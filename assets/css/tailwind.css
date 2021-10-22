@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-gray-200;
+}
+
+@font-face {
+  font-family: 'Vinson Regular';
+  src: url('../fonts/Vinson-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Vinson Bold';
+  src: url('../fonts/Vinson-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Hack Regular';
+  src: url('../fonts/Hack-Regular.woff2') format('woff2');
+}
