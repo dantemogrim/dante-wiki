@@ -1,5 +1,5 @@
 <template>
-  <div class="about-page">
+  <div class="archive-page">
     <h1 class="m-4 text-6xl text-black font-vinsonRegular">{{ page }}</h1>
   </div>
 </template>
@@ -8,7 +8,7 @@
 export default {
   data() {
     return {
-      page: 'About',
+      page: 'Archive',
     };
   },
 };

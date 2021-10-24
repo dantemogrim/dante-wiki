@@ -30,9 +30,9 @@
       <div class="headerMenu2">
         <form class="flex flex-row items-center justify-center" action="#">
           <input
-            class="text-sm rounded-md w-44 h-7 pl-2"
+            class="font-hack text-sm rounded-md w-44 h-7 pl-2"
             type="text"
-            placeholder="Search #topic or title."
+            placeholder="#Topic or title."
             name="search"
           />
           <button
@@ -81,48 +81,139 @@
           </button>
         </form>
       </div>
-      <div class="headerMenu3">
-        <svg
-          class="hamburgerIcon mx-4"
-          xmlns="http://www.w3.org/2000/svg"
-          width="35"
-          height="35"
-          fill="#ffffff"
-          viewBox="0 0 256 256"
+      <div class="headerMenu3 mx-4">
+        <button
+          class="
+            flex
+            items-center
+            justify-between
+            px-2
+            py-2
+            bg-gray-200
+            w-full
+            border border-gray-500
+            rounded-lg
+          "
+          @click="isOptionsExpanded = !isOptionsExpanded"
+          @blur="isOptionsExpanded = false"
         >
-          <rect width="256" height="256" fill="none"></rect>
-          <polyline
-            points="96 184 32 200 32 56 96 40"
-            fill="none"
-            stroke="#ffffff"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="24"
-          ></polyline>
-          <polygon
-            points="160 216 96 184 96 40 160 72 160 216"
-            fill="none"
-            stroke="#ffffff"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="24"
-          ></polygon>
-          <polyline
-            points="160 72 224 56 224 200 160 216"
-            fill="none"
-            stroke="#ffffff"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="24"
-          ></polyline>
-        </svg>
+          <span>{{ selectedOption }}</span>
 
-        <div class="pageLinks hidden">
-          <a>About</a>
-          <a>Archive</a>
-          <a>Topics</a>
-        </div>
+          <svg
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="
+              h-4
+              w-4
+              transform
+              transition-transform
+              duration-200
+              ease-in-out
+            "
+            :class="isOptionsExpanded ? 'rotate-180' : 'rotate-0'"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="3.5"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </button>
+        <transition
+          enter-active-class="transform transition duration-500 ease-custom"
+          enter-class="-translate-y-1/2 scale-y-0 opacity-0"
+          enter-to-class="translate-y-0 scale-y-100 opacity-100"
+          leave-active-class="transform transition duration-300 ease-custom"
+          leave-class="translate-y-0 scale-y-100 opacity-100"
+          leave-to-class="-translate-y-1/2 scale-y-0 opacity-0"
+        >
+          <ul
+            v-show="isOptionsExpanded"
+            class="
+              absolute
+              left-0
+              right-0
+              mt-4
+              mb-4
+              bg-white
+              divide-y
+              rounded-lg
+              shadow-lg
+              overflow-hidden
+            "
+          >
+            <nuxt-link to="/about">
+              <li
+                class="
+                  px-3
+                  py-2
+                  transition-colors
+                  duration-300
+                  hover:bg-gray-200
+                "
+                @mousedown.prevent="setOption(option)"
+              >
+                About
+              </li>
+            </nuxt-link>
+            <nuxt-link to="/archive">
+              <li
+                class="
+                  px-3
+                  py-2
+                  transition-colors
+                  duration-300
+                  hover:bg-gray-200
+                "
+                @mousedown.prevent="setOption(option)"
+              >
+                Archive
+              </li>
+            </nuxt-link>
+            <nuxt-link to="/topics">
+              <li
+                class="
+                  px-3
+                  py-2
+                  transition-colors
+                  duration-300
+                  hover:bg-gray-200
+                "
+                @mousedown.prevent="setOption(option)"
+              >
+                Topics
+              </li>
+            </nuxt-link>
+          </ul>
+        </transition>
       </div>
     </nav>
   </header>
 </template>
+
+<script>
+import Vue from 'vue';
+
+export default Vue.extend({
+  data() {
+    return {
+      isOptionsExpanded: false,
+      selectedOption: '',
+    };
+  },
+  methods: {
+    setOption(option) {
+      this.selectedOption = option;
+      this.isOptionsExpanded = false;
+    },
+  },
+});
+</script>
+
+<style>
+.ease-custom {
+  transition-timing-function: cubic-bezier(0.61, -0.53, 0.43, 1.43);
+}
+</style>

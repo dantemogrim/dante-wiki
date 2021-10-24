@@ -1,9 +1,6 @@
 module.exports = {
   theme: {
     extend: {
-      backgroundImage: {
-        'craftmat-pattern': "url('/assets/craft2.jpg')",
-      },
       colors: {
         primary: '#ff7152',
         secondary: '#52e7ff',
