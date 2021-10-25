@@ -158,7 +158,7 @@
                 About
               </li>
             </nuxt-link>
-            <nuxt-link to="/archive">
+            <nuxt-link to="/articles">
               <li
                 class="
                   px-3

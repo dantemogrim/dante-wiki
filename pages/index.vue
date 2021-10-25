@@ -6,9 +6,8 @@
         Cupcake cookie liquorice sweet halvah bonbon jelly biscuit marzipan.
       </p>
     </article>
-    <h2 class="m-4 text-3xl text-black font-vinsonRegular">Latest</h2>
 
-    <section class="bg-gray-50 m-2 p-2 rounded-md shadow-lg">
+    <section class="flex flex-col font-hack my-1 p-1">
       <component
         v-if="story.content.component"
         :key="story.content._uid"
@@ -25,6 +24,17 @@ export default {
     return {
       story: { content: {} },
     };
+  },
+  async fetch(context) {
+    // Loading reference data - Articles in our case
+    if (context.store.state.articles.loaded !== '1') {
+      let articlesRefRes = await context.app.$storyapi.get(`cdn/stories/`, {
+        starts_with: 'articles/',
+        version: 'draft',
+      });
+      context.store.commit('articles/setArticles', articlesRefRes.data.stories);
+      context.store.commit('articles/setLoaded', '1');
+    }
   },
   mounted() {
     this.$storybridge(() => {
