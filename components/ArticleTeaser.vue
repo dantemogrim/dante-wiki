@@ -1,10 +1,10 @@
 <template>
   <nuxt-link :to="articleLink" class="article-teaser block px-3 rounded">
     <h2 class="pt-2 pb-4 text-2xl font-bold">
-      {{ articleContent.name }}
+      {{ articleContent.title }}
     </h2>
     <p class="pb-6 leading-relaxed">
-      {{ articleContent.intro }}
+      {{ articleContent.description }}
     </p>
   </nuxt-link>
 </template>

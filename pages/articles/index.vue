@@ -1,18 +1,19 @@
 <template>
   <section>
     <h2 class="m-4 text-6xl text-black font-vinsonRegular">Archive</h2>
-    {{ articles }}
-    <ul class="flex py-6 mb-6 justify-center align-center">
+
+    <ul class="flex flex-col py-6 mb-6 justify-center align-center">
       <li
         v-for="article in stories"
         :key="article._uid"
-        class="flex-auto"
-        style="min-width: 33%"
+        class="bg-gray-50 m-2 rounded-md shadow-lg"
+        style=""
       >
         <article-teaser
           v-if="article.content"
           :article-link="article.full_slug"
           :article-content="article.content"
+          class="font-hack"
         />
         <p v-else class="px-4 py-2 text-white bg-red-700 text-center rounded">
           This content loads on save. <strong>Save the entry & reload.</strong>
@@ -43,7 +44,7 @@ export default {
           console.error(res);
           context.error({
             statusCode: 404,
-            message: 'Failed to receive content form api',
+            message: 'Failed to receive content from api.',
           });
         } else {
           console.error(res.response.data);

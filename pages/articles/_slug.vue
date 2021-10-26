@@ -11,38 +11,10 @@ export default {
   components: {
     Article,
   },
-  data() {
-    return {
-      story: { content: {} },
-    };
-  },
-  mounted() {
-    this.$storybridge(() => {
-      const storyblokInstance = new StoryblokBridge();
-
-      // Use the input event for instant update of content
-      storyblokInstance.on('input', (event) => {
-        console.log(this.story.content);
-        if (event.story.id === this.story.id) {
-          this.story.content = event.story.content;
-        }
-      });
-
-      // Use the bridge to listen the events
-      storyblokInstance.on(['published', 'change'], (event) => {
-        // window.location.reload()
-        this.$nuxt.$router.go({
-          path: this.$nuxt.$router.currentRoute,
-          force: true,
-        });
-      });
-    });
-  },
   asyncData(context) {
     // Load the JSON from the API
     let version =
       context.query._storyblok || context.isDev ? 'draft' : 'published';
-
     return context.app.$storyapi
       .get(`cdn/stories/articles/${context.params.slug}`, {
         version: version,
@@ -55,7 +27,7 @@ export default {
           console.error(res);
           context.error({
             statusCode: 404,
-            message: 'Failed to receive content form api',
+            message: 'Failed to receive content from api',
           });
         } else {
           console.error(res.response.data);
@@ -65,6 +37,32 @@ export default {
           });
         }
       });
+  },
+  mounted() {
+    this.$storybridge(() => {
+      const storyblokInstance = new StoryblokBridge();
+      // Use the input event for instant update of content
+      storyblokInstance.on('input', (event) => {
+        console.log(this.story.content);
+        if (event.story.id === this.story.id) {
+          this.story.content = event.story.content;
+        }
+      });
+      // Use the bridge to listen the events
+      storyblokInstance.on(['published', 'change'], (event) => {
+        // window.location.reload()
+        this.$nuxt.$router.go({
+          path: this.$nuxt.$router.currentRoute,
+          force: true,
+        });
+      });
+    });
+  },
+
+  data() {
+    return {
+      story: { content: {} },
+    };
   },
 };
 </script>
