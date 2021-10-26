@@ -31,9 +31,11 @@ export default {
       required: true,
     },
   },
+
   computed: {
     sortedArticles() {
       // Load reference data/content from store
+
       const featuredArticles = this.$store.state.articles.articles.filter(
         (article) => {
           return this.blok.articles.includes(article.uuid);
@@ -41,6 +43,7 @@ export default {
       );
 
       // Enable the ordering of the article previews
+
       featuredArticles.sort((a, b) => {
         return (
           this.blok.articles.indexOf(a.uuid) -

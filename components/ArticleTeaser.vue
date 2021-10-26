@@ -14,10 +14,12 @@ export default {
   props: {
     articleContent: {
       type: Object,
+
       required: true,
     },
     articleLink: {
       type: String,
+
       required: true,
     },
   },
