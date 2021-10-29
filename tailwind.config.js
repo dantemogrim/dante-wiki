@@ -8,8 +8,8 @@ module.exports = {
       },
       fontFamily: {
         hack: ['Hack Regular'],
-        vinsonRegular: ['Vinson Regular'],
-        vinsonBold: ['Vinson Bold'],
+        LeagueSpartan: ['League Spartan Bold'],
+        megaMan: ['Mega Man'],
       },
     },
   },

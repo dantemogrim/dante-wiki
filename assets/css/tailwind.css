@@ -12,17 +12,21 @@ body {
   @apply bg-gray-200;
 }
 
-@font-face {
-  font-family: 'Vinson Regular';
-  src: url('../fonts/Vinson-Regular.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Vinson Bold';
-  src: url('../fonts/Vinson-Bold.woff2') format('woff2');
+h1 {
+  word-spacing: -30px;
 }
 
 @font-face {
   font-family: 'Hack Regular';
-  src: url('../fonts/Hack-Regular.woff2') format('woff2');
+  src: url('~static/fonts/Hack-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'League Spartan Bold';
+  src: url('~static/fonts/LeagueSpartan-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Mega Man';
+  src: url('~static/fonts/MMRock9.woff2') format('woff2');
 }

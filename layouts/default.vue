@@ -15,5 +15,6 @@ export default {
     Header,
     Footer,
   },
+  mounted() {},
 };
 </script>

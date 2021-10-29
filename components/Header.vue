@@ -1,5 +1,5 @@
 <template>
-  <header class="min-w-full h-16 bg-gray-700">
+  <header class="min-w-full h-16 bg-gray-700 sticky">
     <nav class="flex flex-row justify-between items-center h-full">
       <div class="headerMenu1">
         <nuxt-link to="/">
@@ -100,25 +100,59 @@
           <span>{{ selectedOption }}</span>
 
           <svg
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            class="
-              h-4
-              w-4
-              transform
-              transition-transform
-              duration-200
-              ease-in-out
-            "
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="#000000"
+            viewBox="0 0 256 256"
             :class="isOptionsExpanded ? 'rotate-180' : 'rotate-0'"
           >
+            <rect width="256" height="256" fill="none"></rect>
             <path
+              d="M180,48h.00006A27.99994,27.99994,0,0,1,208,75.99994V76a28,28,0,0,1-28,28H152a0,0,0,0,1,0,0V76a28,28,0,0,1,28-28Z"
+              fill="none"
+              stroke="#000000"
               stroke-linecap="round"
               stroke-linejoin="round"
-              stroke-width="3.5"
-              d="M19 9l-7 7-7-7"
-            />
+              stroke-width="24"
+            ></path>
+            <path
+              d="M48,48H76a28,28,0,0,1,28,28v.00006A27.99994,27.99994,0,0,1,76.00006,104H76A28,28,0,0,1,48,76V48A0,0,0,0,1,48,48Z"
+              transform="translate(152 152) rotate(180)"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"
+            ></path>
+            <path
+              d="M152,152h28a28,28,0,0,1,28,28v.00006A27.99994,27.99994,0,0,1,180.00006,208H180a28,28,0,0,1-28-28V152A0,0,0,0,1,152,152Z"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"
+            ></path>
+            <path
+              d="M76,152h.00006A27.99994,27.99994,0,0,1,104,179.99994V180a28,28,0,0,1-28,28H48a0,0,0,0,1,0,0V180A28,28,0,0,1,76,152Z"
+              transform="translate(152 360) rotate(-180)"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"
+            ></path>
+            <rect
+              x="104"
+              y="104"
+              width="48"
+              height="48"
+              stroke-width="24"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              fill="none"
+            ></rect>
           </svg>
         </button>
         <transition
@@ -135,7 +169,7 @@
               absolute
               left-0
               right-0
-              mt-4
+              mt-3
               mb-4
               bg-white
               divide-y
