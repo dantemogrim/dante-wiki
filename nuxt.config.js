@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Dante Mogrim Blog',
+    title: 'Dante Mogrim',
     htmlAttrs: {
       lang: 'en',
     },
@@ -32,13 +32,13 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/css/markdown.css',
     // TailwindCSS file.
     '@/assets/css/tailwind.css',
+    '@/assets/css/text.css',
     {
       src: '~/node_modules/highlight.js/styles/night-owl.css',
-      lang: 'css',
-      lang: 'html',
-      lang: 'php',
+      lang: ['css', 'html', 'php'],
     },
   ],
 
@@ -74,7 +74,15 @@ export default {
     ],
     [
       '@nuxtjs/markdownit',
-      { injected: true, use: ['markdown-it-highlightjs'] },
+      {
+        html: true,
+        linkify: true,
+        typographer: true,
+        use: [
+          ['markdown-it-highlightjs', { inline: true }],
+          'markdown-it-task-lists',
+        ],
+      },
     ],
   ],
 

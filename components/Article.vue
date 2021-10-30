@@ -1,15 +1,16 @@
 <template>
   <div v-editable="blok" class="articleWrapper">
-    <div class="">
-      <img
-        class="h-48 w-full mb-4 object-cover opacity-25"
-        :src="blok.image.filename"
-      />
-      <h1 class="text-4xl m-3 font-megaMan font-extrabold">{{ blok.title }}</h1>
-    </div>
     <section class="bg-gray-50 p-4 rounded-md shadow-lg font-hack">
-      <p class="text-l mb-3">{{ blok.date }}</p>
-      <p class="text-l mb-3">{{ blok.author }}</p>
+      <div class="flex flex-col justify-center items-center w-full">
+        <img class="h-48 w-3/4 mb-4 object-cover" :src="blok.image.filename" />
+        <h1 class="text-4xl m-3 font-leagueSpartan font-extrabold">
+          {{ blok.title }}
+        </h1>
+      </div>
+
+      <p class="text-m mb-3 text-blue-500">{{ blok.author }}</p>
+      <p class="text-m mb-3 text-indigo-500">{{ blok.date }}</p>
+      <hr />
       <div v-html="$md.render(blok.bodyText)" class=""></div>
     </section>
   </div>
@@ -23,6 +24,7 @@ export default {
       required: true,
     },
   },
+
   mounted() {},
 };
 </script>

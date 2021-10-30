@@ -1,8 +1,8 @@
 <template>
   <nuxt-link :to="articleLink" class="article-teaser block px-3 rounded">
-    <h2 class="pt-2 pb-4 text-2xl font-bold">
+    <h3 class="pt-2 pb-4 text-2xl font-bold">
       {{ articleContent.title }}
-    </h2>
+    </h3>
     <p class="pb-6 leading-relaxed">
       {{ articleContent.description }}
     </p>

@@ -7,9 +7,9 @@ module.exports = {
         accent: '#f452ff',
       },
       fontFamily: {
-        hack: ['Hack Regular'],
-        LeagueSpartan: ['League Spartan Bold'],
-        megaMan: ['Mega Man'],
+        hack: ['hack'],
+        leagueSpartan: ['leagueSpartan'],
+        megaMan: ['megaMan'],
       },
     },
   },

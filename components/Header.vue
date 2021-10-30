@@ -1,5 +1,5 @@
 <template>
-  <header class="min-w-full h-16 bg-gray-700 sticky">
+  <header class="min-w-full h-16 bg-gray-700 sticky inset-0">
     <nav class="flex flex-row justify-between items-center h-full">
       <div class="headerMenu1">
         <nuxt-link to="/">
@@ -203,7 +203,7 @@
                 "
                 @mousedown.prevent="setOption(option)"
               >
-                Archive
+                Articles
               </li>
             </nuxt-link>
             <nuxt-link to="/topics">
