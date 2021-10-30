@@ -75,13 +75,7 @@ export default {
     [
       '@nuxtjs/markdownit',
       {
-        html: true,
-        linkify: true,
-        typographer: true,
-        use: [
-          ['markdown-it-highlightjs', { inline: true }],
-          'markdown-it-task-lists',
-        ],
+        use: [['markdown-it-highlightjs', { inline: true }]],
       },
     ],
   ],
