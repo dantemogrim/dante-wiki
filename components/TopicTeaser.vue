@@ -1,22 +1,22 @@
 <template>
-  <nuxt-link :to="articleLink" class="article-teaser block px-3 rounded">
+  <nuxt-link
+    :to="topicLink"
+    class="bg-yellow-200 article-teaser block px-3 rounded"
+  >
     <h3 class="pt-2 pb-4 text-2xl">
-      {{ articleContent.title }}
+      {{ topicContent.name }}
     </h3>
-    <p class="pb-6 leading-relaxed">
-      {{ articleContent.description }}
-    </p>
   </nuxt-link>
 </template>
 
 <script>
 export default {
   props: {
-    articleContent: {
+    topicContent: {
       type: Object,
       required: true,
     },
-    articleLink: {
+    topicLink: {
       type: String,
       required: true,
     },

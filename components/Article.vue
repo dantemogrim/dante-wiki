@@ -8,9 +8,9 @@
         </h1>
       </div>
 
-      <p class="text-m mb-3 text-green-500">{{ blok.tag }}</p>
       <p class="text-m mb-3 text-blue-500">{{ blok.author }}</p>
       <p class="text-m mb-3 text-indigo-500">{{ blok.date }}</p>
+      <p class="text-m mb-3 text-blue-500">{{ blok.tag }}</p>
       <hr />
       <div v-html="$md.render(blok.bodyText)" class=""></div>
     </section>

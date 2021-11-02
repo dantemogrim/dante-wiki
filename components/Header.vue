@@ -32,7 +32,7 @@
           <input
             class="rounded-md w-44 h-8 pl-2 bg-gray-600"
             type="text"
-            placeholder="#Topic or title."
+            placeholder="#topic or title."
             name="search"
           />
           <button

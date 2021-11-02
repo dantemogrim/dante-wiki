@@ -65,7 +65,7 @@ export default {
 
           context.error({
             statusCode: 404,
-            message: 'Failed to receive content form api',
+            message: 'Failed to receive content from api',
           });
         } else {
           console.error(res.response.data);

@@ -1,60 +1,42 @@
 <template>
   <section>
-    <Article :blok="story.content" />
+    <h1 class="m-4">(SPECIFIC TOPIC)</h1>
+    <h2 class="m-4">RELATED ARTICLES:</h2>
+
+    <ul class="flex flex-col">
+      <li
+        v-for="article in stories"
+        :key="article._uid"
+        class="flex-auto"
+        style="min-width: 33%"
+      >
+        <article-teaser
+          v-if="article.content"
+          :article-link="article.full_slug"
+          :article-content="article.content"
+          class="bg-gray-50 m-2 p-2 rounded-md shadow-lg"
+        />
+        <p v-else class="px-4 py-2 text-white bg-red-700 text-center rounded">
+          This content loads on save. <strong>Save the entry & reload.</strong>
+        </p>
+      </li>
+    </ul>
   </section>
 </template>
 
 <script>
-import Article from '~/components/Article.vue';
-
 export default {
-  components: {
-    Article,
-  },
-
   data() {
     return {
-      story: { content: {} },
+      stories: [],
     };
   },
-
-  mounted() {
-    this.$storybridge(() => {
-      const storyblokInstance = new StoryblokBridge();
-
-      // Use the input event for instant update of content
-
-      storyblokInstance.on('input', (event) => {
-        console.log(this.story.content);
-
-        if (event.story.id === this.story.id) {
-          this.story.content = event.story.content;
-        }
-      });
-
-      // Use the bridge to listen the events
-
-      storyblokInstance.on(['published', 'change'], (event) => {
-        // window.location.reload()
-
-        this.$nuxt.$router.go({
-          path: this.$nuxt.$router.currentRoute,
-
-          force: true,
-        });
-      });
-    });
-  },
-
   asyncData(context) {
-    // Load the JSON from the API
-
-    let version =
-      context.query._storyblok || context.isDev ? 'draft' : 'published';
-
     return context.app.$storyapi
-      .get(`cdn/stories/articles/${context.params.slug}`, {
-        version: version,
+      .get('cdn/stories', {
+        starts_with: 'articles/',
+        sort_by: 'position:desc',
+        version: 'draft',
       })
       .then((res) => {
         return res.data;
@@ -62,14 +44,12 @@ export default {
       .catch((res) => {
         if (!res.response) {
           console.error(res);
-
           context.error({
             statusCode: 404,
-            message: 'Failed to receive content form api',
+            message: 'Failed to receive content from api',
           });
         } else {
           console.error(res.response.data);
-
           context.error({
             statusCode: res.response.status,
             message: res.response.data,

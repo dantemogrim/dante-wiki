@@ -71,7 +71,7 @@ export default {
     //Load the JSON from the API - loadig the home content (index page)
     return context.app.$storyapi
       .get('cdn/stories/home', {
-        version: 'draft',
+        version: version,
       })
       .then((res) => {
         return res.data;
@@ -81,7 +81,7 @@ export default {
           console.error(res);
           context.error({
             statusCode: 404,
-            message: 'Failed to receive content form api',
+            message: 'Failed to receive content from api',
           });
         } else {
           console.error(res.response.data);
