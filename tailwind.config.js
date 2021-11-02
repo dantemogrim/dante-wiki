@@ -1,4 +1,12 @@
 module.exports = {
+  purge: {
+    transform: {
+      md: (content) => {
+        return remark().process(content)
+      },
+    },
+    safelist: ['hljs'],
+  },
   theme: {
     extend: {
       colors: {
@@ -8,8 +16,7 @@ module.exports = {
       },
       fontFamily: {
         hack: ['hack'],
-        leagueSpartan: ['leagueSpartan'],
-        megaMan: ['megaMan'],
+        spaceGrotesk: ['spaceGrotesk'],
       },
     },
   },

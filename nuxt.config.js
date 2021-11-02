@@ -32,9 +32,8 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/css/global.css',
     '@/assets/css/markdown.css',
-    // TailwindCSS file.
-    '@/assets/css/tailwind.css',
     '@/assets/css/text.css',
     {
       src: '~/node_modules/highlight.js/styles/night-owl.css',
@@ -43,11 +42,7 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    '~/plugins/components',
-    '~/plugins/composition-api.js',
-    '~/plugins/syntax-highlighter.js',
-  ],
+  plugins: ['~/plugins/components', '~/plugins/composition-api.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -75,7 +70,10 @@ export default {
     [
       '@nuxtjs/markdownit',
       {
-        use: [['markdown-it-highlightjs', { inline: true }]],
+        use: [
+          ['markdown-it-highlightjs', { inline: true }],
+          'markdown-it-task-lists',
+        ],
       },
     ],
   ],

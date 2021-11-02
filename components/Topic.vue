@@ -1,6 +1,6 @@
 <template>
-  <div v-editable="blok" class="py-8 mb-6 text-center text-5xl">
-    {{ blok.headline }}
+  <div v-editable="blok" class="topicWrapper">
+    {{ blok.tag }}
   </div>
 </template>
 
@@ -9,9 +9,10 @@ export default {
   props: {
     blok: {
       type: Object,
-
       required: true,
     },
   },
+
+  mounted() {},
 };
 </script>

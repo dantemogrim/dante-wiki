@@ -1,6 +1,6 @@
 <template>
   <div class="about-page">
-    <h1 class="m-4 text-6xl text-black font-megaMan font-extrabold">
+    <h1 class="m-4">
       {{ page }}
     </h1>
   </div>

@@ -1,6 +1,6 @@
 <template>
   <nuxt-link :to="articleLink" class="article-teaser block px-3 rounded">
-    <h3 class="pt-2 pb-4 text-2xl font-bold">
+    <h3 class="pt-2 pb-4 text-2xl">
       {{ articleContent.title }}
     </h3>
     <p class="pb-6 leading-relaxed">
@@ -25,9 +25,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.article-teaser:hover {
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
-}
-</style>

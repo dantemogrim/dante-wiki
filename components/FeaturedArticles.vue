@@ -1,6 +1,6 @@
 <template>
   <div v-editable="blok">
-    <h2 class="mt-3 ml-3 text-3xl text-black font-megaMan font-extrabold">
+    <h2 class="mt-3 ml-3">
       {{ blok.title }}
     </h2>
     <ul class="flex flex-col my-3">

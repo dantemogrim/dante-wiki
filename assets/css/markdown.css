@@ -3,13 +3,14 @@
 /* Headings. */
 .articleWrapper > section > div > h1,
 .articleWrapper > section > div > h3 {
-  font-weight: bold;
   margin: 5px 0 5px 0;
 }
 
+/* TODO - links within markdown */
+
 /* Paragraphs. */
-.articleWrapper > section > div > p {
-  margin: 3px 0 3px 0;
+p {
+  margin: 8px 0 8px 0;
 }
 
 /* Ordered, numbered list. */
@@ -20,7 +21,6 @@
 
 /* Unordered list, parent item. */
 .articleWrapper > section > div > ul > li {
-  list-style-type: circle;
   margin: 10px 0 10px 0;
 }
 
@@ -34,7 +34,7 @@ li > ul > li {
 /* To do list. */
 .contains-task-list,
 .task-list-item {
-  list-style-type: unset;
+  list-style-type: none;
 }
 
 .contains-task-list {
@@ -47,7 +47,6 @@ blockquote {
   margin: 8px 0 8px 0;
   padding: 10px;
   background-color: lightpink;
-  font-style: italic;
 }
 
 /* Code specific. */
@@ -55,6 +54,11 @@ code,
 pre {
   border-radius: 10px;
   padding: 0 4px 0 4px;
+}
+
+/* For inline code */
+code {
+  background-color: #dcf5f1;
 }
 
 /* HTML specific within code blocks. */

@@ -1,15 +1,13 @@
 <template>
   <div>
-    <h1 class="m-4 text-4xl text-black font-megaMan font-extrabold">
-      HELLO, IM.DANTE
-    </h1>
-    <article class="bg-gray-50 m-2 p-2 rounded-md shadow-lg">
-      <p class="font-hack">
+    <article class="bg-indigo-50 m-2 p-2 rounded-md shadow-lg">
+      <h1 class="m-4">HELLO, IM.DANTE</h1>
+      <p class="m-4">
         Cupcake cookie liquorice sweet halvah bonbon jelly biscuit marzipan.
       </p>
     </article>
     <!-- Featured articles. -->
-    <section class="flex flex-col font-hack my-1 p-1">
+    <section class="flex flex-col my-1 p-1">
       <component
         v-if="story.content.component"
         :key="story.content._uid"
@@ -39,33 +37,38 @@ export default {
     }
   },
   mounted() {
-    this.$storybridge(() => {
-      const storyblokInstance = new StoryblokBridge();
+    this.$storybridge(
+      () => {
+        const storyblokInstance = new StoryblokBridge();
 
-      // Use the input event for instant update of content
-      storyblokInstance.on('input', (event) => {
-        console.log(this.story.content);
-        if (event.story.id === this.story.id) {
-          this.story.content = event.story.content;
-        }
-      });
-
-      // Use the bridge to listen the events
-      storyblokInstance.on(['published', 'change'], (event) => {
-        // window.location.reload()
-        this.$nuxt.$router.go({
-          path: this.$nuxt.$router.currentRoute,
-          force: true,
+        storyblokInstance.on(['input', 'published', 'change'], (event) => {
+          if (event.action == 'input') {
+            if (event.story.id === this.story.id) {
+              this.story.content = event.story.content;
+            }
+          } else {
+            this.$nuxt.$router.go({
+              path: this.$nuxt.$router.currentRoute,
+              force: true,
+            });
+          }
         });
-      });
-    });
+      },
+      (error) => {
+        console.error(error);
+      }
+    );
   },
   asyncData(context) {
-    // // This what would we do in real project
-    // const version = context.query._storyblok || context.isDev ? 'draft' : 'published'
-    // const fullSlug = (context.route.path == '/' || context.route.path == '') ? 'home' : context.route.path
+    // This what would we do in real project
+    const version =
+      context.query._storyblok || context.isDev ? 'draft' : 'published';
+    const fullSlug =
+      context.route.path == '/' || context.route.path == ''
+        ? 'home'
+        : context.route.path;
 
-    // Load the JSON from the API - loadig the home content (index page)
+    //Load the JSON from the API - loadig the home content (index page)
     return context.app.$storyapi
       .get('cdn/stories/home', {
         version: 'draft',
