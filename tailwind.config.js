@@ -1,12 +1,4 @@
 module.exports = {
-  purge: {
-    transform: {
-      md: (content) => {
-        return remark().process(content)
-      },
-    },
-    safelist: ['hljs'],
-  },
   theme: {
     extend: {
       colors: {

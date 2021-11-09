@@ -5,9 +5,29 @@
 }
 
 body {
-  background-color: #cde4e0;
-  background-image: url('../../static/img/texture.png');
-  background-size: cover;
+  background-color: #ffffff;
+  background-image: url('../../static/images/texture.png');
+  background-repeat: repeat;
+}
+
+hr {
+  border: none;
+  border-top: 3px solid rgb(186, 214, 186);
+  color: #333;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+  margin: 20px;
+}
+
+hr:after {
+  content: '🌝';
+  padding: 0 4px;
+  font-size: 30px;
+  border-radius: 5px;
+
+  position: relative;
+  top: -25px;
 }
 
 /* TODO - Glassmorphism within header & footer. */

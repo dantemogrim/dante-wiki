@@ -4,30 +4,14 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Dante Mogrim',
-    htmlAttrs: {
-      lang: 'en',
-    },
+    title: 'Blog',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' },
-      {
-        rel: 'stylesheet',
-
-        href: '//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css',
-      },
-    ],
-    script: [
-      {
-        type: 'text/javascript',
-        src: '//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/highlight.min.js',
-      },
-    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -35,23 +19,18 @@ export default {
     '@/assets/css/global.css',
     '@/assets/css/markdown.css',
     '@/assets/css/text.css',
-    {
-      src: '~/node_modules/highlight.js/styles/night-owl.css',
-      lang: ['css', 'html', 'php'],
-    },
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/components', '~/plugins/composition-api.js'],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    '@nuxtjs/dotenv',
-    // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build',
+    // https://go.nuxtjs.dev/stylelint
+    '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
   ],
@@ -60,26 +39,30 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    [
-      'storyblok-nuxt',
-      {
-        accessToken: process.env.STORYBOOK_DATA_KEY,
-        cacheProvider: 'memory',
-      },
-    ],
-    [
-      '@nuxtjs/markdownit',
-      {
-        use: [
-          ['markdown-it-highlightjs', { inline: true }],
-          'markdown-it-task-lists',
-        ],
-      },
-    ],
+    // https://go.nuxtjs.dev/pwa
+    '@nuxtjs/pwa',
+    // https://go.nuxtjs.dev/content
+    '@nuxt/content',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
+
+  // PWA module configuration: https://go.nuxtjs.dev/pwa
+  pwa: {
+    manifest: {
+      lang: 'en',
+    },
+  },
+
+  // Content module configuration: https://go.nuxtjs.dev/config-content
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-material-oceanic.css',
+      },
+    },
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

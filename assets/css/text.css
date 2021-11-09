@@ -8,11 +8,28 @@
   src: url('~static/fonts/spaceGrotesk.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: 'chomsky';
+  src: url('~static/fonts/chomsky.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'rampartOne';
+  src: url('~static/fonts/rampartOne.woff2') format('woff2');
+}
+
 h1,
 h2,
 h3 {
-  font-family: 'spaceGrotesk'; /* TODO - fallback fonts. */
+  font-family: 'rampartOne'; /* TODO - fallback fonts. */
   text-transform: uppercase;
+}
+
+.brand {
+  font-family: 'rampartOne';
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  color: #1976d2;
 }
 
 /* TailwindCSS text-4xl */

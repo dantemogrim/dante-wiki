@@ -1,7 +1,1 @@
-# Ignore artifacts:
-dist
-node_modules
-
-# Ignore files:
-tailwind.config.js
-*.html
+*.md
