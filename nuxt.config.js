@@ -61,9 +61,9 @@ export default {
       prism: {
         theme: 'prism-themes/themes/prism-material-oceanic.css',
       },
-      nestedProperties: ['author.name'],
-      nestedProperties: ['tag.title'],
     },
+    nestedProperties: ['author.name', 'tags.name', 'post.title', 'posts.slug'],
+    fullTextSearchFields: ['title', 'description', 'name'],
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

@@ -54,14 +54,6 @@ export default {
   async asyncData({ $content, params }) {
     const post = await $content('posts', params.slug).fetch();
 
-    // const tag = await $content('tags', params.slug).fetch();
-
-    // const tag = await $content('tags', params.slug)
-    //   .only(['title', 'slug'])
-    //   .where({ name: { $containsAny: post.tags } })
-    //   .sortBy('title', 'asc')
-    //   .fetch();
-
     const [prev, next] = await $content('posts')
       .only(['title', 'slug'])
       .sortBy('createdAt', 'asc')

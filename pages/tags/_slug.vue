@@ -5,7 +5,6 @@
     >
       <h1>{{ tag.emoji }} {{ tag.name }}</h1>
       <p>{{ tag.description }}</p>
-
       <hr />
       <nuxt-content :document="tag" />
     </article>
@@ -16,6 +15,11 @@
 export default {
   async asyncData({ $content, params }) {
     const tag = await $content('tags', params.slug).fetch();
+
+    // const posts = await $content('posts', params.slug)
+    //   .only(['title', 'description', 'img', 'slug', 'author', 'tags'])
+    //   .sortBy('createdAt', 'asc')
+    //   .fetch();
 
     return {
       tag,

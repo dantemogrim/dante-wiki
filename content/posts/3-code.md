@@ -6,6 +6,9 @@ author:
   emoji: 🌀
   name: Dante Mogrim
   bio: I like people, places and things.
+tags:
+  - alfred
+  - sass
 ---
 > Howdy!
 

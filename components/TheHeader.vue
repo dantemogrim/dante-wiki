@@ -102,7 +102,7 @@
                   duration-300
                   hover:bg-gray-200
                 "
-                @mousedown.prevent="setOption(opt)"
+                @mousedown.prevent="setOption()"
               >
                 About
               </li>
@@ -116,7 +116,7 @@
                   duration-300
                   hover:bg-gray-200
                 "
-                @mousedown.prevent="setOption(opt)"
+                @mousedown.prevent="setOption()"
               >
                 Posts
               </li>
@@ -130,7 +130,7 @@
                   duration-300
                   hover:bg-gray-200
                 "
-                @mousedown.prevent="setOption(opt)"
+                @mousedown.prevent="setOption()"
               >
                 Tags
               </li>
@@ -153,8 +153,7 @@ export default Vue.extend({
     };
   },
   methods: {
-    setOption(opt) {
-      this.selectedOption = opt;
+    setOption() {
       this.isOptionsExpanded = false;
     },
   },
