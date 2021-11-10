@@ -1,10 +1,14 @@
 ---
 title: 1 - Text
 description: A cool intriguing description about it.
+position: 1
 author:
   emoji: 🌀
   name: Dante Mogrim
   bio: I like people, places and things.
+tags:
+  - personal
+  - javascript
 ---
 
 Can we jump on a zoom. Digital literacy open door policy. You better eat a reality sandwich before you walk back in that boardroom i'll book a meeting so we can solution this before the sprint is over but run it up the flag pole cadence you gotta smoke test your hypothesis. Slow-walk our commitment price point can you champion this nor granularity, so it is all exactly as i said, but i don't like it. Win-win into the weeds, so can you slack it to me? for productize so hard stop.

@@ -3,7 +3,7 @@
     <nav class="flex flex-row justify-between items-center h-full">
       <div class="headerMenu1 mx-4">
         <nuxt-link to="/">
-          <p class="brand sm:w-10 whitespace-nowrap">Tech Sassy</p>
+          <p class="brand sm:w-10 whitespace-nowrap">🤷‍♂️ dante.im</p>
         </nuxt-link>
       </div>
       <div class="headerMenu2">
@@ -18,6 +18,7 @@
           height="35"
           fill="none"
           viewBox="0 0 256 256"
+          class="cursor-pointer"
           :class="isOptionsExpanded ? 'rotate-180' : 'rotate-0'"
           @click="isOptionsExpanded = !isOptionsExpanded"
           @blur="isOptionsExpanded = false"
@@ -101,7 +102,7 @@
                   duration-300
                   hover:bg-gray-200
                 "
-                @mousedown.prevent="setOption(option)"
+                @mousedown.prevent="setOption(opt)"
               >
                 About
               </li>
@@ -115,12 +116,12 @@
                   duration-300
                   hover:bg-gray-200
                 "
-                @mousedown.prevent="setOption(option)"
+                @mousedown.prevent="setOption(opt)"
               >
                 Posts
               </li>
             </nuxt-link>
-            <nuxt-link to="/topics">
+            <nuxt-link to="/tags">
               <li
                 class="
                   px-3
@@ -129,9 +130,9 @@
                   duration-300
                   hover:bg-gray-200
                 "
-                @mousedown.prevent="setOption(option)"
+                @mousedown.prevent="setOption(opt)"
               >
-                Topics
+                Tags
               </li>
             </nuxt-link>
           </ul>
@@ -152,8 +153,8 @@ export default Vue.extend({
     };
   },
   methods: {
-    setOption(option) {
-      this.selectedOption = option;
+    setOption(opt) {
+      this.selectedOption = opt;
       this.isOptionsExpanded = false;
     },
   },

@@ -14,11 +14,22 @@
       <h1>{{ post.title }}</h1>
       <p>{{ post.description }}</p>
 
+      <div class="tagWrapper">
+        <span> Tags: </span>
+        <span v-for="tag in post.tags" :key="tag" class="">
+          <nuxt-link
+            :to="`/tags/${tag}`"
+            class="bg-green-200 m-2 p-1 rounded-md"
+            >{{ tag }}
+          </nuxt-link>
+        </span>
+      </div>
+
       <author :author="post.author" />
 
       <div class="bg-blue-100 rounded-md p-2">
-        <p>Published:</p>
-        <p>Last updated: {{ formatDate(post.updatedAt) }}</p>
+        <p>✏️ Created @ {{ formatDate(post.createdAt) }}</p>
+        <p>♻️ Updated @ {{ formatDate(post.updatedAt) }}</p>
       </div>
 
       <!-- Heading index so the user can click to next heading. -->
@@ -40,10 +51,16 @@
 
 <script>
 export default {
-  nuxt: 'is the best',
-
   async asyncData({ $content, params }) {
     const post = await $content('posts', params.slug).fetch();
+
+    // const tag = await $content('tags', params.slug).fetch();
+
+    // const tag = await $content('tags', params.slug)
+    //   .only(['title', 'slug'])
+    //   .where({ name: { $containsAny: post.tags } })
+    //   .sortBy('title', 'asc')
+    //   .fetch();
 
     const [prev, next] = await $content('posts')
       .only(['title', 'slug'])
@@ -53,6 +70,7 @@ export default {
 
     return {
       post,
+
       prev,
       next,
     };

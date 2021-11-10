@@ -1,6 +1,7 @@
 ---
 title: 2 - Headings
 description: A cool intriguing description about it.
+position: 2
 author:
   emoji: 🌀
   name: Dante Mogrim

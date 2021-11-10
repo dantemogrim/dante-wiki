@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #819ebb;
   background-image: url('../../static/images/texture.png');
   background-repeat: repeat;
 }
@@ -21,7 +21,7 @@ hr {
 }
 
 hr:after {
-  content: '🌝';
+  content: '💾';
   padding: 0 4px;
   font-size: 30px;
   border-radius: 5px;
@@ -32,14 +32,14 @@ hr:after {
 
 /* TODO - Glassmorphism within header & footer. */
 header {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(80px);
   border: solid 2px transparent;
   box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
 }
 
 footer {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(80px);
   border: solid 2px transparent;
   box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);

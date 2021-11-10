@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="headline-card text-center p-3">
-      <h1 class="">Blog Posts</h1>
+      <h1 class="">All Posts</h1>
       <p v-if="$nuxt.isOffline">Oops! You are offline. 😱</p>
     </div>
     <ul class="articleCardWrapper flex flex-col justify-center">
@@ -10,6 +10,7 @@
           <div class="articleWrapper m-2 p-2 bg-red-100 rounded-md">
             <img :src="post.img" />
             <h2>{{ post.title }}</h2>
+
             <p>Author: {{ post.author.name }}</p>
             <p>Published:</p>
           </div>
@@ -22,8 +23,14 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
+    // const tags = await $content('tags', params.slug)
+    //   .only(['title', 'slug'])
+    //   .where({ title: { $containsAny: post.tags } })
+    //   .sortBy('title', 'asc')
+    //   .fetch();
+
     const posts = await $content('posts', params.slug)
-      .only(['title', 'description', 'img', 'slug', 'author'])
+      .only(['title', 'description', 'img', 'slug', 'author', 'tags'])
       .sortBy('createdAt', 'asc')
       .fetch();
 
