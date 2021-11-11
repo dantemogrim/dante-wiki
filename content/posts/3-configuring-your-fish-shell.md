@@ -6,6 +6,9 @@ author:
   emoji: 🌀
   name: Dante Mogrim
   bio: I like people, places and things.
+gif:
+  src: https://media.giphy.com/media/kTZBUjdRlZB3G/giphy-downsized.gif
+  alt: A man holding a bass fish and it manages to wiggle away from his grip.
 tags:
   - fish
 ---

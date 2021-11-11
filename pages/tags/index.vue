@@ -8,7 +8,7 @@
       <li v-for="tag of tags" :key="tag.slug">
         <nuxt-link :to="{ name: 'tags-slug', params: { slug: tag.slug } }">
           <div class="tagWrapper m-2 p-2 bg-green-100 rounded-md">
-            <h2>{{ tag.emoji }} #{{ tag.name }}</h2>
+            <h3>{{ tag.emoji }} #{{ tag.name }}</h3>
           </div>
         </nuxt-link>
       </li>

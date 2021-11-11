@@ -23,11 +23,52 @@
         you're busy throughput curate pixel pushing, yet core competencies.
       </p>
     </article>
+
+    <h2>Latest</h2>
+
+    <ul class="articleCardWrapper flex flex-col justify-center">
+      <li v-for="post of posts" :key="post.slug">
+        <nuxt-link :to="{ name: 'posts-slug', params: { slug: post.slug } }">
+          <div class="articleWrapper m-2 p-2 bg-red-100 rounded-md">
+            <img :src="post.img" />
+            <h3>{{ post.title }}</h3>
+            <div class="tagWrapper">
+              <span v-for="tag in post.tags" :key="tag" class="">
+                <nuxt-link
+                  :to="`/tags/${tag}`"
+                  class="bg-green-200 m-2 p-1 rounded-md"
+                  >#{{ tag }}
+                </nuxt-link>
+              </span>
+            </div>
+          </div>
+        </nuxt-link>
+      </li>
+    </ul>
   </div>
 </template>
+<!-- <p>Author: {{ post.author.name }}</p> -->
 
 <script>
-export default {};
+export default {
+  async asyncData({ $content, params }) {
+    // const tags = await $content('tags', params.slug)
+    //   .only(['title', 'slug'])
+    //   .where({ title: { $containsAny: post.tags } })
+    //   .sortBy('title', 'asc')
+    //   .fetch();
+
+    const posts = await $content('posts', params.slug)
+      .only(['title', 'description', 'img', 'slug', 'author', 'tags'])
+      .limit(5)
+      .sortBy('createdAt', 'asc')
+      .fetch();
+
+    return {
+      posts,
+    };
+  },
+};
 </script>
 
 <style scoped>

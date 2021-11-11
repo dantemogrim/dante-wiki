@@ -7,14 +7,14 @@
       <p>{{ tag.description }}</p>
       <hr />
 
-      <h3>Related posts:</h3>
+      <h2>Related posts:</h2>
 
       <ul class="articleCardWrapper flex flex-col justify-center">
         <li v-for="post of posts" :key="post.slug">
           <nuxt-link :to="{ name: 'posts-slug', params: { slug: post.slug } }">
             <div class="articleWrapper m-2 p-2 bg-red-100 rounded-md">
               <img :src="post.img" />
-              <h2>{{ post.title }}</h2>
+              <h3>{{ post.title }}</h3>
 
               <p>Author: {{ post.author.name }}</p>
             </div>

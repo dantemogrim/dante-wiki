@@ -6,8 +6,9 @@ author:
   emoji: 🌀
   name: Dante Mogrim
   bio: I like people, places and things.
-gif: https://media.giphy.com/media/3o7qDQ4kcSD1PLM3BK/giphy.gif
-alt: Chandler Bing dancing.
+gif:
+  src: https://media.giphy.com/media/xUA7bjPYcgAvwq5CKc/giphy.gif
+  alt: Chandler Bing dancing.
 tags:
   - nuxtjs
 ---

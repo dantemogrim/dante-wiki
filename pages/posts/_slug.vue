@@ -11,7 +11,8 @@
         m-2
       "
     >
-      <img :src="`${post.gif}`" :alt="`${post.alt}`" />
+      <gif :gif="post.gif" />
+
       <h1>{{ post.title }}</h1>
       <p>{{ post.description }}</p>
 

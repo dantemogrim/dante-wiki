@@ -9,7 +9,7 @@
         <nuxt-link :to="{ name: 'posts-slug', params: { slug: post.slug } }">
           <div class="articleWrapper m-2 p-2 bg-red-100 rounded-md">
             <img :src="post.img" />
-            <h2>{{ post.title }}</h2>
+            <h3>{{ post.title }}</h3>
 
             <div class="tagWrapper">
               <span v-for="tag in post.tags" :key="tag" class="">
