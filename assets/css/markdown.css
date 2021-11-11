@@ -5,46 +5,37 @@
 }
 
 /* Headings. */
-.articleWrapper > section > div > h1,
+/* .articleWrapper > section > div > h1,
 .articleWrapper > section > div > h3 {
   margin: 5px 0 5px 0;
-}
+} */
 
 /* TODO - links within markdown */
 
 /* Paragraphs. */
-p {
+/* p {
   margin: 8px 0 8px 0;
-}
+} */
 
 /* Ordered, numbered list. */
-.articleWrapper > section > div > ol {
+/* .articleWrapper > section > div > ol {
   list-style-type: decimal;
   margin: 10px 0 10px 30px;
-}
+} */
 
 /* Unordered list, parent item. */
-.articleWrapper > section > div > ul > li {
+/* .articleWrapper > section > div > ul > li {
   margin: 10px 0 10px 0;
-}
+} */
 
 /* Unordered list, indented/child item. */
-.articleWrapper > section > div > ul,
+/* .articleWrapper > section > div > ul,
 li > ul > li {
   list-style-type: circle;
   margin: 5px 0 5px 20px;
-}
+} */
 
 /* To do list. */
-.contains-task-list,
-.task-list-item {
-  list-style-type: none;
-}
-
-.contains-task-list {
-  list-style-type: unset;
-  margin: 10px 0 10px 0;
-}
 
 /* Quotes. */
 blockquote {

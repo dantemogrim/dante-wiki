@@ -11,6 +11,7 @@
         m-2
       "
     >
+      <img :src="`${post.gif}`" :alt="`${post.alt}`" />
       <h1>{{ post.title }}</h1>
       <p>{{ post.description }}</p>
 
@@ -32,16 +33,18 @@
         <p>♻️ Updated @ {{ formatDate(post.updatedAt) }}</p>
       </div>
 
-      <!-- Heading index so the user can click to next heading. -->
-      <!-- <nav class="bg-red-100">
+      <hr />
+
+      <!-- TOC - Table of Contents -->
+      <nav class="bg-red-100">
         <ul>
-          <li>Index:</li>
+          <li>Table of Contents:</li>
           <li v-for="link of post.toc" :key="link.id">
-            <nuxt-link :to="`#${link.id}`">{{ link.text }}</nuxt-link>
+            <nuxt-link :to="`#${link.id}`">- {{ link.text }}</nuxt-link>
           </li>
         </ul>
-      </nav> -->
-      <hr />
+      </nav>
+
       <nuxt-content :document="post" />
 
       <prev-next :prev="prev" :next="next" />
