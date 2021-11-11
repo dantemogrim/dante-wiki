@@ -1,6 +1,6 @@
 ---
 title: .editorconfig 101
-description: A cool intriguing description about it.
+description: Editorconfig explained and how to get started.
 position: 8
 author:
   emoji: 🌀

@@ -1,6 +1,6 @@
 ---
 title: The Creation of Blog
-description: A cool intriguing description about it.
+description: The process of creating this website.
 position: 1
 author:
   emoji: 🌀
@@ -8,20 +8,24 @@ author:
   bio: I like people, places and things.
 gif:
   src: https://media.giphy.com/media/xUA7bjPYcgAvwq5CKc/giphy.gif
-  alt: Chandler Bing dancing.
+  alt: A closeup of hands from the creation of Adam painting except between Adam and God's finger there's a loading bar animation.
 tags:
   - nuxtjs
 ---
 
 ### Intro
+- Starting up.
+- Planning out.
 
+### Process
+- Working.
+- Fumbling in the dark.
 
-😀
-:cat:
+### Reflections
+- I stumbled upon.
+- Stuff that was fun.
 
-- [ ] To do
-- [x] Done
-
-1. Thing
-2. Thang
-3. Thoing
+### References
+- [Nuxt.js](https://nuxtjs.org/)
+- [nuxt/content](https://content.nuxtjs.org/)
+- [Storyblok](https://www.storyblok.com/)

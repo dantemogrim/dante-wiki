@@ -1,6 +1,6 @@
 ---
 title: Buzz Words
-description: A cool intriguing description about it.
+description: The developer community loves their buzz words and nobody knows all of them. Here's a handy glossary of terms I've picked up so far.
 position: 6
 author:
   emoji: 🌀

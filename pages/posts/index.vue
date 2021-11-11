@@ -1,15 +1,15 @@
 <template>
   <div>
-    <div class="headline-card text-center p-3">
+    <div class="headingCard mt-4 mx-2 p-3">
       <h1 class="">All Posts (old to new)</h1>
       <p v-if="$nuxt.isOffline">Oops! You are offline. 😱</p>
     </div>
-    <ul class="articleCardWrapper flex flex-col justify-center">
+    <ul class="articleCardWrapper m-0 list-none flex flex-col justify-center">
       <li v-for="post of posts" :key="post.slug">
         <nuxt-link :to="{ name: 'posts-slug', params: { slug: post.slug } }">
           <div class="articleWrapper m-2 p-2 bg-red-100 rounded-md">
             <img :src="post.img" />
-            <h3>{{ post.title }}</h3>
+            <h3 class="m-0">{{ post.title }}</h3>
 
             <div class="tagWrapper">
               <span v-for="tag in post.tags" :key="tag" class="">
@@ -50,8 +50,8 @@ export default {
 </script>
 
 <style scoped>
-.headline-card {
+.headingCard {
   background-color: #cecff0;
-  clip-path: polygon(4% 5%, 96% 8%, 97% 94%, 3% 94%);
+  clip-path: polygon(100% 0%, 93% 51%, 100% 100%, 0 100%, 0% 50%, 0 0);
 }
 </style>

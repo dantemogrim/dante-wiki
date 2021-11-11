@@ -1,6 +1,6 @@
 ---
 title: Homebrew Bundle / Brewfile
-description: A cool intriguing description about it.
+description: A Homebrew solution for storing, handling and accessing all of your installed softwares in one single file.
 position: 2
 author:
   emoji: 🌀

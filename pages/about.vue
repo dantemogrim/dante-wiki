@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="headline-card text-center p-3">
+    <div class="headingCard mt-4 mx-2 p-3">
       <h1 class="">About</h1>
       <p v-if="$nuxt.isOffline">Oops! You are offline. 😱</p>
     </div>
@@ -20,8 +20,8 @@
     </div>
 
     <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
+      <p class="m-0">Here are a few random facts and about me:</p>
       <ul>
-        <li>Here are a few random facts and about me:</li>
         <li>
           I am a cat guardian to two tortie sisters named Tosca and Våfflan.
         </li>
@@ -42,33 +42,47 @@
       </ul>
     </article>
 
-    <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
+    <div class="subheadingCard mt-6 mx-2 p-3">
       <h2>Connect</h2>
-    </article>
+    </div>
 
+    <article
+      class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2"
+    ></article>
+
+    <div class="subheadingCard mt-6 mx-2 p-3">
+      <h2>Setup</h2>
+    </div>
     <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
-      <h2>Tools</h2>
-      <ul class="m-2">
-        <li>Used for this particular website:</li>
-        <li>- Nuxt.js</li>
-        <li>- Tailwind CSS</li>
-        <li>- nuxt/content</li>
+      <p class="m-0">For this particular website:</p>
+      <ul>
+        <li>Nuxt.js</li>
+        <li>Tailwind CSS</li>
+        <li>nuxt/content</li>
       </ul>
       <ul>
-        <li>My setup/hardware? I am currently using:</li>
-        <li>- Macbook Pro 2019</li>
+        <li>General setup/hardware? I am currently using:</li>
+        <li>Macbook Pro 2019</li>
       </ul>
     </article>
 
-    <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
+    <div class="subheadingCard mt-6 mx-2 p-3">
       <h2>Playlists</h2>
-    </article>
+    </div>
+    <article
+      class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2"
+    ></article>
   </div>
 </template>
 
 <style scoped>
-.headline-card {
+.headingCard {
   background-color: #f8fad3;
-  clip-path: polygon(4% 5%, 96% 8%, 97% 94%, 3% 94%);
+  clip-path: polygon(100% 0%, 93% 51%, 100% 100%, 0 100%, 0% 50%, 0 0);
+}
+
+.subheadingCard {
+  background-color: #feeec5;
+  clip-path: polygon(100% 0%, 93% 51%, 100% 100%, 0 100%, 0% 50%, 0 0);
 }
 </style>

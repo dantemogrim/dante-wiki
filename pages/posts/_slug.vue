@@ -13,10 +13,10 @@
     >
       <gif :gif="post.gif" />
 
-      <h1>{{ post.title }}</h1>
-      <p>{{ post.description }}</p>
+      <h1 class="mb-4">{{ post.title }}</h1>
+      <p class="mb-3">{{ post.description }}</p>
 
-      <div class="tagWrapper">
+      <div class="tagWrapper mb-3">
         <span> Tags: </span>
         <span v-for="tag in post.tags" :key="tag" class="">
           <nuxt-link
@@ -27,9 +27,9 @@
         </span>
       </div>
 
-      <author :author="post.author" />
+      <author class="mb-4" :author="post.author" />
 
-      <div class="bg-blue-100 rounded-md p-2">
+      <div class="bg-blue-100 rounded-md mb-4 p-2">
         <p>✏️ Created @ {{ formatDate(post.createdAt) }}</p>
         <p>♻️ Updated @ {{ formatDate(post.updatedAt) }}</p>
       </div>
@@ -37,11 +37,11 @@
       <hr />
 
       <!-- TOC - Table of Contents -->
-      <nav class="bg-red-100">
+      <nav class="bg-indigo-100 rounded-2xl p-3 w-2/3">
+        <p class="m-0 font-bold">Table of Contents:</p>
         <ul>
-          <li>Table of Contents:</li>
           <li v-for="link of post.toc" :key="link.id">
-            <nuxt-link :to="`#${link.id}`">- {{ link.text }}</nuxt-link>
+            <nuxt-link :to="`#${link.id}`">{{ link.text }}</nuxt-link>
           </li>
         </ul>
       </nav>

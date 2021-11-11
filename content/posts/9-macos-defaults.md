@@ -1,6 +1,6 @@
 ---
 title: macOS Defaults
-description: A cool intriguing description about it.
+description: How to configure your macOS settings through your command-line where System Preferences is lacking.
 position: 9
 author:
   emoji: 🌀
@@ -10,5 +10,6 @@ gif:
   src: https://media.giphy.com/media/MTdNrKa1i1iy3lrJWH/giphy.gif
   alt: A really old Mac computers startup interface.
 tags:
+  - cli
   - macos
 ---

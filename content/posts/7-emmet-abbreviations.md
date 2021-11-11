@@ -1,6 +1,6 @@
 ---
-title: Emmett Abbreviations
-description: A cool intriguing description about it.
+title: Emmet Abbreviations
+description: Getting started using Emmet Abbreviations while coding.
 position: 7
 author:
   emoji: 🌀

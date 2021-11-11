@@ -7,7 +7,9 @@
       <p>{{ tag.description }}</p>
       <hr />
 
-      <h2>Related posts:</h2>
+      <div class="headline-card text-center p-3">
+        <h2>Related posts:</h2>
+      </div>
 
       <ul class="articleCardWrapper flex flex-col justify-center">
         <li v-for="post of posts" :key="post.slug">
@@ -48,3 +50,10 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.headline-card {
+  background-color: #b3dac3;
+  clip-path: polygon(4% 5%, 96% 8%, 97% 94%, 3% 94%);
+}
+</style>

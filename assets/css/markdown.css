@@ -4,33 +4,31 @@
   width: 85vw;
 }
 
-/* Headings. */
-/* .articleWrapper > section > div > h1,
-.articleWrapper > section > div > h3 {
-  margin: 5px 0 5px 0;
-} */
+p {
+  margin: 20px 0 20px 0;
+}
 
-/* TODO - links within markdown */
-
-/* Paragraphs. */
-/* p {
-  margin: 8px 0 8px 0;
-} */
+h3 {
+  margin: 40px 0 0 0;
+}
 
 /* Ordered, numbered list. */
-/* .articleWrapper > section > div > ol {
-  list-style-type: decimal;
-  margin: 10px 0 10px 30px;
-} */
+
+ul {
+  list-style-type: disc;
+  margin: 10px 0 10px 20px;
+}
+
+/* list-style-type: decimal;
+  margin: 10px 0 10px 30px; */
 
 /* Unordered list, parent item. */
-/* .articleWrapper > section > div > ul > li {
+/* .articleWrapper {
   margin: 10px 0 10px 0;
 } */
 
 /* Unordered list, indented/child item. */
-/* .articleWrapper > section > div > ul,
-li > ul > li {
+/* .articleWrapper  {
   list-style-type: circle;
   margin: 5px 0 5px 20px;
 } */
@@ -41,7 +39,7 @@ li > ul > li {
 blockquote {
   margin: 8px 0 8px 0;
   padding: 10px;
-  background-color: lightpink;
+  background-color: rgb(192, 225, 217);
 }
 
 /* Code specific. */
@@ -49,4 +47,8 @@ code,
 pre {
   border-radius: 10px;
   padding: 0 4px 0 4px;
+}
+
+a {
+  color: #1f1fff;
 }
