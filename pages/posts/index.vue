@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="headline-card text-center p-3">
-      <h1 class="">All Posts</h1>
+      <h1 class="">All Posts (old to new)</h1>
       <p v-if="$nuxt.isOffline">Oops! You are offline. 😱</p>
     </div>
     <ul class="articleCardWrapper flex flex-col justify-center">
@@ -11,7 +11,16 @@
             <img :src="post.img" />
             <h2>{{ post.title }}</h2>
 
-            <p>Author: {{ post.author.name }}</p>
+            <div class="tagWrapper">
+              <span v-for="tag in post.tags" :key="tag" class="">
+                <nuxt-link
+                  :to="`/tags/${tag}`"
+                  class="bg-green-200 m-2 p-1 rounded-md"
+                  >#{{ tag }}
+                </nuxt-link>
+              </span>
+            </div>
+            <!-- <p>Author: {{ post.author.name }}</p> -->
           </div>
         </nuxt-link>
       </li>

@@ -7,14 +7,7 @@
       <p>{{ tag.description }}</p>
       <hr />
 
-      <!-- <nuxt-content :document="tag" /> -->
       <h3>Related posts:</h3>
-
-      <!-- {{ posts }} -->
-
-      <!-- <div v-if="posts.length">
-        {{ posts }}
-      </div> -->
 
       <ul class="articleCardWrapper flex flex-col justify-center">
         <li v-for="post of posts" :key="post.slug">
@@ -28,13 +21,6 @@
           </nuxt-link>
         </li>
       </ul>
-
-      <!-- <blog-list v-if="articles.length" :blogs="articles" />
-      <div v-else class="my-6">
-        <h2 class="text-xl lg:text-2xl text-center">
-          Whoops... It seems that there are no articles with # tag. 😥
-        </h2>
-      </div> -->
     </article>
   </div>
 </template>

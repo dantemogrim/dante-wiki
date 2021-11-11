@@ -1,5 +1,5 @@
 ---
-title: 3 - Code
+title: Configuring Your Fish Shell / fish.config
 description: A cool intriguing description about it.
 position: 3
 author:
@@ -7,8 +7,7 @@ author:
   name: Dante Mogrim
   bio: I like people, places and things.
 tags:
-  - alfred
-  - sass
+  - fish
 ---
 > Howdy!
 

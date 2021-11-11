@@ -1,12 +1,11 @@
 ---
-title: Homebrew Bundle / Brewfile
+title: .editorconfig 101
 description: A cool intriguing description about it.
-position: 2
+position: 8
 author:
   emoji: 🌀
   name: Dante Mogrim
   bio: I like people, places and things.
 tags:
-  - homebrew
+  - editorconfig
 ---
-

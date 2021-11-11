@@ -1,7 +1,7 @@
 ---
-title: Homebrew Bundle / Brewfile
+title: Homebrew Cask Fonts
 description: A cool intriguing description about it.
-position: 2
+position: 4
 author:
   emoji: 🌀
   name: Dante Mogrim
@@ -9,4 +9,3 @@ author:
 tags:
   - homebrew
 ---
-
