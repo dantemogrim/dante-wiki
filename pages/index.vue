@@ -3,24 +3,14 @@
     <div
       class="headline-card flex justify-center text-center items-center p-3 m-3"
     >
-      <h1 class="">Welcome</h1>
+      <h1 class="">Hi, im.dante</h1>
       <p v-if="$nuxt.isOffline">Oops! You are offline. 😱</p>
     </div>
-    <article
-      class="
-        articleWrapper
-        bg-gray-50
-        flex flex-col
-        p-4
-        rounded-md
-        shadow-lg
-        m-2
-      "
-    >
+    <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
       <p>
-        Increase the resolution, scale it up we need a larger print workflow
-        ecosystem, we don't need to boil the ocean here market-facing. I know
-        you're busy throughput curate pixel pushing, yet core competencies.
+        I am a web developer student living in Gothenburg, Sweden. Welcome to my
+        digital garden where I’ll be sharing all kinds of development related
+        findings as well as other fun things.
       </p>
     </article>
 
