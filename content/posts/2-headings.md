@@ -8,6 +8,7 @@ author:
   bio: I like people, places and things.
 tags:
   - php
+  - personal
   - nuxtjs
 ---
 

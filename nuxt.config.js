@@ -62,7 +62,13 @@ export default {
         theme: 'prism-themes/themes/prism-material-oceanic.css',
       },
     },
-    nestedProperties: ['author.name', 'tags.name', 'post.title', 'posts.slug'],
+    nestedProperties: [
+      'author.name',
+      'tags.name',
+      'tags.posts',
+      'posts.title',
+      'posts.slug',
+    ],
     fullTextSearchFields: ['title', 'description', 'name'],
   },
 

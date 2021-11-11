@@ -12,7 +12,6 @@
             <h2>{{ post.title }}</h2>
 
             <p>Author: {{ post.author.name }}</p>
-            <p>Published:</p>
           </div>
         </nuxt-link>
       </li>

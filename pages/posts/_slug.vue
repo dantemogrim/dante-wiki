@@ -20,7 +20,7 @@
           <nuxt-link
             :to="`/tags/${tag}`"
             class="bg-green-200 m-2 p-1 rounded-md"
-            >{{ tag }}
+            >#{{ tag }}
           </nuxt-link>
         </span>
       </div>
