@@ -44,3 +44,13 @@ footer {
   border: solid 2px transparent;
   box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
 }
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+.v-leave-from,
+.v-enter-to {
+  opacity: 1;
+}

@@ -1,6 +1,6 @@
 <img src="https://media.giphy.com/media/wqnMODUxBuw2WYYcTD/giphy.gif" alt="">
 
-#  :card_file_box: Blog
+#  :card_file_box: Digital Garden
 My personal web developer blog written with Nuxt.js, using the nuxt/content module as database architecture.
 
 ## :pencil2: Instructions

@@ -4,6 +4,7 @@
       <h1 class="">Hi, im.dante</h1>
       <p v-if="$nuxt.isOffline">Oops! You are offline. 😱</p>
     </div>
+
     <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
       <p class="m-1">
         I am a web developer student living in Gothenburg, Sweden. Welcome to my
@@ -48,6 +49,8 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
+    // If using Nuxt <= 2.12, use 👇
+
     // const tags = await $content('tags', params.slug)
     //   .only(['title', 'slug'])
     //   .where({ title: { $containsAny: post.tags } })
