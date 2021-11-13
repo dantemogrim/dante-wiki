@@ -4,10 +4,10 @@
       <h1 class="">All Tags</h1>
       <p v-if="$nuxt.isOffline">Oops! You are offline. 😱</p>
     </div>
-    <ul class="tagCardWrapper m-0 list-none flex flex-col justify-center">
+    <ul class="m-0 list-none flex flex-col justify-center">
       <li v-for="tag of tags" :key="tag.slug">
         <nuxt-link :to="{ name: 'tags-slug', params: { slug: tag.slug } }">
-          <div class="tagWrapper m-2 p-2 bg-green-100 rounded-md">
+          <div class="tagWrapper m-2 p-2 bg-white rounded-md shadow-lg">
             <h3 class="m-0">{{ tag.emoji }} #{{ tag.name }}</h3>
           </div>
         </nuxt-link>

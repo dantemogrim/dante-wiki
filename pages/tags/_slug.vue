@@ -11,14 +11,13 @@
         <h2>Related posts:</h2>
       </div>
 
-      <ul class="articleCardWrapper flex flex-col justify-center">
+      <ul class="articleCardWrapper m-0 list-none flex flex-col justify-center">
         <li v-for="post of posts" :key="post.slug">
           <nuxt-link :to="{ name: 'posts-slug', params: { slug: post.slug } }">
             <div class="articleWrapper m-2 p-2 bg-red-100 rounded-md">
               <img :src="post.img" />
-              <h3>{{ post.title }}</h3>
-
-              <p>Author: {{ post.author.name }}</p>
+              <h3 class="m-0">{{ post.title }}</h3>
+              <small>Updated @ {{ formatDate(post.updatedAt) }}</small>
             </div>
           </nuxt-link>
         </li>
@@ -32,11 +31,6 @@ export default {
   async asyncData({ $content, params }) {
     const tag = await $content('tags', params.slug).fetch();
 
-    // const posts = await $content('posts', params.slug)
-    //   .only(['title', 'description', 'img', 'slug', 'author', 'tags'])
-    //   .sortBy('createdAt', 'asc')
-    //   .fetch();
-
     const posts = await $content('posts')
       .where({
         tags: { $contains: params.slug },
@@ -47,6 +41,12 @@ export default {
       tag,
       posts,
     };
+  },
+  methods: {
+    formatDate(date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      return new Date(date).toLocaleDateString('en', options);
+    },
   },
 };
 </script>

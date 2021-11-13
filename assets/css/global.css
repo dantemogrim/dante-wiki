@@ -5,9 +5,9 @@
 }
 
 body {
-  background-color: #819ebb;
-  background-image: url('../../static/images/texture.png');
-  background-repeat: repeat;
+  background-color: #d0e0e3;
+  /* background-image: url('../../static/images/texture.png');
+  background-repeat: repeat; */
 }
 
 hr {

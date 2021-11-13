@@ -3,25 +3,21 @@
     <nav class="flex flex-row justify-between items-center h-full">
       <div class="headerMenu1 mx-4">
         <nuxt-link to="/">
-          <p class="brand sm:w-10 whitespace-nowrap">🤷‍♂️ dante.im</p>
+          <p class="brand whitespace-nowrap">🤷‍♂️ dante.wiki</p>
         </nuxt-link>
       </div>
       <div class="headerMenu2">
         <SearchInput />
       </div>
       <div class="headerMenu3 mx-4">
-        <span>{{ selectedOption }}</span>
-
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="35"
           height="35"
           fill="none"
           viewBox="0 0 256 256"
-          class="cursor-pointer"
-          :class="isOptionsExpanded ? 'rotate-180' : 'rotate-0'"
-          @click="isOptionsExpanded = !isOptionsExpanded"
-          @blur="isOptionsExpanded = false"
+          class="cursor-pointer hover:bg-blue-200 rounded-lg"
+          @click="isOpen = !isOpen"
         >
           <rect width="256" height="256" fill="none"></rect>
           <path
@@ -79,7 +75,8 @@
           leave-to-class="-translate-y-1/2 scale-y-0 opacity-0"
         >
           <ul
-            v-show="isOptionsExpanded"
+            v-if="isOpen"
+            @click="isOpen = false"
             class="
               absolute
               left-0
@@ -100,9 +97,8 @@
                   py-2
                   transition-colors
                   duration-300
-                  hover:bg-gray-200
+                  hover:bg-indigo-500 hover:text-white
                 "
-                @mousedown.prevent="setOption()"
               >
                 About
               </li>
@@ -114,9 +110,8 @@
                   py-2
                   transition-colors
                   duration-300
-                  hover:bg-gray-200
+                  hover:bg-indigo-500 hover:text-white
                 "
-                @mousedown.prevent="setOption()"
               >
                 Posts
               </li>
@@ -128,9 +123,8 @@
                   py-2
                   transition-colors
                   duration-300
-                  hover:bg-gray-200
+                  hover:bg-indigo-500 hover:text-white
                 "
-                @mousedown.prevent="setOption()"
               >
                 Tags
               </li>
@@ -148,14 +142,8 @@ import Vue from 'vue';
 export default Vue.extend({
   data() {
     return {
-      isOptionsExpanded: false,
-      selectedOption: '',
+      isOpen: false,
     };
-  },
-  methods: {
-    setOption() {
-      this.isOptionsExpanded = false;
-    },
   },
 });
 </script>

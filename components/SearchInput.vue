@@ -54,7 +54,6 @@
                 transition
                 ease-in-out
                 duration-150
-                text-blue-500
                 hover:bg-indigo-500 hover:text-white
               "
             >
@@ -101,7 +100,8 @@ export default {
 .fade-leave-active {
   transition: opacity 0.5s;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+.fade-enter,
+.fade-leave-to {
   opacity: 0;
 }
 </style>
