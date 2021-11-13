@@ -1,0 +1,60 @@
+<template>
+  <div>
+    <h2>hi</h2>
+    <ul class="articleCardWrapper m-0 list-none flex flex-col justify-center">
+      <li v-for="post of tenPosts" :key="post.slug">
+        <nuxt-link :to="{ name: 'posts-slug', params: { slug: post.slug } }">
+          <div class="articleWrapper m-2 p-2 bg-white rounded-md shadow-lg">
+            <img :src="post.img" />
+            <h3 class="m-0">{{ post.title }}</h3>
+
+            <div class="tagWrapper">
+              <span v-for="tag in post.tags" :key="tag" class="">
+                <nuxt-link
+                  :to="`/tags/${tag}`"
+                  class="bg-green-200 mr-2 p-1 rounded-md"
+                  >#{{ tag }}
+                </nuxt-link>
+              </span>
+            </div>
+
+            <!-- <p>Author: {{ post.author.name }}</p> -->
+          </div>
+        </nuxt-link>
+      </li>
+    </ul>
+<section id="prev-next">
+  <nuxt-link :to="prevLink">Prev page</nuxt-link>
+  <nuxt-link v-if="nextPage" :to="`/page/${pageNumber + 1}`">Next page</nuxt-link>
+</section>
+
+    </section>
+  </div>
+</template>
+
+<script>
+export default {
+  async asyncData({ $content, params, error }) {
+    const pageNumber = parseInt(params.number);
+    const tenPosts = await $content('posts', params.slug)
+      .only(['author', 'createdAt', 'description', 'path', 'title', 'slug'])
+      .sortBy('createdAt', 'desc')
+      .limit(10)
+      .skip(9 * (pageNumber - 1))
+      .fetch();
+
+    if (!tenPosts.length) {
+      return error({ statusCode: 404, message: 'No posts found!' });
+    }
+
+    const nextPage = tenPosts.length === 10;
+    const posts = nextPage ? tenPosts.slice(0, -1) : tenPosts;
+    return { nextPage, tenPosts, pageNumber };
+  },
+  computed: {
+    prevLink() {
+      return this.pageNumber === 2 ? '/' : `/page/${this.pageNumber - 1}`;
+    },
+  },
+};
+</script>

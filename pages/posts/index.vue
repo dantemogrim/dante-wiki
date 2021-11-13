@@ -6,7 +6,7 @@
     </div>
 
     <ul class="articleCardWrapper m-0 list-none flex flex-col justify-center">
-      <li v-for="post of posts" :key="post.slug">
+      <li v-for="post of tenPosts" :key="post.slug">
         <nuxt-link :to="{ name: 'posts-slug', params: { slug: post.slug } }">
           <div class="articleWrapper m-2 p-2 bg-white rounded-md shadow-lg">
             <img :src="post.img" />
@@ -33,28 +33,50 @@
         </nuxt-link>
       </li>
     </ul>
+    <section id="next" v-if="nextPage">
+      <nuxt-link to="/page/2"> Next page </nuxt-link>
+    </section>
   </div>
 </template>
 
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const posts = await $content('posts', params.slug)
+    // const posts = await $content('posts', params.slug)
+    //   .only([
+    //     'title',
+    //     'description',
+    //     'img',
+    //     'slug',
+    //     'author',
+    //     'tags',
+    //     'updatedAt',
+    //     'createdAt',
+    //   ])
+    //   .sortBy('createdAt', 'asc')
+    //   .fetch();
+
+    const tenPosts = await $content('posts', params.slug)
       .only([
-        'title',
-        'description',
-        'img',
-        'slug',
         'author',
-        'tags',
         'updatedAt',
         'createdAt',
+        'description',
+        'path',
+        'slug',
+        'title',
       ])
-      .sortBy('createdAt', 'asc')
+      .sortBy('createdAt', 'desc')
+      .limit(10)
       .fetch();
 
+    const nextPage = tenPosts.length === 10;
+    const posts = nextPage ? tenPosts.slice(0, -1) : tenPosts;
+
     return {
-      posts,
+      // posts,
+      nextPage,
+      tenPosts,
     };
   },
   methods: {

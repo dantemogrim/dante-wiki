@@ -1,7 +1,7 @@
-<img src="https://media.giphy.com/media/wqnMODUxBuw2WYYcTD/giphy.gif" alt="">
+<img src="https://media.giphy.com/media/26tPgbUUcfS5IWiTm/giphy.gif" alt="A garden filled with flower, animals and computers.">
 
 #  :card_file_box: Digital Garden
-My personal web developer blog written with Nuxt.js, using the nuxt/content module as database architecture.
+My personal web developer site written with Nuxt.js, using the nuxt/content module as database architecture.
 
 ## :pencil2: Instructions
 
