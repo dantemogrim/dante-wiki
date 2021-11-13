@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="headingCard mt-4 mx-2 p-3">
-      <h1 class="">All Posts</h1>
+      <h1 class="text-white">All Posts</h1>
       <p v-if="$nuxt.isOffline">Oops! You are offline. 😱</p>
     </div>
 
@@ -90,7 +90,7 @@ export default {
 
 <style scoped>
 .headingCard {
-  background-color: #cecff0;
+  background-color: #505d8c;
   clip-path: polygon(100% 0%, 93% 51%, 100% 100%, 0 100%, 0% 50%, 0 0);
 }
 

@@ -86,12 +86,12 @@ export default {
 
 <style scoped>
 .headingCard {
-  background-color: #364764;
+  background-color: #505d8c;
   clip-path: polygon(100% 0%, 93% 51%, 100% 100%, 0 100%, 0% 50%, 0 0);
 }
 
 .subheadingCard {
-  background-color: #364764;
+  background-color: #505d8c;
   clip-path: polygon(100% 0%, 93% 51%, 100% 100%, 0 100%, 0% 50%, 0 0);
 }
 </style>
