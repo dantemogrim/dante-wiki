@@ -20,12 +20,11 @@ hr {
   margin: 20px;
 }
 
-hr:after {
+hr::after {
   content: '💾';
   padding: 0 4px;
   font-size: 30px;
   border-radius: 5px;
-
   position: relative;
   top: -25px;
 }

@@ -1,3 +1,5 @@
+import getRoutes from './utils/getRoutes';
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -44,6 +46,7 @@ export default {
     'nuxt-lazy-load',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    '@nuxtjs/sitemap',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -75,4 +78,11 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  sitemap: {
+    hostname: process.env.BASE_URL,
+    routes() {
+      return getRoutes();
+    },
+  },
 };

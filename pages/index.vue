@@ -2,7 +2,7 @@
   <div>
     <div class="headingCard mt-4 mx-2 p-3">
       <h1 class="text-white">Hi, I'm Dante Mogrim.</h1>
-      <p v-if="$nuxt.isOffline">Oops! You are offline. 😱</p>
+      <p v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
     </div>
     <div class="flex justify-center">
       <img
@@ -24,11 +24,9 @@
         development.
       </p>
     </article>
-
     <div class="subheadingCard mt-6 mx-2 p-3">
       <h2 class="text-white">Latest</h2>
     </div>
-
     <ul class="m-0 list-none flex flex-col justify-center">
       <li v-for="post of posts" :key="post.slug">
         <nuxt-link :to="{ name: 'posts-slug', params: { slug: post.slug } }">
@@ -43,16 +41,13 @@
                 </nuxt-link>
               </span>
             </div>
-            <p class="text-xs mt-2 m-0">
-              Updated @ {{ formatDate(post.updatedAt) }}
-            </p>
+            <p class="text-xs mt-2 m-0">♻️ {{ formatDate(post.updatedAt) }}</p>
           </div>
         </nuxt-link>
       </li>
     </ul>
   </div>
 </template>
-<!-- <p>Author: {{ post.author.name }}</p> -->
 
 <script>
 export default {
@@ -77,8 +72,8 @@ export default {
   },
   methods: {
     formatDate(date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' };
-      return new Date(date).toLocaleDateString('en', options);
+      const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
+      return new Date(date).toLocaleDateString('en-GB', options);
     },
   },
 };

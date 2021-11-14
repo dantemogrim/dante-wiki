@@ -6,11 +6,9 @@
       <h1>{{ tag.emoji }} #{{ tag.name }}</h1>
       <p>{{ tag.description }}</p>
       <hr />
-
       <div class="headline-card text-center p-3">
         <h2>Related posts:</h2>
       </div>
-
       <ul class="articleCardWrapper m-0 list-none flex flex-col justify-center">
         <li v-for="post of posts" :key="post.slug">
           <nuxt-link :to="{ name: 'posts-slug', params: { slug: post.slug } }">

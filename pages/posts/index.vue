@@ -2,16 +2,14 @@
   <div>
     <div class="headingCard mt-4 mx-2 p-3">
       <h1 class="text-white">All Posts</h1>
-      <p v-if="$nuxt.isOffline">Oops! You are offline. 😱</p>
+      <p v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
     </div>
-
     <ul class="articleCardWrapper m-0 list-none flex flex-col justify-center">
       <li v-for="post of tenPosts" :key="post.slug">
         <nuxt-link :to="{ name: 'posts-slug', params: { slug: post.slug } }">
           <div class="articleWrapper m-2 p-2 bg-white rounded-md shadow-lg">
             <img :src="post.img" />
             <h3 class="m-0">{{ post.title }}</h3>
-
             <div class="tagWrapper">
               <span v-for="tag in post.tags" :key="tag" class="">
                 <nuxt-link
@@ -21,20 +19,19 @@
                 </nuxt-link>
               </span>
             </div>
-
-            <p class="text-xs mt-2 m-0">
-              Created @ {{ formatDate(post.createdAt) }}
-            </p>
-            <p class="text-xs mt-2 m-0">
-              Updated @ {{ formatDate(post.updatedAt) }}
-            </p>
-            <!-- <p>Author: {{ post.author.name }}</p> -->
+            <p class="text-xs mt-2 m-0">✏️ {{ formatDate(post.createdAt) }}</p>
+            <p class="text-xs mt-2 m-0">♻️ {{ formatDate(post.updatedAt) }}</p>
           </div>
         </nuxt-link>
       </li>
     </ul>
-    <section id="next" v-if="nextPage">
-      <nuxt-link to="/page/2"> Next page </nuxt-link>
+
+    <section id="next" v-if="nextPage" class="flex">
+      <nuxt-link
+        to="/page/2"
+        class="m-2 bg-indigo-500 text-white p-2 rounded-lg"
+        >Next page</nuxt-link
+      >
     </section>
   </div>
 </template>
@@ -42,20 +39,6 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    // const posts = await $content('posts', params.slug)
-    //   .only([
-    //     'title',
-    //     'description',
-    //     'img',
-    //     'slug',
-    //     'author',
-    //     'tags',
-    //     'updatedAt',
-    //     'createdAt',
-    //   ])
-    //   .sortBy('createdAt', 'asc')
-    //   .fetch();
-
     const tenPosts = await $content('posts', params.slug)
       .only([
         'author',
@@ -74,15 +57,14 @@ export default {
     const posts = nextPage ? tenPosts.slice(0, -1) : tenPosts;
 
     return {
-      // posts,
       nextPage,
       tenPosts,
     };
   },
   methods: {
     formatDate(date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' };
-      return new Date(date).toLocaleDateString('en', options);
+      const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
+      return new Date(date).toLocaleDateString('en-GB', options);
     },
   },
 };

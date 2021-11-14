@@ -12,10 +12,8 @@
       "
     >
       <gif :gif="post.gif" />
-
       <h1 class="mb-4">{{ post.title }}</h1>
       <p class="mb-3">{{ post.description }}</p>
-
       <div class="tagWrapper mb-3">
         <span> Tags: </span>
         <span v-for="tag in post.tags" :key="tag" class="">
@@ -26,16 +24,12 @@
           </nuxt-link>
         </span>
       </div>
-
       <author class="mb-4" :author="post.author" />
-
       <div class="bg-blue-100 rounded-md mb-4 p-2">
         <p>✏️ Created @ {{ formatDate(post.createdAt) }}</p>
         <p>♻️ Updated @ {{ formatDate(post.updatedAt) }}</p>
       </div>
-
       <hr />
-
       <!-- TOC - Table of Contents -->
       <nav class="bg-indigo-100 rounded-2xl p-3 w-2/3">
         <p class="m-0 font-bold">Table of Contents:</p>
@@ -45,10 +39,8 @@
           </li>
         </ul>
       </nav>
-
       <nuxt-content :document="post" />
-
-      <prev-next :prev="prev" :next="next" />
+      <previous-next-post :previousPost="previousPost" :nextPost="nextPost" />
     </article>
   </div>
 </template>
@@ -58,7 +50,7 @@ export default {
   async asyncData({ $content, params }) {
     const post = await $content('posts', params.slug).fetch();
 
-    const [prev, next] = await $content('posts')
+    const [previousPost, nextPost] = await $content('posts')
       .only(['title', 'slug'])
       .sortBy('createdAt', 'asc')
       .surround(params.slug)
@@ -66,9 +58,8 @@ export default {
 
     return {
       post,
-
-      prev,
-      next,
+      previousPost,
+      nextPost,
     };
   },
   methods: {

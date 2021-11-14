@@ -22,7 +22,7 @@ homebrew-cask-fonts is an fantastic open source project available through Homebr
 
 ### Instructions
 - To install homebrew-cask-fonts to your computer, open up a terminal window and type:
-```zsh
+```shell-session
 $ brew tap homebrew/cask-fonts
 ```
 Now it's installed! Now you're all set to go explore any of the fonts available within the so called "tap". "Tap" is just fancy Homebrew slang for saying "a downloadable container that holds a bunch of smaller downloadable things". 
@@ -30,29 +30,29 @@ Now it's installed! Now you're all set to go explore any of the fonts available 
 "But how do I know which fonts that are available?" Great question! There are several ways to find out. Under the "Resources" heading I've added a giant list where you can scroll through a giant list. If you like feeling extra hacky you can also do this from your command line.
 
 If you want to browse all of the fonts available in the cask type:
-```zsh
+```shell-session
 $ brew search font-
 ```
 _If it takes a while be patient - it's a looong list._
 
 If you're looking for a specific font but can't remember the exact name - `grep` is at your disposal.
-```zsh
+```shell-session
 $ brew search font- | grep luckiest
 ```
 
 Finally found the one you're looking for? to install your chosen font type it out as it is listed in the homebrew-font-casks listing. For example:
-```zsh
+```shell-session
 $ brew install font-luckiest-guy
 ```
 Now to the exciting part! Open up your Font Book (or wherever your fonts are stored) and find your freshly baked font!
 
-Keep in mind that some of these available fonts seem to be faulty in one way or another. So if one or two fonts happen to fail upon download, give a third one a try.
+> Keep in mind that some of these available fonts seem to be deprecated or faulty in one way or another. So if one or two fonts happen to fail upon download, give a third one a try.
 
 ### Personal Favorites
 - Bad Script (font-bad-script) - For those of us who like Tove Jansson.
 - Big Blue Terminal Nerd Font (font-bigblue-terminal-nerd-font) - Maybe it's because I was born in the 90's.
 - Chomsky (font-chomsky) - New York Timesy.
-- Comic Mono (font-comic) - Comic Sans' code editing cousin.
+- Comic Mono (font-comic) - If Comic Sans had a programmer sibling.
 
 
 ### Resources

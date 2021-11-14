@@ -1,6 +1,6 @@
 ---
-title: The Creation of Blog
-description: The process of creating this website.
+title: The Creation of My Digital Garden
+description: The process of building this website.
 position: 1
 author:
   emoji: 🌀

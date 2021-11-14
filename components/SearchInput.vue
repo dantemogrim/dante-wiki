@@ -1,7 +1,7 @@
 <template>
   <div>
     <input
-      @click="isOpen = !isOpen"
+      @click="inputIsOpen = !inputIsOpen"
       v-model="searchQuery"
       type="search"
       autocomplete="off"
@@ -24,10 +24,10 @@
       "
     />
 
-    <transition name="fade">
-      <div v-if="isOpen" class="itemsWrapper">
+    <div v-if="inputIsOpen">
+      <transition name="fade">
         <ul
-          @click="isOpen = false"
+          @click="inputIsOpen = false"
           v-if="posts.length"
           class="
             z-10
@@ -53,7 +53,7 @@
                 leading-5
                 transition
                 ease-in-out
-                duration-150
+                duration-100
                 hover:bg-indigo-500 hover:text-white
               "
             >
@@ -61,11 +61,11 @@
             </nuxt-link>
           </li>
         </ul>
-      </div>
-    </transition>
+      </transition>
+    </div>
     <button
-      v-if="isOpen"
-      @click="isOpen = false"
+      v-if="inputIsOpen"
+      @click="inputIsOpen = false"
       class="cursor-default fixed inset-0 h-full w-full bg-black opacity-50"
     ></button>
   </div>
@@ -74,7 +74,7 @@
 export default {
   data() {
     return {
-      isOpen: false,
+      inputIsOpen: false,
       searchQuery: '',
       posts: [],
     };

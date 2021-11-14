@@ -1,6 +1,9 @@
 <template>
   <div>
-    <h2>hi</h2>
+       <div class="headingCard mt-4 mx-2 p-3">
+      <h1 class="text-white">All Posts</h1>
+      <p v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
+    </div>
     <ul class="articleCardWrapper m-0 list-none flex flex-col justify-center">
       <li v-for="post of tenPosts" :key="post.slug">
         <nuxt-link :to="{ name: 'posts-slug', params: { slug: post.slug } }">
@@ -17,15 +20,15 @@
                 </nuxt-link>
               </span>
             </div>
-
+ <p class="text-xs mt-2 m-0">♻️ {{ formatDate(post.updatedAt) }}</p>
             <!-- <p>Author: {{ post.author.name }}</p> -->
           </div>
         </nuxt-link>
       </li>
     </ul>
-<section id="prev-next">
-  <nuxt-link :to="prevLink">Prev page</nuxt-link>
-  <nuxt-link v-if="nextPage" :to="`/page/${pageNumber + 1}`">Next page</nuxt-link>
+<section id="prev-next" class="flex justify-between items-center">
+  <nuxt-link :to="previousLink" class="m-2 bg-indigo-500 text-white p-2 rounded-lg">Prev page</nuxt-link>
+  <nuxt-link v-if="nextPage" :to="`/page/${pageNumber + 1}`" class="m-2 bg-indigo-500 text-white p-2 rounded-lg">Next page</nuxt-link>
 </section>
 
     </section>
@@ -37,7 +40,7 @@ export default {
   async asyncData({ $content, params, error }) {
     const pageNumber = parseInt(params.number);
     const tenPosts = await $content('posts', params.slug)
-      .only(['author', 'createdAt', 'description', 'path', 'title', 'slug'])
+      .only(['author', 'createdAt', 'description', 'path', 'title', 'slug', 'updatedAt'])
       .sortBy('createdAt', 'desc')
       .limit(10)
       .skip(9 * (pageNumber - 1))
@@ -52,9 +55,22 @@ export default {
     return { nextPage, tenPosts, pageNumber };
   },
   computed: {
-    prevLink() {
+    previousLink() {
       return this.pageNumber === 2 ? '/' : `/page/${this.pageNumber - 1}`;
+    },
+  },
+    methods: {
+    formatDate(date) {
+      const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
+      return new Date(date).toLocaleDateString('en-GB', options);
     },
   },
 };
 </script>
+
+<style scoped>
+.headingCard {
+  background-color: #505d8c;
+  clip-path: polygon(100% 0%, 93% 51%, 100% 100%, 0 100%, 0% 50%, 0 0);
+}
+</style>

@@ -1,8 +1,8 @@
 <template>
   <div class="w-full flex justify-around">
     <nuxt-link
-      v-if="prev"
-      :to="{ name: 'posts-slug', params: { slug: prev.slug } }"
+      v-if="previousPost"
+      :to="{ name: 'posts-slug', params: { slug: previousPost.slug } }"
       class="
         bg-blue-500
         rounded-full
@@ -18,8 +18,8 @@
     </nuxt-link>
     <span v-else>&nbsp;</span>
     <nuxt-link
-      v-if="next"
-      :to="{ name: 'posts-slug', params: { slug: next.slug } }"
+      v-if="nextPost"
+      :to="{ name: 'posts-slug', params: { slug: nextPost.slug } }"
       class="
         bg-blue-500
         rounded-full
@@ -40,11 +40,11 @@
 <script>
 export default {
   props: {
-    prev: {
+    previousPost: {
       type: Object,
       default: () => null,
     },
-    next: {
+    nextPost: {
       type: Object,
       default: () => null,
     },

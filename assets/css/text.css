@@ -10,12 +10,13 @@
 
 h1,
 h2 {
-  font-family: 'spaceGrotesk'; /* TODO - fallback fonts. */
+  font-family: 'spaceGrotesk';
   white-space: nowrap;
 }
 
+/* Fallbacks. */
 * {
-  font-family: 'hack';
+  font-family: 'hack', Arial, Helvetica, Verdana, Georgia, Tahoma, sans-serif;
 }
 
 .brand {
@@ -24,25 +25,22 @@ h2 {
   line-height: 2.25rem;
 }
 
-/* TailwindCSS text-4xl */
 h1 {
   font-size: 1.5rem;
   line-height: 2.5rem;
   font-weight: 600;
 }
 
-/* TailwindCSS text-3xl */
 h2 {
   font-size: 1.3rem;
   line-height: 2.25rem;
   font-weight: 600;
 }
 
-/* TailwindCSS text-2xl */
 h3 {
   font-size: 1.2rem;
   line-height: 2rem;
-  font-weight: 500; /* 800 i standard but it's a bit much. */
+  font-weight: 500;
 }
 
 .articleWrapper,

@@ -25,7 +25,7 @@ For detailed explanation on how things work, check out the [documentation](https
 ## :paperclip: Tools
 - [nuxt/content](https://content.nuxtjs.org/) - Git-based headless CMS.
 - [Nuxt.js](https://nuxtjs.org/) - Framework.
-- [Prism](https://prismjs.com/) - Syntax highlighter.
+- [PrismJS](https://prismjs.com/) - Syntax highlighter.
 - [Tailwind CSS](https://tailwindcss.com/) - CSS framework.
 - [Prettier](https://prettier.io/) - Code formatter.
 

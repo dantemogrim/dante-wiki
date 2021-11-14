@@ -2,7 +2,7 @@
   <div>
     <div class="headingCard mt-4 mx-2 p-3">
       <h1 class="text-white">About</h1>
-      <p v-if="$nuxt.isOffline">Oops! You are offline. 😱</p>
+      <p v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
     </div>
     <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
       <p>
@@ -12,13 +12,11 @@
         things.
       </p>
     </article>
-
     <div class="w-full flex justify-center">
       <img
         src="https://media.giphy.com/media/dJHeg7s9WflUxV0x52/giphy-downsized-large.gif"
       />
     </div>
-
     <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
       <p class="m-0">Here are a few random facts and about me:</p>
       <ul>
@@ -41,15 +39,12 @@
         </li>
       </ul>
     </article>
-
     <div class="subheadingCard mt-6 mx-2 p-3">
       <h2 class="text-white">Connect</h2>
     </div>
-
     <article
       class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2"
     ></article>
-
     <div class="subheadingCard mt-6 mx-2 p-3">
       <h2 class="text-white">Setup</h2>
     </div>
@@ -65,7 +60,6 @@
         <li>Macbook Pro 2019</li>
       </ul>
     </article>
-
     <div class="subheadingCard mt-6 mx-2 p-3">
       <h2 class="text-white">Playlists</h2>
     </div>
