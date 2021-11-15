@@ -10,6 +10,15 @@ body {
   background-repeat: repeat; */
 }
 
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.4s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
 hr {
   border: none;
   border-top: 3px solid rgb(200, 208, 244);

@@ -14,14 +14,12 @@
     <article class="bg-white flex flex-col p-4 rounded-md shadow-lg m-2">
       <p class="m-1">
         I am a web developer student living in Gothenburg, Sweden. Welcome to my
-        digital garden where I’ll be sharing all kinds of development related
-        findings as well as other fun things.
+        digital garden where I’ll be sharing all kinds of findings.
       </p>
       <p class="m-1">
-        This project is meant to serve both a personal and open source
-        notebook/blog. A resource accessible for anyone to gather different
-        kinds of useful, comprehensive information when it comes to web
-        development.
+        This project is both a personal + open source notebook. A collection of
+        notes that will grow over time, accessible for anyone to take part of a
+        wide range of useful, comprehensive information.
       </p>
     </article>
     <div class="subheadingCard mt-6 mx-2 p-3">
@@ -41,7 +39,7 @@
                 </nuxt-link>
               </span>
             </div>
-            <p class="text-xs mt-2 m-0">♻️ {{ formatDate(post.updatedAt) }}</p>
+            <p class="text-xs mt-2 m-0">✏️ {{ formatDate(post.updatedAt) }}</p>
           </div>
         </nuxt-link>
       </li>

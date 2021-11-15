@@ -20,7 +20,7 @@
             <div class="articleWrapper m-2 p-2 bg-red-100 rounded-md">
               <img :src="post.img" />
               <h3 class="m-0">{{ post.title }}</h3>
-              <small>Updated @ {{ formatDate(post.updatedAt) }}</small>
+              <small>✏️ {{ formatDate(post.updatedAt) }}</small>
             </div>
           </nuxt-link>
         </li>
@@ -49,8 +49,8 @@ export default {
   },
   methods: {
     formatDate(date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' };
-      return new Date(date).toLocaleDateString('en', options);
+      const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
+      return new Date(date).toLocaleDateString('en-GB', options);
     },
   },
 
@@ -71,9 +71,9 @@ export default {
       title: this.tag.name,
       meta: [
         ...this.meta,
-        { name: 'twitter:label1', content: 'Written by' },
+        { name: 'twitter:label1', content: 'Author:' },
         { name: 'twitter:data1', content: 'Dante Mogrim' },
-        { name: 'twitter:label2', content: 'Filed under' },
+        { name: 'twitter:label2', content: 'Filed under:' },
       ],
       link: [
         {

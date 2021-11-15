@@ -67,13 +67,13 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: '/a-loveley-image.png',
+        content: '/meta.png',
       },
     ],
 
     link: [
       // Favicon.
-      { rel: 'icon', type: 'image/svg+xml', href: '/favicon.png' },
+      { rel: 'icon', type: 'image/svg+xml', href: '/icon.png' },
       {
         // Canonical.
         rel: 'icon',

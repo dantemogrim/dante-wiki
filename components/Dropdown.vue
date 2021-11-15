@@ -136,7 +136,7 @@ export default Vue.extend({
 });
 </script>
 
-<style>
+<style scoped>
 .ease-custom {
   transition-timing-function: cubic-bezier(0.61, -0.53, 0.43, 1.43);
 }

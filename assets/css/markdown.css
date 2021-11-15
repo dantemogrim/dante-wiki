@@ -37,9 +37,14 @@ ul {
 
 /* Quotes. */
 blockquote {
-  margin: 8px 0 8px 0;
-  padding: 10px;
+  margin: 3px;
   background-color: rgb(192, 225, 217);
+  border-radius: 10px;
+}
+
+blockquote p {
+  margin: 0;
+  padding: 10px;
 }
 
 /* Code specific. */

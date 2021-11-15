@@ -49,10 +49,9 @@ Now to the exciting part! Open up your Font Book (or wherever your fonts are sto
 > Keep in mind that some of these available fonts seem to be deprecated or faulty in one way or another. So if one or two fonts happen to fail upon download, give a third one a try.
 
 ### Personal Favorites
-- Bad Script (font-bad-script) - For those of us who like Tove Jansson.
-- Big Blue Terminal Nerd Font (font-bigblue-terminal-nerd-font) - Maybe it's because I was born in the 90's.
-- Chomsky (font-chomsky) - New York Timesy.
-- Comic Mono (font-comic) - If Comic Sans had a programmer sibling.
+- **Bad Script** (font-bad-script) - For those of us who like Tove Jansson.
+- **Chomsky** (font-chomsky) - New York Timesy.
+- **Comic Mono** (font-comic) - If Comic Sans had a programmer sibling.
 
 
 ### Resources

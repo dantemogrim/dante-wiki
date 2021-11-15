@@ -77,7 +77,7 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: '/a-loveley-image.png',
+        content: './static/meta.png',
       },
     ],
 

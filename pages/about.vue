@@ -42,30 +42,39 @@
     <div class="subheadingCard mt-6 mx-2 p-3">
       <h2 class="text-white">Connect</h2>
     </div>
-    <article
-      class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2"
-    ></article>
+    <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
+      <p class="mt-1 mb-1">
+        Have any questions, feedback, recommendations, requests or just want to
+        say "hi"? Feel free to contact me at <b>1991.mogrim@gmail.com</b>
+      </p>
+      <p class="mt-1 mb-1">
+        If you'd like too peek into my social accounts, I've added these in the
+        footer.
+      </p>
+    </article>
     <div class="subheadingCard mt-6 mx-2 p-3">
       <h2 class="text-white">Setup</h2>
     </div>
     <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
+      <p class="m-0">General setup + hardware:</p>
+      <ul>
+        <li>Macbook Pro 2019</li>
+      </ul>
       <p class="m-0">For this particular website:</p>
       <ul>
         <li>Nuxt.js</li>
         <li>Tailwind CSS</li>
         <li>nuxt/content</li>
       </ul>
-      <ul>
-        <li>General setup/hardware? I am currently using:</li>
-        <li>Macbook Pro 2019</li>
-      </ul>
     </article>
     <div class="subheadingCard mt-6 mx-2 p-3">
       <h2 class="text-white">Playlists</h2>
     </div>
-    <article
-      class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2"
-    ></article>
+    <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
+      <ul>
+        <li><a href="#">Ice cream pizza.</a></li>
+      </ul>
+    </article>
   </div>
 </template>
 
@@ -133,7 +142,7 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: '/a-loveley-image.png',
+        content: '/meta.png',
       },
     ],
 

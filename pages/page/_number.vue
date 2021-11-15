@@ -20,7 +20,7 @@
                 </nuxt-link>
               </span>
             </div>
- <p class="text-xs mt-2 m-0">♻️ {{ formatDate(post.updatedAt) }}</p>
+ <p class="text-xs mt-2 m-0">✏️ {{ formatDate(post.updatedAt) }}</p>
             <!-- <p>Author: {{ post.author.name }}</p> -->
           </div>
         </nuxt-link>
