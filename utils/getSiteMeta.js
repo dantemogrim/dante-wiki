@@ -1,9 +1,9 @@
 // Default, fallback meta data.
 const type = 'website';
 const url = 'https://dante.im';
-const title = 'My Amazing Blog on The Joy of Painting';
+const title = 'Dante Mogrim';
 const description =
-  'Articles focused on the beautiful art of landscape painting.';
+  'My digital garden filled with web development articles, notes and tutorials.';
 const mainImage = '/a-lovely-image.png';
 
 export default (meta) => {

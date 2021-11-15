@@ -33,22 +33,22 @@ export default {
     title: 'Tags',
 
     meta: [
-      { property: 'og:site_name', content: 'I Love Painting' },
+      { property: 'og:site_name', content: 'Dante Mogrim' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://bobross.com',
+        content: 'https://dante.im',
       },
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'My Amazing Blog on The Joy of Painting',
+        content: 'Tags',
       },
       {
         hid: 'og:description',
         property: 'og:description',
-        content: 'Articles focused on the beautiful art of landscape painting.',
+        content: 'All tags related to web development posts.',
       },
       {
         hid: 'og:image',
@@ -57,22 +57,22 @@ export default {
       },
       { property: 'og:image:width', content: '740' },
       { property: 'og:image:height', content: '300' },
-      { name: 'twitter:site', content: '@bobross' },
+      { name: 'twitter:site', content: '' },
       { name: 'twitter:card', content: 'summary_large_image' },
       {
         hid: 'twitter:url',
         name: 'twitter:url',
-        content: 'https://bobross.com',
+        content: 'https://dante.im',
       },
       {
         hid: 'twitter:title',
         name: 'twitter:title',
-        content: 'My Amazing Blog on The Joy of Painting',
+        content: 'Tags',
       },
       {
         hid: 'twitter:description',
         name: 'twitter:description',
-        content: 'Articles focused on the beautiful art of landscape painting.',
+        content: 'All tags related to web development posts.',
       },
       {
         hid: 'twitter:image',
@@ -85,7 +85,7 @@ export default {
       {
         hid: 'canonical',
         rel: 'canonical',
-        href: 'https://bobross.com',
+        href: 'https://dante.im',
       },
     ],
   },

@@ -102,7 +102,7 @@ export default {
           content: this.post.tags ? this.post.tags.toString() : '',
         },
         { name: 'twitter:label1', content: 'Written by' },
-        { name: 'twitter:data1', content: global.author || '' },
+        { name: 'twitter:data1', content: '' },
         { name: 'twitter:label2', content: 'Filed under' },
         {
           name: 'twitter:data2',

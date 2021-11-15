@@ -72,7 +72,7 @@ export default {
       meta: [
         ...this.meta,
         { name: 'twitter:label1', content: 'Written by' },
-        { name: 'twitter:data1', content: 'Bob Ross' },
+        { name: 'twitter:data1', content: 'Dante Mogrim' },
         { name: 'twitter:label2', content: 'Filed under' },
       ],
       link: [

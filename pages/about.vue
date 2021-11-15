@@ -80,3 +80,70 @@
   clip-path: polygon(100% 0%, 93% 51%, 100% 100%, 0 100%, 0% 50%, 0 0);
 }
 </style>
+
+<script>
+export default {
+  head: {
+    title: 'About',
+
+    meta: [
+      { property: 'og:site_name', content: 'Dante Mogrim' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://dante.im',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'About',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content:
+          'My digital garden filled with web development articles, notes and tutorials.',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: '/a-lovely-image.png',
+      },
+      { property: 'og:image:width', content: '740' },
+      { property: 'og:image:height', content: '300' },
+      { name: 'twitter:site', content: '' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      {
+        hid: 'twitter:url',
+        name: 'twitter:url',
+        content: 'https://dante.im',
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'About',
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content:
+          'My digital garden filled with web development articles, notes and tutorials.',
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: '/a-loveley-image.png',
+      },
+    ],
+
+    link: [
+      {
+        hid: 'canonical',
+        rel: 'canonical',
+        href: 'https://dante.im',
+      },
+    ],
+  },
+};
+</script>
