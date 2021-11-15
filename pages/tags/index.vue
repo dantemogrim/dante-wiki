@@ -28,6 +28,67 @@ export default {
       tags,
     };
   },
+
+  head: {
+    title: 'Tags',
+
+    meta: [
+      { property: 'og:site_name', content: 'I Love Painting' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://bobross.com',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'My Amazing Blog on The Joy of Painting',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'Articles focused on the beautiful art of landscape painting.',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: '/a-lovely-image.png',
+      },
+      { property: 'og:image:width', content: '740' },
+      { property: 'og:image:height', content: '300' },
+      { name: 'twitter:site', content: '@bobross' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      {
+        hid: 'twitter:url',
+        name: 'twitter:url',
+        content: 'https://bobross.com',
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'My Amazing Blog on The Joy of Painting',
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: 'Articles focused on the beautiful art of landscape painting.',
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: '/a-loveley-image.png',
+      },
+    ],
+
+    link: [
+      {
+        hid: 'canonical',
+        rel: 'canonical',
+        href: 'https://bobross.com',
+      },
+    ],
+  },
 };
 </script>
 

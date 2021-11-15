@@ -67,6 +67,17 @@ export default {
       return new Date(date).toLocaleDateString('en-GB', options);
     },
   },
+
+  head: {
+    title: 'Posts',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'A full list of all posts on dante.wiki.',
+      },
+    ],
+  },
 };
 </script>
 

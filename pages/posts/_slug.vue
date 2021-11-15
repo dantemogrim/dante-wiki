@@ -46,6 +46,8 @@
 </template>
 
 <script>
+import getSiteMeta from '@/utils/getSiteMeta';
+
 export default {
   async asyncData({ $content, params }) {
     const post = await $content('posts', params.slug).fetch();
@@ -67,6 +69,54 @@ export default {
       const options = { year: 'numeric', month: 'long', day: 'numeric' };
       return new Date(date).toLocaleDateString('en', options);
     },
+  },
+
+  computed: {
+    meta() {
+      const metaData = {
+        type: 'post',
+        title: this.post.title,
+        description: this.post.description,
+        url: `${this.$config.baseUrl}/posts/${this.$route.params.slug}`,
+        mainImage: this.post.gif,
+      };
+      return getSiteMeta(metaData);
+    },
+  },
+
+  head() {
+    return {
+      title: this.post.title,
+      meta: [
+        ...this.meta,
+        {
+          property: 'post:published_time',
+          content: this.post.createdAt,
+        },
+        {
+          property: 'post:modified_time',
+          content: this.post.updatedAt,
+        },
+        {
+          property: 'post:tag',
+          content: this.post.tags ? this.post.tags.toString() : '',
+        },
+        { name: 'twitter:label1', content: 'Written by' },
+        { name: 'twitter:data1', content: global.author || '' },
+        { name: 'twitter:label2', content: 'Filed under' },
+        {
+          name: 'twitter:data2',
+          content: this.post.tags ? this.post.tags.toString() : '',
+        },
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `https://dante.im/posts/${this.$route.params.slug}`,
+        },
+      ],
+    };
   },
 };
 </script>

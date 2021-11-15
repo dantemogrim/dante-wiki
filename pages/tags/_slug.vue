@@ -11,7 +11,12 @@
       </div>
       <ul class="articleCardWrapper m-0 list-none flex flex-col justify-center">
         <li v-for="post of posts" :key="post.slug">
-          <nuxt-link :to="{ name: 'posts-slug', params: { slug: post.slug } }">
+          <nuxt-link
+            :to="{
+              name: 'posts-slug',
+              params: { slug: post.slug },
+            }"
+          >
             <div class="articleWrapper m-2 p-2 bg-red-100 rounded-md">
               <img :src="post.img" />
               <h3 class="m-0">{{ post.title }}</h3>
@@ -25,6 +30,8 @@
 </template>
 
 <script>
+import getSiteMeta from '@/utils/getSiteMeta';
+
 export default {
   async asyncData({ $content, params }) {
     const tag = await $content('tags', params.slug).fetch();
@@ -45,6 +52,37 @@ export default {
       const options = { year: 'numeric', month: 'long', day: 'numeric' };
       return new Date(date).toLocaleDateString('en', options);
     },
+  },
+
+  computed: {
+    meta() {
+      const metaData = {
+        type: 'tag',
+        title: this.tag.name,
+        description: this.tag.description,
+        url: `${this.$config.baseUrl}/tags/${this.$route.params.slug}`,
+      };
+      return getSiteMeta(metaData);
+    },
+  },
+
+  head() {
+    return {
+      title: this.tag.name,
+      meta: [
+        ...this.meta,
+        { name: 'twitter:label1', content: 'Written by' },
+        { name: 'twitter:data1', content: 'Bob Ross' },
+        { name: 'twitter:label2', content: 'Filed under' },
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `https://dante.im/tags/${this.$route.params.slug}`,
+        },
+      ],
+    };
   },
 };
 </script>
