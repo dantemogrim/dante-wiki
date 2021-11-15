@@ -4,7 +4,7 @@ const url = 'https://dante.im';
 const title = 'Dante Mogrim';
 const description =
   'My digital garden filled with web development articles, notes and tutorials.';
-const mainImage = '/a-lovely-image.png';
+const mainImage = '/meta.png';
 
 export default (meta) => {
   return [

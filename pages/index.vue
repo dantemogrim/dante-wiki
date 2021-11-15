@@ -7,7 +7,7 @@
     <div class="flex justify-center">
       <img
         class="mt-3"
-        src="~/static/images/selfie.png"
+        src="/selfie.png"
         alt="An illustration of me peeking up and smiling."
       />
     </div>

@@ -41,7 +41,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: '/a-lovely-image.png',
+        content: '/meta.png',
       },
       { property: 'og:image:width', content: '740' },
       { property: 'og:image:height', content: '300' },
@@ -93,7 +93,7 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/main.js'],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
