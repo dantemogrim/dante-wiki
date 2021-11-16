@@ -1,7 +1,7 @@
 ---
-title: 24
-description: My personal collection of currently favorite cli (command-line interface)tools.
-position: 24
+title: VSCode 101
+description: Getting started using Visual Studio Code.
+position: 14
 author:
   emoji: 🌀
   name: Dante Mogrim

@@ -3,10 +3,12 @@
     <article
       class="tagWrapper bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2"
     >
-      <h1>{{ tag.emoji }} #{{ tag.name }}</h1>
+      <div class="bg-green-200 mr-2 p-1 rounded-md">
+        <h1>{{ tag.emoji }} #{{ tag.name }}</h1>
+      </div>
       <p>{{ tag.description }}</p>
       <hr />
-      <div class="headline-card text-center p-3">
+      <div class="bg-img text-white p-3">
         <h2>Related posts:</h2>
       </div>
       <ul class="articleCardWrapper m-0 list-none flex flex-col justify-center">
@@ -79,17 +81,10 @@ export default {
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `https://dante.im/tags/${this.$route.params.slug}`,
+          href: `https://dante.wiki/tags/${this.$route.params.slug}`,
         },
       ],
     };
   },
 };
 </script>
-
-<style scoped>
-.headline-card {
-  background-color: #b3dac3;
-  clip-path: polygon(4% 5%, 96% 8%, 97% 94%, 3% 94%);
-}
-</style>

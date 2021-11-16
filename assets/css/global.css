@@ -19,6 +19,10 @@ body {
   opacity: 0;
 }
 
+.bg-img {
+  background-color: #505d8c;
+}
+
 hr {
   border: none;
   border-top: 3px solid rgb(200, 208, 244);

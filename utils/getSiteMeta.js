@@ -1,6 +1,6 @@
 // Default, fallback meta data.
 const type = 'website';
-const url = 'https://dante.im';
+const url = 'https://dante.wiki';
 const title = 'Dante Mogrim';
 const description =
   'My digital garden filled with web development articles, notes and tutorials.';

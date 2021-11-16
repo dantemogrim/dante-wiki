@@ -115,7 +115,7 @@ export default {
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `https://dante.im/posts/${this.$route.params.slug}`,
+          href: `https://dante.wiki/posts/${this.$route.params.slug}`,
         },
       ],
     };

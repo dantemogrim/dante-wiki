@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="headingCard mt-4 mx-2 p-3">
+    <div class="bg-img mt-4 mx-2 p-3">
       <h1 class="text-white">All Tags</h1>
       <p v-if="$nuxt.isOffline">Oops! You are offline. 😱</p>
     </div>
@@ -38,7 +38,7 @@ export default {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://dante.im',
+        content: 'https://dante.wiki',
       },
       {
         hid: 'og:title',
@@ -62,7 +62,7 @@ export default {
       {
         hid: 'twitter:url',
         name: 'twitter:url',
-        content: 'https://dante.im',
+        content: 'https://dante.wiki',
       },
       {
         hid: 'twitter:title',
@@ -85,16 +85,9 @@ export default {
       {
         hid: 'canonical',
         rel: 'canonical',
-        href: 'https://dante.im',
+        href: 'https://dante.wiki',
       },
     ],
   },
 };
 </script>
-
-<style scoped>
-.headingCard {
-  background-color: #505d8c;
-  clip-path: polygon(100% 0%, 93% 51%, 100% 100%, 0 100%, 0% 50%, 0 0);
-}
-</style>

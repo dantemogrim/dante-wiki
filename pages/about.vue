@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="headingCard mt-4 mx-2 p-3">
+    <div class="bg-img mt-4 mx-2 p-3">
       <h1 class="text-white">About</h1>
       <p v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
     </div>
@@ -39,7 +39,7 @@
         </li>
       </ul>
     </article>
-    <div class="subheadingCard mt-6 mx-2 p-3">
+    <div class="bg-img mt-6 mx-2 p-3">
       <h2 class="text-white">Connect</h2>
     </div>
     <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
@@ -52,7 +52,7 @@
         footer.
       </p>
     </article>
-    <div class="subheadingCard mt-6 mx-2 p-3">
+    <div class="bg-img mt-6 mx-2 p-3">
       <h2 class="text-white">Setup</h2>
     </div>
     <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
@@ -67,7 +67,7 @@
         <li>nuxt/content</li>
       </ul>
     </article>
-    <div class="subheadingCard mt-6 mx-2 p-3">
+    <div class="bg-img mt-6 mx-2 p-3">
       <h2 class="text-white">Playlists</h2>
     </div>
     <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
@@ -77,18 +77,6 @@
     </article>
   </div>
 </template>
-
-<style scoped>
-.headingCard {
-  background-color: #505d8c;
-  clip-path: polygon(100% 0%, 93% 51%, 100% 100%, 0 100%, 0% 50%, 0 0);
-}
-
-.subheadingCard {
-  background-color: #505d8c;
-  clip-path: polygon(100% 0%, 93% 51%, 100% 100%, 0 100%, 0% 50%, 0 0);
-}
-</style>
 
 <script>
 export default {
@@ -101,7 +89,7 @@ export default {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://dante.im',
+        content: 'https://dante.wiki',
       },
       {
         hid: 'og:title',
@@ -126,7 +114,7 @@ export default {
       {
         hid: 'twitter:url',
         name: 'twitter:url',
-        content: 'https://dante.im',
+        content: 'https://dante.wiki',
       },
       {
         hid: 'twitter:title',
@@ -150,7 +138,7 @@ export default {
       {
         hid: 'canonical',
         rel: 'canonical',
-        href: 'https://dante.im',
+        href: 'https://dante.wiki',
       },
     ],
   },

@@ -1,7 +1,7 @@
 ---
-title: 25
-description: My personal collection of currently favorite cli (command-line interface)tools.
-position: 25
+title: Image Optimization
+description: Good practices when using images in web development.
+position: 35
 author:
   emoji: 🌀
   name: Dante Mogrim

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="headingCard mt-4 mx-2 p-3">
+    <div class="bg-img mt-4 mx-2 p-3">
       <h1 class="text-white">All Posts</h1>
       <p v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
     </div>
@@ -80,14 +80,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.headingCard {
-  background-color: #505d8c;
-  clip-path: polygon(100% 0%, 93% 51%, 100% 100%, 0 100%, 0% 50%, 0 0);
-}
-
-.sortingOptions {
-  background-color: #a3cbce;
-}
-</style>

@@ -25,7 +25,7 @@ export default {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://dante.im',
+        content: 'https://dante.wiki',
       },
       {
         hid: 'og:title',
@@ -51,7 +51,7 @@ export default {
       {
         hid: 'twitter:url',
         name: 'twitter:url',
-        content: 'https://dante.im',
+        content: 'https://dante.wiki',
       },
       {
         hid: 'twitter:title',

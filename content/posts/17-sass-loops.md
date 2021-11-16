@@ -1,7 +1,7 @@
 ---
-title: 21
-description: My personal collection of currently favorite cli (command-line interface)tools.
-position: 21
+title: Sass Loops
+description: How to use loops in Sass.
+position: 17
 author:
   emoji: 🌀
   name: Dante Mogrim
@@ -10,6 +10,5 @@ gif:
   src: https://media.giphy.com/media/yR4xZagT71AAM/giphy.gif
   alt: A happy kid typing on an old computer that outputs 'syntax error'.
 tags:
-  - cli
-  - homebrew
+  - sass
 ---

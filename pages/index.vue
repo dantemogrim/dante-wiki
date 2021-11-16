@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="headingCard mt-4 mx-2 p-3">
+    <div class="bg-img smt-4 mx-2 p-3">
       <h1 class="text-white">Hi, I'm Dante Mogrim.</h1>
       <p v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
     </div>
@@ -22,15 +22,15 @@
         wide range of useful, comprehensive information.
       </p>
     </article>
-    <div class="subheadingCard mt-6 mx-2 p-3">
+    <div class="bg-img mt-6 mx-2 p-3">
       <h2 class="text-white">Latest</h2>
     </div>
     <ul class="m-0 list-none flex flex-col justify-center">
       <li v-for="post of posts" :key="post.slug">
         <nuxt-link :to="{ name: 'posts-slug', params: { slug: post.slug } }">
           <div class="articleWrapper m-2 p-2 bg-white rounded-md shadow-lg">
-            <h3 class="m-0">{{ post.title }}</h3>
-            <div class="tagWrapper">
+            <h3 class="mb-1 m-0">{{ post.title }}</h3>
+            <div class="tagWrapper mb-1">
               <span v-for="tag in post.tags" :key="tag" class="">
                 <nuxt-link
                   :to="`/tags/${tag}`"
@@ -76,15 +76,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.headingCard {
-  background-color: #505d8c;
-  clip-path: polygon(100% 0%, 93% 51%, 100% 100%, 0 100%, 0% 50%, 0 0);
-}
-
-.subheadingCard {
-  background-color: #505d8c;
-  clip-path: polygon(100% 0%, 93% 51%, 100% 100%, 0 100%, 0% 50%, 0 0);
-}
-</style>

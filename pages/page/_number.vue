@@ -1,7 +1,7 @@
 <template>
   <div>
-       <div class="headingCard mt-4 mx-2 p-3">
-      <h1 class="text-white">All Posts</h1>
+       <div class="bg-img mt-4 mx-2 p-3">
+      <h1 class="text-white">All Posts {{`🔖 Page ${pageNumber}`}}</h1>
       <p v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
     </div>
     <ul class="articleCardWrapper m-0 list-none flex flex-col justify-center">
@@ -67,10 +67,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.headingCard {
-  background-color: #505d8c;
-  clip-path: polygon(100% 0%, 93% 51%, 100% 100%, 0 100%, 0% 50%, 0 0);
-}
-</style>
