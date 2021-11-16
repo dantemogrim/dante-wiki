@@ -11,6 +11,7 @@ gif:
   alt: A man holding a bass fish and it manages to wiggle away from his grip.
 tags:
   - fish
+  - homebrew
 ---
 If you're familiar with [fish shell](https://fishshell.com/), here is a hands on guide to how you can customize it more to your liking.
 

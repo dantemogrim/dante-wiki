@@ -20,8 +20,18 @@
             }"
           >
             <div class="articleWrapper mt-3 p-2 bg-red-100 rounded-md">
-              <img :src="post.img" />
               <h3 class="m-0">{{ post.title }}</h3>
+              <div class="flex text-center items-center">
+                <span v-for="tag in post.tags" :key="tag" class="">
+                  <div class="flex text-center">
+                    <nuxt-link
+                      :to="`/tags/${tag}`"
+                      class="bg-green-200 mr-2 p-1 rounded-md"
+                      >#{{ tag }}
+                    </nuxt-link>
+                  </div>
+                </span>
+              </div>
               <small>✏️ {{ formatDate(post.updatedAt) }}</small>
             </div>
           </nuxt-link>
@@ -39,6 +49,7 @@ export default {
     const tag = await $content('tags', params.slug).fetch();
 
     const posts = await $content('posts')
+      .only(['title', 'slug', 'updatedAt', 'tags'])
       .where({
         tags: { $contains: params.slug },
       })

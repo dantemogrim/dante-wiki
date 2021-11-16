@@ -11,5 +11,6 @@ gif:
   alt: A really old Mac computers startup interface.
 tags:
   - cli
+  - homebrew
   - macos
 ---

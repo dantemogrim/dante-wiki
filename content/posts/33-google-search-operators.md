@@ -1,7 +1,7 @@
 ---
-title: Date & Time in JavaScript
-description: My personal collection of currently favorite cli (command-line interface)tools.
-position: 24
+title: Google Search Operators
+description: Get better hits by tweaking your searches.
+position: 33
 author:
   emoji: 🌀
   name: Dante Mogrim
@@ -10,5 +10,5 @@ gif:
   src: https://media.giphy.com/media/yR4xZagT71AAM/giphy.gif
   alt: A happy kid typing on an old computer that outputs 'syntax error'.
 tags:
-  - javascript
+  - browsers
 ---

@@ -19,7 +19,7 @@
       <p class="m-1">
         This project is both a personal + open source notebook. A collection of
         notes that will grow over time, accessible for anyone to take part of a
-        wide range of useful, comprehensive information.
+        wide range of maybe useful, perhaps comprehensive information.
       </p>
     </article>
     <div class="bg-img mt-6 mx-2 p-3">

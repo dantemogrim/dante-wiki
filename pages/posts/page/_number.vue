@@ -28,7 +28,7 @@
     </ul>
 <section id="prev-next" class="flex justify-between items-center">
   <nuxt-link :to="previousLink" class="m-2 bg-indigo-500 text-white p-2 rounded-lg">Prev page</nuxt-link>
-  <nuxt-link v-if="nextPage" :to="`/page/${pageNumber + 1}`" class="m-2 bg-indigo-500 text-white p-2 rounded-lg">Next page</nuxt-link>
+  <nuxt-link v-if="nextPage" :to="`${pageNumber + 1}`" class="m-2 bg-indigo-500 text-white p-2 rounded-lg">Next page</nuxt-link>
 </section>
 
     </section>
@@ -40,7 +40,7 @@ export default {
   async asyncData({ $content, params, error }) {
     const pageNumber = parseInt(params.number);
     const tenPosts = await $content('posts', params.slug)
-      .only(['author', 'createdAt', 'description', 'path', 'title', 'slug', 'updatedAt'])
+      .only(['author', 'createdAt', 'description', 'path', 'title', 'slug', 'updatedAt', 'tags'])
       .sortBy('createdAt', 'desc')
       .limit(10)
       .skip(9 * (pageNumber - 1))
@@ -56,7 +56,7 @@ export default {
   },
   computed: {
     previousLink() {
-      return this.pageNumber === 2 ? '/' : `/page/${this.pageNumber - 1}`;
+      return this.pageNumber === 2 ? '/posts' : `/posts/page/${this.pageNumber - 1}`;
     },
   },
     methods: {

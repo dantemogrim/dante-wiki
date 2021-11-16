@@ -1,5 +1,5 @@
 ---
-title: Pointing your one.com domain to Netlify
+title: Pointing Your one.com Domain to Netlify
 description: A tutorial/guide on how to reroute your one.com domain to Netlify.
 position: 6
 author:
@@ -66,6 +66,6 @@ Like we did before, it'll likely ask you to "Add" instead of "Register", so add 
 If all has gone according to plan, you should now successfully be able to try out your purchased domain in your browser and have it open up the project that you connected it to on Netlify. 🥳
 
 ### HTTPS
-> **Bonus:** Would you like to have a HTTPS connection as well? 🏆 (This requires that you've done the following steps and have waited about 24h.)
+> **Bonus:** Would you like to have a HTTPS connection as well? 🏆 (This requires that you've done the following steps and have waited for everything to be up and running.)
 > On Netlify, click on your project and go to `Site Settings` ▶️ `Domain Management` ▶️ and look for the heading `HTTPS`.
 Under `SSL/TLS certificate`, click the `Renew Certificate` and Netlify do the rest of the job for you. Neat, huh?

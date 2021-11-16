@@ -48,8 +48,7 @@ pre {
 
 /* Inline code. */
 .nuxt-content p code {
-  color: white;
-  background-color: #505d8c;
+  background-color: #ffd7e9;
   border-radius: 10px;
 }
 

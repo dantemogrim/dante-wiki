@@ -11,6 +11,7 @@ gif:
   alt: Mickey Mouse waving and shouting 'Yoohoo!'.
 tags:
   - editorconfig
+  - homebrew
 ---
 
 ```dot

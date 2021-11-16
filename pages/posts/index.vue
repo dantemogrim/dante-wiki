@@ -28,7 +28,7 @@
 
     <section id="next" v-if="nextPage" class="flex">
       <nuxt-link
-        to="/page/2"
+        to="posts/page/2"
         class="m-2 bg-indigo-500 text-white p-2 rounded-lg"
         >Next page</nuxt-link
       >
@@ -48,6 +48,7 @@ export default {
         'path',
         'slug',
         'title',
+        'tags',
       ])
       .sortBy('createdAt', 'desc')
       .limit(10)

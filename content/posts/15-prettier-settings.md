@@ -11,5 +11,6 @@ gif:
   alt: A happy kid typing on an old computer that outputs 'syntax error'.
 tags:
   - dotfiles
+  - homebrew
   - prettier
 ---
