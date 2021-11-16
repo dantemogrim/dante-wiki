@@ -12,7 +12,7 @@
       "
     >
       <gif :gif="post.gif" />
-      <h1>{{ post.title }}</h1>
+      <h1 class="whitespace-normal">{{ post.title }}</h1>
       <p class="mt-2 mb-2">{{ post.description }}</p>
       <div class="flex text-center items-center">
         <span> Tags: </span>
@@ -28,13 +28,13 @@
       </div>
       <author :author="post.author" />
       <div class="mb-2 bg-indigo-100 rounded-2xl p-3 w-2/3">
-        <p class="m-0">🌱 created {{ formatDate(post.createdAt) }}</p>
-        <p class="m-0">✏️ updated {{ formatDate(post.updatedAt) }}</p>
+        <p>🌱 created {{ formatDate(post.createdAt) }}</p>
+        <p>✏️ updated {{ formatDate(post.updatedAt) }}</p>
       </div>
       <hr />
       <!-- TOC - Table of Contents -->
       <nav class="bg-blue-100 rounded-2xl p-3 w-2/3">
-        <p class="m-0 font-bold">Table of Contents:</p>
+        <p class="font-bold">Table of Contents:</p>
         <ul>
           <li v-for="link of post.toc" :key="link.id">
             <nuxt-link :to="`#${link.id}`">{{ link.text }}</nuxt-link>

@@ -18,7 +18,7 @@
       />
     </div>
     <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
-      <p class="m-0">Here are a few random facts and about me:</p>
+      <p>Here are a few random facts and about me:</p>
       <ul>
         <li>
           I am a cat guardian to two tortie sisters named Tosca and Våfflan.
@@ -56,11 +56,11 @@
       <h2 class="text-white">Setup</h2>
     </div>
     <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
-      <p class="m-0">General setup + hardware:</p>
+      <p>General setup + hardware:</p>
       <ul>
         <li>Macbook Pro 2019</li>
       </ul>
-      <p class="m-0">For this particular website:</p>
+      <p>For this particular website:</p>
       <ul>
         <li>Nuxt.js</li>
         <li>Tailwind CSS</li>

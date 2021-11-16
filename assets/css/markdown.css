@@ -1,49 +1,37 @@
-/* Markdown blocks from api. */
-
-.nuxt-content-highlight {
-  width: 85vw;
+/* h1, h2, h3 settings. */
+.nuxt-content h1 {
+  font-weight: bold;
+  white-space: normal;
+  font-size: 32px;
 }
 
-p {
+.nuxt-content h2 {
+  font-weight: bold;
+  white-space: normal;
+  font-size: 28px;
+}
+.nuxt-content h3 {
+  font-weight: bold;
+  white-space: normal;
+  font-size: 22px;
+}
+
+/* Paragraphs. */
+.nuxt-content p {
   margin: 20px 0 20px 0;
 }
 
-h3 {
-  margin: 40px 0 0 0;
-}
-
 /* Ordered, numbered list. */
-
 ul {
   list-style-type: disc;
   margin: 10px 0 10px 20px;
 }
 
-/* list-style-type: decimal;
-  margin: 10px 0 10px 30px; */
-
-/* Unordered list, parent item. */
-/* .articleWrapper {
-  margin: 10px 0 10px 0;
-} */
-
-/* Unordered list, indented/child item. */
-/* .articleWrapper  {
-  list-style-type: circle;
-  margin: 5px 0 5px 20px;
-} */
-
-/* To do list. */
-
 /* Quotes. */
-blockquote {
+.nuxt-content blockquote p {
   margin: 3px;
   background-color: rgb(192, 225, 217);
   border-radius: 10px;
-}
-
-blockquote p {
-  margin: 0;
   padding: 10px;
 }
 
@@ -54,6 +42,18 @@ pre {
   padding: 0 4px 0 4px;
 }
 
-a {
+.nuxt-content-highlight {
+  width: 85vw;
+}
+
+/* Inline code. */
+.nuxt-content p code {
+  color: white;
+  background-color: #505d8c;
+  border-radius: 10px;
+}
+
+/* Links */
+nuxt-content a {
   color: #1f1fff;
 }

@@ -11,7 +11,7 @@
       <div class="bg-img text-white p-3">
         <h2>Related posts:</h2>
       </div>
-      <ul class="articleCardWrapper m-0 list-none flex flex-col justify-center">
+      <ul class="articleCardWrapper m-0 list-none flex flex-col">
         <li v-for="post of posts" :key="post.slug">
           <nuxt-link
             :to="{
@@ -19,7 +19,7 @@
               params: { slug: post.slug },
             }"
           >
-            <div class="articleWrapper m-2 p-2 bg-red-100 rounded-md">
+            <div class="articleWrapper mt-3 p-2 bg-red-100 rounded-md">
               <img :src="post.img" />
               <h3 class="m-0">{{ post.title }}</h3>
               <small>✏️ {{ formatDate(post.updatedAt) }}</small>

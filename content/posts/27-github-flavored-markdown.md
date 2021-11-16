@@ -1,5 +1,5 @@
 ---
-title: 27
+title: GitHub Flavored Markdown
 description: My personal collection of currently favorite cli (command-line interface)tools.
 position: 27
 author:
@@ -10,4 +10,6 @@ gif:
   src: https://media.giphy.com/media/yR4xZagT71AAM/giphy.gif
   alt: A happy kid typing on an old computer that outputs 'syntax error'.
 tags:
+  - github
+  - markdown
 ---

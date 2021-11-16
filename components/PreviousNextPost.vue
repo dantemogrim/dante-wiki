@@ -11,7 +11,7 @@
         text-white
         whitespace-nowrap
         m-3
-        hover:underline
+        hover:shadow-lg
       "
     >
       👈 Previous
@@ -28,7 +28,7 @@
         text-white
         whitespace-nowrap
         m-3
-        hover:underline
+        hover:shadow-lg
       "
     >
       Next 👉
