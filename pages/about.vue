@@ -1,15 +1,20 @@
 <template>
   <div>
-    <div class="bg-img mt-4 mx-2 p-3">
+    <div class="headingCard mt-4 mx-2 p-3">
       <h1 class="text-white">About</h1>
       <p v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
     </div>
     <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
-      <p>
+      <p class="mb-2">
         Hi! My name is Dante Mogrim. I am a web developer student living in
         Gothenburg, Sweden. Welcome to my personal cyber nook where I’ll be
         sharing all kinds of development related knowledge as well as other fun
         things.
+      </p>
+      <p>
+        This project is both a personal + open source notebook. A collection of
+        notes that will grow over time, accessible for anyone to take part of a
+        wide range of maybe useful, perhaps comprehensive information.
       </p>
     </article>
     <div class="w-full flex justify-center">
@@ -21,7 +26,7 @@
       <p>Here are a few random facts and about me:</p>
       <ul>
         <li>
-          I am a cat guardian to two tortie sisters named Tosca and Våfflan.
+          I am a cat guardian to two tortie sisters named Tosca and Waffles.
         </li>
         <li>I was once a tram driver for four years.</li>
         <li>
@@ -39,26 +44,35 @@
         </li>
       </ul>
     </article>
-    <div class="bg-img mt-6 mx-2 p-3">
+    <div class="headingCard mt-6 mx-2 p-3">
       <h2 class="text-white">Connect</h2>
     </div>
     <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
-      <p class="mt-1 mb-1">
-        Have any questions, feedback, recommendations, requests or just want to
-        say "hi"? Feel free to contact me at <b>1991.mogrim@gmail.com</b>
+      <p class="mt-1 mb-2">
+        If you have any questions, feedback, recommendations, requests or just
+        want to say "hi":
       </p>
-      <p class="mt-1 mb-1">
-        If you'd like too peek into my social accounts, I've added these in the
-        footer.
+      <p class="mb-2">
+        Feel free to contact me at
+        <b><a href="mailto:1991.mogrim@gmail.com">1991.mogrim@gmail.com</a></b>
       </p>
+      <p>Social media accounts:</p>
+      <ul>
+        <li><a href="https://github.com/dantemogrim/">🐈‍⬛ GitHub</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/dantemogrim/">🔗 LinkedIn</a>
+        </li>
+      </ul>
     </article>
-    <div class="bg-img mt-6 mx-2 p-3">
+    <div class="headingCard mt-6 mx-2 p-3">
       <h2 class="text-white">Setup</h2>
     </div>
     <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
       <p>General setup + hardware:</p>
       <ul>
-        <li>Macbook Pro 2019</li>
+        <li>💻 Macbook Pro 2019</li>
+        <li>⌨️ Magic Keyboard</li>
+        <li>🎙 Røde NT-USB</li>
       </ul>
       <p>For this particular website:</p>
       <ul>
@@ -67,7 +81,7 @@
         <li>nuxt/content</li>
       </ul>
     </article>
-    <div class="bg-img mt-6 mx-2 p-3">
+    <div class="headingCard mt-6 mx-2 p-3">
       <h2 class="text-white">Playlists</h2>
     </div>
     <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">

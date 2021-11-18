@@ -1,13 +1,27 @@
 <template>
   <div>
-    <div class="bg-img mt-4 mx-2 p-3">
+    <div class="headingCard mt-4 mx-2 p-3">
       <h1 class="text-white">All Tags</h1>
       <p v-if="$nuxt.isOffline">Oops! You are offline. 😱</p>
     </div>
     <ul class="m-0 list-none flex flex-col justify-center">
       <li v-for="tag of tags" :key="tag.slug">
         <nuxt-link :to="{ name: 'tags-slug', params: { slug: tag.slug } }">
-          <div class="tagWrapper m-2 p-2 bg-white rounded-md shadow-lg">
+          <div
+            class="
+              tagWrapper
+              m-2
+              p-2
+              bg-white
+              rounded-md
+              shadow-lg
+              transition
+              duration-300
+              ease-in-out
+              transform
+              hover:-translate-y-1 hover:scale-101
+            "
+          >
             <h3 class="m-0">{{ tag.emoji }} #{{ tag.name }}</h3>
           </div>
         </nuxt-link>

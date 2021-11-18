@@ -11,7 +11,11 @@
         text-white
         whitespace-nowrap
         m-3
-        hover:shadow-lg
+        transition
+        duration-500
+        ease-in-out
+        transform
+        hover:-translate-y-1 hover:scale-105
       "
     >
       👈 Previous
@@ -28,7 +32,11 @@
         text-white
         whitespace-nowrap
         m-3
-        hover:shadow-lg
+        transition
+        duration-300
+        ease-in-out
+        transform
+        hover:-translate-y-1 hover:scale-105
       "
     >
       Next 👉

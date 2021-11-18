@@ -8,7 +8,7 @@
       </div>
       <p>{{ tag.description }}</p>
       <hr />
-      <div class="bg-img text-white p-3">
+      <div class="headingCard text-white p-3">
         <h2>Related posts:</h2>
       </div>
       <ul class="articleCardWrapper m-0 list-none flex flex-col">
@@ -19,7 +19,21 @@
               params: { slug: post.slug },
             }"
           >
-            <div class="articleWrapper mt-3 p-2 bg-red-100 rounded-md">
+            <div
+              class="
+                articleWrapper
+                mt-3
+                p-2
+                bg-red-100
+                rounded-md
+                shadow-lg
+                transition
+                duration-300
+                ease-in-out
+                transform
+                hover:-translate-y-1 hover:scale-101
+              "
+            >
               <h3 class="m-0">{{ post.title }}</h3>
               <div class="flex text-center items-center">
                 <span v-for="tag in post.tags" :key="tag" class="">

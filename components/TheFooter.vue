@@ -2,7 +2,16 @@
   <footer class="min-w-full h-45">
     <nav class="m-2 flex flex-row justify-evenly items-center h-4/5">
       <!-- GitHub. -->
-      <a href="https://github.com/dantemogrim/">
+      <a
+        class="
+          transition
+          duration-300
+          ease-in-out
+          transform
+          hover:-translate-y-1 hover:scale-101
+        "
+        href="https://github.com/dantemogrim/"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="35"
@@ -54,7 +63,16 @@
         </svg>
       </a>
       <!-- E-mail. -->
-      <a href="mailto:1991.mogrim@gmail.com">
+      <a
+        class="
+          transition
+          duration-300
+          ease-in-out
+          transform
+          hover:-translate-y-1 hover:scale-101
+        "
+        href="mailto:1991.mogrim@gmail.com"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="35"
@@ -104,7 +122,16 @@
         </svg>
       </a>
       <!-- LinkedIn. -->
-      <a href="https://www.linkedin.com/in/dantemogrim">
+      <a
+        class="
+          transition
+          duration-300
+          ease-in-out
+          transform
+          hover:-translate-y-1 hover:scale-101
+        "
+        href="https://www.linkedin.com/in/dantemogrim"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="35"

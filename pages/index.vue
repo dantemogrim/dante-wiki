@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="bg-img smt-4 mx-2 p-3">
+    <div class="headingCard smt-4 mx-2 p-3">
       <h1 class="text-white">Hi, I'm Dante Mogrim.</h1>
       <p v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
     </div>
@@ -14,21 +14,30 @@
     <article class="bg-white flex flex-col p-4 rounded-md shadow-lg m-2">
       <p class="m-1">
         I am a web developer student living in Gothenburg, Sweden. Welcome to my
-        digital garden where I’ll be sharing all kinds of findings.
-      </p>
-      <p class="m-1">
-        This project is both a personal + open source notebook. A collection of
-        notes that will grow over time, accessible for anyone to take part of a
-        wide range of maybe useful, perhaps comprehensive information.
+        personal wikipedia of web development findings.
       </p>
     </article>
-    <div class="bg-img mt-6 mx-2 p-3">
+    <div class="headingCard mt-6 mx-2 p-3">
       <h2 class="text-white">Latest</h2>
     </div>
     <ul class="m-0 list-none flex flex-col justify-center">
       <li v-for="post of posts" :key="post.slug">
         <nuxt-link :to="{ name: 'posts-slug', params: { slug: post.slug } }">
-          <div class="articleWrapper m-2 p-2 bg-white rounded-md shadow-lg">
+          <div
+            class="
+              articleWrapper
+              m-2
+              p-2
+              bg-white
+              rounded-md
+              shadow-lg
+              transition
+              duration-300
+              ease-in-out
+              transform
+              hover:-translate-y-1 hover:scale-101
+            "
+          >
             <h3 class="mb-1 m-0">{{ post.title }}</h3>
             <div class="tagWrapper mb-1">
               <span v-for="tag in post.tags" :key="tag" class="">

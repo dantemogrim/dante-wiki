@@ -1,7 +1,7 @@
-<img src="https://media.giphy.com/media/26tPgbUUcfS5IWiTm/giphy.gif" alt="A garden filled with flower, animals and computers.">
+<img src="https://media.giphy.com/media/9CGHugNfh1CSomfsnZ/giphy.gif" alt="Michael Scott saying 'Wikipedia... Is the best thing ever.'">
 
-#  :card_file_box: Digital Garden
-My personal web developer site written with Nuxt.js, using the nuxt/content module as database architecture.
+#  :card_file_box: dante.wiki
+My personal wikipedia written with Nuxt.js, using the nuxt/content module as database architecture.
 
 ## :pencil2: Instructions
 

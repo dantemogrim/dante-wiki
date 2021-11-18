@@ -1,11 +1,8 @@
-@font-face {
-  font-family: 'hack';
-  src: url('~static/fonts/hack.woff2') format('woff2');
-}
+/* Font settings. */
 
 @font-face {
-  font-family: 'spaceGrotesk';
-  src: url('~static/fonts/spaceGrotesk.woff2') format('woff2');
+  font-family: 'jetbrainsmono';
+  src: url('~static/fonts/jetbrainsmono.woff2') format('woff2');
 }
 
 h1,
@@ -14,21 +11,21 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'spaceGrotesk';
+  font-family: 'jetbrainsmono';
   white-space: normal;
 }
 
 /* Main + fallbacks. */
 * {
-  font-family: 'hack', Arial, Helvetica, Verdana, Georgia, Tahoma, sans-serif;
+  font-family: 'jetbrainsmono', Arial, Helvetica, Verdana, Georgia, Tahoma,
+    sans-serif;
 }
 
 .brand {
-  font-family: 'hack';
-  font-size: 1.2rem;
-  line-height: 2.25rem;
+  color: rebeccapurple;
 }
 
+/* Text settings. */
 h1 {
   font-size: 1.5rem;
   line-height: 2.5rem;
@@ -45,9 +42,4 @@ h3 {
   font-size: 1.2rem;
   line-height: 2rem;
   font-weight: 500;
-}
-
-.articleWrapper,
-p {
-  font-family: 'hack'; /* TODO - fallback fonts. */
 }

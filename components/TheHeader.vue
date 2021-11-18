@@ -2,8 +2,9 @@
   <header class="z-10 min-w-full h-16 sticky inset-0">
     <nav class="flex flex-row justify-between items-center h-full">
       <div class="headerMenu1 mx-2">
-        <nuxt-link to="/">
-          <p class="brand whitespace-nowrap">🤷‍♂️ dante.wiki</p>
+        <nuxt-link class="flex items-center" to="/">
+          <img class="favicon mr-2" src="/fav.png" />
+          <p class="brand"><b>dante.wiki</b></p>
         </nuxt-link>
       </div>
       <div class="headerMenu2">

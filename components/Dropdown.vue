@@ -6,7 +6,18 @@
       height="35"
       fill="none"
       viewBox="0 0 256 256"
-      class="cursor-pointer hover:bg-blue-200 rounded-lg"
+      class="
+        cursor-pointer
+        rounded-lg
+        transition
+        duration-500
+        ease-in-out
+        bg-indigo-200
+        hover:bg-green-200
+        shadow-md
+        transform
+        hover:rotate-45
+      "
       @click="menuIsOpen = !menuIsOpen"
     >
       <rect width="256" height="256" fill="none"></rect>

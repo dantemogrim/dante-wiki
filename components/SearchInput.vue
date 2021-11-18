@@ -15,12 +15,14 @@
         truncate
         leading-5
         placeholder-gray-500
-        border border-gray-500
         text-gray-700
-        focus:border-blue-500
+        focus:ring-blue-500
         rounded-md
-        focus:outline-none focus:bg-white
-        bg-white
+        focus:bg-white
+        transition
+        duration-300
+        transition-colors
+        bg-gray-200
       "
     />
 

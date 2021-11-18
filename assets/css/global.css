@@ -23,8 +23,16 @@ body {
   opacity: 0;
 }
 
-.bg-img {
-  background-color: #505d8c;
+.headingCard {
+  background: rgb(80, 93, 140);
+  background: linear-gradient(
+    90deg,
+    rgba(80, 93, 140, 1) 0%,
+    rgba(100, 114, 171, 1) 38%,
+    rgba(121, 139, 208, 1) 100%
+  );
+  border-radius: 10px;
+  box-shadow: 0 3px 5px #bdbdbd;
 }
 
 hr {
@@ -44,6 +52,11 @@ hr::after {
   border-radius: 5px;
   position: relative;
   top: -25px;
+}
+
+.favicon {
+  width: 35px;
+  height: auto;
 }
 
 /* TODO - Glassmorphism within header & footer. */
