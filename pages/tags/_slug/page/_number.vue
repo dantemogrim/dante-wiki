@@ -1,0 +1,89 @@
+<template>
+  <div>
+    <h2 class="headingCard text-white">
+      {{ `${tag.name} Posts 🔖 Page` }}
+    </h2>
+    <p v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
+    <ul class="articleCardWrapper m-0 list-none flex flex-col">
+      <li v-for="post of tenPosts" :key="post.slug">
+        <nuxt-link
+          :to="{
+            name: 'posts-slug',
+            params: { slug: post.slug },
+          }"
+        >
+          <div class="articleWrapper mt-3 p-2 bg-red-100 rounded-md">
+            <h3 class="m-0">{{ post.title }}</h3>
+            <div class="flex text-center items-center">
+              <span v-for="tag in post.tags" :key="tag" class="">
+                <div class="flex text-center">
+                  <nuxt-link
+                    :to="`/tags/${tag}`"
+                    class="bg-green-200 mr-2 p-1 rounded-md"
+                    >#{{ tag }}
+                  </nuxt-link>
+                </div>
+              </span>
+            </div>
+          </div>
+        </nuxt-link>
+      </li>
+    </ul>
+
+<section id="prev-next" class="flex justify-between items-center">
+  <nuxt-link :to="previousLink" class="m-2 bg-indigo-500 text-white p-2 rounded-lg         transition
+        duration-300
+        ease-in-out
+        transform
+        hover:-translate-y-1 hover:scale-105">Prev page</nuxt-link>
+  <nuxt-link v-if="nextPage" :to="`${pageNumber + 1}`" class="m-2 bg-indigo-500 text-white p-2 rounded-lg         transition
+        duration-300
+        ease-in-out
+        transform
+        hover:-translate-y-1 hover:scale-105">Next page</nuxt-link>
+</section>
+
+    </section>
+  </div>
+</template>
+
+<script>
+export default {
+  async asyncData({ $content, params }) {
+    // An object!
+    const tag = await $content('tags', params.slug).fetch();
+
+    const pageNumber = parseInt(params.number);
+
+    const tenPosts = await $content('posts')
+      .only(['title', 'slug', 'updatedAt', 'tags'])
+      .where({
+        tags: { $contains: tag.slug },
+      })
+      .sortBy('createdAt', 'desc')
+      .limit(10)
+      .skip(9 * (pageNumber - 1))
+      .fetch();
+
+      if (!tenPosts.length) {
+      return error({ statusCode: 404, message: 'No posts found!' });
+    }
+
+    const nextPage = tenPosts.length === 10;
+    const posts = nextPage ? tenPosts.slice(0, -1) : tenPosts;
+
+    return {
+      nextPage,
+      tag,
+      tenPosts,
+      pageNumber,
+    };
+  },
+
+   computed: {
+    previousLink() {
+      return this.pageNumber === 2 ? `/tags/${this.tag.slug}` : `/tags/${this.tag.slug}/page/${this.pageNumber - 1}`;
+    },
+  },
+};
+</script>

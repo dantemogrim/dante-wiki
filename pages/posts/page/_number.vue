@@ -50,7 +50,9 @@
 <script>
 export default {
   async asyncData({ $content, params, error }) {
+
     const pageNumber = parseInt(params.number);
+    
     const tenPosts = await $content('posts', params.slug)
       .only(['author', 'createdAt', 'description', 'path', 'title', 'slug', 'updatedAt', 'tags'])
       .sortBy('createdAt', 'desc')

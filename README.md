@@ -3,6 +3,14 @@
 #  :card_file_box: dante.wiki
 My personal wikipedia written with Nuxt.js, using the nuxt/content module as database architecture.
 
+<details><summary>🌐 Features!</summary>
+
+- [nuxt/content](https://content.nuxtjs.org/)
+- [nuxt/sitemap](https://sitemap.nuxtjs.org/)
+</details>
+
+
+
 ## :pencil2: Instructions
 
 ```bash

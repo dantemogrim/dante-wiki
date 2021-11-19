@@ -1,3 +1,4 @@
+// import getFeed from './utils/getFeed';
 import getRoutes from './utils/getRoutes';
 import getSiteMeta from './utils/getSiteMeta';
 const meta = getSiteMeta();
@@ -73,7 +74,7 @@ export default {
 
     link: [
       // Favicon.
-      { rel: 'icon', type: 'image/svg+xml', href: '/fav.png' },
+      { rel: 'icon', type: 'image/svg+xml', href: '/fav-bw.png' },
       {
         // Canonical.
         rel: 'icon',
@@ -117,6 +118,8 @@ export default {
     '@nuxt/content',
     // https://sitemap.nuxtjs.org/
     '@nuxtjs/sitemap',
+    // https://github.com/nuxt-community/feed-module
+    '@nuxtjs/feed',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -153,6 +156,25 @@ export default {
     hostname: process.env.BASE_URL,
     routes() {
       return getRoutes();
+    },
+  },
+
+  feed: [
+    // A default feed configuration object
+    {
+      path: '/feed.xml', // The route to your feed.
+      async create(feed) {}, // The create function (see below)
+      cacheTime: 1000 * 60 * 15, // How long should the feed be cached
+      type: 'rss2', // Can be: rss2, atom1, json1
+      data: ['Some additional data'], // Will be passed as 2nd argument to `create` function
+    },
+  ],
+
+  hooks: {
+    'content:file:beforeInsert': (document) => {
+      if (document.extension === '.md') {
+        document.bodyPlainText = document.text;
+      }
     },
   },
 };

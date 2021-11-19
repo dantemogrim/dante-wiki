@@ -54,13 +54,23 @@
       </p>
       <p class="mb-2">
         Feel free to contact me at
-        <b><a href="mailto:1991.mogrim@gmail.com">1991.mogrim@gmail.com</a></b>
+        <a class="text-blue-700" href="mailto:1991.mogrim@gmail.com"
+          >1991.mogrim@gmail.com</a
+        >
       </p>
       <p>Social media accounts:</p>
       <ul>
-        <li><a href="https://github.com/dantemogrim/">🐈‍⬛ GitHub</a></li>
         <li>
-          <a href="https://www.linkedin.com/in/dantemogrim/">🔗 LinkedIn</a>
+          <a class="text-blue-700" href="https://github.com/dantemogrim/"
+            >🐈‍⬛ GitHub</a
+          >
+        </li>
+        <li>
+          <a
+            class="text-blue-700"
+            href="https://www.linkedin.com/in/dantemogrim/"
+            >🔗 LinkedIn</a
+          >
         </li>
       </ul>
     </article>
@@ -76,9 +86,49 @@
       </ul>
       <p>For this particular website:</p>
       <ul>
-        <li>Nuxt.js</li>
-        <li>Tailwind CSS</li>
-        <li>nuxt/content</li>
+        <li>
+          Base:
+          <a class="text-blue-700" href="https://nuxtjs.org/" target="_blank"
+            >Nuxt.js</a
+          >
+        </li>
+        <li>
+          Domain:
+          <a
+            class="text-blue-700"
+            href="https://www.one.com/en/"
+            target="_blank"
+            >one.com</a
+          >
+        </li>
+        <li>
+          Git-based Headless CMS:
+          <a
+            class="text-blue-700"
+            href="https://content.nuxtjs.org/"
+            target="_blank"
+            >nuxt/content</a
+          >
+        </li>
+        <li>
+          Hosting:
+          <a
+            class="text-blue-700"
+            href="https://www.netlify.com/"
+            target="_blank"
+            >Netlify</a
+          >
+        </li>
+        <li>
+          Styling:
+          <a
+            class="text-blue-700"
+            href="https://tailwindcss.com/"
+            target="_blank"
+          >
+            Tailwind CSS</a
+          >
+        </li>
       </ul>
     </article>
     <div class="headingCard mt-6 mx-2 p-3">
@@ -86,7 +136,7 @@
     </div>
     <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
       <ul>
-        <li><a href="#">Ice cream pizza.</a></li>
+        <li><a class="text-blue-700" href="#">Ice cream pizza.</a></li>
       </ul>
     </article>
   </div>
