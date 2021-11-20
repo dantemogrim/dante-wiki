@@ -1,9 +1,10 @@
 <template>
   <div>
-    <div class="headingCard smt-4 mx-2 p-3">
+    <div class="headingCard mt-4 mx-2 p-3">
       <h1 class="text-white">Hi, I'm Dante Mogrim.</h1>
       <p v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
     </div>
+
     <div class="flex justify-center">
       <img
         class="mt-3"
@@ -11,16 +12,29 @@
         alt="An illustration of me peeking up and smiling."
       />
     </div>
-    <article class="bg-white flex flex-col p-4 rounded-md shadow-lg m-2">
-      <p class="m-1">
-        I am a web developer student living in Gothenburg, Sweden. Welcome to my
-        personal wikipedia of web development findings.
-      </p>
-    </article>
-    <div class="headingCard mt-6 mx-2 p-3">
+    <div class="md:flex md:justify-center">
+      <article
+        class="bg-green-100 flex flex-col p-4 rounded-md shadow-lg m-2 md:w-2/3"
+      >
+        <p class="m-1">
+          I am a web developer student living in Gothenburg, Sweden. Welcome to
+          my personal wikipedia of web development findings.
+        </p>
+      </article>
+    </div>
+    <div class="subheadingCard mt-6 mx-2 p-3">
       <h2 class="text-white">Latest</h2>
     </div>
-    <ul class="m-0 list-none flex flex-col justify-center">
+
+    <ul
+      class="
+        m-0
+        list-none
+        flex flex-col
+        justify-center
+        md:my-3 md:grid md:grid-flow-col md:grid-cols-2 md:grid-rows-3 md:gap-4
+      "
+    >
       <li v-for="post of posts" :key="post.slug">
         <nuxt-link :to="{ name: 'posts-slug', params: { slug: post.slug } }">
           <div
@@ -68,7 +82,7 @@ export default {
         'tags',
         'updatedAt',
       ])
-      .limit(5)
+      .limit(6)
       .sortBy('updatedAt', 'desc')
       .fetch();
 

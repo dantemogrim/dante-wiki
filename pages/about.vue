@@ -1,11 +1,22 @@
 <template>
-  <div>
-    <div class="headingCard mt-4 mx-2 p-3">
+  <div class="md:flex md:flex-col md:justify-center md:items-center">
+    <div class="headingCard mt-4 mx-2 p-3 md:w-2/3">
       <h1 class="text-white">About</h1>
       <p v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
     </div>
-    <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
-      <p class="mb-2">
+
+    <article
+      class="
+        m-2
+        bg-green-100
+        flex flex-col
+        p-4
+        rounded-md
+        shadow-lg
+        md:my-4 md:w-2/3
+      "
+    >
+      <p>
         Hi! My name is Dante Mogrim. I am a web developer student living in
         Gothenburg, Sweden. Welcome to my personal cyber nook where I’ll be
         sharing all kinds of development related knowledge as well as other fun
@@ -17,10 +28,20 @@
         wide range of maybe useful, perhaps comprehensive information.
       </p>
     </article>
-    <div class="w-full flex justify-center">
-      <img src="/about-me.png" />
-    </div>
-    <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
+
+    <img src="/about-me.png" />
+
+    <article
+      class="
+        m-2
+        bg-green-100
+        flex flex-col
+        p-4
+        rounded-md
+        shadow-lg
+        md:mt-4 md:w-2/3
+      "
+    >
       <p>Here are a few random facts and about me:</p>
       <ul>
         <li>
@@ -42,10 +63,22 @@
         </li>
       </ul>
     </article>
-    <div class="headingCard mt-6 mx-2 p-3">
+
+    <div class="subheadingCard mt-6 mx-2 p-3 md:w-2/3">
       <h2 class="text-white">Connect</h2>
     </div>
-    <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
+    <article
+      class="
+        m-2
+        bg-gray-50
+        flex flex-col
+        p-4
+        my-2
+        rounded-md
+        shadow-lg
+        md:mt-4 md:w-2/3
+      "
+    >
       <p class="mt-1 mb-2">
         <i>
           If you have any questions, feedback, recommendations, requests or just
@@ -74,10 +107,20 @@
         </li>
       </ul>
     </article>
-    <div class="headingCard mt-6 mx-2 p-3">
+    <div class="subheadingCard mt-6 mx-2 p-3 md:w-2/3">
       <h2 class="text-white">Setup</h2>
     </div>
-    <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
+    <article
+      class="
+        bg-gray-50
+        flex flex-col
+        p-4
+        rounded-md
+        shadow-lg
+        m-2
+        md:mt-4 md:w-2/3
+      "
+    >
       <p>General setup + hardware:</p>
       <ul>
         <li>💻 Macbook Pro 2019</li>
@@ -162,10 +205,20 @@
         </li>
       </ul>
     </article>
-    <div class="headingCard mt-6 mx-2 p-3">
+    <div class="subheadingCard mt-6 mx-2 p-3 md:w-2/3">
       <h2 class="text-white">Playlists</h2>
     </div>
-    <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
+    <article
+      class="
+        bg-gray-50
+        flex flex-col
+        p-4
+        rounded-md
+        shadow-lg
+        m-2
+        md:mt-4 md:w-2/3
+      "
+    >
       <ul>
         <li>
           <a

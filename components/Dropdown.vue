@@ -12,8 +12,7 @@
         transition
         duration-500
         ease-in-out
-        bg-indigo-200
-        hover:bg-green-200
+        bg-green-200
         shadow-md
         transform
         hover:rotate-45
@@ -98,7 +97,7 @@
               py-2
               transition-colors
               duration-300
-              hover:bg-indigo-500 hover:text-white
+              hover:bg-skunkdarkpurple hover:text-white
             "
           >
             About
@@ -111,7 +110,7 @@
               py-2
               transition-colors
               duration-300
-              hover:bg-indigo-500 hover:text-white
+              hover:bg-skunkdarkpurple hover:text-white
             "
           >
             Posts
@@ -124,7 +123,7 @@
               py-2
               transition-colors
               duration-300
-              hover:bg-indigo-500 hover:text-white
+              hover:bg-skunkdarkpurple hover:text-white
             "
           >
             Tags

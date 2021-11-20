@@ -2,13 +2,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#ff7152',
-        secondary: '#52e7ff',
-        accent: '#f452ff',
+        skunkpurple: '#67659A',
+        skunkdarkpurple: '#414677',
+        skunklightpurple: '#E7E7FF',
+        skunkblue: '#2E63A8',
       },
       fontFamily: {
-        hack: ['hack'],
-        spaceGrotesk: ['spaceGrotesk'],
+        jetbrainsmono: ['jetbrainsmono'],
       },
     },
   },

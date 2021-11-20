@@ -25,7 +25,7 @@
             class="
               m-2
               p-2
-              bg-red-100
+              bg-white
               rounded-md
               shadow-lg
               transition
@@ -57,7 +57,7 @@
         :to="`/tags/${tag.name}/page/2`"
         class="
           m-2
-          bg-indigo-500
+          bg-skunkblue
           text-white
           p-2
           rounded-lg
@@ -67,7 +67,7 @@
           transform
           hover:-translate-y-1 hover:scale-105
         "
-        >Next page</nuxt-link
+        >Next page 👉</nuxt-link
       >
     </section>
   </div>

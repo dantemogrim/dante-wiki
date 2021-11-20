@@ -4,7 +4,15 @@
       <h1 class="text-white">All Posts</h1>
       <p v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
     </div>
-    <ul class="m-0 list-none flex flex-col justify-center">
+    <ul
+      class="
+        m-0
+        list-none
+        flex flex-col
+        justify-center
+        md:my-3 md:grid md:grid-flow-col md:grid-cols-2 md:grid-rows-5 md:gap-4
+      "
+    >
       <li v-for="post of tenPosts" :key="post.slug">
         <nuxt-link :to="{ name: 'posts-slug', params: { slug: post.slug } }">
           <div
@@ -44,7 +52,7 @@
         to="posts/page/2"
         class="
           m-2
-          bg-indigo-500
+          bg-skunkblue
           text-white
           p-2
           rounded-lg
@@ -54,7 +62,7 @@
           transform
           hover:-translate-y-1 hover:scale-105
         "
-        >Next page</nuxt-link
+        >Next page 👉</nuxt-link
       >
     </section>
   </div>

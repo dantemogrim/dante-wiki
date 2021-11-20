@@ -22,7 +22,7 @@
         transition
         duration-300
         transition-colors
-        bg-gray-200
+        bg-gray-100
       "
     />
 
@@ -56,7 +56,7 @@
                 transition
                 ease-in-out
                 duration-100
-                hover:bg-indigo-500 hover:text-white
+                hover:bg-skunkdarkpurple hover:text-white
               "
             >
               {{ post.title }}

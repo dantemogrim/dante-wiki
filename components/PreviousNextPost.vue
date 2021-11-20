@@ -4,7 +4,7 @@
       v-if="previousPost"
       :to="{ name: 'posts-slug', params: { slug: previousPost.slug } }"
       class="
-        bg-blue-500
+        bg-skunkblue
         rounded-full
         py-3
         px-6
@@ -25,7 +25,7 @@
       v-if="nextPost"
       :to="{ name: 'posts-slug', params: { slug: nextPost.slug } }"
       class="
-        bg-blue-500
+        bg-skunkblue
         rounded-full
         py-3
         px-6

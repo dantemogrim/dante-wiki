@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: #eef6ff;
+  background-color: #e7e7ff;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -27,15 +27,17 @@ body {
 }
 
 .headingCard {
-  background: rgb(80, 93, 140);
-  background: linear-gradient(
-    90deg,
-    rgba(80, 93, 140, 1) 0%,
-    rgba(100, 114, 171, 1) 38%,
-    rgba(121, 139, 208, 1) 100%
-  );
+  background: #414677;
+  background: linear-gradient(90deg, #414677, #414677 38%, #4e548e 100%);
   border-radius: 10px;
-  box-shadow: 0 3px 5px #bdbdbd;
+  box-shadow: 0 3px 5px #090909;
+}
+
+.subheadingCard {
+  background: #2e63a8;
+  background: linear-gradient(90deg, #2e63a8, #2e63a8 38%, #3774c4 100%);
+  border-radius: 10px;
+  box-shadow: 0 3px 5px #090909;
 }
 
 hr {
@@ -64,15 +66,15 @@ hr::after {
 
 /* TODO - Glassmorphism within header & footer. */
 header {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(80px);
+  background: rgba(231, 231, 255, 0.95);
+  backdrop-filter: blur(150px);
   border: solid 2px transparent;
   box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
 }
 
 footer {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(80px);
+  background: rgba(231, 231, 255, 0.95);
+  backdrop-filter: blur(150px);
   border: solid 2px transparent;
   box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
 }

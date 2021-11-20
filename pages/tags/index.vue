@@ -4,7 +4,15 @@
       <h1 class="text-white">All Tags</h1>
       <p v-if="$nuxt.isOffline">Oops! You are offline. 😱</p>
     </div>
-    <ul class="m-0 list-none flex flex-col justify-center">
+    <ul
+      class="
+        m-0
+        list-none
+        flex flex-col
+        justify-center
+        md:my-3 md:grid md:grid-flow-row md:grid-cols-3 md:grid-rows-8 md:gap-2
+      "
+    >
       <li v-for="tag of tags" :key="tag.slug">
         <nuxt-link :to="{ name: 'tags-slug', params: { slug: tag.slug } }">
           <div
