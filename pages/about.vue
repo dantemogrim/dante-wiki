@@ -18,9 +18,7 @@
       </p>
     </article>
     <div class="w-full flex justify-center">
-      <img
-        src="https://media.giphy.com/media/dJHeg7s9WflUxV0x52/giphy-downsized-large.gif"
-      />
+      <img src="/about-me.png" />
     </div>
     <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
       <p>Here are a few random facts and about me:</p>
@@ -49,8 +47,10 @@
     </div>
     <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
       <p class="mt-1 mb-2">
-        If you have any questions, feedback, recommendations, requests or just
-        want to say "hi":
+        <i>
+          If you have any questions, feedback, recommendations, requests or just
+          want to say "hi":
+        </i>
       </p>
       <p class="mb-2">
         Feel free to contact me at
@@ -102,6 +102,21 @@
           >
         </li>
         <li>
+          Font:
+          <a
+            class="text-blue-700"
+            href="https://www.jetbrains.com/lp/mono/"
+            target="_blank"
+            >JetBrains Mono</a
+          >
+        </li>
+        <li>
+          Formatter:
+          <a class="text-blue-700" href="https://prettier.io/" target="_blank"
+            >Prettier</a
+          >
+        </li>
+        <li>
           Git-based Headless CMS:
           <a
             class="text-blue-700"
@@ -120,6 +135,16 @@
           >
         </li>
         <li>
+          Sitemap:
+          <a
+            class="text-blue-700"
+            href="https://sitemap.nuxtjs.org/"
+            target="_blank"
+          >
+            nuxt/sitemap</a
+          >
+        </li>
+        <li>
           Styling:
           <a
             class="text-blue-700"
@@ -129,6 +154,12 @@
             Tailwind CSS</a
           >
         </li>
+        <li>
+          Syntax Highlighter:
+          <a class="text-blue-700" href="https://prismjs.com/" target="_blank"
+            >PrismJS</a
+          >
+        </li>
       </ul>
     </article>
     <div class="headingCard mt-6 mx-2 p-3">
@@ -136,7 +167,30 @@
     </div>
     <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
       <ul>
-        <li><a class="text-blue-700" href="#">Ice cream pizza.</a></li>
+        <li>
+          <a
+            class="text-blue-700"
+            href="https://open.spotify.com/playlist/63eWm3mK0MQyOKm8QNzzqs?si=5b65d62936b643b6"
+            target="_blank"
+            >Computer Friendly</a
+          >
+        </li>
+        <li>
+          <a
+            class="text-blue-700"
+            href="https://open.spotify.com/playlist/0boUIgfM2MNguOC7bL2dzC?si=0f4509c917dd45d8"
+            target="_blank"
+            >Relaxation Station</a
+          >
+        </li>
+        <li>
+          <a
+            class="text-blue-700"
+            href="https://open.spotify.com/playlist/0O3HeZuqz4tt0LyQQYy178?si=5859f635bfe94410"
+            target="_blank"
+            >Saturday Night In</a
+          >
+        </li>
       </ul>
     </article>
   </div>

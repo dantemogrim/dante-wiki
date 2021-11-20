@@ -10,8 +10,10 @@
       <hr />
       <div class="bg-img text-white p-3"></div>
     </article>
-    <h2>Related posts:</h2>
-    <ul class="articleCardWrapper m-0 list-none flex flex-col">
+    <div class="headingCard mt-6 mx-2 p-3">
+      <h2 class="text-white">Related Posts</h2>
+    </div>
+    <ul class="m-0 list-none flex flex-col">
       <li v-for="post of tenPosts" :key="post.slug">
         <nuxt-link
           :to="{
@@ -19,7 +21,20 @@
             params: { slug: post.slug },
           }"
         >
-          <div class="articleWrapper mt-3 p-2 bg-red-100 rounded-md">
+          <div
+            class="
+              m-2
+              p-2
+              bg-red-100
+              rounded-md
+              shadow-lg
+              transition
+              duration-300
+              ease-in-out
+              transform
+              hover:-translate-y-1 hover:scale-101
+            "
+          >
             <h3 class="m-0">{{ post.title }}</h3>
             <div class="flex text-center items-center">
               <span v-for="tag in post.tags" :key="tag" class="">

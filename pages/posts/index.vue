@@ -4,12 +4,11 @@
       <h1 class="text-white">All Posts</h1>
       <p v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
     </div>
-    <ul class="articleCardWrapper m-0 list-none flex flex-col justify-center">
+    <ul class="m-0 list-none flex flex-col justify-center">
       <li v-for="post of tenPosts" :key="post.slug">
         <nuxt-link :to="{ name: 'posts-slug', params: { slug: post.slug } }">
           <div
             class="
-              articleWrapper
               m-2
               p-2
               bg-white

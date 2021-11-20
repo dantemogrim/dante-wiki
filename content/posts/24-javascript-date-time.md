@@ -1,5 +1,5 @@
 ---
-title: JavaScript Date & Time
+title: Date & Time
 description: 
 position: 24
 author:
@@ -11,5 +11,4 @@ gif:
   alt: A happy kid typing on an old computer that outputs 'syntax error'.
 tags:
   - javascript
-  - homebrew
 ---

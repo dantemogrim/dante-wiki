@@ -1,5 +1,5 @@
 ---
-title: The Creation of My Digital Garden
+title: The Creation of dante.wiki
 description: The process of building this website.
 position: 1
 author:
@@ -10,6 +10,7 @@ gif:
   src: https://media.giphy.com/media/xUA7bjPYcgAvwq5CKc/giphy.gif
   alt: A closeup of hands from the creation of Adam painting except between Adam and God's finger there's a loading bar animation.
 tags:
+  - journal
   - nuxtjs
 ---
 

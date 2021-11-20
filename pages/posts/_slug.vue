@@ -1,16 +1,6 @@
 <template>
   <div>
-    <article
-      class="
-        articleWrapper
-        bg-gray-50
-        flex flex-col
-        p-4
-        rounded-md
-        shadow-lg
-        m-2
-      "
-    >
+    <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
       <gif :gif="post.gif" />
       <h1 class="whitespace-normal">{{ post.title }}</h1>
       <p class="mt-2 mb-2">{{ post.description }}</p>

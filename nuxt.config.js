@@ -74,7 +74,7 @@ export default {
 
     link: [
       // Favicon.
-      { rel: 'icon', type: 'image/svg+xml', href: '/fav-bw.png' },
+      { rel: 'icon', type: 'image/svg+xml', href: '/icon.png' },
       {
         // Canonical.
         rel: 'icon',

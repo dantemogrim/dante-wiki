@@ -10,8 +10,8 @@ gif:
   src: https://media.giphy.com/media/1kJxyyCq9ZHXX0GM3a/giphy.gif
   alt: Mickey Mouse waving and shouting 'Yoohoo!'.
 tags:
+  - dotfiles
   - editorconfig
-  - homebrew
 ---
 
 ```dot

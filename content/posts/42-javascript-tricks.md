@@ -1,7 +1,7 @@
 ---
-title: List of APIs
-description: My personal collection of currently favorite cli (command-line interface)tools.
-position: 34
+title: Tricks
+description: 
+position: 35
 author:
   emoji: 🌀
   name: Dante Mogrim
@@ -10,5 +10,5 @@ gif:
   src: https://media.giphy.com/media/yR4xZagT71AAM/giphy.gif
   alt: A happy kid typing on an old computer that outputs 'syntax error'.
 tags:
-  - api
+  - javascript
 ---

@@ -1,10 +1,22 @@
 <template>
   <div>
-    <h2 class="headingCard text-white">
-      {{ `${tag.name} Posts 🔖 Page` }}
+    <article
+      class="tagWrapper bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2"
+    >
+      <div class="bg-green-200 mr-2 p-1 rounded-md">
+        <h1>{{ tag.emoji }} #{{ tag.name }}</h1>
+      </div>
+      <p>{{ tag.description }}</p>
+      <hr />
+      <div class="bg-img text-white p-3"></div>
+    </article>
+    <div class="headingCard mt-6 mx-2 p-3">
+    <h2 class="text-white">
+      {{ `Related Posts 🔖 Page ${pageNumber}` }}
     </h2>
+    </div>
     <p v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
-    <ul class="articleCardWrapper m-0 list-none flex flex-col">
+    <ul class="m-0 list-none flex flex-col">
       <li v-for="post of tenPosts" :key="post.slug">
         <nuxt-link
           :to="{
@@ -12,7 +24,17 @@
             params: { slug: post.slug },
           }"
         >
-          <div class="articleWrapper mt-3 p-2 bg-red-100 rounded-md">
+          <div class="
+              m-2
+              p-2
+              bg-red-100
+              rounded-md
+              shadow-lg
+              transition
+              duration-300
+              ease-in-out
+              transform
+              hover:-translate-y-1 hover:scale-101">
             <h3 class="m-0">{{ post.title }}</h3>
             <div class="flex text-center items-center">
               <span v-for="tag in post.tags" :key="tag" class="">

@@ -25,7 +25,6 @@
         <nuxt-link :to="{ name: 'posts-slug', params: { slug: post.slug } }">
           <div
             class="
-              articleWrapper
               m-2
               p-2
               bg-white

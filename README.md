@@ -3,14 +3,6 @@
 #  :card_file_box: dante.wiki
 My personal wikipedia written with Nuxt.js, using the nuxt/content module as database architecture.
 
-<details><summary>🌐 Features!</summary>
-
-- [nuxt/content](https://content.nuxtjs.org/)
-- [nuxt/sitemap](https://sitemap.nuxtjs.org/)
-</details>
-
-
-
 ## :pencil2: Instructions
 
 ```bash
@@ -30,11 +22,12 @@ $ npm run dev
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
 ## :paperclip: Tools
-- [nuxt/content](https://content.nuxtjs.org/) - Git-based headless CMS.
-- [Nuxt.js](https://nuxtjs.org/) - Framework.
-- [PrismJS](https://prismjs.com/) - Syntax highlighter.
-- [Tailwind CSS](https://tailwindcss.com/) - CSS framework.
-- [Prettier](https://prettier.io/) - Code formatter.
+- Base: [Nuxt.js](https://nuxtjs.org/)
+- Formatter: [Prettier](https://prettier.io/)
+- Git-based Headless CMS: [nuxt/content](https://content.nuxtjs.org/)
+- Sitemap: [nuxt/sitemap](https://sitemap.nuxtjs.org/)
+- Syntax Highlighter: [PrismJS](https://prismjs.com/)
+- Styling: [CSS](https://www.w3.org/Style/CSS/Overview.en.html) + [Tailwind CSS](https://tailwindcss.com/)
 
 
 ## :man_technologist: Creator
