@@ -14,63 +14,8 @@ export default {
     },
     title: 'Dante Mogrim',
 
-    meta: [
-      ...meta,
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' },
-      // Facebook.
-      { property: 'og:site_name', content: 'Dante Mogrim' },
-      { hid: 'og:type', property: 'og:type', content: 'website' },
-      {
-        hid: 'og:url',
-        property: 'og:url',
-        content: 'https://dante.wiki',
-      },
-      {
-        hid: 'og:title',
-        property: 'og:title',
-        content: 'Dante Mogrim',
-      },
-      {
-        hid: 'og:description',
-        property: 'og:description',
-        content:
-          'My personal wikipedia filled with web development articles, notes and tutorials.',
-      },
-      {
-        hid: 'og:image',
-        property: 'og:image',
-        content: '/meta.png',
-      },
-      { property: 'og:image:width', content: '740' },
-      { property: 'og:image:height', content: '300' },
-      { name: 'twitter:site', content: '' },
-      { name: 'twitter:card', content: 'summary_large_image' },
-      // Twitter.
-      {
-        hid: 'twitter:url',
-        name: 'twitter:url',
-        content: 'https://dante.wiki',
-      },
-      {
-        hid: 'twitter:title',
-        name: 'twitter:title',
-        content: 'Dante Mogrim',
-      },
-      {
-        hid: 'twitter:description',
-        name: 'twitter:description',
-        content:
-          'My personal wikipedia filled with web development articles, notes and tutorials.',
-      },
-      {
-        hid: 'twitter:image',
-        name: 'twitter:image',
-        content: '/meta.png',
-      },
-    ],
+    //  ~/utils/getSiteMeta.js
+    meta: [...meta],
 
     link: [
       // Favicon.

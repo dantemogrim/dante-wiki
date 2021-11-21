@@ -4,10 +4,13 @@ const url = 'https://dante.wiki';
 const title = 'Dante Mogrim';
 const description =
   'My personal wikipedia filled with web development articles, notes and tutorials.';
-const mainImage = '~/static/meta.png';
+const mainImage = '/meta.png';
 
 export default (meta) => {
   return [
+    { charset: 'utf-8' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    { name: 'format-detection', content: 'telephone=no' },
     {
       hid: 'description',
       name: 'description',
@@ -38,6 +41,9 @@ export default (meta) => {
       property: 'og:image',
       content: (meta && meta.mainImage) || mainImage,
     },
+    { property: 'og:image:width', content: '740' },
+    { property: 'og:image:height', content: '300' },
+    { property: 'og:site_name', content: 'Dante Mogrim' },
     {
       hid: 'twitter:url',
       name: 'twitter:url',
@@ -58,5 +64,6 @@ export default (meta) => {
       name: 'twitter:image',
       content: (meta && meta.mainImage) || mainImage,
     },
+    { name: 'twitter:card', content: 'summary_large_image' },
   ];
 };
