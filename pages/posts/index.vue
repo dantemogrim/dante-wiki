@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="md:m-4">
     <div class="headingCard mt-4 mx-2 p-3">
       <h1 class="text-white">All Posts</h1>
       <p v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
@@ -55,7 +55,7 @@
           bg-skunkblue
           text-white
           p-2
-          rounded-lg
+          rounded-full
           transition
           duration-300
           ease-in-out

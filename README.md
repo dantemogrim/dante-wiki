@@ -25,6 +25,7 @@ For detailed explanation on how things work, check out the [documentation](https
 - Base: [Nuxt.js](https://nuxtjs.org/)
 - Formatter: [Prettier](https://prettier.io/)
 - Git-based Headless CMS: [nuxt/content](https://content.nuxtjs.org/)
+- Illustrations: Me
 - Sitemap: [nuxt/sitemap](https://sitemap.nuxtjs.org/)
 - Syntax Highlighter: [PrismJS](https://prismjs.com/)
 - Styling: [CSS](https://www.w3.org/Style/CSS/Overview.en.html) + [Tailwind CSS](https://tailwindcss.com/)

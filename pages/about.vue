@@ -1,20 +1,12 @@
 <template>
-  <div class="md:flex md:flex-col md:justify-center md:items-center">
-    <div class="headingCard mt-4 mx-2 p-3 md:w-2/3">
+  <div class="md:m-4">
+    <div class="headingCard mt-4 mx-2 p-3">
       <h1 class="text-white">About</h1>
       <p v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
     </div>
 
     <article
-      class="
-        m-2
-        bg-green-100
-        flex flex-col
-        p-4
-        rounded-md
-        shadow-lg
-        md:my-4 md:w-2/3
-      "
+      class="m-2 bg-green-100 flex flex-col p-4 rounded-md shadow-lg md:my-4"
     >
       <p>
         Hi! My name is Dante Mogrim. I am a web developer student living in
@@ -28,19 +20,15 @@
         wide range of maybe useful, perhaps comprehensive information.
       </p>
     </article>
-
-    <img src="/about-me.png" />
+    <div class="flex justify-center">
+      <img
+        src="/about-me.png"
+        alt="An illustration of me by my desk with my laptop and my two cats and a cup of coffee."
+      />
+    </div>
 
     <article
-      class="
-        m-2
-        bg-green-100
-        flex flex-col
-        p-4
-        rounded-md
-        shadow-lg
-        md:mt-4 md:w-2/3
-      "
+      class="m-2 bg-green-100 flex flex-col p-4 rounded-md shadow-lg md:mt-4"
     >
       <p>Here are a few random facts and about me:</p>
       <ul>
@@ -64,20 +52,11 @@
       </ul>
     </article>
 
-    <div class="subheadingCard mt-6 mx-2 p-3 md:w-2/3">
+    <div class="subheadingCard mt-6 mx-2 p-3">
       <h2 class="text-white">Connect</h2>
     </div>
     <article
-      class="
-        m-2
-        bg-gray-50
-        flex flex-col
-        p-4
-        my-2
-        rounded-md
-        shadow-lg
-        md:mt-4 md:w-2/3
-      "
+      class="m-2 bg-gray-50 flex flex-col p-4 my-2 rounded-md shadow-lg md:mt-4"
     >
       <p class="mt-1 mb-2">
         <i>
@@ -107,19 +86,11 @@
         </li>
       </ul>
     </article>
-    <div class="subheadingCard mt-6 mx-2 p-3 md:w-2/3">
+    <div class="subheadingCard mt-6 mx-2 p-3">
       <h2 class="text-white">Setup</h2>
     </div>
     <article
-      class="
-        bg-gray-50
-        flex flex-col
-        p-4
-        rounded-md
-        shadow-lg
-        m-2
-        md:mt-4 md:w-2/3
-      "
+      class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2 md:mt-4"
     >
       <p>General setup + hardware:</p>
       <ul>
@@ -205,19 +176,11 @@
         </li>
       </ul>
     </article>
-    <div class="subheadingCard mt-6 mx-2 p-3 md:w-2/3">
+    <div class="subheadingCard mt-6 mx-2 p-3">
       <h2 class="text-white">Playlists</h2>
     </div>
     <article
-      class="
-        bg-gray-50
-        flex flex-col
-        p-4
-        rounded-md
-        shadow-lg
-        m-2
-        md:mt-4 md:w-2/3
-      "
+      class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2 md:mt-4"
     >
       <ul>
         <li>

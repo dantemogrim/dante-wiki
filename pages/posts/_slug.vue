@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="md:m-4">
     <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
       <gif :gif="post.gif" />
       <h1 class="whitespace-normal">{{ post.title }}</h1>
@@ -24,7 +24,7 @@
       <hr />
       <!-- TOC - Table of Contents -->
       <nav class="bg-blue-100 rounded-2xl p-3 w-2/3">
-        <p class="font-bold">Table of Contents:</p>
+        <p>Table of Contents:</p>
         <ul>
           <li v-for="link of post.toc" :key="link.id">
             <nuxt-link :to="`#${link.id}`">{{ link.text }}</nuxt-link>
@@ -32,8 +32,8 @@
         </ul>
       </nav>
       <nuxt-content :document="post" />
-      <previous-next-post :previousPost="previousPost" :nextPost="nextPost" />
     </article>
+    <previous-next-post :previousPost="previousPost" :nextPost="nextPost" />
   </div>
 </template>
 

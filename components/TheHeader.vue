@@ -3,8 +3,11 @@
     <nav class="flex flex-row justify-between items-center h-full">
       <div class="headerMenu1 mx-2">
         <nuxt-link class="flex items-center" to="/">
-          <img class="icon mr-2" src="/icon.png" />
-          <p class="brand">dante.wiki</p>
+          <img
+            class="brand mx-2"
+            src="/dante-wiki.png"
+            alt="dante.wiki in hand writing."
+          />
         </nuxt-link>
       </div>
       <div class="headerMenu2">

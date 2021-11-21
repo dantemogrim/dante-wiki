@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="md:m-4">
     <article
       class="tagWrapper bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2"
     >
@@ -13,7 +13,14 @@
     <div class="headingCard mt-6 mx-2 p-3">
       <h2 class="text-white">Related Posts</h2>
     </div>
-    <ul class="m-0 list-none flex flex-col">
+    <ul
+      class="
+        m-0
+        list-none
+        flex flex-col
+        md:my-3 md:grid md:grid-flow-col md:grid-cols-2 md:grid-rows-5 md:gap-4
+      "
+    >
       <li v-for="post of tenPosts" :key="post.slug">
         <nuxt-link
           :to="{

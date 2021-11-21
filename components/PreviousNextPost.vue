@@ -6,8 +6,7 @@
       class="
         bg-skunkblue
         rounded-full
-        py-3
-        px-6
+        p-3
         text-white
         whitespace-nowrap
         m-3
@@ -18,7 +17,7 @@
         hover:-translate-y-1 hover:scale-105
       "
     >
-      👈 Previous
+      👈 Previous Post
     </nuxt-link>
     <span v-else>&nbsp;</span>
     <nuxt-link
@@ -27,8 +26,7 @@
       class="
         bg-skunkblue
         rounded-full
-        py-3
-        px-6
+        p-3
         text-white
         whitespace-nowrap
         m-3
@@ -39,7 +37,7 @@
         hover:-translate-y-1 hover:scale-105
       "
     >
-      Next 👉
+      Next Post 👉
     </nuxt-link>
     <span v-else>&nbsp;</span>
   </div>

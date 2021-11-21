@@ -97,7 +97,7 @@
               py-2
               transition-colors
               duration-300
-              hover:bg-skunkdarkpurple hover:text-white
+              hover:bg-skunkblue hover:text-white
             "
           >
             About
@@ -110,7 +110,7 @@
               py-2
               transition-colors
               duration-300
-              hover:bg-skunkdarkpurple hover:text-white
+              hover:bg-skunkblue hover:text-white
             "
           >
             Posts
@@ -123,7 +123,7 @@
               py-2
               transition-colors
               duration-300
-              hover:bg-skunkdarkpurple hover:text-white
+              hover:bg-skunkblue hover:text-white
             "
           >
             Tags

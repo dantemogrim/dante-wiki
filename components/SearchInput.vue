@@ -5,7 +5,7 @@
       v-model="searchQuery"
       type="search"
       autocomplete="off"
-      placeholder="🔎 Search 4 posts."
+      placeholder="🔎"
       class="
         relative
         z-10
@@ -56,7 +56,7 @@
                 transition
                 ease-in-out
                 duration-100
-                hover:bg-skunkdarkpurple hover:text-white
+                hover:bg-skunkblue hover:text-white
               "
             >
               {{ post.title }}
