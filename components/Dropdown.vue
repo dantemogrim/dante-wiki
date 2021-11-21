@@ -83,7 +83,7 @@
           right-0
           mt-3.5
           mb-4
-          bg-white
+          bg-gray-50
           divide-y
           rounded-lg
           shadow-lg

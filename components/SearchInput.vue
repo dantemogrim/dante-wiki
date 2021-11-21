@@ -18,7 +18,7 @@
         text-gray-700
         focus:ring-blue-500
         rounded-md
-        focus:bg-white
+        focus:bg-gray-50
         transition
         duration-300
         transition-colors
@@ -37,7 +37,7 @@
             w-auto
             flex-1
             top-15
-            bg-white
+            bg-gray-50
             dark:bg-gray-900
             rounded-md
             border border-gray-300

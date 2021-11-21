@@ -1,6 +1,6 @@
 <template>
   <div>
-       <div class="headingCard mt-4 mx-2 p-3">
+       <div class="headingCard mt-4 mx-2 p-3 shadow-lg">
       <h1 class="text-white">All Posts {{`🔖 Page ${pageNumber}`}}</h1>
       <p v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
     </div>
@@ -9,7 +9,7 @@
     ">
       <li v-for="post of tenPosts" :key="post.slug">
         <nuxt-link :to="{ name: 'posts-slug', params: { slug: post.slug } }">
-          <div class="m-2 p-2 bg-white rounded-md shadow-lg               transition
+          <div class="m-2 p-2 bg-gray-50 rounded-md shadow-lg               transition
               duration-300
               ease-in-out
               transform
@@ -37,12 +37,15 @@
         duration-300
         ease-in-out
         transform
-        hover:-translate-y-1 hover:scale-105">👈 Previous Page</nuxt-link>
+        hover:-translate-y-1 hover:scale-105
+        shadow-lg hover:shadow-md
+        ">👈 Previous Page</nuxt-link>
   <nuxt-link v-if="nextPage" :to="`${pageNumber + 1}`" class="m-2 bg-skunkblue text-white p-2 rounded-full transition
         duration-300
         ease-in-out
         transform
-        hover:-translate-y-1 hover:scale-105">Next Page 👉</nuxt-link>
+        hover:-translate-y-1 hover:scale-105 shadow-lg
+        hover:shadow-md">Next Page 👉</nuxt-link>
 </section>
 
     </section>

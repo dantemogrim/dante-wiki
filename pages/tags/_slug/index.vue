@@ -10,7 +10,7 @@
       <hr />
       <div class="bg-img text-white p-3"></div>
     </article>
-    <div class="headingCard mt-6 mx-2 p-3">
+    <div class="headingCard mt-6 mx-2 p-3 shadow-lg">
       <h2 class="text-white">Related Posts</h2>
     </div>
     <ul
@@ -32,7 +32,7 @@
             class="
               m-2
               p-2
-              bg-white
+              bg-gray-50
               rounded-md
               shadow-lg
               transition
@@ -73,6 +73,8 @@
           ease-in-out
           transform
           hover:-translate-y-1 hover:scale-105
+          shadow-lg
+          hover:shadow-md
         "
         >Next page 👉</nuxt-link
       >

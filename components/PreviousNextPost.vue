@@ -15,6 +15,8 @@
         ease-in-out
         transform
         hover:-translate-y-1 hover:scale-105
+        shadow-lg
+        hover:shadow-md
       "
     >
       👈 Previous Post
@@ -35,6 +37,8 @@
         ease-in-out
         transform
         hover:-translate-y-1 hover:scale-105
+        shadow-lg
+        hover:shadow-md
       "
     >
       Next Post 👉

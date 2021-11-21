@@ -1,6 +1,6 @@
 <template>
   <div class="md:m-4">
-    <div class="headingCard mt-4 mx-2 p-3">
+    <div class="headingCard mt-4 mx-2 p-3 shadow-lg">
       <h1 class="text-white">Hi, I'm Dante Mogrim.</h1>
       <p v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
     </div>
@@ -18,7 +18,7 @@
         personal wikipedia of web development findings.
       </p>
     </article>
-    <div class="subheadingCard mt-6 mx-2 p-3">
+    <div class="subheadingCard mt-6 mx-2 p-3 shadow-lg">
       <h2 class="text-white">Latest</h2>
     </div>
 
@@ -37,7 +37,7 @@
             class="
               m-2
               p-2
-              bg-white
+              bg-gray-50
               rounded-md
               shadow-lg
               transition

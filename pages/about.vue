@@ -1,6 +1,6 @@
 <template>
   <div class="md:m-4">
-    <div class="headingCard mt-4 mx-2 p-3">
+    <div class="headingCard mt-4 mx-2 p-3 shadow-lg">
       <h1 class="text-white">About</h1>
       <p v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
     </div>
@@ -52,7 +52,7 @@
       </ul>
     </article>
 
-    <div class="subheadingCard mt-6 mx-2 p-3">
+    <div class="subheadingCard mt-6 mx-2 p-3 shadow-lg">
       <h2 class="text-white">Connect</h2>
     </div>
     <article
@@ -86,7 +86,7 @@
         </li>
       </ul>
     </article>
-    <div class="subheadingCard mt-6 mx-2 p-3">
+    <div class="subheadingCard mt-6 mx-2 p-3 shadow-lg">
       <h2 class="text-white">Setup</h2>
     </div>
     <article
@@ -102,81 +102,51 @@
       <ul>
         <li>
           Base:
-          <a class="text-blue-700" href="https://nuxtjs.org/" target="_blank"
-            >Nuxt.js</a
-          >
+          <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>
         </li>
         <li>
           Domain:
-          <a
-            class="text-blue-700"
-            href="https://www.one.com/en/"
-            target="_blank"
-            >one.com</a
-          >
+          <a href="https://www.one.com/en/" target="_blank">one.com</a>
         </li>
         <li>
           Font:
-          <a
-            class="text-blue-700"
-            href="https://www.jetbrains.com/lp/mono/"
-            target="_blank"
+          <a href="https://www.jetbrains.com/lp/mono/" target="_blank"
             >JetBrains Mono</a
           >
         </li>
         <li>
           Formatter:
-          <a class="text-blue-700" href="https://prettier.io/" target="_blank"
-            >Prettier</a
-          >
+          <a href="https://prettier.io/" target="_blank">Prettier</a>
         </li>
         <li>
           Git-based Headless CMS:
-          <a
-            class="text-blue-700"
-            href="https://content.nuxtjs.org/"
-            target="_blank"
-            >nuxt/content</a
-          >
+          <a href="https://content.nuxtjs.org/" target="_blank">nuxt/content</a>
         </li>
         <li>
           Hosting:
-          <a
-            class="text-blue-700"
-            href="https://www.netlify.com/"
-            target="_blank"
-            >Netlify</a
-          >
+          <a href="https://www.netlify.com/" target="_blank">Netlify</a>
         </li>
         <li>
           Sitemap:
-          <a
-            class="text-blue-700"
-            href="https://sitemap.nuxtjs.org/"
-            target="_blank"
-          >
+          <a href="https://sitemap.nuxtjs.org/" target="_blank">
             nuxt/sitemap</a
           >
         </li>
         <li>
           Styling:
-          <a
-            class="text-blue-700"
-            href="https://tailwindcss.com/"
-            target="_blank"
-          >
-            Tailwind CSS</a
-          >
+          <a href="https://tailwindcss.com/" target="_blank"> Tailwind CSS</a>
         </li>
         <li>
           Syntax Highlighter:
-          <a class="text-blue-700" href="https://prismjs.com/" target="_blank"
-            >PrismJS</a
-          >
+          <a href="https://prismjs.com/" target="_blank">PrismJS</a>
         </li>
       </ul>
+      <p>
+        The code for this project is open source. You can find it
+        <a href="https://github.com/dantemogrim/dante-wiki">here</a>.
+      </p>
     </article>
-    <div class="subheadingCard mt-6 mx-2 p-3">
+    <div class="subheadingCard mt-6 mx-2 p-3 shadow-lg">
       <h2 class="text-white">Playlists</h2>
     </div>
     <article
@@ -234,7 +204,7 @@ export default {
         hid: 'og:description',
         property: 'og:description',
         content:
-          'My digital garden filled with web development articles, notes and tutorials.',
+          'My personal wikipedia filled with web development articles, notes and tutorials.',
       },
       {
         hid: 'og:image',
@@ -259,7 +229,7 @@ export default {
         hid: 'twitter:description',
         name: 'twitter:description',
         content:
-          'My digital garden filled with web development articles, notes and tutorials.',
+          'My personal wikipedia filled with web development articles, notes and tutorials.',
       },
       {
         hid: 'twitter:image',

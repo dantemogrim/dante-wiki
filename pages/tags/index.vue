@@ -1,6 +1,6 @@
 <template>
   <div class="md:m-4">
-    <div class="headingCard mt-4 mx-2 p-3">
+    <div class="headingCard mt-4 mx-2 p-3 shadow-lg">
       <h1 class="text-white">All Tags</h1>
       <p v-if="$nuxt.isOffline">Oops! You are offline. 😱</p>
     </div>
@@ -20,7 +20,7 @@
               tagWrapper
               m-2
               p-2
-              bg-white
+              bg-gray-50
               rounded-md
               shadow-lg
               transition

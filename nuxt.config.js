@@ -37,7 +37,7 @@ export default {
         hid: 'og:description',
         property: 'og:description',
         content:
-          'My digital garden filled with web development articles, notes and tutorials.',
+          'My personal wikipedia filled with web development articles, notes and tutorials.',
       },
       {
         hid: 'og:image',
@@ -63,7 +63,7 @@ export default {
         hid: 'twitter:description',
         name: 'twitter:description',
         content:
-          'My digital garden filled with web development articles, notes and tutorials.',
+          'My personal wikipedia filled with web development articles, notes and tutorials.',
       },
       {
         hid: 'twitter:image',

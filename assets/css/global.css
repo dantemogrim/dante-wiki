@@ -30,14 +30,12 @@ body {
   background: #414677;
   background: linear-gradient(90deg, #414677, #414677 38%, #4e548e 100%);
   border-radius: 10px;
-  box-shadow: 0 3px 5px #090909;
 }
 
 .subheadingCard {
   background: #2e63a8;
   background: linear-gradient(90deg, #2e63a8, #2e63a8 38%, #3774c4 100%);
   border-radius: 10px;
-  box-shadow: 0 3px 5px #090909;
 }
 
 hr {

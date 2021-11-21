@@ -1,6 +1,6 @@
 <template>
   <div class="md:m-4">
-    <div class="headingCard mt-4 mx-2 p-3">
+    <div class="headingCard mt-4 mx-2 p-3 shadow-lg">
       <h1 class="text-white">All Posts</h1>
       <p v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
     </div>
@@ -19,7 +19,7 @@
             class="
               m-2
               p-2
-              bg-white
+              bg-gray-50
               rounded-md
               shadow-lg
               transition
@@ -61,6 +61,8 @@
           ease-in-out
           transform
           hover:-translate-y-1 hover:scale-105
+          shadow-lg
+          hover:shadow-md
         "
         >Next page 👉</nuxt-link
       >
