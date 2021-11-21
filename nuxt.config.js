@@ -1,7 +1,6 @@
-// import getFeed from './utils/getFeed';
-import getFeed from './utils/getFeed';
 import getRoutes from './utils/getRoutes';
 import getSiteMeta from './utils/getSiteMeta';
+
 const meta = getSiteMeta();
 
 export default {
@@ -110,9 +109,10 @@ export default {
     // A default feed configuration object
     {
       path: '/feed.xml', // The route to your feed.
-      factory: () => {
-        return getFeed();
-      },
+      async create(feed) {}, // The create function (see below)
+      cacheTime: 1000 * 60 * 15, // How long should the feed be cached
+      type: 'rss2', // Can be: rss2, atom1, json1
+      data: ['Some additional data'], // Will be passed as 2nd argument to `create` function
     },
   ],
 
