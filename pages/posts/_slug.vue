@@ -70,7 +70,6 @@ export default {
         title: this.post.title,
         description: this.post.description,
         url: `${this.$config.baseUrl}/posts/${this.$route.params.slug}`,
-        mainImage: this.post.gif,
       };
       return getSiteMeta(metaData);
     },
@@ -81,10 +80,6 @@ export default {
       title: this.post.title,
       meta: [
         ...this.meta,
-        {
-          property: 'og:image',
-          content: this.post.gif,
-        },
         {
           property: 'post:published_time',
           content: this.post.createdAt,
