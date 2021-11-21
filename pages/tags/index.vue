@@ -53,63 +53,6 @@ export default {
 
   head: {
     title: 'Tags',
-
-    meta: [
-      { property: 'og:site_name', content: 'Dante Mogrim' },
-      { hid: 'og:type', property: 'og:type', content: 'website' },
-      {
-        hid: 'og:url',
-        property: 'og:url',
-        content: 'https://dante.wiki',
-      },
-      {
-        hid: 'og:title',
-        property: 'og:title',
-        content: 'Tags',
-      },
-      {
-        hid: 'og:description',
-        property: 'og:description',
-        content: 'All tags related to web development posts.',
-      },
-      {
-        hid: 'og:image',
-        property: 'og:image',
-        content: '/meta.png',
-      },
-      { property: 'og:image:width', content: '740' },
-      { property: 'og:image:height', content: '300' },
-      { name: 'twitter:site', content: '' },
-      { name: 'twitter:card', content: 'summary_large_image' },
-      {
-        hid: 'twitter:url',
-        name: 'twitter:url',
-        content: 'https://dante.wiki',
-      },
-      {
-        hid: 'twitter:title',
-        name: 'twitter:title',
-        content: 'Tags',
-      },
-      {
-        hid: 'twitter:description',
-        name: 'twitter:description',
-        content: 'All tags related to web development posts.',
-      },
-      {
-        hid: 'twitter:image',
-        name: 'twitter:image',
-        content: './static/meta.png',
-      },
-    ],
-
-    link: [
-      {
-        hid: 'canonical',
-        rel: 'canonical',
-        href: 'https://dante.wiki',
-      },
-    ],
   },
 };
 </script>

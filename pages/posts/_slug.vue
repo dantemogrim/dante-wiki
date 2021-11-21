@@ -82,6 +82,10 @@ export default {
       meta: [
         ...this.meta,
         {
+          property: 'og:image',
+          content: this.post.gif,
+        },
+        {
           property: 'post:published_time',
           content: this.post.createdAt,
         },

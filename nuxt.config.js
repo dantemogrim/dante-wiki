@@ -12,7 +12,7 @@ export default {
     htmlAttrs: {
       lang: 'en-GB',
     },
-    title: 'Dante Mogrim',
+    title: 'dante.wiki',
 
     //  ~/utils/getSiteMeta.js
     meta: [...meta],
