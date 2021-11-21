@@ -4,7 +4,7 @@ const url = 'https://dante.wiki';
 const title = 'Dante Mogrim';
 const description =
   'My personal wikipedia filled with web development articles, notes and tutorials.';
-const mainImage = '/meta.png';
+const mainImage = '/static/meta.png';
 
 export default (meta) => {
   return [
