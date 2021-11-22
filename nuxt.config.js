@@ -3,6 +3,39 @@ import getSiteMeta from './utils/getSiteMeta';
 
 const meta = getSiteMeta();
 
+const constructFeedItem = (post, dir, hostname) => {
+  const url = `${hostname}/${dir}/${post.slug}`;
+  return {
+    title: post.title,
+    id: url,
+    link: url,
+    description: post.description,
+    content: post.bodyPlainText,
+  };
+};
+
+const create = async (feed, args) => {
+  const [filePath, ext] = args;
+  const hostname =
+    process.NODE_ENV === 'production'
+      ? 'https://dante.wiki'
+      : 'http://localhost:3000';
+  feed.options = {
+    title: 'My Blog',
+    description: 'Blog Stuff!',
+    link: `${hostname}/feed.${ext}`,
+  };
+  const { $content } = require('@nuxt/content');
+  if (posts === null || posts.length === 0)
+    posts = await $content(filePath).fetch();
+
+  for (const post of posts) {
+    const feedItem = await constructFeedItem(post, filePath, hostname);
+    feed.addItem(feedItem);
+  }
+  return feed;
+};
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -106,28 +139,12 @@ export default {
   },
 
   feed: [
-    // A default feed configuration object
     {
-      path: '/feed.xml', // The route to your feed.
-      create(feed) {
-        console.log(routes.map((d) => d.path));
-        feed.options = {
-          title: 'Dante Mogrim',
-          link: 'https://www.dante.wiki/feed.xml',
-          description: 'Nuxt RSS feed',
-        };
-        routes.forEach((post) => {
-          feed.addItem({
-            title: post.title,
-            id: post.path,
-            link: `https://www.dante.wiki${post.path}`,
-            content: post.html,
-          });
-        });
-      }, // The create function (see below)
-      cacheTime: 1000 * 60 * 15, // How long should the feed be cached
-      type: 'rss2', // Can be: rss2, atom1, json1
-      data: ['Some additional data'], // Will be passed as 2nd argument to `create` function
+      path: '/feed.xml',
+      create,
+      cacheTime: 1000 * 60 * 15,
+      type: 'rss2',
+      data: ['blog', 'xml'],
     },
   ],
 
@@ -135,6 +152,7 @@ export default {
   hooks: {
     'content:file:beforeInsert': (document) => {
       if (document.extension === '.md') {
+        document.bodyPlainText = document.text;
         Object.entries(document).forEach(([key, value]) => {
           const _key = `case_insensitive__${key}`; // prefix is arbitrary
 
