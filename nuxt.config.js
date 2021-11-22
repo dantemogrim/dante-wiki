@@ -3,45 +3,6 @@ import getSiteMeta from './utils/getSiteMeta';
 
 const meta = getSiteMeta();
 
-let posts = [];
-
-const constructFeedItem = (post, dir, hostname) => {
-  const url = `${hostname}/${dir}/${post.slug}`;
-  return {
-    title: post.title,
-    id: url,
-    link: url,
-    content: post.bodyPlainText,
-  };
-};
-
-const create = async (feed, args) => {
-  const { $content } = require('@nuxt/content');
-  const [filePath, ext] = args;
-  const hostname = 'https://dante.wiki';
-
-  feed.options = {
-    title: 'Dante Mogrim',
-    description:
-      'My personal wikipedia filled with web development articles, notes and tutorials.',
-    link: `${hostname}/feed.${ext}`,
-  };
-
-  // only get posts that are published
-  // and order by title
-
-  posts = await $content(filePath)
-    .where({ published: true })
-    .sortBy('title')
-    .fetch();
-
-  for (const post of posts) {
-    const feedItem = await constructFeedItem(post, filePath, hostname);
-    feed.addItem(feedItem);
-  }
-  return feed;
-};
-
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -148,7 +109,7 @@ export default {
     // A default feed configuration object
     {
       path: '/feed.xml', // The route to your feed.
-      create, // The create function (see below)
+      create(feed) {}, // The create function (see below)
       cacheTime: 1000 * 60 * 15, // How long should the feed be cached
       type: 'rss2', // Can be: rss2, atom1, json1
       data: ['Some additional data'], // Will be passed as 2nd argument to `create` function
