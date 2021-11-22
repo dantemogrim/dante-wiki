@@ -78,8 +78,8 @@ export default {
         'tags',
         'updatedAt',
       ])
-      .limit(6)
       .sortBy('updatedAt', 'desc')
+      .limit(6)
       .fetch();
 
     return {
