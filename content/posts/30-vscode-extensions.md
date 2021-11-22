@@ -1,7 +1,6 @@
 ---
 title: VSCode Extensions
 description: 
-position: 30
 author:
   emoji: 🌀
   name: Dante Mogrim

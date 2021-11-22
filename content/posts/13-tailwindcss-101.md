@@ -1,7 +1,6 @@
 ---
 title: Tailwind CSS 101
 description: How to get started using Tailwind CSS.
-position: 13
 author:
   emoji: 🌀
   name: Dante Mogrim

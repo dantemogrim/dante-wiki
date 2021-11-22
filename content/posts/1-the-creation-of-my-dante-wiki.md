@@ -1,7 +1,6 @@
 ---
 title: The Creation of dante.wiki
 description: The process of building this website.
-position: 1
 author:
   emoji: 🌀
   name: Dante Mogrim

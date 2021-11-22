@@ -1,7 +1,6 @@
 ---
 title: Configuring Your Fish Shell
 description: A guide on how to configure and personalize your command line fish shell.
-position: 3
 author:
   emoji: 🌀
   name: Dante Mogrim

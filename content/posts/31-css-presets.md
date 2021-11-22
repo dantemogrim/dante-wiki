@@ -1,7 +1,6 @@
 ---
 title: CSS Presets
 description:
-position: 31
 author:
   emoji: 🌀
   name: Dante Mogrim

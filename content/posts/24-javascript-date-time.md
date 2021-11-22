@@ -1,7 +1,6 @@
 ---
 title: Date & Time
 description: 
-position: 24
 author:
   emoji: 🌀
   name: Dante Mogrim

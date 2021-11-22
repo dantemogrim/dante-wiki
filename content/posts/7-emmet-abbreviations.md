@@ -1,7 +1,6 @@
 ---
 title: Emmet Abbreviations
 description: Getting started using Emmet Abbreviations while coding.
-position: 7
 author:
   emoji: 🌀
   name: Dante Mogrim

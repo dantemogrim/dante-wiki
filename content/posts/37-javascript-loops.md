@@ -1,7 +1,6 @@
 ---
 title: Loops
 description: 
-position: 37
 author:
   emoji: 🌀
   name: Dante Mogrim

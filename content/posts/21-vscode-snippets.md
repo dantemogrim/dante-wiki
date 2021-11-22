@@ -1,7 +1,6 @@
 ---
 title: VSCode Snippets
 description: A personal collection of handy snippets in Visual Studio Code.
-position: 21
 author:
   emoji: 🌀
   name: Dante Mogrim

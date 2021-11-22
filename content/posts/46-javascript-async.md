@@ -1,7 +1,6 @@
 ---
 title: Async
-description: 
-position: 35
+description:
 author:
   emoji: 🌀
   name: Dante Mogrim

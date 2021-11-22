@@ -1,7 +1,6 @@
 ---
 title: Alfred 101
 description: Tips on getting started using Alfred.
-position: 29
 author:
   emoji: 🌀
   name: Dante Mogrim

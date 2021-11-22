@@ -1,7 +1,6 @@
 ---
 title: Arrays
 description: Understanding JavaScript arrays and how and when to use them.
-position: 20
 author:
   emoji: 🌀
   name: Dante Mogrim

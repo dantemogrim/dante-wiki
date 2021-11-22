@@ -1,7 +1,6 @@
 ---
 title: macOS Defaults
 description: How to configure your macOS settings through your command-line where System Preferences is lacking.
-position: 9
 author:
   emoji: 🌀
   name: Dante Mogrim

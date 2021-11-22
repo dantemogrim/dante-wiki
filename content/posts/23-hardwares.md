@@ -1,7 +1,6 @@
 ---
 title: Hardwares
 description: My personal collection of currently favorite cli (command-line interface)tools.
-position: 23
 author:
   emoji: 🌀
   name: Dante Mogrim

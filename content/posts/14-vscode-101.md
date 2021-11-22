@@ -1,7 +1,6 @@
 ---
 title: VSCode 101
 description: Getting started using Visual Studio Code.
-position: 14
 author:
   emoji: 🌀
   name: Dante Mogrim

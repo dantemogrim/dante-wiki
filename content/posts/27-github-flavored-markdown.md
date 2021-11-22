@@ -1,7 +1,6 @@
 ---
 title: GitHub Flavored Markdown
 description: My personal collection of currently favorite cli (command-line interface)tools.
-position: 27
 author:
   emoji: 🌀
   name: Dante Mogrim

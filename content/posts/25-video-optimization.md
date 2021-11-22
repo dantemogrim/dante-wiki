@@ -1,7 +1,6 @@
 ---
 title: Video Optimization
 description: 
-position: 25
 author:
   emoji: 🌀
   name: Dante Mogrim

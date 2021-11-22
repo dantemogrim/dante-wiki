@@ -1,7 +1,6 @@
 ---
 title: JavaScript + JSON
 description: 
-position: 35
 author:
   emoji: 🌀
   name: Dante Mogrim

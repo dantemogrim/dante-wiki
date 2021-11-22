@@ -1,7 +1,6 @@
 ---
 title: Google Search Operators
 description: Get better hits by tweaking your searches.
-position: 33
 author:
   emoji: 🌀
   name: Dante Mogrim

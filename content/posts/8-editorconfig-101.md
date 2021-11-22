@@ -1,7 +1,6 @@
 ---
 title: .editorconfig 101
 description: Editorconfig explained and how to get started.
-position: 8
 author:
   emoji: 🌀
   name: Dante Mogrim

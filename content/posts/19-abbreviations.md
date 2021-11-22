@@ -1,7 +1,6 @@
 ---
 title: Abbreviations
 description: A list of occuring tech abbreviations.
-position: 19
 author:
   emoji: 🌀
   name: Dante Mogrim

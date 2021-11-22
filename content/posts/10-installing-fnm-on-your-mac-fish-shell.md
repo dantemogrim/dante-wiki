@@ -1,7 +1,6 @@
 ---
 title: Installing FNM on Your Mac using Fish Shell
 description: FNM (Fast Node Manager) explained and how to get started.
-position: 10
 author:
   emoji: 🌀
   name: Dante Mogrim
@@ -16,6 +15,8 @@ tags:
 ---
 
 > "What is FNM and why should I install it?" You might have heard of something called [NVM](https://github.com/nvm-sh/nvm) (short for Node Version Manager). [FNM](https://github.com/Schniz/fnm) (short for Fast Node Manager) is, as you might have guessed, said to be an ~40x faster alternative. It is built in Rust and comes with cross-platform support.
+
+Test
 
 For this guide you should have the following installed:
 - [Fish Shell](https://fishshell.com/)

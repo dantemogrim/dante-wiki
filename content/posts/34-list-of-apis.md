@@ -1,7 +1,6 @@
 ---
 title: List of APIs
 description: My personal collection of currently favorite cli (command-line interface)tools.
-position: 34
 author:
   emoji: 🌀
   name: Dante Mogrim

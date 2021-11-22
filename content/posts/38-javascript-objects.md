@@ -1,7 +1,6 @@
 ---
 title: Objects
 description: 
-position: 38
 author:
   emoji: 🌀
   name: Dante Mogrim

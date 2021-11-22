@@ -1,7 +1,6 @@
 ---
 title: Classes
 description: 
-position: 36
 author:
   emoji: 🌀
   name: Dante Mogrim

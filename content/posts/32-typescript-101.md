@@ -1,7 +1,6 @@
 ---
 title: TypeScript 101
 description: Getting started using TypeScript.
-position: 32
 author:
   emoji: 🌀
   name: Dante Mogrim

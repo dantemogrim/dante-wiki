@@ -1,7 +1,6 @@
 ---
 title: Methods
 description: 
-position: 35
 author:
   emoji: 🌀
   name: Dante Mogrim

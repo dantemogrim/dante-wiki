@@ -1,7 +1,6 @@
 ---
 title: Configuring Your Z (zsh) Shell
 description: 
-position: 28
 author:
   emoji: 🌀
   name: Dante Mogrim

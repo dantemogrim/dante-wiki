@@ -1,7 +1,6 @@
 ---
 title: Image Optimization
 description: Good practices when using images in web development.
-position: 35
 author:
   emoji: 🌀
   name: Dante Mogrim

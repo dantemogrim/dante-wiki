@@ -1,7 +1,6 @@
 ---
 title: Event Listeners
 description: 
-position: 40
 author:
   emoji: 🌀
   name: Dante Mogrim

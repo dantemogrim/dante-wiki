@@ -1,7 +1,6 @@
 ---
 title: Sass Loops
 description: How to use loops in Sass.
-position: 17
 author:
   emoji: 🌀
   name: Dante Mogrim

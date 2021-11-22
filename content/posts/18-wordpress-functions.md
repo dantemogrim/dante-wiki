@@ -1,7 +1,6 @@
 ---
 title: WordPress Functions
 description: A set of handy, useful built-in WordPress functions.
-position: 18
 author:
   emoji: 🌀
   name: Dante Mogrim

@@ -1,7 +1,6 @@
 ---
 title: Softwares
 description: My personal collection of currently favorite software tools.
-position: 5
 author:
   emoji: 🌀
   name: Dante Mogrim

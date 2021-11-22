@@ -1,7 +1,6 @@
 ---
 title: Prettier Settings
 description: My personal collection of currently favorite cli (command-line interface)tools.
-position: 15
 author:
   emoji: 🌀
   name: Dante Mogrim
