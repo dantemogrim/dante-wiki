@@ -19,6 +19,7 @@
           <div
             class="
               m-2
+              h-full
               p-2
               bg-gray-50
               rounded-md
@@ -28,6 +29,8 @@
               ease-in-out
               transform
               hover:-translate-y-1 hover:scale-101
+              flex flex-col
+              justify-between
             "
           >
             <h3 class="m-0">{{ post.title }}</h3>

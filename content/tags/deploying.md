@@ -1,5 +1,5 @@
 ---
-name: deploying-hosting
+name: deploying
 description: 
 emoji: 🌐
 ---

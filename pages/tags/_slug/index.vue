@@ -3,10 +3,10 @@
     <article
       class="tagWrapper bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2"
     >
-      <div class="bg-green-200 mr-2 p-1 rounded-md">
+      <div class="mb-2 pl-2 bg-green-200 p-1 rounded-md">
         <h1>{{ tag.emoji }} #{{ tag.name }}</h1>
       </div>
-      <p>{{ tag.description }}</p>
+      <p class="my-2">{{ tag.description }}</p>
       <hr />
       <div class="bg-img text-white p-3"></div>
     </article>
@@ -32,6 +32,7 @@
           <div
             class="
               m-2
+              h-full
               p-2
               bg-gray-50
               rounded-md
@@ -41,6 +42,8 @@
               ease-in-out
               transform
               hover:-translate-y-1 hover:scale-101
+              flex flex-col
+              justify-between
             "
           >
             <h3 class="m-0">{{ post.title }}</h3>

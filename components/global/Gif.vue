@@ -1,12 +1,10 @@
 <template>
-  <div class="gifWrapper w-full h-64 flex justify-center mb-4">
-    <transition name="fade">
-      <img
-        class="object-cover rounded-lg"
-        :src="`${gif.src}`"
-        :alt="`${gif.alt}`"
-      />
-    </transition>
+  <div class="gifWrapper w-full h-64 h-auto flex justify-center mb-4">
+    <img
+      class="w-full max-w-3xl rounded-lg h-auto"
+      :src="`${gif.src}`"
+      :alt="`${gif.alt}`"
+    />
   </div>
 </template>
 

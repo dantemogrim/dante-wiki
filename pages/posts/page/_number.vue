@@ -10,14 +10,8 @@
     ">
       <li v-for="post of tenPosts" :key="post.slug">
         <nuxt-link :to="{ name: 'posts-slug', params: { slug: post.slug } }">
-          <div class="m-2 p-2 bg-gray-50 rounded-md shadow-lg               transition
-              duration-300
-              ease-in-out
-              transform
-              hover:-translate-y-1 hover:scale-101">
-            <img :src="post.img" />
+          <div class="m-2 h-full p-2 bg-gray-50 rounded-md shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-101 flex flex-col justify-between">
             <h3 class="m-0">{{ post.title }}</h3>
-
             <div class="tagWrapper">
               <span v-for="tag in post.tags" :key="tag" class="">
                 <nuxt-link
@@ -62,7 +56,7 @@ export default {
       .only(['path', 'title', 'slug', 'updatedAt', 'tags'])
       .sortBy('updatedAt', 'desc')
       .limit(10)
-      .skip(9 * (pageNumber - 1))
+      .skip(10 * (pageNumber - 1))
       .fetch();
 
     if (!tenPosts.length) {

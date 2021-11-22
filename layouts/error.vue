@@ -11,7 +11,7 @@
   >
     <h1 v-if="error.statusCode === 404" class="mb-4 text-9xl">404</h1>
     <h2 v-if="error.statusCode === 404" class="mb-4">😔 Page not found. 😔</h2>
-    <h1 v-else class="">An error occurred</h1>
+    <h1 v-else class="">😔 An error occurred. 😔</h1>
     <NuxtLink
       class="
         mt-4

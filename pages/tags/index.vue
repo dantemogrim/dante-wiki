@@ -10,13 +10,16 @@
         list-none
         flex flex-col
         justify-center
-        md:my-3 md:grid md:grid-flow-row md:grid-cols-3 md:grid-rows-8 md:gap-2
+        md:my-3 md:grid md:grid-flow-row md:grid-cols-3 md:grid-rows-8 md:gap-4
       "
     >
       <li v-for="tag of tags" :key="tag.slug">
         <nuxt-link :to="{ name: 'tags-slug', params: { slug: tag.slug } }">
           <div
             class="
+              flex flex-col
+              justify-center
+              h-full
               tagWrapper
               m-2
               p-2

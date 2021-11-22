@@ -16,13 +16,13 @@
         leading-5
         placeholder-gray-500
         text-gray-700
-        focus:ring-blue-500
+        focus:ring-skunkblue
         rounded-md
         focus:bg-gray-50
         transition
         duration-300
         transition-colors
-        bg-gray-100
+        bg-indigo-200
       "
     />
 
@@ -68,7 +68,7 @@
     <button
       v-if="inputIsOpen"
       @click="inputIsOpen = false"
-      class="cursor-default fixed inset-0 h-full w-full bg-black opacity-50"
+      class="cursor-default fixed inset-0 h-full w-full"
     ></button>
   </div>
 </template>

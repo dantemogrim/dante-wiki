@@ -17,8 +17,7 @@
     <p class="text-skunklightpurple">// Ordered by last updated.</p>
     </div>
     <p class="text-white" v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
-    <ul class="m-0 list-none flex flex-col
-     md:my-3 md:grid md:grid-flow-col md:grid-cols-2 md:grid-rows-5 md:gap-4
+    <ul class="m-0 list-none flex flex-col md:my-3 md:grid md:grid-flow-col md:grid-cols-2 md:grid-rows-5 md:gap-4
     ">
       <li v-for="post of tenPosts" :key="post.slug">
         <nuxt-link
@@ -27,20 +26,10 @@
             params: { slug: post.slug },
           }"
         >
-          <div class="
-              m-2
-              p-2
-              bg-gray-50
-              rounded-md
-              shadow-lg
-              transition
-              duration-300
-              ease-in-out
-              transform
-              hover:-translate-y-1 hover:scale-101">
+          <div class="h-full m-2 p-2 bg-gray-50 rounded-md shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-101 flex flex-col justify-between">
             <h3 class="m-0">{{ post.title }}</h3>
             <div class="flex text-center items-center">
-              <span v-for="tag in post.tags" :key="tag" class="">
+              <span v-for="tag in post.tags" :key="tag">
                 <div class="flex text-center">
                   <nuxt-link
                     :to="`/tags/${tag}`"
@@ -90,7 +79,7 @@ export default {
       })
       .sortBy('createdAt', 'desc')
       .limit(10)
-      .skip(9 * (pageNumber - 1))
+      .skip(10 * (pageNumber - 1))
       .fetch();
 
       if (!tenPosts.length) {

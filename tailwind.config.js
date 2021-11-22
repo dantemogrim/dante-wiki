@@ -1,4 +1,9 @@
 module.exports = {
+  variants: {
+    extend: {
+      animation: ['hover', 'focus', 'group-hover'],
+    },
+  },
   theme: {
     extend: {
       colors: {

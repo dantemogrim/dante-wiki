@@ -26,8 +26,7 @@
       class="
         m-0
         list-none
-        flex flex-col
-        justify-center
+        sm:flex sm:flex-col sm:justify-center
         md:my-3 md:grid md:grid-flow-col md:grid-cols-2 md:grid-rows-3 md:gap-4
       "
     >
@@ -36,6 +35,8 @@
           <div
             class="
               m-2
+              mt-3
+              h-full
               p-2
               bg-gray-50
               rounded-md
@@ -45,6 +46,8 @@
               ease-in-out
               transform
               hover:-translate-y-1 hover:scale-101
+              flex flex-col
+              justify-between
             "
           >
             <h3 class="mb-1 m-0">{{ post.title }}</h3>
@@ -68,7 +71,7 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const posts = await $content('posts', params.slug)
+    const posts = await $content('posts')
       .only(['title', 'slug', 'tags', 'updatedAt'])
       .sortBy('updatedAt', 'desc')
       .limit(6)
