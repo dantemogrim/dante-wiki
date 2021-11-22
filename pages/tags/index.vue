@@ -42,8 +42,8 @@
 export default {
   async asyncData({ $content, params }) {
     const tags = await $content('tags', params.slug)
-      .only(['name', 'description', 'emoji', 'slug'])
-      .sortBy('name', 'asc')
+      .only(['name', 'emoji', 'slug'])
+      .sortBy('case_insensitive__title', 'asc')
       .fetch();
 
     return {

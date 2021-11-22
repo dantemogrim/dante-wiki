@@ -116,6 +116,7 @@ export default {
     },
   ],
 
+  // Case insensitive sorting on posts.
   hooks: {
     'content:file:beforeInsert': (document) => {
       if (document.extension === '.md') {

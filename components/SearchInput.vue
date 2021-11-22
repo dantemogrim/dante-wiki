@@ -90,6 +90,7 @@ export default {
         return;
       }
       this.posts = await this.$content('posts')
+        .only(['title', 'slug', 'tags'])
         .limit(6)
         .search(searchQuery)
         .fetch();

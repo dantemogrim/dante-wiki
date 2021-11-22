@@ -2,7 +2,7 @@
   <div class="md:m-4">
     <div class="headingCard mt-4 mx-2 p-3 shadow-lg">
       <h1 class="text-white">All Posts</h1>
-      <p class="text-white">Ordered by last updated.</p>
+      <p class="text-skunklightpurple">// Ordered by last updated.</p>
       <p class="text-white" v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
     </div>
     <ul
@@ -30,7 +30,6 @@
               hover:-translate-y-1 hover:scale-101
             "
           >
-            <img :src="post.img" />
             <h3 class="m-0">{{ post.title }}</h3>
             <div class="tagWrapper">
               <span v-for="tag in post.tags" :key="tag" class="">
@@ -41,7 +40,6 @@
                 </nuxt-link>
               </span>
             </div>
-            <!-- <p class="text-xs mt-2 m-0">🌱 {{ formatDate(post.createdAt) }}</p> -->
             <p class="text-xs mt-2 m-0">✏️ {{ formatDate(post.updatedAt) }}</p>
           </div>
         </nuxt-link>
@@ -75,16 +73,7 @@
 export default {
   async asyncData({ $content, params }) {
     const tenPosts = await $content('posts', params.slug)
-      .only([
-        'author',
-        'updatedAt',
-        'createdAt',
-        'description',
-        'path',
-        'slug',
-        'title',
-        'tags',
-      ])
+      .only(['updatedAt', 'path', 'slug', 'title', 'tags'])
       .sortBy('updatedAt', 'desc')
       .limit(10)
       .fetch();
@@ -110,7 +99,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'A full list of all posts on dante.wiki.',
+        content: 'All posts on dante.wiki.',
       },
     ],
   },

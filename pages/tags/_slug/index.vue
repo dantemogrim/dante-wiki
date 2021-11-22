@@ -12,6 +12,7 @@
     </article>
     <div class="headingCard mt-6 mx-2 p-3 shadow-lg">
       <h2 class="text-white">Related Posts</h2>
+      <p class="text-skunklightpurple">// Ordered by last updated.</p>
     </div>
     <ul
       class="

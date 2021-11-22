@@ -19,7 +19,7 @@
       </p>
     </article>
     <div class="subheadingCard mt-6 mx-2 p-3 shadow-lg">
-      <h2 class="text-white">Latest</h2>
+      <h2 class="text-white">Featured</h2>
     </div>
 
     <ul
@@ -69,15 +69,7 @@
 export default {
   async asyncData({ $content, params }) {
     const posts = await $content('posts', params.slug)
-      .only([
-        'title',
-        'description',
-        'img',
-        'slug',
-        'author',
-        'tags',
-        'updatedAt',
-      ])
+      .only(['title', 'slug', 'tags', 'updatedAt'])
       .sortBy('updatedAt', 'desc')
       .limit(6)
       .fetch();

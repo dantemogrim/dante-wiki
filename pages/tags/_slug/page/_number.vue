@@ -14,6 +14,7 @@
     <h2 class="text-white">
       {{ `Related Posts 🔖 Page ${pageNumber}` }}
     </h2>
+    <p class="text-skunklightpurple">// Ordered by last updated.</p>
     </div>
     <p class="text-white" v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
     <ul class="m-0 list-none flex flex-col
@@ -49,6 +50,7 @@
                 </div>
               </span>
             </div>
+               <small>✏️ {{ formatDate(post.updatedAt) }}</small>
           </div>
         </nuxt-link>
       </li>
@@ -106,6 +108,12 @@ export default {
     };
   },
 
+  methods: {
+    formatDate(date) {
+      const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
+      return new Date(date).toLocaleDateString('en-GB', options);
+    },
+  },
    computed: {
     previousLink() {
       return this.pageNumber === 2 ? `/tags/${this.tag.slug}` : `/tags/${this.tag.slug}/page/${this.pageNumber - 1}`;
