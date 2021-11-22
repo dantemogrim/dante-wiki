@@ -2,7 +2,8 @@
   <div class="md:m-4">
     <div class="headingCard mt-4 mx-2 p-3 shadow-lg">
       <h1 class="text-white">All Posts</h1>
-      <p v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
+      <p class="text-white">Ordered by last updated.</p>
+      <p class="text-white" v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
     </div>
     <ul
       class="
@@ -84,7 +85,7 @@ export default {
         'title',
         'tags',
       ])
-      .sortBy('createdAt', 'desc')
+      .sortBy('updatedAt', 'desc')
       .limit(10)
       .fetch();
 

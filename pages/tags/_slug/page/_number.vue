@@ -15,7 +15,7 @@
       {{ `Related Posts 🔖 Page ${pageNumber}` }}
     </h2>
     </div>
-    <p v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
+    <p class="text-white" v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
     <ul class="m-0 list-none flex flex-col
      md:my-3 md:grid md:grid-flow-col md:grid-cols-2 md:grid-rows-5 md:gap-4
     ">

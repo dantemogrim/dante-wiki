@@ -2,7 +2,8 @@
   <div>
        <div class="headingCard mt-4 mx-2 p-3 shadow-lg">
       <h1 class="text-white">All Posts {{`🔖 Page ${pageNumber}`}}</h1>
-      <p v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
+      <p class="text-white">Ordered by last updated.</p>
+      <p class="text-white" v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
     </div>
     <ul class="m-0 list-none flex flex-col justify-center
     md:my-3 md:grid md:grid-flow-col md:grid-cols-2 md:grid-rows-5 md:gap-4
