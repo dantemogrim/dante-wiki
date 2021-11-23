@@ -7,6 +7,8 @@ My personal wikipedia written with Nuxt.js, using the nuxt/content module as dat
 
 ## :pencil2: Instructions
 
+Rename `env.example` to `.env`.
+
 ```bash
 # Install dependencies.
 $ npm install
@@ -20,8 +22,6 @@ $ npm run generate
 # Serve with hot reload at localhost:3000.
 $ npm run dev
 ```
-
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
 ## :paperclip: Tools
 - Base: [Nuxt.js](https://nuxtjs.org/)
