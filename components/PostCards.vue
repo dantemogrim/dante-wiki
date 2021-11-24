@@ -14,7 +14,7 @@
             </nuxt-link>
           </span>
         </div> -->
-      <p class="text-xs mt-2 m-0">✏️ {{ formatDate(item.updatedAt) }}</p>
+      <p class="text-xs mt-2 m-0">✏️ {{ formatDate(item.createdAt) }}</p>
     </nuxt-link>
   </li>
 </template>
@@ -29,9 +29,9 @@ export default {
   },
 
   methods: {
-    formatDate(updatedAt) {
+    formatDate(createdAt) {
       const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
-      return new Date(updatedAt).toLocaleDateString('en-GB', options);
+      return new Date(createdAt).toLocaleDateString('en-GB', options);
       //  date = new Date(date).toLocaleDateString('en-GB', options);
       // return date;
     },
