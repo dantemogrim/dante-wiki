@@ -39,6 +39,12 @@ body {
 }
 
 hr {
+  border: 1px dashed rgb(150, 150, 240);
+  border-radius: 5px;
+  opacity: 0.5;
+}
+
+/* hr {
   border: none;
   border-top: 3px solid rgb(200, 208, 244);
   color: #333;
@@ -46,16 +52,16 @@ hr {
   text-align: center;
   height: 5px;
   margin: 20px;
-}
+} */
 
-hr::after {
+/* hr::after {
   content: '💾';
   padding: 0 4px;
   font-size: 30px;
   border-radius: 5px;
   position: relative;
   top: -25px;
-}
+} */
 
 .brand {
   width: 220px;

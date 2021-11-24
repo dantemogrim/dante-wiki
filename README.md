@@ -3,6 +3,8 @@
 #  :card_file_box: dante.wiki
 My personal wikipedia written with Nuxt.js, using the nuxt/content module as database architecture.
 
+_The design is inspired by my first programming memory from 1998 when I was active in an online community called [skunk.nu](https://en.wikipedia.org/wiki/Skunk.nu)._
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f6622098-4c78-434e-8c59-901f46fadc73/deploy-status)](https://app.netlify.com/sites/dante-wiki/deploys)
 
 ## :pencil2: Instructions

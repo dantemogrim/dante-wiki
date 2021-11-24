@@ -141,8 +141,17 @@
           <a href="https://prismjs.com/" target="_blank">PrismJS</a>
         </li>
       </ul>
-      <p>
-        The code for this project is open source. You can find it
+      <p class="mb-2">
+        🎨 The design is inspired by my first programming memory from 1998 when
+        I was active in an online community called
+        <a href="https://en.wikipedia.org/wiki/Skunk.nu">skunk.nu</a>.
+      </p>
+      <p class="mb-2">
+        🍏 The content I write will be based off of what works on my own
+        operating system, Mac (sorry Windows + Linux). 🤷‍♂️
+      </p>
+      <p class="mb-2">
+        👨‍💻 The code for this project is open source. You can find it
         <a href="https://github.com/dantemogrim/dante-wiki">here</a>.
       </p>
     </article>

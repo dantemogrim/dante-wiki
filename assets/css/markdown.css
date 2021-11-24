@@ -56,3 +56,12 @@ pre {
 nuxt-content a {
   color: #1f1fff;
 }
+
+/* Keys */
+key {
+  color: rgb(57, 27, 101);
+  border: solid;
+  padding: 0 3px 0 3px;
+  border-width: thin;
+  border-radius: 5px;
+}
