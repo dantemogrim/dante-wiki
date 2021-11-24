@@ -20,46 +20,27 @@
         md:my-3 md:grid md:grid-flow-col md:grid-cols-2 md:grid-rows-5 md:gap-4
       "
     >
-      <li v-for="post of tenPosts" :key="post.slug">
-        <nuxt-link
-          :to="{
-            name: 'posts-slug',
-            params: { slug: post.slug },
-          }"
-        >
-          <div
-            class="
-              m-2
-              h-full
-              p-2
-              bg-gray-50
-              rounded-md
-              shadow-lg
-              transition
-              duration-300
-              ease-in-out
-              transform
-              hover:-translate-y-1 hover:scale-101
-              flex flex-col
-              justify-between
-            "
-          >
-            <h3 class="m-0">{{ post.title }}</h3>
-            <div class="flex text-center items-center">
-              <span v-for="tag in post.tags" :key="tag" class="">
-                <div class="flex text-center">
-                  <nuxt-link
-                    :to="`/tags/${tag}`"
-                    class="bg-green-200 mr-2 p-1 rounded-md"
-                    >#{{ tag }}
-                  </nuxt-link>
-                </div>
-              </span>
-            </div>
-            <small>✏️ {{ formatDate(post.updatedAt) }}</small>
-          </div>
-        </nuxt-link>
-      </li>
+      <div
+        class="
+          m-2
+          h-full
+          p-2
+          bg-gray-50
+          rounded-md
+          shadow-lg
+          transition
+          duration-300
+          ease-in-out
+          transform
+          hover:-translate-y-1 hover:scale-101
+          flex flex-col
+          justify-between
+        "
+        v-for="item of items"
+        :key="item.slug"
+      >
+        <PostCards :item="item" />
+      </div>
     </ul>
     <section id="next" v-if="nextPage" class="flex">
       <nuxt-link
@@ -91,7 +72,7 @@ export default {
   async asyncData({ $content, params }) {
     const tag = await $content('tags', params.slug).fetch();
 
-    const tenPosts = await $content('posts')
+    const items = await $content('posts')
       .only(['title', 'slug', 'updatedAt', 'tags'])
       .where({
         tags: { $contains: params.slug },
@@ -100,20 +81,14 @@ export default {
       .limit(10)
       .fetch();
 
-    const nextPage = tenPosts.length === 10;
-    const posts = nextPage ? tenPosts.slice(0, -1) : tenPosts;
+    const nextPage = items.length === 10;
+    const posts = nextPage ? items.slice(0, -1) : items;
 
     return {
       nextPage,
       tag,
-      tenPosts,
+      items,
     };
-  },
-  methods: {
-    formatDate(date) {
-      const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
-      return new Date(date).toLocaleDateString('en-GB', options);
-    },
   },
 
   computed: {

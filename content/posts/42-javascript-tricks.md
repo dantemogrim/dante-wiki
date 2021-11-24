@@ -11,3 +11,5 @@ gif:
 tags:
   - javascript
 ---
+
+### Tricks

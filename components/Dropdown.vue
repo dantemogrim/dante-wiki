@@ -83,7 +83,7 @@
           absolute
           left-0
           right-0
-          mt-3.5
+          mt-3.4
           mb-4
           bg-gray-50
           divide-y

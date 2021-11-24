@@ -6,7 +6,7 @@
       <p class="mt-2 mb-2">{{ post.description }}</p>
       <div class="flex text-center items-center">
         <span> Tags: </span>
-        <span v-for="tag in post.tags" :key="tag" class="">
+        <span v-for="tag in post.tags" :key="tag">
           <div class="flex text-center">
             <nuxt-link
               :to="`/tags/${tag}`"

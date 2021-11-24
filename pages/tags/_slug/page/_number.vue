@@ -41,13 +41,13 @@
     </ul>
 
 <section id="prev-next" class="flex justify-between items-center">
-  <nuxt-link :to="previousLink" class="m-2 bg-skunkblue text-white p-2 rounded-lg         transition
+  <nuxt-link :to="previousLink" class="m-2 bg-skunkblue text-white p-2 rounded-lg transition
         duration-300
         ease-in-out
         transform
         hover:-translate-y-1 hover:scale-105 shadow
           hover:shadow-sm">👈 Previous page</nuxt-link>
-  <nuxt-link v-if="nextPage" :to="`${pageNumber + 1}`" class="m-2 bg-skunkblue text-white p-2 rounded-lg         transition
+  <nuxt-link v-if="nextPage" :to="`${pageNumber + 1}`" class="m-2 bg-skunkblue text-white p-2 rounded-lg transition
         duration-300
         ease-in-out
         transform

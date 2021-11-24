@@ -43,7 +43,7 @@ export default {
   async asyncData({ $content, params }) {
     const tags = await $content('tags', params.slug)
       .only(['name', 'emoji', 'slug'])
-      .sortBy('case_insensitive__title', 'asc')
+      .sortBy('name', 'asc')
       .fetch();
 
     return {
