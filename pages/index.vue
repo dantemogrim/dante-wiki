@@ -1,10 +1,6 @@
 <template>
   <div class="md:m-4">
-    <div class="headingCard mt-4 mx-2 p-3 shadow-lg">
-      <h1 class="text-white">Hi, I'm Dante Mogrim.</h1>
-      <p class="text-white" v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
-    </div>
-
+    <Heading>Hi, I'm Dante Mogrim</Heading>
     <div class="flex justify-center">
       <img
         class="mt-3"
@@ -18,9 +14,7 @@
         personal wikipedia of web development findings.
       </p>
     </article>
-    <div class="subheadingCard mt-6 mx-2 p-3 shadow-lg">
-      <h2 class="text-white">Featured</h2>
-    </div>
+    <Subheading>Featured</Subheading>
 
     <ul
       class="

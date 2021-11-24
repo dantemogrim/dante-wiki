@@ -89,7 +89,7 @@ set -g __fish_git_prompt_color_untrackedfiles $fish_color_normal
 set -g __fish_git_prompt_color_upstream_ahead green
 set -g __fish_git_prompt_color_upstream_behind red
 
-# Status Chars
+# Characters
 set -g __fish_git_prompt_char_dirtystate '⚡'
 set -g __fish_git_prompt_char_stagedstate '→'
 set -g __fish_git_prompt_char_untrackedfiles '☡'
@@ -107,6 +107,11 @@ If you're curious and want to learn more on what possibilities are out there - d
 My best advice so far is to go to [GitHub Explore](https://github.com/explore) and search for "fish.config" or "dotfiles" to see what other kind of configurations other developers have made to their shells.
 
 ## Links
-- [Docs - Git Information](https://fishshell.com/docs/current/cmds/fish_git_prompt.html)
-- [Docs - The `fish_config` command.](https://fishshell.com/docs/current/cmds/fish_config.html)
-- [Docs - The `config.fish` file.](https://fishshell.com/docs/current/index.html#configuration-files)
+
+🗞 **Articles**
+- [Emojify Your Git Fish Prompt](https://medium.com/@joshuacrass/git-fish-prompt-faa389fff07c)
+
+📚 **Docs**
+- [Git Information](https://fishshell.com/docs/current/cmds/fish_git_prompt.html)
+- [The `fish_config` command.](https://fishshell.com/docs/current/cmds/fish_config.html)
+- [The `config.fish` file.](https://fishshell.com/docs/current/index.html#configuration-files)

@@ -10,10 +10,8 @@
       <hr />
       <div class="bg-img text-white p-3"></div>
     </article>
-    <div class="headingCard mt-6 mx-2 p-3 shadow-lg">
-      <h2 class="text-white">Related Posts</h2>
-      <p class="text-skunklightpurple">// Ordered by last updated.</p>
-    </div>
+    <Subheading>Related Posts</Subheading>
+    <p class="ml-2 text-skunkblue">// Ordered by last updated.</p>
     <ul
       class="
         m-0

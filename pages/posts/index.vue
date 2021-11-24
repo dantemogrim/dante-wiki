@@ -1,10 +1,7 @@
 <template>
   <div class="md:m-4">
-    <div class="headingCard mt-4 mx-2 p-3 shadow-lg">
-      <h1 class="text-white">All Posts</h1>
-      <p class="text-skunklightpurple">// Ordered by last updated.</p>
-      <p class="text-white" v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
-    </div>
+    <Heading>All Posts</Heading>
+    <p class="ml-2 text-skunkblue">// Ordered by last updated.</p>
     <ul
       class="
         m-0

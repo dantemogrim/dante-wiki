@@ -1,10 +1,6 @@
 <template>
   <div class="md:m-4">
-    <div class="headingCard mt-4 mx-2 p-3 shadow-lg">
-      <h1 class="text-white">About</h1>
-      <p class="text-white" v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
-    </div>
-
+    <Heading>About</Heading>
     <article
       class="m-2 bg-green-100 flex flex-col p-4 rounded-md shadow-lg md:my-4"
     >
@@ -51,10 +47,7 @@
         </li>
       </ul>
     </article>
-
-    <div class="subheadingCard mt-6 mx-2 p-3 shadow-lg">
-      <h2 class="text-white">Connect</h2>
-    </div>
+    <Subheading>Connect</Subheading>
     <article
       class="m-2 bg-gray-50 flex flex-col p-4 my-2 rounded-md shadow-lg md:mt-4"
     >
@@ -86,9 +79,7 @@
         </li>
       </ul>
     </article>
-    <div class="subheadingCard mt-6 mx-2 p-3 shadow-lg">
-      <h2 class="text-white">Setup</h2>
-    </div>
+    <Subheading>Setup</Subheading>
     <article
       class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2 md:mt-4"
     >
@@ -155,9 +146,7 @@
         <a href="https://github.com/dantemogrim/dante-wiki">here</a>.
       </p>
     </article>
-    <div class="subheadingCard mt-6 mx-2 p-3 shadow-lg">
-      <h2 class="text-white">Playlists</h2>
-    </div>
+    <Subheading>Playlists</Subheading>
     <article
       class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2 md:mt-4"
     >
