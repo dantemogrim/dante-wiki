@@ -32,7 +32,7 @@
     "prism-themes": "^1.9.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.1.4",
+    "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^12.1.4",
     "@nuxtjs/stylelint-module": "^4.0.0",
     "@nuxtjs/tailwindcss": "^4.2.0",
