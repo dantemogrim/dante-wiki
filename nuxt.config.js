@@ -92,6 +92,7 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     'nuxt-lazy-load',
+    // https://github.com/dword-design/nuxt-content-git
     [
       'nuxt-content-git',
       {

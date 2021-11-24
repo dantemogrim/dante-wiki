@@ -11,3 +11,7 @@ gif:
 tags:
   - media
 ---
+
+## Practices
+
+## Tools
