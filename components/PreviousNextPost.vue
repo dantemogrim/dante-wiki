@@ -15,8 +15,8 @@
         ease-in-out
         transform
         hover:-translate-y-1 hover:scale-105
-        shadow-lg
-        hover:shadow-md
+        shadow
+        hover:shadow-sm
       "
     >
       👈 Previous Post

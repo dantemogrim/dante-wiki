@@ -1,20 +1,6 @@
 <template>
   <div class="md:m-4">
-    <Heading>Hi, I'm Dante Mogrim</Heading>
-    <div class="flex justify-center">
-      <img
-        class="mt-3"
-        src="/selfie.png"
-        alt="An illustration of me peeking up and smiling."
-      />
-    </div>
-    <article class="bg-green-100 flex flex-col p-4 rounded-md shadow-lg m-2">
-      <p class="m-1">
-        I am a web developer student living in Gothenburg, Sweden. Welcome to my
-        personal wikipedia of web development findings.
-      </p>
-    </article>
-    <Subheading>Latest Posts</Subheading>
+    <Subheading>Test Page</Subheading>
 
     <ul
       class="

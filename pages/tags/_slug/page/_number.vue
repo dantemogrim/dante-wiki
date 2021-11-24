@@ -10,13 +10,8 @@
       <hr />
       <div class="bg-img text-white p-3"></div>
     </article>
-    <div class="headingCard mt-6 mx-2 p-3 shadow-lg">
-    <h2 class="text-white">
-      {{ `Related Posts 🔖 Page ${pageNumber}` }}
-    </h2>
-    <p class="text-skunklightpurple">// Ordered by last updated.</p>
-    </div>
-    <p class="text-white" v-if="$nuxt.isOffline">Oops! You're offline. 😱</p>
+ <Subheading>Related Posts</Subheading>
+    <p class="ml-2 text-skunkblue">// Ordered by last updated.</p>
     <ul class="m-0 list-none flex flex-col md:my-3 md:grid md:grid-flow-col md:grid-cols-2 md:grid-rows-5 md:gap-4
     ">
       <li v-for="post of tenPosts" :key="post.slug">
@@ -50,8 +45,8 @@
         duration-300
         ease-in-out
         transform
-        hover:-translate-y-1 hover:scale-105 shadow-lg
-          hover:shadow-md">👈 Previous page</nuxt-link>
+        hover:-translate-y-1 hover:scale-105 shadow
+          hover:shadow-sm">👈 Previous page</nuxt-link>
   <nuxt-link v-if="nextPage" :to="`${pageNumber + 1}`" class="m-2 bg-skunkblue text-white p-2 rounded-lg         transition
         duration-300
         ease-in-out
