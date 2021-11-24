@@ -51,8 +51,8 @@
 export default {
   async asyncData({ $content, params }) {
     const items = await $content('posts')
-      .only(['title', 'slug', 'tags', 'createdAt'])
-      .sortBy('createdAt', 'desc')
+      .only(['title', 'slug', 'tags', 'gitUpdatedAt'])
+      .sortBy('gitUpdatedAt', 'desc')
       .limit(6)
       .fetch();
 

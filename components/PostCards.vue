@@ -14,7 +14,7 @@
             </nuxt-link>
           </span>
         </div> -->
-      <p class="text-xs mt-2 m-0">✏️ {{ formatDate(item.createdAt) }}</p>
+      <p class="text-xs mt-2 m-0">✏️ {{ formatDate(item.gitUpdatedAt) }}</p>
     </nuxt-link>
   </li>
 </template>
