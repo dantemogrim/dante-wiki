@@ -11,7 +11,7 @@
       <div class="bg-img text-white p-3"></div>
     </article>
     <Subheading>Related Posts</Subheading>
-    <p class="ml-2 text-skunkblue">// Ordered by last updated.</p>
+    <p class="ml-2 text-skunkblue">// Ordered by last updated post.</p>
     <ul
       class="
         m-0
@@ -73,11 +73,11 @@ export default {
     const tag = await $content('tags', params.slug).fetch();
 
     const items = await $content('posts')
-      .only(['title', 'slug', 'updatedAt', 'tags'])
+      .only(['title', 'slug', 'tags', 'gitUpdatedAt'])
       .where({
         tags: { $contains: params.slug },
       })
-      .sortBy('createdAt', 'desc')
+      .sortBy('gitUpdatedAt', 'desc')
       .limit(10)
       .fetch();
 
@@ -95,7 +95,7 @@ export default {
     meta() {
       const metaData = {
         type: 'tag',
-        title: this.tag.name,
+        title: `${this.tag.name} Posts | Dante Mogrim`,
         description: this.tag.description,
         url: `${this.$config.baseUrl}/tags/${this.$route.params.slug}`,
       };

@@ -33,7 +33,9 @@
       </nav>
       <nuxt-content :document="post" />
     </article>
-    <previous-next-post :previousPost="previousPost" :nextPost="nextPost" />
+    <previous-next-post :previous="previous" :next="next"
+      >Post</previous-next-post
+    >
   </div>
 </template>
 
@@ -44,7 +46,7 @@ export default {
   async asyncData({ $content, params }) {
     const post = await $content('posts', params.slug).fetch();
 
-    const [previousPost, nextPost] = await $content('posts')
+    const [previous, next] = await $content('posts')
       .only(['title', 'slug'])
       .sortBy('createdAt', 'asc')
       .surround(params.slug)
@@ -52,8 +54,8 @@ export default {
 
     return {
       post,
-      previousPost,
-      nextPost,
+      previous,
+      next,
     };
   },
   methods: {
@@ -67,7 +69,7 @@ export default {
     meta() {
       const metaData = {
         type: 'post',
-        title: this.post.title,
+        title: `${this.post.title} | Dante Mogrim`,
         description: this.post.description,
         url: `${this.$config.baseUrl}/posts/${this.$route.params.slug}`,
       };

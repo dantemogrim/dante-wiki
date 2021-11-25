@@ -1,7 +1,7 @@
 <template>
   <div class="md:m-4">
     <Heading>All Posts</Heading>
-    <p class="ml-2 text-skunkblue">// Ordered by last updated.</p>
+    <p class="ml-2 text-skunkblue">// Ordered by last updated post.</p>
     <ul
       class="
         m-0

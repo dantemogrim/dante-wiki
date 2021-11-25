@@ -1,7 +1,7 @@
 <template>
   <div>
     <Heading>All Posts {{`🔖 Page ${pageNumber}`}}</Heading>
-    <p class="ml-2 text-skunkblue">// Ordered by last updated.</p>
+    <p class="ml-2 text-skunkblue">// Ordered by last updated post.</p>
     <ul class="m-0 list-none flex flex-col justify-center
     md:my-3 md:grid md:grid-flow-col md:grid-cols-2 md:grid-rows-5 md:gap-4
     ">
@@ -29,7 +29,7 @@
     </ul>
     </ul>
 <section id="prev-next" class="flex justify-between items-center">
-  <nuxt-link :to="previousLink" class="m-2 bg-skunkblue text-white p-2 rounded-full transition
+  <nuxt-link :to="previousPage" class="m-2 bg-skunkblue text-white p-2 rounded-full transition
         duration-300
         ease-in-out
         transform
@@ -70,7 +70,7 @@ export default {
     return { nextPage, items, pageNumber };
   },
   computed: {
-    previousLink() {
+    previousPage() {
       return this.pageNumber === 2 ? '/posts' : `/posts/page/${this.pageNumber - 1}`;
     },
   },

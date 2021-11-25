@@ -183,7 +183,7 @@
 <script>
 export default {
   head: {
-    title: 'About',
+    title: 'About | Dante Mogrim',
   },
 };
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div class="md:m-4">
-    <Heading>All Tags</Heading>
+    <Heading class="mb-2">All Tags</Heading>
     <ul
       class="
         m-0
@@ -52,7 +52,7 @@ export default {
   },
 
   head: {
-    title: 'Tags',
+    title: 'Tags | Dante Mogrim',
   },
 };
 </script>

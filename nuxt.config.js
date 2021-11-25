@@ -163,7 +163,6 @@ export default {
         document.bodyPlainText = document.text;
         Object.entries(document).forEach(([key, value]) => {
           const _key = `case_insensitive__${key}`; // prefix is arbitrary
-
           if (!document[_key] && typeof value === 'string') {
             document[_key] = value.toLocaleLowerCase();
           }
