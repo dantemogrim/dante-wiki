@@ -2,7 +2,7 @@
   <div class="md:m-4">
     <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
       <gif :gif="post.gif" />
-      <h1 class="whitespace-normal">{{ post.title }}</h1>
+      <h1 class="whitespace-normal text-skunkdarkpurple">{{ post.title }}</h1>
       <p class="mt-2 mb-2">{{ post.description }}</p>
       <div class="flex text-center items-center">
         <span> Tags: </span>
@@ -17,7 +17,7 @@
         </span>
       </div>
       <author :author="post.author" />
-      <div class="mb-2 bg-indigo-100 rounded-2xl p-3 w-2/3">
+      <div class="mb-2 bg-indigo-100 rounded-2xl p-3 sm:w-full md:w-2/6">
         <p>🌱 created {{ formatDate(post.gitCreatedAt) }}</p>
         <p>✏️ updated {{ formatDate(post.gitUpdatedAt) }}</p>
       </div>

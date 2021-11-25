@@ -1,18 +1,21 @@
 /* h1, h2, h3 settings. */
-.nuxt-content h1 {
+.nuxt-content h1,
+.nuxt-content h2,
+.nuxt-content h3 {
+  color: black;
   font-weight: bold;
+  margin: 20px 0 0 0;
   white-space: normal;
+}
+
+.nuxt-content h1 {
   font-size: 32px;
 }
 
 .nuxt-content h2 {
-  font-weight: bold;
-  white-space: normal;
   font-size: 28px;
 }
 .nuxt-content h3 {
-  font-weight: bold;
-  white-space: normal;
   font-size: 22px;
 }
 

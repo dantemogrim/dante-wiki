@@ -49,7 +49,7 @@
     </article>
     <Subheading>Connect</Subheading>
     <article
-      class="m-2 bg-gray-50 flex flex-col p-4 my-2 rounded-md shadow-lg md:mt-4"
+      class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2 md:mt-4"
     >
       <p class="mt-1 mb-2">
         <i>
@@ -191,7 +191,6 @@ export default {
     meta() {
       const metaData = {
         title: `About | Dante Mogrim`,
-        description: this.tag.description,
         url: `${this.$config.baseUrl}/about`,
       };
       return getSiteMeta(metaData);

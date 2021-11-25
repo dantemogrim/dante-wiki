@@ -1,6 +1,6 @@
 ---
 title: Using Puppetteer To Create an Image
-description: 
+description: A guide on how to use Puppetteer to create an image.
 author:
   emoji: 🌀
   name: Dante Mogrim
