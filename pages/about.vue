@@ -181,9 +181,21 @@
 </template>
 
 <script>
+import getSiteMeta from '@/utils/getSiteMeta';
+
 export default {
   head: {
-    title: 'About | Dante Mogrim',
+    title: 'About',
+  },
+  computed: {
+    meta() {
+      const metaData = {
+        title: `About | Dante Mogrim`,
+        description: this.tag.description,
+        url: `${this.$config.baseUrl}/about`,
+      };
+      return getSiteMeta(metaData);
+    },
   },
 };
 </script>

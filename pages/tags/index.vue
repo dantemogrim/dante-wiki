@@ -18,6 +18,8 @@
 </template>
 
 <script>
+import getSiteMeta from '@/utils/getSiteMeta';
+
 export default {
   async asyncData({ $content, params }) {
     const items = await $content('tags', params.slug)
@@ -29,9 +31,18 @@ export default {
       items,
     };
   },
-
   head: {
-    title: 'Tags | Dante Mogrim',
+    title: 'Tags',
+  },
+  computed: {
+    meta() {
+      const metaData = {
+        title: `Tags | Dante Mogrim`,
+        description: this.tag.description,
+        url: `${this.$config.baseUrl}/tags`,
+      };
+      return getSiteMeta(metaData);
+    },
   },
 };
 </script>
