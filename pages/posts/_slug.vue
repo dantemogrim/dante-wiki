@@ -18,8 +18,8 @@
       </div>
       <author :author="post.author" />
       <div class="mb-2 bg-indigo-100 rounded-2xl p-3 w-2/3">
-        <p>🌱 created {{ formatDate(post.createdAt) }}</p>
-        <p>✏️ updated {{ formatDate(post.updatedAt) }}</p>
+        <p>🌱 created {{ formatDate(post.gitCreatedAt) }}</p>
+        <p>✏️ updated {{ formatDate(post.gitUpdatedAt) }}</p>
       </div>
       <hr />
       <!-- TOC - Table of Contents -->
@@ -48,7 +48,7 @@ export default {
 
     const [previous, next] = await $content('posts')
       .only(['title', 'slug'])
-      .sortBy('createdAt', 'asc')
+      .sortBy('gitCreatedAt', 'asc')
       .surround(params.slug)
       .fetch();
 
@@ -84,11 +84,11 @@ export default {
         ...this.meta,
         {
           property: 'post:published_time',
-          content: this.post.createdAt,
+          content: this.post.gitCreatedAt,
         },
         {
           property: 'post:modified_time',
-          content: this.post.updatedAt,
+          content: this.post.gitUpdatedAt,
         },
         {
           property: 'post:tag',

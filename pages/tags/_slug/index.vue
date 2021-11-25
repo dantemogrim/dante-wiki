@@ -10,8 +10,11 @@
       <hr />
       <div class="bg-img text-white p-3"></div>
     </article>
-    <Subheading>Related Posts</Subheading>
-    <p class="ml-2 text-skunkblue">// Ordered by last updated post.</p>
+
+    <div v-if="postsExist">
+      <Subheading>Related Posts</Subheading>
+      <p class="ml-2 text-skunkblue">// Ordered by last updated post.</p>
+    </div>
     <ul
       class="
         m-0
@@ -81,6 +84,7 @@ export default {
       .limit(10)
       .fetch();
 
+    const postsExist = items.length > 0;
     const nextPage = items.length === 10;
     const posts = nextPage ? items.slice(0, -1) : items;
 

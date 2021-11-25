@@ -35,6 +35,16 @@ $ npm run dev
 - Syntax Highlighter: [PrismJS](https://prismjs.com/)
 - Styling: [CSS](https://www.w3.org/Style/CSS/Overview.en.html) + [Tailwind CSS](https://tailwindcss.com/)
 
+## Backlog
+
+<details><summary>📚 WIP</summary>
+
+- [ ] TypeScript implementation
+- [ ] RSS feed.
+- [ ] Extending PrismJS functionalities.
+- [ ] Newsletter (maybe).
+
+</details>
 
 ## :man_technologist: Creator
 - [Dante Mogrim](https://www.dante.wiki/)
