@@ -43,17 +43,19 @@ Drag and drop the fish folder into VSCode and let's get cooking.
 3. Now to actually start configuring our shell - the fun part!
 I'll explain the things I've chosen to have in my own personal `fish.config` file - and if anything is to your liking simply copy paste it into yours.
 
-- Aliases
-You can set these to shorten day to day commands. Or if you have a longer snippet and just want it to be shortened to a single word.
+**- Aliases**
 
-	_Example:_ In my file below where I've written `alias desk="cd Desktop"` means that if I run `desk` in my terminal, Fish will recognize this is my alias and run whatever I've put in after the `=` sign, so in this case `cd Desktop`. 
+> You can set these to shorten day to day commands. Or if you have a longer snippet and just want it to be shortened to a single word.
+> _Example:_ In my file below where I've written `alias desk="cd Desktop"` means that if I run `desk` in my terminal, Fish will recognize this is my alias and run whatever I've put in after the `=` sign, so in this case `cd Desktop`. 
 
-- Git Information
-Half of my settings revolve around Git. You can set special color rules, specific characters etc. Luckily fish-shell has documented this part of my configuration very well in [this link](https://fishshell.com/docs/current/cmds/fish_git_prompt.html).
-Take a look there and come back and you will better understand which line does what.
+**- Git Information**
 
-- Zoxide
-Mentioned in the last line of my `config.fish`. It's a CLI application that has nothing to do with fish shell really. But it can be worth mentioning that sometimes when we download certain command line tools, it might require us to add them into our shell configuration somehow for everything to work properly. Always double check the documentation when downloading these types of apps.
+> Half of my settings revolve around Git. You can set special color rules, specific characters etc. Luckily fish-shell has documented this part of my configuration very well in [this link](https://fishshell.com/docs/current/cmds/fish_git_prompt.html).
+> Take a look there and come back and you will better understand which line does what.
+
+**- Zoxide**
+
+> Mentioned in the last line of my `config.fish`. It's a CLI application that has nothing to do with fish shell really. But it can be worth mentioning that sometimes when we download certain command line tools, it might require us to add them into our shell configuration somehow for everything to work properly. Always double check the documentation when downloading these types of apps.
 
 
 **config.fish**

@@ -30,8 +30,6 @@ To demonstrate JavaScript's Date, let's create a variable and assign the current
 const now = new Date()
 
 // View the output
-now
-
 Wed Oct 18 2017 12:41:34 GMT+0000 (UTC)
 ```
 

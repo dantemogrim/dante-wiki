@@ -118,7 +118,7 @@ Help menu:
 $ fnm help
 ```
 
-Hope this was helpful in getting started.
+Hope this was helpful in getting started!
 
 It can sometimes be a time saver to be able to switch between different Node.js versions when trying to access old projects or newer ones.
 If you have any questions or comments, get in touch.

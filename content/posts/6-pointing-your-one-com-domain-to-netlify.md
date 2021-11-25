@@ -14,7 +14,7 @@ tags:
 ---
 
 ### Intro
-> If you buy a domain through (in this example one.com) you don't need to pay for one.com's hosting fees if you're planning on doing a front-end or headless project.
+> When buying a domain through (in this example one.com) you don't need to pay for one.com's hosting fees if you're planning on doing a front-end or headless project.
 You can simply buy **just** the domain or as one.com interestingly calls it, their "e-mail plan" 🤷‍♂️ and reroute that domain to Netlify so you can add whatever content you like to it.
 
 ### On Netlify

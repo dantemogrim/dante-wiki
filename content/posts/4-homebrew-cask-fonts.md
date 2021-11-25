@@ -15,9 +15,11 @@ tags:
 ---
 homebrew-cask-fonts is an fantastic open source project available through Homebrew, that lets you download any of the thousand+ freely-distributable fonts that are available there.
 
-### Prerequisites
+📋 **Necessities**
 - Having [Homebrew](https://brew.sh/index_sv) installed.
 - Having [homebrew/cask]() installed.
+
+---
 
 ### Instructions
 - To install homebrew-cask-fonts to your computer, open up a terminal window and type:

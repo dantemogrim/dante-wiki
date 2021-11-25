@@ -3,20 +3,8 @@
 .nuxt-content h2,
 .nuxt-content h3 {
   color: black;
-  font-weight: bold;
   margin: 20px 0 0 0;
   white-space: normal;
-}
-
-.nuxt-content h1 {
-  font-size: 32px;
-}
-
-.nuxt-content h2 {
-  font-size: 28px;
-}
-.nuxt-content h3 {
-  font-size: 22px;
 }
 
 /* Paragraphs. */
@@ -32,7 +20,7 @@ ul {
 
 /* Quotes. */
 .nuxt-content blockquote p {
-  margin: 3px;
+  margin: 15px 0 15px 0;
   background-color: rgb(192, 225, 217);
   border-radius: 10px;
   padding: 10px;
@@ -46,13 +34,13 @@ pre {
 }
 
 .nuxt-content-highlight {
-  width: 85vw;
+  width: 100%;
 }
 
 /* Inline code. */
 .nuxt-content p code {
-  background-color: #ffd7e9;
-  border-radius: 10px;
+  background-color: #ffe5c7;
+  border-radius: 5px;
 }
 
 /* Links */

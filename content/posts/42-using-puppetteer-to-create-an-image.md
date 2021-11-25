@@ -12,6 +12,7 @@ tags:
   - puppetteer
 ---
 
+## Snippet
 ```js
 const puppeteer = require('puppeteer')
 
