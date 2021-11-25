@@ -21,7 +21,7 @@ You can simply buy **just** the domain or as one.com interestingly calls it, the
 After you've logged into your Netlify account, from the menu go to `Domains` and click the `Add or register domain` button.
 Enter the name of the domain you bought for example "my-super-cool-website.com" and continue.
 
-You will most likely encounter a text that says that "this domain is already registered" and it will give you the option to add it instead. Do that.
+You will most likely encounter a text that says that "this domain is already registered" and it will give you the option to add it instead. Do it.
 
 In your menu you'll have the option to "Enable IPv6 on your domain". This is not mandatory but if you want your website to reach areas of the world where it otherwise might not, then this is a good option to enable.
 

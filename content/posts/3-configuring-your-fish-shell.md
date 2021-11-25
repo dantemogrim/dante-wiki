@@ -20,9 +20,9 @@ tags:
 
 ## About
 
-`config.fish` is a file where we're able to configure our fish shell to our own liking.
+`config.fish` is a file where we're able to configure certain aspects of our fish shell.
 This easily gets mixed up with the command `fish_config`.
-`fish_config` is a command that has the ability to set certain settings, while the file `config.fish` can handle other settings that the command can't.
+`fish_config` is a command that has the ability to set certain settings, while the file `config.fish` can handle other settings that the other one can't.
 
 The `fish_config` command will open up your browser and let you choose certain fish settings from a menu such as general colors, prompt etc.
 
