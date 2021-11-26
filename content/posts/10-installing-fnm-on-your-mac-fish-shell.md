@@ -1,5 +1,5 @@
 ---
-title: Installing FNM on Your Mac
+title: 🦄 Installing FNM on Your Mac
 description: FNM (Fast Node Manager) explained and how to get started.
 author:
   emoji: 🌀

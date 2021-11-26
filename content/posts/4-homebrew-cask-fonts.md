@@ -1,5 +1,5 @@
 ---
-title: Homebrew Cask Fonts
+title: 🦄 Homebrew Cask Fonts
 description: homebrew-cask-fonts gives you the option to choose and download a variety of a thousand and more freely-distributable fonts, straight from your command line.
 author:
   emoji: 🌀

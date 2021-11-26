@@ -1,5 +1,5 @@
 ---
-title: How To Configure Your Fish Shell
+title: 🦄 How To Configure Your Fish Shell
 description: A guide on how to configure and personalize your command line fish shell.
 author:
   emoji: 🌀

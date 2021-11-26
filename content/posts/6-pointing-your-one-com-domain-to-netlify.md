@@ -1,5 +1,5 @@
 ---
-title: Pointing Your one.com Domain to Netlify
+title: 🦄 Pointing Your one.com Domain to Netlify
 description: A tutorial/guide on how to reroute your one.com domain to Netlify.
 author:
   emoji: 🌀
