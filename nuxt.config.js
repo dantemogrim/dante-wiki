@@ -120,7 +120,7 @@ export default {
         const $content = require('@nuxt/content').$content;
         feed.options = {
           title: 'Dante Mogrim',
-          link: 'https://www.dante.wiki/',
+          link: 'https://www.dante.wiki/feed.xml',
           description:
             'My personal wikipedia filled with web dev related content, notes and guides.',
         };
@@ -131,16 +131,16 @@ export default {
         posts.forEach((post) => {
           const url = `https://www.dante.wiki/${post.slug}`;
           feed.addItem({
-            content: post.bodyPlainText,
-            date: new Date(post.gitUpdatedAt),
-            description: post.description,
             id: url,
-            link: url,
             title: post.title,
+            description: post.description,
+            date: new Date(post.gitUpdatedAt),
+            content: post.bodyPlainText,
+            link: url,
           });
         });
       },
-      path: '/feed',
+      path: '/feed.xml',
       type: 'rss2',
     },
   ],
