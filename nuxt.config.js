@@ -3,39 +3,6 @@ import getSiteMeta from './utils/getSiteMeta';
 
 const meta = getSiteMeta();
 
-const constructFeedItem = (post, dir, hostname) => {
-  const url = `${hostname}/${dir}/${post.slug}`;
-  return {
-    title: post.title,
-    id: url,
-    link: url,
-    description: post.description,
-    content: post.bodyPlainText,
-  };
-};
-
-const create = async (feed, args) => {
-  const [filePath, ext] = args;
-  const hostname =
-    process.NODE_ENV === 'production'
-      ? 'https://dante.wiki'
-      : 'http://localhost:3000';
-  feed.options = {
-    title: 'My Blog',
-    description: 'Blog Stuff!',
-    link: `${hostname}/feed.${ext}`,
-  };
-  const { $content } = require('@nuxt/content');
-  if (posts === null || posts.length === 0)
-    posts = await $content(filePath).fetch();
-
-  for (const post of posts) {
-    const feedItem = await constructFeedItem(post, filePath, hostname);
-    feed.addItem(feedItem);
-  }
-  return feed;
-};
-
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -148,11 +115,32 @@ export default {
 
   feed: [
     {
-      path: '/feed.xml', // The route to your feed.
-      create(feed) {},
-      cacheTime: 1000 * 60 * 15, // How long should the feed be cached
-      type: 'rss2', // Can be: rss2, atom1, json1
-      data: ['Some additional data'], // Will be passed as 2nd argument to `create` function
+      create: async (feed) => {
+        const $content = require('@nuxt/content').$content;
+        feed.options = {
+          title: 'Dante Mogrim',
+          link: 'https://www.dante.wiki/',
+          description:
+            'My personal wikipedia filled with web dev related content, notes and guides.',
+        };
+
+        const posts = await $content('posts')
+          .sortBy('gitUpdatedAt', 'desc')
+          .fetch();
+        posts.forEach((post) => {
+          const url = `https://www.dante.wiki/${post.slug}`;
+          feed.addItem({
+            content: post.bodyPlainText,
+            date: new Date(post.gitUpdatedAt),
+            description: post.description,
+            id: url,
+            link: url,
+            title: post.title,
+          });
+        });
+      },
+      path: '/feed',
+      type: 'rss2',
     },
   ],
 
@@ -161,12 +149,6 @@ export default {
     'content:file:beforeInsert': (document) => {
       if (document.extension === '.md') {
         document.bodyPlainText = document.text;
-        Object.entries(document).forEach(([key, value]) => {
-          const _key = `case_insensitive__${key}`; // prefix is arbitrary
-          if (!document[_key] && typeof value === 'string') {
-            document[_key] = value.toLocaleLowerCase();
-          }
-        });
       }
     },
   },

@@ -1,15 +1,19 @@
 {
   "name": "dante-wiki",
-  "description": "My second brain.",
+  "description": "My personal wikipedia.",
   "version": "1.0.0",
   "author": "Dante Mogrim",
   "email": "1991.mogrim@gmail.com",
-  "url": "",
+  "url": "https://www.dante.wiki/",
   "private": true,
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/dantemogrim/digital-garden.git"
+  },
+  "engines": {
+    "npm": ">=7.21.1",
+    "node": ">=16.9.1"
   },
   "scripts": {
     "dev": "nuxt",
