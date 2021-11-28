@@ -67,6 +67,7 @@ export default {
         updatedAtName: 'gitUpdatedAt',
       },
     ],
+    'nuxt-content-body-html',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     // https://sitemap.nuxtjs.org/
