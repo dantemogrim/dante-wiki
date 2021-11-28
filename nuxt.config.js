@@ -142,6 +142,7 @@ export default {
       },
       path: '/feed.xml',
       type: 'rss2',
+      data: ['posts', 'xml'],
     },
   ],
 
