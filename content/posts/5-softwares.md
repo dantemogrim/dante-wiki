@@ -24,7 +24,7 @@ I love softwares. Here's a list of ones I am currently using:
 
 ### Compressors
 - **Handbrake** _Super effective video compressor._
-- **ImageAlpha**
+- **ImageAlpha** - Image optimizer.
 - **ImageOptim**
 
 ### Kanban
