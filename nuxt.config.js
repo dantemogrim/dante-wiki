@@ -19,7 +19,7 @@ export default {
 
     link: [
       // Favicon.
-      { rel: 'icon', type: 'image/svg+xml', href: '/favicon.png' },
+      { rel: 'icon', type: 'image/svg+xml', href: '/icon.png' },
       {
         // Canonical.
         rel: 'icon',
@@ -59,6 +59,7 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     'nuxt-lazy-load',
+    'nuxt-content-body-html',
     // https://github.com/dword-design/nuxt-content-git
     [
       'nuxt-content-git',
@@ -134,7 +135,7 @@ export default {
             title: post.title,
             description: post.description,
             date: new Date(post.gitUpdatedAt),
-            content: post.bodyPlainText,
+            content: post.bodyHtml,
             link: url,
           });
         });
@@ -144,13 +145,4 @@ export default {
       data: ['posts', 'xml'],
     },
   ],
-
-  // Case insensitive sorting on posts.
-  hooks: {
-    'content:file:beforeInsert': (document) => {
-      if (document.extension === '.md') {
-        document.bodyPlainText = document.text;
-      }
-    },
-  },
 };
