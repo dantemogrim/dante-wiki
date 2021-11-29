@@ -67,7 +67,6 @@ export default {
         updatedAtName: 'gitUpdatedAt',
       },
     ],
-    'nuxt-content-body-html',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     // https://sitemap.nuxtjs.org/
@@ -129,7 +128,7 @@ export default {
           .sortBy('gitUpdatedAt', 'desc')
           .fetch();
         posts.forEach((post) => {
-          const url = `https://www.dante.wiki/${post.slug}`;
+          const url = `https://www.dante.wiki/posts/${post.slug}`;
           feed.addItem({
             id: url,
             title: post.title,
