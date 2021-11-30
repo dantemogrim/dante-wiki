@@ -1,3 +1,4 @@
+import axios from 'axios';
 import getRoutes from './utils/getRoutes';
 import getSiteMeta from './utils/getSiteMeta';
 
@@ -117,18 +118,16 @@ export default {
   feed: [
     {
       create: async (feed) => {
-        const $content = require('@nuxt/content').$content;
         feed.options = {
           title: 'dante.wiki',
           link: 'https://www.dante.wiki/feed.xml',
           description:
             'My personal wikipedia filled with web dev related content, notes and guides.',
-          favicon: '~/static/icon.png',
+          favicon: '/static/icon.png',
         };
 
-        const posts = await $content('posts')
-          .sortBy('gitUpdatedAt', 'desc')
-          .fetch();
+        const posts = await axios.get('https://www.dante.wiki/posts').data;
+
         posts.forEach((post) => {
           const url = `https://www.dante.wiki/posts/${post.slug}`;
           feed.addItem({
