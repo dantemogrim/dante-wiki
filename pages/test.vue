@@ -31,7 +31,7 @@ export default {
   },
 
   head: {
-    title: 'Tags | Dante Mogrim',
+    title: 'Tags | dante.wiki',
   },
 };
 </script>

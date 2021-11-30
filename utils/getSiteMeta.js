@@ -1,7 +1,7 @@
 // Default, fallback meta data.
 const type = 'website';
 const url = 'https://dante.wiki';
-const title = 'Dante Mogrim';
+const title = 'dante.wiki';
 const description =
   'My personal wikipedia filled with web dev related content, notes and guides.';
 const mainImage = '/meta.png';

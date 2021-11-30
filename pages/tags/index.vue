@@ -37,7 +37,7 @@ export default {
   computed: {
     meta() {
       const metaData = {
-        title: `Tags | Dante Mogrim`,
+        title: `Tags | dante.wiki`,
         description: this.tag.description,
         url: `${this.$config.baseUrl}/tags`,
       };

@@ -190,7 +190,7 @@ export default {
   computed: {
     meta() {
       const metaData = {
-        title: `About | Dante Mogrim`,
+        title: `About | dante.wiki`,
         url: `${this.$config.baseUrl}/about`,
       };
       return getSiteMeta(metaData);

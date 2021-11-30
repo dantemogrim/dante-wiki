@@ -119,11 +119,11 @@ export default {
       create: async (feed) => {
         const $content = require('@nuxt/content').$content;
         feed.options = {
-          title: 'Dante Mogrim',
+          title: 'dante.wiki',
           link: 'https://www.dante.wiki/feed.xml',
           description:
             'My personal wikipedia filled with web dev related content, notes and guides.',
-          favicon: '/icon.png',
+          favicon: '~/static/icon.png',
         };
 
         const posts = await $content('posts')
@@ -138,6 +138,11 @@ export default {
             date: new Date(post.gitUpdatedAt),
             content: post.bodyHtml,
             link: url,
+            author: {
+              name: 'Dante Mogrim',
+              email: '1991.mogrim@gmail.com',
+              link: 'https://www.dante.wiki',
+            },
           });
         });
       },
