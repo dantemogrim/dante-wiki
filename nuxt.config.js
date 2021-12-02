@@ -123,7 +123,7 @@ export default {
           link: 'https://www.dante.wiki/feed.xml',
           description:
             'My personal wikipedia filled with web dev related content, notes and guides.',
-          favicon: '/static/icon.png',
+          favicon: 'https://www.dante.wiki/icon.png',
         };
 
         const posts = await $content('posts')
