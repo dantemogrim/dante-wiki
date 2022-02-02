@@ -19,7 +19,7 @@ export default {
 
     link: [
       // Favicon.
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png?v2' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
       {
         // Canonical.
         rel: 'icon',
@@ -46,8 +46,6 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/stylelint
-    '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
   ],
@@ -147,7 +145,7 @@ export default {
           });
         });
       },
-      path: '/feed',
+      path: '/feed.xml',
       type: 'rss2',
       data: ['posts', 'xml'],
     },
