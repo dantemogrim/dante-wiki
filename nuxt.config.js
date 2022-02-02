@@ -19,7 +19,7 @@ export default {
 
     link: [
       // Favicon.
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
       {
         // Canonical.
         rel: 'icon',
@@ -122,7 +122,7 @@ export default {
           link: 'https://www.dante.wiki/feed.xml',
           description:
             'My personal wikipedia filled with web dev related content, notes and guides.',
-          favicon: `https://www.dante.wiki/favicon.ico`,
+          favicon: `https://www.dante.wiki/favicon.png`,
         };
 
         const posts = await $content('posts')
