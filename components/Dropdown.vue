@@ -7,17 +7,7 @@
         height="35"
         fill="none"
         viewBox="0 0 256 256"
-        class="
-          cursor-pointer
-          rounded-lg
-          transition
-          duration-500
-          ease-in-out
-          bg-blue-200
-          shadow-md
-          transform
-          hover:rotate-45
-        "
+        class="cursor-pointer rounded-lg transition duration-500 ease-in-out bg-blue-200 shadow-md transform hover:rotate-45"
         @click="menuIsOpen = !menuIsOpen"
       >
         <rect width="256" height="256" fill="none"></rect>
@@ -79,54 +69,25 @@
       <ul
         v-if="menuIsOpen"
         @click="menuIsOpen = false"
-        class="
-          absolute
-          left-0
-          right-0
-          mt-3.4
-          mb-4
-          bg-gray-50
-          divide-y
-          rounded-lg
-          shadow-lg
-          overflow-hidden
-        "
+        class="absolute left-0 right-0 mt-3.4 mb-4 bg-gray-50 divide-y rounded-lg shadow-lg overflow-hidden"
       >
         <nuxt-link to="/about">
           <li
-            class="
-              px-3
-              py-2
-              transition-colors
-              duration-300
-              hover:bg-skunkblue hover:text-white
-            "
+            class="px-3 py-2 transition-colors duration-300 hover:bg-skunkblue hover:text-white"
           >
             About
           </li>
         </nuxt-link>
         <nuxt-link to="/posts">
           <li
-            class="
-              px-3
-              py-2
-              transition-colors
-              duration-300
-              hover:bg-skunkblue hover:text-white
-            "
+            class="px-3 py-2 transition-colors duration-300 hover:bg-skunkblue hover:text-white"
           >
             Posts
           </li>
         </nuxt-link>
         <nuxt-link to="/tags">
           <li
-            class="
-              px-3
-              py-2
-              transition-colors
-              duration-300
-              hover:bg-skunkblue hover:text-white
-            "
+            class="px-3 py-2 transition-colors duration-300 hover:bg-skunkblue hover:text-white"
           >
             Tags
           </li>
@@ -138,8 +99,6 @@
 
 <script>
 import Vue from 'vue';
-
-console.log('hello world');
 
 export default Vue.extend({
   data() {

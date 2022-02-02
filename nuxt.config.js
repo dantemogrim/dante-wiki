@@ -19,7 +19,7 @@ export default {
 
     link: [
       // Favicon.
-      { rel: 'icon', type: 'image/svg+xml', href: '/icon.png' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png?v2' },
       {
         // Canonical.
         rel: 'icon',
@@ -124,7 +124,7 @@ export default {
           link: 'https://www.dante.wiki/feed.xml',
           description:
             'My personal wikipedia filled with web dev related content, notes and guides.',
-          favicon: 'https://www.dante.wiki/icon.png',
+          favicon: `https://www.dante.wiki/icon.png`,
         };
 
         const posts = await $content('posts')
@@ -147,7 +147,7 @@ export default {
           });
         });
       },
-      path: '/feed.xml',
+      path: '/feed',
       type: 'rss2',
       data: ['posts', 'xml'],
     },
