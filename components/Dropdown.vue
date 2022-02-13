@@ -7,7 +7,7 @@
         height="35"
         fill="none"
         viewBox="0 0 256 256"
-        class="cursor-pointer rounded-lg transition duration-500 ease-in-out bg-blue-200 shadow-md transform hover:rotate-45"
+        class="transition duration-500 ease-in-out transform bg-blue-200 rounded-lg shadow-md cursor-pointer hover:rotate-45"
         @click="menuIsOpen = !menuIsOpen"
       >
         <rect width="256" height="256" fill="none"></rect>
@@ -59,17 +59,17 @@
       </svg>
     </button>
     <transition
-      enter-active-class="transform transition duration-500 ease-custom"
-      enter-class="-translate-y-1/2 scale-y-0 opacity-0"
-      enter-to-class="translate-y-0 scale-y-100 opacity-100"
-      leave-active-class="transform transition duration-300 ease-custom"
-      leave-class="translate-y-0 scale-y-100 opacity-100"
-      leave-to-class="-translate-y-1/2 scale-y-0 opacity-0"
+      enter-active-class="transition duration-500 transform ease-custom"
+      enter-class="scale-y-0 -translate-y-1/2 opacity-0"
+      enter-to-class="scale-y-100 translate-y-0 opacity-100"
+      leave-active-class="transition duration-300 transform ease-custom"
+      leave-class="scale-y-100 translate-y-0 opacity-100"
+      leave-to-class="scale-y-0 -translate-y-1/2 opacity-0"
     >
       <ul
         v-if="menuIsOpen"
         @click="menuIsOpen = false"
-        class="absolute left-0 right-0 mt-3.4 mb-4 bg-gray-50 divide-y rounded-lg shadow-lg overflow-hidden"
+        class="absolute inset-x-0 mt-2.5 overflow-hidden divide-y rounded-lg shadow-lg bg-gray-50"
       >
         <nuxt-link to="/about">
           <li
@@ -106,6 +106,7 @@ export default Vue.extend({
       menuIsOpen: false,
     };
   },
+  methods: {},
 });
 </script>
 
