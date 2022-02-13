@@ -22,7 +22,7 @@ export default {
       {
         rel: 'icon',
         type: 'image/x-icon',
-        href: '/favicon.ico?v=5',
+        href: '/favicon.ico?v=1',
       },
       {
         // Canonical.
