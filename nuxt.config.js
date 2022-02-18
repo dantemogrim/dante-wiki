@@ -52,6 +52,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-analytics',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -115,6 +116,10 @@ export default {
     routes() {
       return getRoutes();
     },
+  },
+
+  googleAnalytics: {
+    id: process.env.GOOGLE_ANALYTICS_ID,
   },
 
   feed: [
