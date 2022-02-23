@@ -1,31 +1,31 @@
 <template>
-  <div class="md:mx-20">
-    <article class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2">
+  <div class="md:mx-20 font-jetbrains-mono">
+    <article class="flex flex-col p-4 m-2 rounded-md shadow-lg bg-gray-50">
       <gif :gif="post.gif" />
-      <h1 class="whitespace-normal text-skunkdarkpurple font-medium">
+      <h1 class="font-medium text-indigo-900 whitespace-normal">
         {{ post.title }}
       </h1>
       <p class="mt-2 mb-2">{{ post.description }}</p>
-      <div class="flex text-center items-center">
+      <div class="flex items-center text-center">
         <span> Tags: </span>
         <span v-for="tag in post.tags" :key="tag">
           <div class="flex text-center">
             <nuxt-link
               :to="`/tags/${tag}`"
-              class="bg-green-200 m-2 p-1 rounded-md"
+              class="p-1 m-2 bg-green-200 rounded-md"
               >#{{ tag }}
             </nuxt-link>
           </div>
         </span>
       </div>
       <author :author="post.author" />
-      <div class="mb-2 bg-indigo-100 rounded-2xl p-3 sm:w-full md:w-2/6">
+      <div class="p-3 mb-2 bg-indigo-100 rounded-2xl sm:w-full md:w-2/6">
         <p>🌱 Created: {{ formatDate(post.gitCreatedAt) }}</p>
         <p>✏️ Updated: {{ formatDate(post.gitUpdatedAt) }}</p>
       </div>
       <hr />
       <!-- TOC - Table of Contents -->
-      <nav class="bg-blue-100 rounded-2xl p-3 sm:w-full md:w-2/6">
+      <nav class="p-3 bg-blue-100 rounded-2xl sm:w-full md:w-2/6">
         <p>📚 Contents:</p>
         <ul>
           <li v-for="link of post.toc" :key="link.id">

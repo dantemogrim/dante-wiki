@@ -1,83 +1,41 @@
 <template>
   <div class="md:m-4">
     <article
-      class="tagWrapper bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2"
+      class="flex flex-col p-4 m-2 rounded-md shadow-lg tagWrapper bg-gray-50"
     >
-      <div class="bg-green-200 mr-2 p-1 rounded-md">
+      <div class="p-1 mr-2 bg-green-200 rounded-md">
         <h1>{{ tag.emoji }} #{{ tag.name }}</h1>
       </div>
       <p>{{ tag.description }}</p>
       <hr />
-      <div class="bg-img text-white p-3"></div>
+      <div class="p-3 text-white bg-img"></div>
     </article>
     <Subheading>Related Posts</Subheading>
     <p class="ml-2 text-skunkblue">// Ordered by last updated post.</p>
     <ul
-      class="
-        m-0
-        list-none
-        flex flex-col
-        md:my-3 md:grid md:grid-flow-col md:grid-cols-2 md:grid-rows-5 md:gap-4
-      "
+      class="flex flex-col m-0 list-none md:my-3 md:grid md:grid-flow-col md:grid-cols-2 md:grid-rows-5 md:gap-4"
     >
       <div
         v-for="item of items"
         :key="item.slug"
-        class="
-          h-full
-          m-2
-          p-2
-          bg-gray-50
-          rounded-md
-          shadow-lg
-          transition
-          duration-300
-          ease-in-out
-          transform
-          hover:-translate-y-1 hover:scale-101
-          flex flex-col
-          justify-between
-        "
+        class="flex flex-col justify-between h-full p-2 m-2 transition duration-300 ease-in-out transform rounded-md shadow-lg bg-gray-50 hover:-translate-y-1 hover:scale-101"
       >
         <PostCards :item="item" />
       </div>
     </ul>
-    <section id="prev-next" class="flex justify-between items-center">
+    <section
+      id="prev-next"
+      class="flex items-center justify-around w-full h-20 mt-3 text-sm uppercase font-jetbrains-mono"
+    >
       <nuxt-link
         :to="previousLink"
-        class="
-          m-2
-          bg-skunkblue
-          text-white
-          p-2
-          rounded-lg
-          transition
-          duration-300
-          ease-in-out
-          transform
-          hover:-translate-y-1 hover:scale-105
-          shadow
-          hover:shadow-sm
-        "
+        class="flex items-center justify-center w-40 h-8 p-3 text-white bg-indigo-400 rounded-full shadow-md hover:animate-wiggle whitespace-nowrap"
         >👈 Previous page</nuxt-link
       >
       <nuxt-link
         v-if="nextPage"
         :to="`${pageNumber + 1}`"
-        class="
-          m-2
-          bg-skunkblue
-          text-white
-          p-2
-          rounded-lg
-          transition
-          duration-300
-          ease-in-out
-          transform
-          hover:-translate-y-1 hover:scale-105
-          shadow-lg
-          hover:shadow-md
-        "
+        class="flex items-center justify-center w-40 h-8 p-3 text-white bg-indigo-400 rounded-full shadow-md hover:animate-wiggle whitespace-nowrap"
         >Next page 👉</nuxt-link
       >
     </section>

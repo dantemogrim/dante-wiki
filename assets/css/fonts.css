@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'jetbrains-mono';
+  src: url('~static/fonts/jetbrains-mono.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'editorial-new';
+  src: url('~static/fonts/editorial-new.woff2') format('woff2');
+}
+
+/* Fallback Fonts */

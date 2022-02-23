@@ -1,6 +1,5 @@
 <template>
   <div class="md:m-4">
-    <Heading>Hi, I'm Dante Mogrim</Heading>
     <div class="flex justify-center">
       <img
         class="mt-3"
@@ -8,36 +7,20 @@
         alt="An illustration of me peeking up and smiling."
       />
     </div>
-    <article class="bg-green-100 flex flex-col p-4 rounded-md shadow-lg m-2">
+    <article class="flex flex-col p-4 m-2 bg-white rounded-md shadow-md">
       <p class="m-1">
-        I am a web developer student living in Gothenburg, Sweden. Welcome to my
-        personal wikipedia of web development findings.
+        Hello! I'm Dante Mogrim. I am a web developer student living in
+        Gothenburg, Sweden. Welcome to my personal wikipedia of web development
+        findings.
       </p>
     </article>
     <Subheading>Latest Posts</Subheading>
 
     <ul
-      class="
-        m-0
-        list-none
-        sm:flex sm:flex-col sm:justify-center
-        md:my-3 md:grid md:grid-flow-col md:grid-cols-2 md:grid-rows-3 md:gap-4
-      "
+      class="m-0 list-none sm:flex sm:flex-col sm:justify-center md:my-3 md:grid md:grid-flow-col md:grid-cols-2 md:grid-rows-3 md:gap-4"
     >
       <div
-        class="
-          m-2
-          mt-3
-          p-2
-          bg-gray-50
-          rounded-md
-          shadow-lg
-          transition
-          duration-300
-          ease-in-out
-          transform
-          hover:-translate-y-1 hover:scale-101
-        "
+        class="p-2 m-2 mt-3 transition duration-300 ease-in-out transform bg-white rounded-md shadow-md hover:-translate-y-1 hover:scale-101"
         v-for="item of items"
         :key="item.slug"
       >

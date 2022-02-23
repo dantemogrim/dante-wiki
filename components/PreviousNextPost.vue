@@ -1,45 +1,20 @@
 <template>
-  <div class="w-full flex justify-around">
+  <div
+    class="flex items-center justify-around w-full h-20 mt-3 text-sm uppercase font-jetbrains-mono"
+  >
     <nuxt-link
       v-if="previous"
       :to="{ name: 'posts-slug', params: { slug: previous.slug } }"
-      class="
-        bg-skunkblue
-        rounded-full
-        p-3
-        text-white
-        whitespace-nowrap
-        m-3
-        transition
-        duration-500
-        ease-in-out
-        transform
-        hover:-translate-y-1 hover:scale-105
-        shadow
-        hover:shadow-sm
-      "
+      class="flex items-center justify-center w-40 h-8 p-3 text-white bg-indigo-400 rounded-full shadow-md hover:animate-wiggle whitespace-nowrap"
     >
-      👈 Previous <slot></slot>
+      <span class="mr-2">👈</span>Previous <slot></slot>
     </nuxt-link>
+
     <span v-else>&nbsp;</span>
     <nuxt-link
       v-if="next"
       :to="{ name: 'posts-slug', params: { slug: next.slug } }"
-      class="
-        bg-skunkblue
-        rounded-full
-        p-3
-        text-white
-        whitespace-nowrap
-        m-3
-        transition
-        duration-300
-        ease-in-out
-        transform
-        hover:-translate-y-1 hover:scale-105
-        shadow-lg
-        hover:shadow-md
-      "
+      class="flex items-center justify-center w-40 h-8 p-3 text-white bg-indigo-400 rounded-full shadow-md hover:animate-wiggle whitespace-nowrap"
     >
       Next <slot></slot> 👉
     </nuxt-link>

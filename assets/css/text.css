@@ -1,23 +1,6 @@
-/* Font settings. */
-
-@font-face {
-  font-family: 'jetbrainsmono';
-  src: url('~static/fonts/jetbrainsmono.woff2') format('woff2');
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'jetbrainsmono';
-  white-space: normal;
-}
-
 /* Main + fallbacks. */
-* {
-  font-family: 'jetbrainsmono', Arial, Helvetica, Verdana, Georgia, Tahoma,
+p {
+  font-family: 'jetbrains-mono', Arial, Helvetica, Verdana, Georgia, Tahoma,
     sans-serif;
 }
 
@@ -37,9 +20,6 @@ h2 {
 h3 {
   font-size: 1.2rem;
   line-height: 2rem;
-  color: blue;
-}
-
-a {
+  font-weight: 700;
   color: blue;
 }

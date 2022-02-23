@@ -6,24 +6,7 @@
       type="search"
       autocomplete="off"
       placeholder="🔎"
-      class="
-        relative
-        z-10
-        block
-        w-full
-        p-2
-        truncate
-        leading-5
-        placeholder-gray-500
-        text-gray-700
-        focus:ring-skunkblue
-        rounded-md
-        focus:bg-gray-50
-        transition
-        duration-300
-        transition-colors
-        bg-indigo-200
-      "
+      class="relative z-10 block w-full p-2 leading-5 text-gray-700 placeholder-gray-500 truncate transition transition-colors duration-300 bg-gray-100 rounded-md focus:ring-skunkblue focus:bg-gray-50"
     />
 
     <div v-if="inputIsOpen">
@@ -31,33 +14,12 @@
         <ul
           @click="inputIsOpen = false"
           v-if="posts.length"
-          class="
-            z-10
-            absolute
-            w-auto
-            flex-1
-            top-15
-            bg-gray-50
-            dark:bg-gray-900
-            rounded-md
-            border border-gray-300
-            overflow-hidden
-          "
+          class="absolute z-10 flex-1 w-auto overflow-hidden border border-gray-300 rounded-md top-15 bg-gray-50 dark:bg-gray-900"
         >
           <li v-for="post of posts" :key="post.slug">
             <nuxt-link
               :to="{ name: 'posts-slug', params: { slug: post.slug } }"
-              class="
-                flex
-                px-4
-                py-2
-                items-center
-                leading-5
-                transition
-                ease-in-out
-                duration-100
-                hover:bg-skunkblue hover:text-white
-              "
+              class="flex items-center px-4 py-2 leading-5 transition duration-100 ease-in-out hover:bg-skunkblue hover:text-white"
             >
               {{ post.title }}
             </nuxt-link>
@@ -68,7 +30,7 @@
     <button
       v-if="inputIsOpen"
       @click="inputIsOpen = false"
-      class="cursor-default fixed inset-0 h-full w-full"
+      class="fixed inset-0 w-full h-full cursor-default"
     ></button>
   </div>
 </template>

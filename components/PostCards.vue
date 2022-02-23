@@ -1,20 +1,22 @@
 <template>
   <li class="h-full">
     <nuxt-link
-      class="h-full flex flex-col justify-between"
+      class="flex flex-col justify-between h-full"
       :to="{ name: 'posts-slug', params: { slug: item.slug } }"
     >
-      <h3 class="mb-1 m-0">{{ item.title }}</h3>
-      <div class="tagWrapper mb-1">
-        <span
-          v-for="tag in item.tags"
-          :key="tags"
-          class="bg-green-200 rounded-lg mr-2 p-1"
-        >
-          #{{ tag }}
-        </span>
+      <h3 class="m-0 mb-1 visited:text-green-400 font-jetbrains-mono">
+        {{ item.title }}
+      </h3>
+      <div class="flex mb-1 tagWrapper">
+        <div v-for="tag in item.tags" :key="tag">
+          <p
+            class="px-1 py-1 mr-2 text-sm bg-green-200 rounded-lg font-jetbrains-mono"
+          >
+            #{{ tag }}
+          </p>
+        </div>
       </div>
-      <p class="text-xs mt-2 m-0">✏️ {{ formatDate(item.gitUpdatedAt) }}</p>
+      <p class="m-0 mt-2 text-xs">✏️ {{ formatDate(item.gitUpdatedAt) }}</p>
     </nuxt-link>
   </li>
 </template>

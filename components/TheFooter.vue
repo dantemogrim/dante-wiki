@@ -1,193 +1,61 @@
 <template>
   <footer class="min-w-full h-45">
-    <nav class="m-2 flex flex-row justify-evenly items-center h-4/5">
+    <nav class="flex flex-row items-center m-2 justify-evenly h-4/5">
       <!-- GitHub. -->
       <a
-        class="
-          transition
-          duration-300
-          ease-in-out
-          transform
-          hover:-translate-y-1 hover:scale-101
-        "
+        class="transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-101"
         href="https://github.com/dantemogrim/"
+        target="_blank"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="35"
-          height="35"
-          fill="#000000"
-          viewBox="0 0 256 256"
-        >
-          <rect width="256" height="256" fill="none"></rect>
-          <path
-            d="M84,240a24,24,0,0,0,24-24V168"
-            fill="none"
-            stroke="#000000"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="24"
-          ></path>
-          <path
-            d="M172,240a24,24,0,0,1-24-24V168"
-            fill="none"
-            stroke="#000000"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="24"
-          ></path>
-          <path
-            d="M152,168h16a24,24,0,0,1,24,24v8a24,24,0,0,0,24,24"
-            fill="none"
-            stroke="#000000"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="24"
-          ></path>
-          <path
-            d="M104,168H88a24,24,0,0,0-24,24v8a24,24,0,0,1-24,24"
-            fill="none"
-            stroke="#000000"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="24"
-          ></path>
-          <path
-            d="M111.825,63.99934A51.9599,51.9599,0,0,0,68,40a51.90058,51.90058,0,0,0-3.48841,44.7036A49.25789,49.25789,0,0,0,56,112v8a48,48,0,0,0,48,48h48a48,48,0,0,0,48-48v-8a49.25769,49.25769,0,0,0-8.5116-27.29639A51.90061,51.90061,0,0,0,188,40a51.95992,51.95992,0,0,0-43.82535,23.99983Z"
-            fill="none"
-            stroke="#000000"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="24"
-          ></path>
-        </svg>
+        <GitHub />
       </a>
       <!-- E-mail. -->
       <a
-        class="
-          transition
-          duration-300
-          ease-in-out
-          transform
-          hover:-translate-y-1 hover:scale-101
-        "
+        class="transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-101"
         href="mailto:1991.mogrim@gmail.com"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="35"
-          height="35"
-          fill="#000000"
-          viewBox="0 0 256 256"
-        >
-          <rect width="256" height="256" fill="none"></rect>
-          <polyline
-            points="224 56 128 144 32 56"
-            fill="none"
-            stroke="#000000"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="24"
-          ></polyline>
-          <path
-            d="M32,56H224a0,0,0,0,1,0,0V192a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V56A0,0,0,0,1,32,56Z"
-            fill="none"
-            stroke="#000000"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="24"
-          ></path>
-          <line
-            x1="110.54541"
-            y1="128.00013"
-            x2="34.4668"
-            y2="197.73926"
-            fill="none"
-            stroke="#000000"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="24"
-          ></line>
-          <line
-            x1="221.53418"
-            y1="197.73926"
-            x2="145.45424"
-            y2="127.99964"
-            fill="none"
-            stroke="#000000"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="24"
-          ></line>
-        </svg>
+        <Mail />
       </a>
       <!-- LinkedIn. -->
       <a
-        class="
-          transition
-          duration-300
-          ease-in-out
-          transform
-          hover:-translate-y-1 hover:scale-101
-        "
+        class="transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-101"
         href="https://www.linkedin.com/in/dantemogrim"
+        target="_blank"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="35"
-          height="35"
-          fill="#000000"
-          viewBox="0 0 256 256"
-        >
-          <rect width="256" height="256" fill="none"></rect>
-          <rect
-            x="36"
-            y="36"
-            width="184"
-            height="184"
-            rx="8"
-            stroke-width="24"
-            stroke="#000000"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            fill="none"
-          ></rect>
-          <line
-            x1="124"
-            y1="120.00094"
-            x2="124"
-            y2="176.00094"
-            fill="none"
-            stroke="#000000"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="24"
-          ></line>
-          <line
-            x1="84"
-            y1="120.00094"
-            x2="84"
-            y2="176.00094"
-            fill="none"
-            stroke="#000000"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="24"
-          ></line>
-          <path
-            d="M124,148.00094a28,28,0,1,1,56,0v28"
-            fill="none"
-            stroke="#000000"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="24"
-          ></path>
-          <circle cx="84" cy="79.99998" r="16"></circle>
-        </svg>
+        <LinkedIn />
+      </a>
+      <!-- RSS -->
+      <a
+        class="transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-101"
+        href="https://www.dante.wiki/feed.xml"
+        target="_blank"
+      >
+        <RSS />
       </a>
     </nav>
     <section class="flex flex-row justify-center w-full h-auto">
-      <p class="my-2">© Dante Mogrim 2021</p>
+      <p class="my-2">© Dante Mogrim {{ currentYear }}</p>
     </section>
   </footer>
 </template>
+
+<script>
+import GitHub from '~/components/icons/GitHub.vue';
+import LinkedIn from '~/components/icons/LinkedIn.vue';
+import Mail from '~/components/icons/Mail.vue';
+import RSS from '~/components/icons/RSS.vue';
+
+export default {
+  components: {
+    GitHub,
+    LinkedIn,
+    Mail,
+    RSS,
+  },
+  data() {
+    return {
+      currentYear: new Date().getFullYear(),
+    };
+  },
+};
+</script>

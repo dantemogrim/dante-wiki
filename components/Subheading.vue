@@ -1,5 +1,3 @@
 <template>
-  <div class="subheadingCard mt-6 mx-2 p-3 shadow-lg">
-    <h2 class="text-white"><slot>Title</slot></h2>
-  </div>
+  <h2 class="pl-3 text-2xl font-jetbrains-mono"><slot>Title</slot></h2>
 </template>

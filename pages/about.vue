@@ -1,8 +1,8 @@
 <template>
-  <div class="md:m-4">
+  <div class="md:m-4 font-jetbrains-mono">
     <Heading>About</Heading>
     <article
-      class="m-2 bg-green-100 flex flex-col p-4 rounded-md shadow-lg md:my-4"
+      class="flex flex-col p-4 m-2 bg-white rounded-md shadow-md md:my-4"
     >
       <p>
         Hi! My name is Dante Mogrim. I am a web developer student living in
@@ -24,7 +24,7 @@
     </div>
 
     <article
-      class="m-2 bg-green-100 flex flex-col p-4 rounded-md shadow-lg md:mt-4"
+      class="flex flex-col p-4 m-2 bg-white rounded-md shadow-md md:mt-4"
     >
       <p>Here are a few random facts and about me:</p>
       <ul>
@@ -49,7 +49,7 @@
     </article>
     <Subheading>Connect</Subheading>
     <article
-      class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2 md:mt-4"
+      class="flex flex-col p-4 m-2 bg-white rounded-md shadow-md md:mt-4"
     >
       <p class="mt-1 mb-2">
         <i>
@@ -81,7 +81,7 @@
     </article>
     <Subheading>Setup</Subheading>
     <article
-      class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2 md:mt-4"
+      class="flex flex-col p-4 m-2 bg-white rounded-md shadow-md md:mt-4"
     >
       <p>General setup + hardware:</p>
       <ul>
@@ -148,7 +148,7 @@
     </article>
     <Subheading>Playlists</Subheading>
     <article
-      class="bg-gray-50 flex flex-col p-4 rounded-md shadow-lg m-2 md:mt-4"
+      class="flex flex-col p-4 m-2 bg-white rounded-md shadow-md md:mt-4"
     >
       <ul>
         <li>

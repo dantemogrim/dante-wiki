@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="font-jetbrains-mono">
     <button>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -7,7 +7,7 @@
         height="35"
         fill="none"
         viewBox="0 0 256 256"
-        class="transition duration-500 ease-in-out transform bg-blue-200 rounded-lg shadow-md cursor-pointer hover:rotate-45"
+        class="transition duration-500 ease-in-out transform bg-red-100 rounded-lg shadow-md cursor-pointer hover:rotate-45"
         @click="menuIsOpen = !menuIsOpen"
       >
         <rect width="256" height="256" fill="none"></rect>
@@ -73,21 +73,21 @@
       >
         <nuxt-link to="/about">
           <li
-            class="px-3 py-2 transition-colors duration-300 hover:bg-skunkblue hover:text-white"
+            class="px-3 py-2 transition-colors duration-300 hover:bg-red-100 hover:text-blue-600"
           >
             About
           </li>
         </nuxt-link>
         <nuxt-link to="/posts">
           <li
-            class="px-3 py-2 transition-colors duration-300 hover:bg-skunkblue hover:text-white"
+            class="px-3 py-2 transition-colors duration-300 hover:bg-red-100 hover:text-blue-600"
           >
             Posts
           </li>
         </nuxt-link>
         <nuxt-link to="/tags">
           <li
-            class="px-3 py-2 transition-colors duration-300 hover:bg-skunkblue hover:text-white"
+            class="px-3 py-2 transition-colors duration-300 hover:bg-red-100 hover:text-blue-600"
           >
             Tags
           </li>

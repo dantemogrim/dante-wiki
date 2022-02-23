@@ -1,14 +1,8 @@
 <template>
   <div class="md:m-4">
-    <Heading class="mb-2">All Tags</Heading>
+    <Heading>All Tags</Heading>
     <ul
-      class="
-        m-0
-        list-none
-        flex flex-col
-        justify-center
-        md:my-3 md:grid md:grid-flow-row md:grid-cols-3 md:grid-rows-8 md:gap-4
-      "
+      class="flex flex-col justify-center m-0 list-none md:my-3 md:grid md:grid-flow-row md:grid-cols-3 md:grid-rows-8 md:gap-4"
     >
       <div v-for="item of items" :key="item.slug">
         <TagCards :item="item" />

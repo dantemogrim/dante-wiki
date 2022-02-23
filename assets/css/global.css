@@ -9,13 +9,13 @@ html {
 }
 
 body {
-  background-color: #e7e7ff;
+  background-color: rgb(250 250 250);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   background-size: 40px 40px;
-  background-image: linear-gradient(to right, #d9d9ee 1px, transparent 1px),
-    linear-gradient(to bottom, #d9d9ee 1px, transparent 1px);
+  background-image: linear-gradient(to right, #e8e8e8 1px, transparent 1px),
+    linear-gradient(to bottom, #e8e8e8 1px, transparent 1px);
 }
 
 .page-enter-active,
@@ -25,18 +25,6 @@ body {
 .page-enter,
 .page-leave-to {
   opacity: 0;
-}
-
-.headingCard {
-  background: #414677;
-  background: linear-gradient(90deg, #414677, #414677 38%, #4e548e 100%);
-  border-radius: 10px;
-}
-
-.subheadingCard {
-  background: #2e63a8;
-  background: linear-gradient(90deg, #2e63a8, #2e63a8 38%, #3774c4 100%);
-  border-radius: 10px;
 }
 
 hr {
@@ -51,14 +39,14 @@ hr {
 
 /* TODO - Glassmorphism within header & footer. */
 header {
-  background: rgba(231, 231, 255, 0.95);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(150px);
   border: solid 2px transparent;
   box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
 }
 
 footer {
-  background: rgba(231, 231, 255, 0.95);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(150px);
   border: solid 2px transparent;
   box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
