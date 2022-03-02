@@ -1,5 +1,5 @@
 <template>
-  <footer class="min-w-full h-45">
+  <footer class="min-w-full glassmorphism h-45">
     <nav class="flex flex-row items-center m-2 justify-evenly h-4/5">
       <!-- GitHub. -->
       <a

@@ -17,7 +17,7 @@
     <section
       id="next"
       v-if="nextPage"
-      class="flex items-center w-full h-20 mt-3 text-sm uppercase font-jetbrains-mono"
+      class="flex items-center justify-center w-full h-20 mt-3 text-sm uppercase font-cartridge"
     >
       <nuxt-link
         to="posts/page/2"

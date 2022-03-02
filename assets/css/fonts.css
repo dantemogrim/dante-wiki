@@ -4,8 +4,8 @@
 }
 
 @font-face {
-  font-family: 'editorial-new';
-  src: url('~static/fonts/editorial-new.woff2') format('woff2');
+  font-family: 'cartridge';
+  src: url('~static/fonts/cartridge.woff2') format('woff2');
 }
 
 /* Fallback Fonts */

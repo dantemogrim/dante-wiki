@@ -2,7 +2,7 @@
   <div class="md:mx-20 font-jetbrains-mono">
     <article class="flex flex-col p-4 m-2 rounded-md shadow-lg bg-gray-50">
       <gif :gif="post.gif" />
-      <h1 class="font-medium text-indigo-900 whitespace-normal">
+      <h1 class="text-5xl text-indigo-900 font-cartridge">
         {{ post.title }}
       </h1>
       <p class="mt-2 mb-2">{{ post.description }}</p>
@@ -19,13 +19,13 @@
         </span>
       </div>
       <author :author="post.author" />
-      <div class="p-3 mb-2 bg-indigo-100 rounded-2xl sm:w-full md:w-2/6">
+      <div class="p-3 mb-2 rounded-md bg-indigo-50 sm:w-full md:w-2/6">
         <p>🌱 Created: {{ formatDate(post.gitCreatedAt) }}</p>
         <p>✏️ Updated: {{ formatDate(post.gitUpdatedAt) }}</p>
       </div>
       <hr />
       <!-- TOC - Table of Contents -->
-      <nav class="p-3 bg-blue-100 rounded-2xl sm:w-full md:w-2/6">
+      <nav class="p-3 bg-blue-100 rounded-md sm:w-full md:w-2/6">
         <p>📚 Contents:</p>
         <ul>
           <li v-for="link of post.toc" :key="link.id">

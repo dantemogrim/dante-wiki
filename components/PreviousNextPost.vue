@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center justify-around w-full h-20 mt-3 text-sm uppercase font-jetbrains-mono"
+    class="flex items-center justify-around w-full h-20 mt-3 text-sm uppercase font-cartridge"
   >
     <nuxt-link
       v-if="previous"

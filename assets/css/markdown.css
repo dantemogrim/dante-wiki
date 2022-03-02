@@ -4,7 +4,12 @@
 .nuxt-content h3 {
   color: black;
   margin: 20px 0 0 0;
-  white-space: normal;
+  font-family: 'Cartridge';
+}
+
+.nuxt-content h2 {
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
 }
 
 /* Paragraphs. */

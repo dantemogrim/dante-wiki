@@ -12,7 +12,7 @@ module.exports = {
         wiggle: 'wiggle 1s ease-in-out infinite',
       },
       fontFamily: {
-        'editorial-new': ['editorial-new'],
+        cartridge: ['cartridge'],
         'jetbrains-mono': ['jetbrains-mono'],
       },
       keyframes: {
@@ -20,6 +20,12 @@ module.exports = {
           '0%, 100%': { transform: 'rotate(-2deg)' },
           '50%': { transform: 'rotate(2deg)' },
         },
+      },
+      maxHeight: {
+        128: '32rem',
+      },
+      width: {
+        120: '30rem',
       },
     },
   },
