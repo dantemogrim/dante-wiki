@@ -1,47 +1,26 @@
 <template>
-  <header class="sticky inset-0 z-10 h-16 min-w-full glassmorphism">
-    <nav class="grid items-center w-full h-full grid-cols-6 px-4">
+  <header
+    class="sticky inset-0 z-10 flex items-center h-16 text-gray-900 shadow-sm bg-zinc-200"
+  >
+    <nav class="grid items-center w-full grid-cols-6 px-4">
       <nuxt-link
-        class="self-center col-start-1 col-end-3 mr-5 text-3xl lg:col-end-2 font-cartridge"
+        class="self-center col-start-1 col-end-3 text-2xl text-pink-500 uppercase brand sm:text-4xl lg:col-end-2 font-cartridge"
         to="/"
         >dante.wiki</nuxt-link
       >
-      <SearchInput
-        class="self-center col-start-4 col-end-6 lg:col-start-2 lg:col-end-3"
-      />
-      <div class="w-0 lg:col-start-4 lg:col-end-6">
+      <div
+        class="inline-flex items-center self-center justify-center col-start-3 col-end-6 lg:col-start-2 lg:col-end-4 md:justify-end"
+      >
+        <Search class="mr-4" />
+        <SearchInput />
+      </div>
+      <div class="w-0 lg:col-start-5 lg:col-end-6">
         <div @click="menuOpen = !menuOpen">
           <button v-if="menuOpen" class="absolute w-7 h-7 top-4 right-5">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-7 h-7"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
+            <Hamburger class="hover:text-indigo-500" />
           </button>
           <button v-else class="absolute w-7 h-7 top-4 right-5">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-7 h-7"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
+            <Close class="hover:text-indigo-500" />
           </button>
         </div>
         <transition
@@ -61,20 +40,24 @@
 </template>
 
 <script>
+import Close from '~/components/icons/Close.vue';
+import Hamburger from '~/components/icons/Hamburger.vue';
+import Menu from '~/components/Menu.vue';
+import Search from '~/components/icons/Search.vue';
+
 export default {
+  components: {
+    Close,
+    Hamburger,
+    Menu,
+    Search,
+  },
   data() {
     return {
       menuOpen: false,
     };
   },
-  mounted() {
-    let width = window.innerWidth;
-    console.log(width);
-
-    // if (width > 500) {
-    //   return (this.active = true);
-    // }
-  },
+  mounted() {},
   methods: {
     toggleClass: function (event) {
       this.active = !this.active;

@@ -1,49 +1,16 @@
 <template>
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="35"
-    height="35"
-    fill="#000000"
-    viewBox="0 0 256 256"
+    class="w-6 h-6"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    stroke-width="2"
   >
-    <rect width="256" height="256" fill="none"></rect>
-    <polyline
-      points="224 56 128 144 32 56"
-      fill="none"
-      stroke="#000000"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="24"
-    ></polyline>
     <path
-      d="M32,56H224a0,0,0,0,1,0,0V192a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V56A0,0,0,0,1,32,56Z"
-      fill="none"
-      stroke="#000000"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="24"
-    ></path>
-    <line
-      x1="110.54541"
-      y1="128.00013"
-      x2="34.4668"
-      y2="197.73926"
-      fill="none"
-      stroke="#000000"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="24"
-    ></line>
-    <line
-      x1="221.53418"
-      y1="197.73926"
-      x2="145.45424"
-      y2="127.99964"
-      fill="none"
-      stroke="#000000"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="24"
-    ></line>
+      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+    />
   </svg>
 </template>

@@ -9,13 +9,14 @@ html {
 }
 
 body {
-  background-color: rgb(250 250 250);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-size: 40px 40px;
-  background-image: linear-gradient(to right, #e8e8e8 1px, transparent 1px),
-    linear-gradient(to bottom, #e8e8e8 1px, transparent 1px);
+}
+
+.brand,
+.ligatures {
+  font-feature-settings: 'aalt' on;
 }
 
 .page-enter-active,
@@ -30,19 +31,6 @@ body {
 hr {
   border: 1px dashed #f0bbe3;
   margin: 20px;
-}
-
-.brand {
-  width: 220px;
-  height: auto;
-}
-
-/* TODO - Glassmorphism within header & footer. */
-.glassmorphism {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(150px);
-  border: solid 2px transparent;
-  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
 }
 
 .v-enter-from,

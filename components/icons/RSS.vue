@@ -1,36 +1,16 @@
 <template>
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="35"
-    height="35"
-    fill="#000000"
-    viewBox="0 0 256 256"
+    class="w-6 h-6"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    stroke-width="2"
   >
-    <rect width="256" height="256" fill="none"></rect>
     <path
-      d="M48,144a64,64,0,0,1,64,64"
-      fill="none"
-      stroke="#000000"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="24"
-    ></path>
-    <path
-      d="M48,96A112,112,0,0,1,160,208"
-      fill="none"
-      stroke="#000000"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="24"
-    ></path>
-    <path
-      d="M48,48A159.1,159.1,0,0,1,161.1,94.9,159.1,159.1,0,0,1,208,208"
-      fill="none"
-      stroke="#000000"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="24"
-    ></path>
-    <circle cx="52" cy="204" r="16"></circle>
+      d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z"
+    />
   </svg>
 </template>

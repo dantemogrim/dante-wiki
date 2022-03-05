@@ -1,5 +1,5 @@
 <template>
-  <div class="md:m-4">
+  <div>
     <article
       class="flex flex-col p-4 m-2 rounded-md shadow-lg tagWrapper bg-gray-50"
     >
@@ -11,16 +11,12 @@
       <div class="p-3 text-white bg-img"></div>
     </article>
     <Subheading>Related Posts</Subheading>
-    <p class="ml-2 text-skunkblue">// Ordered by last updated post.</p>
+    <p class="ml-2">// Ordered by last update.</p>
     <ul
-      class="flex flex-col m-0 list-none md:my-3 md:grid md:grid-flow-col md:grid-cols-2 md:grid-rows-5 md:gap-4"
+      class="flex flex-col justify-center md:mx-3 md:my-3 md:grid md:grid-cols-3 md:grid-rows-4 md:gap-4"
     >
-      <div
-        v-for="item of items"
-        :key="item.slug"
-        class="flex flex-col justify-between h-full p-2 m-2 transition duration-300 ease-in-out transform rounded-md shadow-lg bg-gray-50 hover:-translate-y-1 hover:scale-101"
-      >
-        <PostCards :item="item" />
+      <div v-for="item of items" :key="item.slug">
+        <PostCard :item="item" />
       </div>
     </ul>
     <section
@@ -30,13 +26,13 @@
       <nuxt-link
         :to="previousLink"
         class="flex items-center justify-center w-40 h-8 p-3 text-white bg-indigo-400 rounded-full shadow-md hover:animate-wiggle whitespace-nowrap"
-        >👈 Previous page</nuxt-link
+        >Previous page</nuxt-link
       >
       <nuxt-link
         v-if="nextPage"
         :to="`${pageNumber + 1}`"
         class="flex items-center justify-center w-40 h-8 p-3 text-white bg-indigo-400 rounded-full shadow-md hover:animate-wiggle whitespace-nowrap"
-        >Next page 👉</nuxt-link
+        >Next page</nuxt-link
       >
     </section>
   </div>
@@ -58,15 +54,15 @@ export default {
         tags: { $contains: tag.slug },
       })
       .sortBy('gitUpdatedAt', 'desc')
-      .limit(10)
-      .skip(10 * (pageNumber - 1))
+      .limit(12)
+      .skip(12 * (pageNumber - 1))
       .fetch();
 
     if (!items.length) {
       return error({ statusCode: 404, message: 'No posts found!' });
     }
 
-    const nextPage = items.length === 10;
+    const nextPage = items.length === 12;
     const posts = nextPage ? items.slice(0, -1) : items;
 
     return {

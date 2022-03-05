@@ -3,23 +3,3 @@ p {
   font-family: 'jetbrains-mono', Arial, Helvetica, Verdana, Georgia, Tahoma,
     sans-serif;
 }
-
-/* Text settings. */
-h1 {
-  font-size: 1.5rem;
-  line-height: 2.5rem;
-  color: black;
-}
-
-h2 {
-  font-size: 1.3rem;
-  line-height: 2.25rem;
-  color: black;
-}
-
-h3 {
-  font-size: 1.2rem;
-  line-height: 2rem;
-  font-weight: 700;
-  color: blue;
-}

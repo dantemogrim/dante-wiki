@@ -1,21 +1,27 @@
 <template>
   <div
-    class="absolute left-0 inline-flex flex-col w-screen pt-5 uppercase bg-white shadow-md lg:shadow-none h-min lg:justify-between lg:w-96 lg:pt-0 lg:bg-transparent lg:text-black w-fit lg:static top-12 lg:flex-row"
+    class="absolute left-0 z-10 inline-flex flex-col w-full text-xl tracking-widest border-t-2 border-gray-300 shadow-md bg-zinc-200 lg:border-none lg:shadow-none h-min lg:justify-between lg:pt-0 lg:bg-transparent lg:w-60 lg:text-buttermilk lg:static top-15 lg:flex-row"
   >
     <NuxtLink
-      class="p-6 lg:self-center lg:p-0 hover:bg-indigo-100 lg:hover:bg-transparent font-cartridge"
+      class="p-4 border-b-2 border-gray-300 lg:border-none lg:self-center lg:p-0 hover:bg-gray-100 active:bg-gray-100 lg:text-gray-900 lg:hover:bg-transparent font-cartridge"
       to="/about"
       >About</NuxtLink
     >
     <NuxtLink
-      class="p-6 lg:self-center lg:p-0 hover:bg-indigo-100 lg:hover:bg-transparent font-cartridge"
+      class="p-4 lg:self-center lg:p-0 hover:bg-gray-100 lg:text-gray-900 lg:hover:bg-transparent font-cartridge"
       to="/posts"
       >Posts</NuxtLink
     >
     <NuxtLink
-      class="p-6 lg:self-center lg:p-0 hover:bg-indigo-100 lg:hover:bg-transparent font-cartridge"
+      class="p-4 border-t-2 border-gray-300 lg:border-none lg:self-center lg:p-0 hover:bg-gray-100 lg:text-gray-900 lg:hover:bg-transparent font-cartridge"
       to="/tags"
       >Tags</NuxtLink
     >
   </div>
 </template>
+
+<style scoped>
+.nuxt-link-exact-active {
+  color: #ec4899;
+}
+</style>

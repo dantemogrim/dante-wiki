@@ -1,37 +1,33 @@
 <template>
-  <div class="md:m-4">
-    <div class="flex justify-center">
-      <img
-        class="mt-3"
-        src="/selfie.png"
-        alt="An illustration of me peeking up and smiling."
-      />
-    </div>
-    <article class="flex flex-col p-4 m-2 bg-white rounded-md shadow-md">
-      <p class="m-1">
-        Hello! I'm Dante Mogrim. I am a web developer student living in
-        Gothenburg, Sweden. Welcome to my personal wikipedia of web development
-        findings.
+  <div>
+    <div class="flex items-center justify-center w-full m-4 h-28">
+      <p class="inline-flex items-center h-10 p-3">
+        Hello! I'm Dante Mogrim. Welcome to my personal wikipedia of web
+        development findings.
       </p>
-    </article>
+    </div>
     <Subheading>Latest Posts</Subheading>
-
-    <ul
-      class="m-0 list-none sm:flex sm:flex-col sm:justify-center md:my-3 md:grid md:grid-flow-col md:grid-cols-2 md:grid-rows-3 md:gap-4"
-    >
-      <div
-        class="p-2 m-2 mt-3 transition duration-300 ease-in-out transform bg-white rounded-md shadow-md hover:-translate-y-1 hover:scale-101"
-        v-for="item of items"
-        :key="item.slug"
+    <div class="flex-col items-center justify-center w-full md:flex h-fit">
+      <ul
+        class="flex flex-col justify-center md:mx-3 md:my-3 md:grid md:grid-cols-3 md:grid-rows-2 md:gap-4"
       >
-        <PostCards :item="item" />
-      </div>
-    </ul>
+        <div class="grid-flow-col" v-for="item of items" :key="item.slug">
+          <PostCard :item="item" />
+        </div>
+      </ul>
+    </div>
   </div>
 </template>
 
 <script>
+import PostCard from '~/components/PostCard.vue';
+import Subheading from '~/components/Subheading.vue';
+
 export default {
+  components: {
+    PostCard,
+    Subheading,
+  },
   async asyncData({ $content, params }) {
     const items = await $content('posts')
       .only(['title', 'slug', 'tags', 'gitUpdatedAt'])

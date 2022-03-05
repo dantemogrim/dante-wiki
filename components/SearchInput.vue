@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="font-cartridge">
     <input
       @click="inputIsOpen = !inputIsOpen"
       v-model="searchQuery"
       type="search"
       autocomplete="off"
-      placeholder="🔎"
-      class="relative z-10 block w-full p-2 leading-5 text-gray-700 placeholder-gray-500 truncate transition transition-colors duration-300 bg-gray-100 rounded-md focus:ring-skunkblue focus:bg-gray-50"
+      placeholder=""
+      class="z-10 block w-24 p-2 leading-5 text-gray-700 truncate transition-colors duration-300 bg-gray-300 rounded-sm h-7 sm:w-60 focus:ring-indigo-200 focus:bg-indigo-100"
     />
 
     <div v-if="inputIsOpen">
@@ -14,12 +14,12 @@
         <ul
           @click="inputIsOpen = false"
           v-if="posts.length"
-          class="absolute z-10 flex-1 w-auto overflow-hidden border border-gray-300 rounded-md top-15 bg-gray-50 dark:bg-gray-900"
+          class="absolute z-10 flex-1 w-auto overflow-hidden rounded-b bg-zinc-200 top-15"
         >
           <li v-for="post of posts" :key="post.slug">
             <nuxt-link
               :to="{ name: 'posts-slug', params: { slug: post.slug } }"
-              class="flex items-center px-4 py-2 leading-5 transition duration-100 ease-in-out hover:bg-skunkblue hover:text-white"
+              class="flex items-center px-4 py-2 leading-5 transition duration-100 ease-in-out hover:bg-gray-100"
             >
               {{ post.title }}
             </nuxt-link>

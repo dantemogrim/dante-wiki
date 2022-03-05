@@ -36,9 +36,10 @@ $ npm run dev
 
 <details><summary>📚 WIP</summary>
 
-- [ ] TypeScript implementation
-- [ ] RSS feed.
-- [ ] Extending PrismJS functionalities.
+- [ ] Progress responsiveness.
+- [x] RSS feed.
+- [ ] TypeScript implementation.
+
 
 </details>
 

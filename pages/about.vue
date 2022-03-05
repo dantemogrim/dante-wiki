@@ -47,7 +47,7 @@
         </li>
       </ul>
     </article>
-    <Subheading>Connect</Subheading>
+    <Subheading color="bg-yellow-500">Connect</Subheading>
     <article
       class="flex flex-col p-4 m-2 bg-white rounded-md shadow-md md:mt-4"
     >
@@ -79,7 +79,7 @@
         </li>
       </ul>
     </article>
-    <Subheading>Setup</Subheading>
+    <Subheading color="bg-indigo-500">Setup</Subheading>
     <article
       class="flex flex-col p-4 m-2 bg-white rounded-md shadow-md md:mt-4"
     >
@@ -146,7 +146,7 @@
         <a href="https://github.com/dantemogrim/dante-wiki">here</a>.
       </p>
     </article>
-    <Subheading>Playlists</Subheading>
+    <Subheading color="bg-green-500">Playlists</Subheading>
     <article
       class="flex flex-col p-4 m-2 bg-white rounded-md shadow-md md:mt-4"
     >
