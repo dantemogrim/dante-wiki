@@ -36,7 +36,8 @@ $ npm run dev
 
 <details><summary>📚 WIP</summary>
 
-- [ ] Progress responsiveness.
+- [ ] Improve A11Y measurements.
+- [ ] Improve responsiveness.
 - [x] RSS feed.
 - [ ] TypeScript implementation.
 

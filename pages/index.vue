@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex items-center justify-center w-full m-4 h-28">
+    <div class="flex items-center justify-center m-4 h-28">
       <p class="inline-flex items-center h-10 p-3">
         Hello! I'm Dante Mogrim. Welcome to my personal wikipedia of web
         development findings.
