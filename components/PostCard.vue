@@ -15,12 +15,9 @@
         class="flex items-center row-start-3 row-end-3 p-1 bg-slate-200 rounded-b-md"
       >
         <div class="w-fit" v-for="tag in item.tags" :key="tag">
-          <nuxt-link
-            :to="`tags/${tag}`"
-            class="px-1 py-1 mr-2 text-sm rounded-lg hover:text-fuchsia-700 font-cartridge"
-          >
+          <p class="px-1 py-1 mr-2 text-sm rounded-lg font-cartridge">
             #{{ tag }}
-          </nuxt-link>
+          </p>
         </div>
       </div>
     </nuxt-link>
