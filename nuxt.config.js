@@ -60,7 +60,25 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-analytics',
   ],
+
+  googleAnalytics: {
+    id: process.env.GOOGLE_ANALYTICS_ID, // Use as fallback if no runtime config is provided
+    debug: {
+      enabled: true,
+      sendHitTask: true,
+    },
+  },
+  publicRuntimeConfig: {
+    googleAnalytics: {
+      id: process.env.GOOGLE_ANALYTICS_ID,
+      debug: {
+        enabled: true,
+        sendHitTask: true,
+      },
+    },
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
