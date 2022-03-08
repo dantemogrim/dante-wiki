@@ -1,19 +1,19 @@
 <template>
   <div
-    class="absolute left-0 z-10 inline-flex flex-col w-full text-xl tracking-widest border-t-2 border-gray-300 shadow-md bg-zinc-200 lg:border-none lg:shadow-none h-min lg:justify-between lg:pt-0 lg:bg-transparent lg:w-60 lg:text-buttermilk lg:static top-15 lg:flex-row"
+    class="absolute left-0 z-10 inline-flex flex-col w-full text-xl tracking-widest bg-blue-800 border-t-2 border-blue-500 shadow-md lg:border-none lg:shadow-none h-min lg:justify-between lg:pt-0 lg:bg-transparent lg:w-60 lg:text-buttermilk lg:static top-15 lg:flex-row"
   >
     <NuxtLink
-      class="p-4 border-b-2 border-gray-300 lg:border-none lg:self-center lg:p-0 hover:bg-gray-100 active:bg-gray-100 lg:text-gray-900 lg:hover:bg-transparent font-cartridge"
+      class="p-4 border-b-2 border-blue-500 lg:border-none lg:self-center lg:p-0 hover:bg-blue-600 lg:hover:bg-transparent font-cartridge"
       to="/about"
       >About</NuxtLink
     >
     <NuxtLink
-      class="p-4 lg:self-center lg:p-0 hover:bg-gray-100 lg:text-gray-900 lg:hover:bg-transparent font-cartridge"
+      class="p-4 lg:self-center lg:p-0 hover:bg-blue-600 lg:hover:bg-transparent font-cartridge"
       to="/posts"
       >Posts</NuxtLink
     >
     <NuxtLink
-      class="p-4 border-t-2 border-gray-300 lg:border-none lg:self-center lg:p-0 hover:bg-gray-100 lg:text-gray-900 lg:hover:bg-transparent font-cartridge"
+      class="p-4 border-t-2 border-blue-500 lg:border-none lg:self-center lg:p-0 hover:bg-blue-600 lg:hover:bg-transparent font-cartridge"
       to="/tags"
       >Tags</NuxtLink
     >
@@ -21,7 +21,7 @@
 </template>
 
 <style scoped>
-.nuxt-link-exact-active {
-  color: #ec4899;
+.nuxt-link-exact-active::before {
+  content: '🞰';
 }
 </style>

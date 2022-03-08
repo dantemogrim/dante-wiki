@@ -1,10 +1,10 @@
 <template>
   <header
-    class="sticky inset-0 z-10 flex items-center h-16 text-gray-900 shadow-sm bg-zinc-200"
+    class="sticky inset-0 z-10 flex items-center h-16 bg-blue-800 shadow-sm text-buttermilk"
   >
     <nav class="grid items-center w-full grid-cols-6 px-4">
       <nuxt-link
-        class="self-center col-start-1 col-end-3 text-2xl text-pink-500 uppercase brand sm:text-4xl lg:col-end-2 font-cartridge"
+        class="self-center col-start-1 col-end-3 text-2xl brand sm:text-4xl lg:col-end-2 font-cartridge"
         to="/"
         >dante.wiki</nuxt-link
       >
@@ -16,11 +16,19 @@
       </div>
       <div class="w-0 lg:col-start-5 lg:col-end-6">
         <div @click="menuOpen = !menuOpen">
-          <button v-if="menuOpen" class="absolute w-7 h-7 top-4 right-5">
-            <Hamburger class="hover:text-indigo-500" />
+          <button
+            v-if="menuOpen"
+            aria-label="Open menu."
+            class="absolute w-7 h-7 top-4 right-5"
+          >
+            <Hamburger class="hover:text-pink-200" />
           </button>
-          <button v-else class="absolute w-7 h-7 top-4 right-5">
-            <Close class="hover:text-indigo-500" />
+          <button
+            v-else
+            aria-label="Close menu."
+            class="absolute w-7 h-7 top-4 right-5"
+          >
+            <Close class="hover:text-pink-200" />
           </button>
         </div>
         <transition

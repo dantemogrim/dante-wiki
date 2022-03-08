@@ -1,18 +1,18 @@
 <template>
-  <footer
-    class="flex flex-col items-center justify-center w-full h-24 bg-zinc-200"
-  >
+  <footer class="flex flex-col items-center justify-center w-full h-24">
     <nav class="flex flex-row items-center w-full text-gray-900 justify-evenly">
       <a
         class="transition duration-300 ease-in-out transform hover:text-indigo-500 hover:-translate-y-1 hover:scale-101"
         href="https://github.com/dantemogrim/"
         target="_blank"
+        aria-label="GitHub"
       >
         <Code />
       </a>
       <a
         class="transition duration-300 ease-in-out transform hover:text-indigo-500 hover:-translate-y-1 hover:scale-101"
         href="mailto:1991.mogrim@gmail.com"
+        aria-label="E-Mail"
       >
         <Mail />
       </a>
@@ -20,6 +20,7 @@
         class="transition duration-300 ease-in-out transform hover:text-indigo-500 hover:-translate-y-1 hover:scale-101"
         href="https://www.linkedin.com/in/dantemogrim"
         target="_blank"
+        aria-label="LinkedIn"
       >
         <LinkedIn />
       </a>
@@ -27,6 +28,7 @@
         class="transition duration-300 ease-in-out transform hover:text-indigo-500 hover:-translate-y-1 hover:scale-101"
         href="https://www.dante.wiki/feed.xml"
         target="_blank"
+        aria-label="RSS"
       >
         <RSS />
       </a>
