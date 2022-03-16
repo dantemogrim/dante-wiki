@@ -21,7 +21,7 @@
 </template>
 
 <style scoped>
-.nuxt-link-exact-active::before {
-  content: '🞰';
+.nuxt-link-exact-active::after {
+  content: ' 📍';
 }
 </style>

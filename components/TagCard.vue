@@ -1,21 +1,16 @@
 <template>
-  <!-- <pre class="text-white">{{ item.color }}</pre> -->
   <nuxt-link
-    class="flex items-center justify-between h-16 m-2 uppercase transition duration-300 ease-in-out transform bg-gray-300 rounded-lg shadow-md md:text-sm whitespace-nowrap md:m-0 text-buttermilk tagWrapper hover:-translate-y-1 hover:scale-101"
+    class="flex items-center justify-center h-16 m-2 uppercase transition duration-300 ease-in-out transform bg-gray-400 rounded-lg shadow-md whitespace-nowrap md:m-0 tagWrapper hover:-translate-y-1 hover:scale-101"
     :to="{ name: 'tags-slug', params: { slug: item.slug } }"
   >
-    <div class="px-2 py-1 ml-2 bg-gray-400 rounded-full">
-      {{ item.emoji }}
+    <div class="w-1/6 h-0.5 bg-gray-500" />
+    <div
+      :class="item.color"
+      class="flex items-center justify-center w-11/12 text-center rounded-lg ring-2 ring-gray-500 h-2/3"
+    >
+      <h3 class="text-buttermilk ligatures font-cartridge" v-html="item.name" />
     </div>
-
-    <li :class="item.color" class="w-2/3 py-1 mx-2 text-center rounded-full">
-      <h3 class="font-cartridge">
-        <span class="ligatures" v-html="item.name" />
-      </h3>
-    </li>
-    <div class="px-2 py-1 mr-2 bg-gray-400 rounded-full">
-      {{ item.emoji }}
-    </div>
+    <div class="w-1/6 h-0.5 bg-gray-500" />
   </nuxt-link>
 </template>
 

@@ -21,17 +21,15 @@
     </ul>
     <section
       id="prev-next"
-      class="flex items-center justify-around w-full h-20 mt-3 text-sm uppercase font-cartridge"
+      class="flex items-center justify-around w-full h-20 mt-3"
     >
-      <nuxt-link
-        :to="previousLink"
-        class="flex items-center justify-center w-40 h-8 p-3 text-white bg-indigo-400 rounded-full shadow-md hover:animate-wiggle whitespace-nowrap"
+      <nuxt-link :to="previousLink" class="boombox-button"
         >Previous page</nuxt-link
       >
       <nuxt-link
         v-if="nextPage"
         :to="`${pageNumber + 1}`"
-        class="flex items-center justify-center w-40 h-8 p-3 text-white bg-indigo-400 rounded-full shadow-md hover:animate-wiggle whitespace-nowrap"
+        class="boombox-button"
         >Next page</nuxt-link
       >
     </section>

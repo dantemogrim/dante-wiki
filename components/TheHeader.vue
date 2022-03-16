@@ -21,14 +21,14 @@
             aria-label="Open menu."
             class="absolute w-7 h-7 top-4 right-5"
           >
-            <Hamburger class="hover:text-pink-200" />
+            <Hamburger class="hover:animate-pulse" />
           </button>
           <button
             v-else
             aria-label="Close menu."
             class="absolute w-7 h-7 top-4 right-5"
           >
-            <Close class="hover:text-pink-200" />
+            <Close class="hover:animate-pulse" />
           </button>
         </div>
         <transition

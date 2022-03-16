@@ -7,10 +7,8 @@
       </p>
     </div>
     <Subheading>Latest Posts</Subheading>
-    <div class="flex-col items-center justify-center w-full md:flex h-fit">
-      <ul
-        class="flex flex-col justify-center md:mx-3 md:my-3 md:grid md:grid-cols-3 md:grid-rows-2 md:gap-4"
-      >
+    <div class="flex-col items-center justify-center w-full h-fit">
+      <ul class="md:grid md:grid-cols-3 md:grid-rows-2 md:gap-4">
         <div class="grid-flow-col" v-for="item of items" :key="item.slug">
           <PostCard :item="item" />
         </div>

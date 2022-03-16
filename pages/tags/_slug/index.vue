@@ -25,11 +25,9 @@
     <section
       id="next"
       v-if="nextPage"
-      class="flex items-center justify-center w-full h-20 mt-3 text-sm uppercase font-cartridge"
+      class="flex items-center justify-center w-full h-20 mt-3"
     >
-      <nuxt-link
-        :to="`/tags/${tag.name}/page/2`"
-        class="flex items-center justify-center w-40 h-8 p-3 ml-2 text-white bg-indigo-400 rounded-full shadow-md hover:animate-wiggle whitespace-nowrap"
+      <nuxt-link :to="`/tags/${tag.name}/page/2`" class="boombox-button"
         >Next page</nuxt-link
       >
     </section>
