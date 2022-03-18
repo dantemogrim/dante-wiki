@@ -9,6 +9,7 @@ module.exports = {
   safelist: [
     'bg-black',
     'bg-white',
+    'min-h-screen',
     {
       pattern:
         /bg-(amber|blue|cyan|fuchsia|gray|emerald|green|indigo|lime|neutral|orange|pink|purple|red|rose|sky|slate|stone|teal|violet|yellow|zinc)-(100|200|300|400|500|600|700|800|900)/,
