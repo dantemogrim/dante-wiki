@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-11 bg-fixed bg-gray-200">
+  <div class="grid min-h-screen grid-cols-11 bg-fixed bg-gray-200">
     <TheHeader class="col-span-full" />
     <div
       class="items-center min-h-screen overflow-y-hidden col-span-full"
