@@ -5,10 +5,9 @@
       class="flex flex-col p-4 m-2 bg-white rounded-md shadow-md md:my-4"
     >
       <p>
-        Hi! My name is Dante Mogrim. I am a web developer student living in
-        Gothenburg, Sweden. Welcome to my personal cyber nook where I’ll be
-        sharing all kinds of development related knowledge as well as other fun
-        things.
+        Hi! My name is Dante Mogrim. I am a web developer living in Gothenburg,
+        Sweden. Welcome to my personal cyber nook where I’ll be sharing all
+        kinds of development related findings as well as other fun things.
       </p>
       <p>
         This project is both a personal + open source notebook. A collection of
@@ -27,20 +26,16 @@
       class="flex flex-col p-4 m-2 bg-white rounded-md shadow-md md:mt-4"
     >
       <p>Here are a few random facts and about me:</p>
-      <ul>
+      <ul class="ml-4 list-disc">
         <li>
           I am a cat guardian to two tortie sisters named Tosca and Waffles.
         </li>
-        <li>I was once a tram driver for four years.</li>
+        <li>I've worked as a tram driver for four years.</li>
         <li>
           I was born in Monterey, California (American + Swedish parents) and
           came to Sweden when I was two.
         </li>
         <li>I have a master’s degree in motion sickness.</li>
-        <li>
-          I am working on coming up with the ultimate recipe for Pad Thai. If
-          you have any pointers whatsoever, please share.
-        </li>
         <li>
           I am a left handed, habitual note taker with an untamed love for
           lists.
@@ -59,12 +54,12 @@
       </p>
       <p class="mb-2">
         Feel free to contact me at
-        <a class="text-blue-700" href="mailto:1991.mogrim@gmail.com"
-          >1991.mogrim@gmail.com</a
+        <a class="text-blue-700" href="mailto:mogrimdante@gmail.com"
+          >mogrimdante@gmail.com</a
         >
       </p>
       <p>Social media accounts:</p>
-      <ul>
+      <ul class="ml-4 list-disc">
         <li>
           <a class="text-blue-700" href="https://github.com/dantemogrim/"
             >🐈‍⬛ GitHub</a
@@ -83,74 +78,121 @@
     <article
       class="flex flex-col p-4 m-2 bg-white rounded-md shadow-md md:mt-4"
     >
-      <p>General setup + hardware:</p>
-      <ul>
+      <p class="font-semibold">General setup + hardware:</p>
+      <ul class="ml-4 list-disc">
         <li>💻 Macbook Pro 2019</li>
         <li>⌨️ Magic Keyboard</li>
         <li>🎙 Røde NT-USB</li>
       </ul>
-      <p>For this particular website:</p>
-      <ul>
+      <p class="mt-3 font-semibold">For this particular website:</p>
+      <ul class="ml-4 list-disc">
         <li>
           Base:
-          <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>
+          <a href="https://nuxtjs.org/" class="text-blue-700" target="_blank"
+            >Nuxt.js</a
+          >
         </li>
         <li>
           Domain:
-          <a href="https://www.one.com/en/" target="_blank">one.com</a>
+          <a
+            href="https://www.one.com/en/"
+            class="text-blue-700"
+            target="_blank"
+            >one.com</a
+          >
         </li>
         <li>
           Font:
-          <a href="https://www.jetbrains.com/lp/mono/" target="_blank"
+          <a
+            href="https://www.jetbrains.com/lp/mono/"
+            class="text-blue-700"
+            target="_blank"
             >JetBrains Mono</a
+          >
+          &
+          <a
+            href="https://simplebits.com/collections/fonts/products/cartridge-font"
+            class="text-blue-700"
+            target="_blank"
+            >Cartridge</a
           >
         </li>
         <li>
           Formatter:
-          <a href="https://prettier.io/" target="_blank">Prettier</a>
+          <a href="https://prettier.io/" class="text-blue-700" target="_blank"
+            >Prettier</a
+          >
         </li>
         <li>
           Git-based Headless CMS:
-          <a href="https://content.nuxtjs.org/" target="_blank">nuxt/content</a>
+          <a
+            href="https://content.nuxtjs.org/"
+            class="text-blue-700"
+            target="_blank"
+            >nuxt/content</a
+          >
         </li>
         <li>
           Hosting:
-          <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+          <a
+            href="https://www.netlify.com/"
+            class="text-blue-700"
+            target="_blank"
+            >Netlify</a
+          >
         </li>
         <li>
           Sitemap:
-          <a href="https://sitemap.nuxtjs.org/" target="_blank">
+          <a
+            href="https://sitemap.nuxtjs.org/"
+            class="text-blue-700"
+            target="_blank"
+          >
             nuxt/sitemap</a
           >
         </li>
         <li>
           Styling:
-          <a href="https://tailwindcss.com/" target="_blank"> Tailwind CSS</a>
+          <a
+            href="https://tailwindcss.com/"
+            class="text-blue-700"
+            target="_blank"
+          >
+            Tailwind CSS</a
+          >
         </li>
         <li>
           Syntax Highlighter:
-          <a href="https://prismjs.com/" target="_blank">PrismJS</a>
+          <a href="https://prismjs.com/" class="text-blue-700" target="_blank"
+            >PrismJS</a
+          >
         </li>
       </ul>
-      <p class="mb-2">
-        🎨 The design is inspired by my first programming memory from 1998 when
+      <p class="mt-3">
+        🦨 The design is inspired by my first programming memory from 1998 when
         I was active in an online community called
-        <a href="https://en.wikipedia.org/wiki/Skunk.nu">skunk.nu</a>.
+        <a
+          href="https://en.wikipedia.org/wiki/Skunk.nu"
+          class="text-blue-700"
+          target="_blank"
+          >skunk.nu</a
+        >.
       </p>
-      <p class="mb-2">
-        🍏 The content I write will be based off of what works on my own
-        operating system, Mac (sorry Windows + Linux). 🤷‍♂️
-      </p>
-      <p class="mb-2">
+      <p class="mt-3">
         👨‍💻 The code for this project is open source. You can find it
-        <a href="https://github.com/dantemogrim/dante-wiki">here</a>.
+        <a
+          href="https://github.com/dantemogrim/dante-wiki"
+          class="text-blue-700"
+          target="_blank"
+          >here</a
+        >.
       </p>
     </article>
     <Subheading color="bg-green-500">Playlists</Subheading>
     <article
       class="flex flex-col p-4 m-2 bg-white rounded-md shadow-md md:mt-4"
     >
-      <ul>
+      <ul class="ml-4 list-disc">
         <li>
           <a
             class="text-blue-700"
