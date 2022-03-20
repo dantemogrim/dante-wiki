@@ -28,5 +28,4 @@ links:
   url: https://tamakungchi.vercel.app/
 
 type: Solo
-
 ---

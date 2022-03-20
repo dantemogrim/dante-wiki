@@ -31,5 +31,4 @@ tools:
 - Vercel
 
 type: Solo
-
 ---

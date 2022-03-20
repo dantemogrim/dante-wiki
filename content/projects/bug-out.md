@@ -30,5 +30,4 @@ tools:
   - Phaser
 
 type: Collab
-
 ---

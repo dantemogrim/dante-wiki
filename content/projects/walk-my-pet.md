@@ -23,5 +23,4 @@ links:
   url: https://github.com/dantemogrim/walk-my-pet
 
 type: Collab
-
 ---

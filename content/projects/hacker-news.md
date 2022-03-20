@@ -26,5 +26,4 @@ tools:
   - Bootstrap
 
 type: Solo
-
 ---

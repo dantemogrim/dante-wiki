@@ -26,5 +26,4 @@ tools:
  - .NET Core
 
 type: Solo
-
 ---
