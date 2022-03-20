@@ -15,6 +15,16 @@ module.exports = {
         /bg-(amber|blue|cyan|fuchsia|gray|emerald|green|indigo|lime|neutral|orange|pink|purple|red|rose|sky|slate|stone|teal|violet|yellow|zinc)-(100|200|300|400|500|600|700|800|900)/,
       variants: ['focus', 'hover', 'md', 'md:hover', 'lg', 'lg:hover'],
     },
+    {
+      pattern:
+        /border-(amber|blue|cyan|fuchsia|gray|emerald|green|indigo|lime|neutral|orange|pink|purple|red|rose|sky|slate|stone|teal|violet|yellow|zinc)-(100|200|300|400|500|600|700|800|900)/,
+      variants: ['focus', 'hover', 'md', 'md:hover', 'lg', 'lg:hover'],
+    },
+    {
+      pattern:
+        /text-(amber|blue|cyan|fuchsia|gray|emerald|green|indigo|lime|neutral|orange|pink|purple|red|rose|sky|slate|stone|teal|violet|yellow|zinc)-(100|200|300|400|500|600|700|800|900)/,
+      variants: ['focus', 'hover', 'md', 'md:hover', 'lg', 'lg:hover'],
+    },
   ],
   theme: {
     extend: {

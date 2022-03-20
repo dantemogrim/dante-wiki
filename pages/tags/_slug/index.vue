@@ -3,6 +3,7 @@
     <article
       class="flex flex-col p-4 m-2 rounded-md shadow-lg tagWrapper bg-gray-50"
     >
+      <gif :gif="tag.gif" />
       <div class="p-1 pl-2 mb-2 bg-green-200 rounded-md">
         <h1>{{ tag.emoji }} #{{ tag.name }}</h1>
       </div>
