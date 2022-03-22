@@ -8,6 +8,6 @@ description: The PHP Framework for Web Artisans.
 emoji: 🐛
 
 gif:
-  alt: A Simpsons scene where a cat is showing a baby cat a great big ball of yarn.
-  src: https://media.giphy.com/media/xT5LMN3VPxsWBiWPFm/giphy.gif
+  alt: A person in medieval clothing riding a toy horse and stomping in front of a large castle.
+  src: https://media.giphy.com/media/eK0vlbtJLV0SjsJmIC/giphy.gif
 ---

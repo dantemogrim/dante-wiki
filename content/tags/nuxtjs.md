@@ -8,6 +8,6 @@ description: An intuitive framework built on top of Vue.
 emoji: 🗻
 
 gif:
-  alt: A Simpsons scene where a cat is showing a baby cat a great big ball of yarn.
-  src: https://media.giphy.com/media/xT5LMN3VPxsWBiWPFm/giphy.gif
+  alt: A view of Montana national park looking out over pretty mountains.
+  src: https://media.giphy.com/media/8LpEhnKQ4olb2/giphy.gif
 ---

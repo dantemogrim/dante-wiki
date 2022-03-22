@@ -8,6 +8,6 @@ description: SEO (search engine optimization) is a set of practices designed to 
 emoji: 🏅
 
 gif:
-  alt: A Simpsons scene where a cat is showing a baby cat a great big ball of yarn.
-  src: https://media.giphy.com/media/xT5LMN3VPxsWBiWPFm/giphy.gif
+  alt: A person with the label 'programmer' tries intimidating another labeled 'SEO expert' who smacks down the 'programmer' with a single punch.
+  src: https://media.giphy.com/media/5fkzHxGP920Ra/giphy-downsized.gif
 ---

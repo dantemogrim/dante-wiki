@@ -8,6 +8,6 @@ description: References to books, literature and other readable what-nots.
 emoji: 📚
 
 gif:
-  alt: A Simpsons scene where a cat is showing a baby cat a great big ball of yarn.
-  src: https://media.giphy.com/media/xT5LMN3VPxsWBiWPFm/giphy.gif
+  alt: A scene from X Files where Scully is intensely reading through a book on outer space.
+  src: https://media.giphy.com/media/3o85xG3i2IQrHhPJyU/giphy.gif
 ---
