@@ -8,6 +8,6 @@ description: macOS is an graphical operating system developed and marketed by Ap
 emoji: 🍎
 
 gif:
-  alt: A Simpsons scene where a cat is showing a baby cat a great big ball of yarn.
-  src: https://media.giphy.com/media/xT5LMN3VPxsWBiWPFm/giphy.gif
+  alt: One of the first start up interfaces on Apple computers (retro).
+  src: https://media.giphy.com/media/MTdNrKa1i1iy3lrJWH/giphy.gif
 ---

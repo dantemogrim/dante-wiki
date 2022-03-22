@@ -8,6 +8,6 @@ description: Puppeteer is a Node library which provides a high-level API to cont
 emoji: 🎭
 
 gif:
-  alt: A Simpsons scene where a cat is showing a baby cat a great big ball of yarn.
-  src: https://media.giphy.com/media/xT5LMN3VPxsWBiWPFm/giphy.gif
+  alt: A minimalistic animation of an atom symbol.
+  src: https://media.giphy.com/media/4vQ3MIacy1ar5kCXw6/giphy.gif
 ---
