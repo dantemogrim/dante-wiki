@@ -1,6 +1,6 @@
 ---
-title: .editorconfig 101
-description: Editorconfig explained and how to get started.
+title: Why .editorconfig?
+description: What's the purpose when we have all these fancy formatters?
 author:
   emoji: 🌀
   name: Dante Mogrim

@@ -1,7 +1,7 @@
 ---
 name: styled-components
 
-color: bg-gray-700
+color: bg-card-gray
 
 description: A styling framework that lets you write actual CSS in your JavaScript.
 

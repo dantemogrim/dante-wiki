@@ -1,6 +1,6 @@
 ---
-title: Fonts 101
-description: Good practices using fonts during web devleopment.
+title: Media Optimization
+description: Good practices when using images in web development.
 author:
   emoji: 🌀
   name: Dante Mogrim
@@ -9,5 +9,9 @@ gif:
   src: https://media.giphy.com/media/yR4xZagT71AAM/giphy.gif
   alt: A happy kid typing on an old computer that outputs 'syntax error'.
 tags:
-  - fonts
+  - media
 ---
+
+## Practices
+
+## Tools

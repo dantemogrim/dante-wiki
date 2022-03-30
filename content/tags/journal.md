@@ -1,7 +1,7 @@
 ---
 name: journal
 
-color: bg-violet-800
+color: bg-card-orange
 
 description: Something a bit more personal.
 

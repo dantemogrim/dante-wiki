@@ -1,13 +1,13 @@
 ---
 name: gatsby
 
-color: bg-purple-800
+color: bg-card-purple
 
 description:
 
 emoji: 🧐
 
 gif:
-  alt: A Simpsons scene where a cat is showing a baby cat a great big ball of yarn.
-  src: https://media.giphy.com/media/xT5LMN3VPxsWBiWPFm/giphy.gif
+  alt: A scene from The Great Gatsby where Leonardo di Caprio is making a cheers while fireworks are going off behind him.
+  src: https://media.giphy.com/media/u4CY9BW4umAfu/giphy.gif
 ---

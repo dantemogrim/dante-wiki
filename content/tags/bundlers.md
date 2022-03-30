@@ -1,13 +1,13 @@
 ---
 name: bundlers
 
-color: bg-yellow-700
+color: bg-card-pink
 
 description: Tools to help you minify your web projects resources before deploying.
 
 emoji: 📦
 
 gif:
-  alt: A Simpsons scene where a cat is showing a baby cat a great big ball of yarn.
-  src: https://media.giphy.com/media/xT5LMN3VPxsWBiWPFm/giphy.gif
+  alt: A scene from The Office where Jim Halpert is taping shut a larger box.
+  src: https://media.giphy.com/media/GA1s4aZhfe5f2N3fFb/giphy-downsized.gif
 ---

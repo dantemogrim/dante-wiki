@@ -8,6 +8,6 @@ description: Structured Query Language (aka Sequel) which is basically a languag
 emoji: 🗃
 
 gif:
-  alt: A Simpsons scene where a cat is showing a baby cat a great big ball of yarn.
-  src: https://media.giphy.com/media/xT5LMN3VPxsWBiWPFm/giphy.gif
+  alt: A Simpsons scene where a one person is introduced as 'Database' and the other one 'Lisa'.
+  src: https://media.giphy.com/media/xT5LMLPhW6qWTHjaWk/giphy.gif
 ---

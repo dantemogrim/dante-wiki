@@ -28,6 +28,7 @@
       </transition>
     </div>
     <button
+      aria-label="Menu toggle button."
       v-if="inputIsOpen"
       @click="inputIsOpen = false"
       class="fixed inset-0 w-full h-full cursor-default"

@@ -1,5 +1,5 @@
 ---
-title: JavaScript + JSON
+title: Educational Games
 description: 
 author:
   emoji: 🌀

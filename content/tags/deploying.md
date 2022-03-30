@@ -1,7 +1,7 @@
 ---
 name: deploying
 
-color: bg-amber-700
+color: bg-card-brown
 
 description: 
 

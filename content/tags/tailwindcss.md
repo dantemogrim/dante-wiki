@@ -1,7 +1,7 @@
 ---
 name: tailwindcss
 
-color: bg-teal-700
+color: bg-card-purple
 
 description: A CSS framework that describes itself as utility first.
 

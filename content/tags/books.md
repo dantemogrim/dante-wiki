@@ -1,7 +1,7 @@
 ---
 name: books
 
-color: bg-lime-900
+color: bg-card-green
 
 description: References to books, literature and other readable what-nots.
 

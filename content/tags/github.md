@@ -1,7 +1,7 @@
 ---
 name: github
 
-color: bg-gray-900
+color: bg-card-yellow
 
 description: GitHub is a version-control platform where users can collaborate on or adopt open source code projects, fork code, share ideas and more.
 

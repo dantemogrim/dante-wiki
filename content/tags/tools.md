@@ -1,7 +1,7 @@
 ---
 name: tools
 
-color: bg-black
+color: bg-card-yellow
 
 description: Devices used to carry out a particular function.
 

@@ -1,7 +1,7 @@
 ---
 name: laravel
 
-color: bg-red-800
+color: bg-card-red
 
 description: The PHP Framework for Web Artisans.
 

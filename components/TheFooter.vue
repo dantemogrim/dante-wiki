@@ -33,7 +33,7 @@
         <RSS />
       </a>
     </nav>
-    <p class="pt-4 text-pink-600">© Dante Mogrim {{ currentYear }}</p>
+    <p class="pt-4 text-card-purple">© Dante Mogrim {{ currentYear }}</p>
   </footer>
 </template>
 

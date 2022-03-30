@@ -1,8 +1,17 @@
 <template>
+  <!-- TODO -->
   <div
-    class="flex flex-row items-center justify-center w-full mb-4 overflow-hidden rounded-md max-h-80 md:max-h-128 gifWrapper"
+    class="grid items-center grid-cols-1 grid-rows-1 overflow-hidden md:mt-5 md:flex gifWrapper md:min-h-[25rem] max-h-128 justify-center"
   >
-    <img class="w-full h-auto" :src="`${gif.src}`" :alt="`${gif.alt}`" />
+    <div
+      class="w-full max-w-3xl col-start-1 col-end-1 row-start-1 row-end-1 overflow-hidden md:shadow-md md:rounded-md h-96 bg-blue-link"
+    >
+      <img
+        class="min-w-[100%] h-full opacity-70"
+        :src="gif.src"
+        :alt="gif.alt"
+      />
+    </div>
   </div>
 </template>
 

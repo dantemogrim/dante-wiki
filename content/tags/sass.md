@@ -1,7 +1,7 @@
 ---
 name: sass
 
-color: bg-pink-600
+color: bg-card-red
 
 description: CSS with superpowers!
 

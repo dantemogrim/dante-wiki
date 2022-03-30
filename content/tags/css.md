@@ -1,7 +1,7 @@
 ---
 name: css
 
-color: bg-sky-700
+color: bg-card-pink
 
 description: Cascading Style Sheets are used to format the layout of Web pages.
 

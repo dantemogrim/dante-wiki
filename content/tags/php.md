@@ -1,7 +1,7 @@
 ---
 name: php
 
-color: bg-indigo-800
+color: bg-card-purple
 
 description: PHP, which stands for Hypertext Preprocessor (aka Personal Home Page) is a server side scripting language.
 

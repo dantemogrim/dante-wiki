@@ -1,33 +1,33 @@
 <template>
-  <div class="md:mx-20 font-jetbrains-mono">
-    <article class="flex flex-col p-4 m-2 rounded-md shadow-lg bg-gray-50">
-      <gif :gif="post.gif" />
-      <h1 class="text-5xl text-indigo-900 font-cartridge">
-        {{ post.title }}
-      </h1>
-      <p class="mt-2 mb-2">{{ post.description }}</p>
-      <div class="flex items-center text-center">
-        <span> Tags: </span>
-        <span v-for="tag in post.tags" :key="tag">
-          <div class="flex text-center">
-            <nuxt-link
-              :to="`/tags/${tag}`"
-              class="p-1 m-2 bg-green-200 rounded-md"
-              >#{{ tag }}
-            </nuxt-link>
-          </div>
-        </span>
+  <div class="w-full justify-self-center">
+    <gif :gif="post.gif" />
+    <article class="p-3 font-jetbrains-mono">
+      <div class="my-4">
+        <h1 class="mb-2 text-4xl font-cartridge" v-html="post.title" />
+        <p class="mb-4" v-html="post.description" />
+        <div class="inline-flex mb-4">
+          <span> Tags: </span>
+          <span v-for="tag in post.tags" :key="tag">
+            <div>
+              <nuxt-link
+                :to="`/tags/${tag}`"
+                class="p-1 m-2 bg-green-200 rounded-md"
+                >#{{ tag }}
+              </nuxt-link>
+            </div>
+          </span>
+        </div>
       </div>
-      <author :author="post.author" />
-      <div class="p-3 mb-2 rounded-md bg-indigo-50 sm:w-full md:w-2/6">
+      <div class="mb-4 lowercase md:columns-2">
         <p>🌱 Created: {{ formatDate(post.gitCreatedAt) }}</p>
         <p>✏️ Updated: {{ formatDate(post.gitUpdatedAt) }}</p>
       </div>
+      <author :author="post.author" />
       <hr />
       <!-- TOC - Table of Contents -->
-      <nav class="p-3 bg-blue-100 rounded-md sm:w-full md:w-2/6">
+      <nav class="w-full p-3 border-2 rounded-md md:w-2/6">
         <p>📚 Contents:</p>
-        <ul>
+        <ul class="ml-4 list-disc text-blue-link">
           <li v-for="link of post.toc" :key="link.id">
             <nuxt-link :to="`#${link.id}`">{{ link.text }}</nuxt-link>
           </li>

@@ -1,6 +1,6 @@
 ---
-title: YAML - 101
-description: My personal collection of currently favorite cli (command-line interface)tools.
+title: Handy Commands in Node.js
+description: A list of occuring tech abbreviations.
 author:
   emoji: 🌀
   name: Dante Mogrim
@@ -9,5 +9,5 @@ gif:
   src: https://media.giphy.com/media/yR4xZagT71AAM/giphy.gif
   alt: A happy kid typing on an old computer that outputs 'syntax error'.
 tags:
-  - yaml
+  - syntax
 ---

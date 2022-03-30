@@ -11,7 +11,7 @@
       <div class="p-3 text-white bg-img"></div>
     </article>
     <Subheading>Related Posts</Subheading>
-    <p class="ml-2">// Ordered by last update.</p>
+    <p class="ml-2 md:ml-0">// Ordered by last update.</p>
     <ul
       class="flex flex-col justify-center md:mx-3 md:my-3 md:grid md:grid-cols-3 md:grid-rows-4 md:gap-4"
     >

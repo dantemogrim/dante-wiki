@@ -1,5 +1,5 @@
 <template>
-  <h2 class="my-4 ml-4 text-3xl md:text-4xl font-cartridge">
+  <h2 class="my-3 ml-4 text-3xl md:ml-0 font-cartridge">
     <slot>Title</slot>
   </h2>
 </template>

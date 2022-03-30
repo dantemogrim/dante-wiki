@@ -1,6 +1,6 @@
 ---
-title: Image Optimization
-description: Good practices when using images in web development.
+title: TypeScript Types
+description: Getting started using TypeScript.
 author:
   emoji: 🌀
   name: Dante Mogrim
@@ -9,9 +9,5 @@ gif:
   src: https://media.giphy.com/media/yR4xZagT71AAM/giphy.gif
   alt: A happy kid typing on an old computer that outputs 'syntax error'.
 tags:
-  - media
+  - typescript
 ---
-
-## Practices
-
-## Tools

@@ -1,7 +1,7 @@
 ---
 name: web-audio
 
-color: bg-red-500
+color: bg-card-red
 
 description: 
 

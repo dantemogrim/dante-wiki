@@ -1,6 +1,6 @@
 ---
-title: Alfred 101
-description: Tips on getting started using Alfred.
+title: How to Metadata
+description:
 author:
   emoji: 🌀
   name: Dante Mogrim
@@ -9,5 +9,5 @@ gif:
   src: https://media.giphy.com/media/yR4xZagT71AAM/giphy.gif
   alt: A happy kid typing on an old computer that outputs 'syntax error'.
 tags:
-  - alfred
+  - javascript
 ---

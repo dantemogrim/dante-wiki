@@ -1,7 +1,7 @@
 ---
 name: macos
 
-color: bg-slate-900
+color: bg-card-sky
 
 description: macOS is an graphical operating system developed and marketed by Apple Inc.
 

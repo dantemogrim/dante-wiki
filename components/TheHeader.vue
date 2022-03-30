@@ -9,7 +9,7 @@
         >dante.wiki</nuxt-link
       >
       <div
-        class="inline-flex items-center self-center justify-center col-start-3 col-end-6 lg:col-start-2 lg:col-end-4 md:justify-end"
+        class="inline-flex items-center self-center justify-center col-start-3 col-end-6 lg:col-start-2 lg:col-end-4"
       >
         <Search class="mr-4" />
         <SearchInput />

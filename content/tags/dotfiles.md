@@ -1,7 +1,7 @@
 ---
 name: dotfiles
 
-color: bg-slate-700
+color: bg-card-purple
 
 description: Dotfiles are plain text configuration files on Unix-y systems for things like our shell, ~/.zshrc , our editor in ~/.vimrc , and many others.
 

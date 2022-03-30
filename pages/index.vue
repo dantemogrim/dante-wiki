@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex items-center justify-center m-4">
+    <div class="flex items-center justify-center">
       <img
         class="rounded-md shadow-md"
         src="greeting.svg"

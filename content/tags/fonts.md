@@ -1,13 +1,13 @@
 ---
 name: fonts
 
-color: bg-rose-800
+color: bg-card-brown
 
 description: Fonts are a particular size, weight and style of a typeface. 
 
 emoji: 🔤
 
 gif:
-  alt: A Simpsons scene where a cat is showing a baby cat a great big ball of yarn.
-  src: https://media.giphy.com/media/xT5LMN3VPxsWBiWPFm/giphy.gif
+  alt: A scene from The Office where Nellie Bertram says 'When you use a ridiculous font, no one thinks you have a plan'.
+  src: https://media.giphy.com/media/52kR8CC9eKezyQgXli/giphy-downsized.gif
 ---

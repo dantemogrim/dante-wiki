@@ -1,61 +1,46 @@
 <template>
   <div>
     <Heading>Projects</Heading>
-    <div v-for="project of projects" :key="project.slug">
+    <div class="grid-flow-row grid-cols-2 gap-4 md:grid">
       <div
-        :class="project.colors.bg"
-        class="flex justify-between w-full h-full m-3 rounded-md shadow-md cardWrapper"
+        v-for="project of projects"
+        :key="project.slug"
+        class="flex flex-col col-span-1 p-4 my-4 transition duration-300 ease-in-out transform bg-gray-200 rounded-md shadow-md md:my-0 hover:-translate-y-1 hover:scale-101"
       >
-        <div class="flex flex-col items-center 1/3 md:flex-row">
-          <div
-            class="flex flex-col items-center p-3 overflow-hidden h-96 pattern"
-          >
-            <div class="inline-flex justify-between w-full my-5">
-              <p class="px-3" v-html="project.emoji" />
-              <p
-                :class="project.colors.text"
-                class="text-3xl uppercase font-cartridge ligatures"
-                v-html="project.name"
+        <h3
+          class="mb-3 text-2xl uppercase text-blue-link font-cartridge ligatures"
+          v-html="`${project.emoji} ${project.name} ${project.emoji}`"
+        />
+        <div class="grid h-5 grid-cols-4">
+          <ul class="inline-flex w-full col-start-1 col-end-4">
+            <li
+              class="inline-flex items-center mr-1 text-sm w-fit"
+              v-for="utility of project.utilities"
+              :key="utility.id"
+            >
+              <div
+                :class="`bg-${utility.color}`"
+                class="w-2 h-2 mr-1 rounded-full shadow-md"
               />
-              <p class="px-3" v-html="project.emoji" />
-            </div>
-            <img
-              :class="project.colors.border"
-              class="border-4 rounded-md h-2/3 aspect-video opacity-70"
-              :src="project.gif.src"
-              :alt="project.gif.alt"
-            />
-          </div>
-          <div class="w-2/3 font-jetbrains-mono text-buttermilk">
-            <ul>
-              <li class="mb-2">
-                <span class="font-semibold">Description:</span>
-                {{ project.description }}
-              </li>
-              <li class="mb-2">
-                <span class="font-semibold">Languages:</span>
-                <div v-for="language of project.languages" :key="language">
-                  <span v-html="language" />
-                </div>
-              </li>
-              <li class="mb-2">
-                <span class="font-semibold">Links:</span>
-                <div v-for="link of project.links" :key="link">
-                  <a :href="link.url" target="_blank">{{ link.title }}</a>
-                </div>
-              </li>
-              <li class="mb-2">
-                <span class="font-semibold">Tools:</span>
-                <div v-for="tool of project.tools" :key="tool">
-                  {{ tool }}
-                </div>
-              </li>
-              <li class="mb-2">
-                <span class="font-semibold">Type:</span>
-                {{ project.type }}
-              </li>
-            </ul>
-          </div>
+              <p class="text-xs tracking-wider" v-html="utility.name" />
+            </li>
+          </ul>
+          <ul
+            class="inline-flex col-start-4 col-end-4 overflow-hidden justify-self-end"
+          >
+            <li
+              v-for="link of project.links"
+              :key="link.id"
+              class="ml-2 first:ml-0"
+            >
+              <a :href="link.url" target="_blank" :aria-label="link.aria"
+                ><img
+                  :alt="link.aria"
+                  class="w-5 h-5"
+                  :src="`icons/${link.icon}`"
+              /></a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

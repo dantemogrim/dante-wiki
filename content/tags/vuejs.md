@@ -8,6 +8,6 @@ description: A progressive framework for building user interfaces.
 emoji: 👀
 
 gif:
-  alt: A Simpsons scene where a cat is showing a baby cat a great big ball of yarn.
-  src: https://media.giphy.com/media/xT5LMN3VPxsWBiWPFm/giphy.gif
+  alt: A minimalistic stop motion animation of the Vue.js logo.
+  src: https://media.giphy.com/media/VgGthkhUvGgOit7Y9i/giphy.gif
 ---

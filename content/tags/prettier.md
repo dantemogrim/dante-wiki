@@ -1,13 +1,13 @@
 ---
 name: prettier
 
-color: bg-pink-600
+color: bg-card-pink
 
 description: An opinionated code formatter that supports many languages.
 
 emoji: 🌈
 
 gif:
-  alt: A Simpsons scene where a cat is showing a baby cat a great big ball of yarn.
-  src: https://media.giphy.com/media/xT5LMN3VPxsWBiWPFm/giphy.gif
+  alt: A vain person in a blonde wig, flaunting their hair.
+  src: https://media.giphy.com/media/hrkAPO5PnFp4yBcRuT/giphy-downsized.gif
 ---

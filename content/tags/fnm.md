@@ -1,7 +1,7 @@
 ---
 name: fnm
 
-color: bg-slate-900
+color: bg-card-gray
 
 description: FNM stands for Fast Node Manager. A tool that helps you switch between different versions of Node.js.
 

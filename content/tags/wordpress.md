@@ -1,7 +1,7 @@
 ---
 name: wordpress
 
-color: bg-blue-800
+color: bg-card-pale-blue
 
 description: A free content management system used to build and maintain websites.
 

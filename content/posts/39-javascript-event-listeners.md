@@ -1,5 +1,5 @@
 ---
-title: Event Listeners
+title: ES6 Event Listeners
 description: 
 author:
   emoji: 🌀

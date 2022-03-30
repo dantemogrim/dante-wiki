@@ -1,5 +1,44 @@
 /* Main + fallbacks. */
-p {
+* {
   font-family: 'jetbrains-mono', Arial, Helvetica, Verdana, Georgia, Tahoma,
     sans-serif;
+}
+
+/* h1, h2, h3 settings. */
+.nuxt-content h1,
+.nuxt-content h2,
+.nuxt-content h3,
+.nuxt-content h4 {
+  color: black;
+  margin: 20px 0 0 0;
+}
+
+.nuxt-content h1 {
+  font-family: 'Cartridge';
+}
+
+.nuxt-content h2,
+.nuxt-content h3,
+.nuxt-content h4 {
+  font-family: 'Jetbrains Mono';
+}
+
+.nuxt-content h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.nuxt-content h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.nuxt-content h4 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+/* Paragraphs. */
+.nuxt-content p {
+  margin: 20px 0 0 0;
 }

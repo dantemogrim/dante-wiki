@@ -3,7 +3,6 @@
     <article
       class="flex flex-col p-4 m-2 rounded-md shadow-lg tagWrapper bg-gray-50"
     >
-      <gif :gif="tag.gif" />
       <div class="p-1 pl-2 mb-2 bg-green-200 rounded-md">
         <h1>{{ tag.emoji }} #{{ tag.name }}</h1>
       </div>
@@ -14,7 +13,7 @@
 
     <div v-if="postsExist">
       <Subheading>Related Posts</Subheading>
-      <p class="ml-2 text-skunkblue">// Ordered by last update.</p>
+      <p class="ml-2 md:ml-0">// Ordered by last update.</p>
     </div>
     <ul
       class="flex flex-col justify-center md:mx-3 md:my-3 md:grid md:grid-cols-3 md:grid-rows-2 md:gap-4"

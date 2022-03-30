@@ -1,5 +1,5 @@
 ---
-title: RegEx 101
+title: RegEx Basics
 description: RegEx (Regular Expressions) explained and how to get started.
 author:
   emoji: 🌀

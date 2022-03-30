@@ -1,23 +1,24 @@
 <template>
   <li
-    class="m-2 transition duration-300 ease-in-out transform bg-gray-300 rounded-md shadow-md h-36 border-3 lg:m-0 hover:-translate-y-1 hover:scale-101"
+    class="m-2 transition duration-300 ease-in-out transform bg-gray-200 rounded-md shadow-md h-36 border-3 md:m-0 hover:-translate-y-1 hover:scale-101"
   >
     <nuxt-link
       class="grid h-full grid-rows-3"
       :to="{ name: 'posts-slug', params: { slug: item.slug } }"
     >
       <div class="row-start-1 row-end-2">
-        <h3 class="p-2 text-xl text-left font-cartridge">
+        <h3 class="p-2 text-xl text-left font-jetbrains-mono text-blue-link">
           {{ item.title }}
         </h3>
       </div>
       <div
-        class="flex items-center row-start-3 row-end-3 p-1 bg-slate-200 rounded-b-md"
+        class="flex items-center row-start-3 row-end-3 p-1 bg-slate-100 rounded-b-md"
       >
         <div class="w-fit" v-for="tag in item.tags" :key="tag">
           <p class="px-1 py-1 mr-2 text-sm rounded-lg font-cartridge">
             #{{ tag }}
           </p>
+          <!-- <Tag :name="tag" /> -->
         </div>
       </div>
     </nuxt-link>
@@ -25,7 +26,12 @@
 </template>
 
 <script>
+import Tag from '~/components/global/Tag.vue';
+
 export default {
+  components: {
+    Tag,
+  },
   props: {
     item: {
       type: Object,
@@ -34,8 +40,10 @@ export default {
     tags: {
       type: Array,
     },
+    tag: {
+      type: Object,
+    },
   },
-
   methods: {
     formatDate(gitUpdatedAt) {
       const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
