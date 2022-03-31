@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full justify-self-center">
+  <div class="w-full">
     <gif :gif="post.gif" />
     <article class="p-3 font-jetbrains-mono">
       <div class="my-4">

@@ -13,7 +13,7 @@
     </div>
     <main
       v-else
-      class="max-w-5xl md:min-w-[36rem] lg:min-w-[50rem] justify-self-center col-span-full md:col-start-2 md:col-end-11"
+      class="max-w-5xl w-full md:min-w-[36rem] lg:min-w-[50rem] justify-self-center col-span-full md:col-start-2 md:col-end-11"
     >
       <Nuxt />
     </main>

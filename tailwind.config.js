@@ -23,10 +23,6 @@ module.exports = {
         'spin-slow': 'spin 50s linear infinite',
         wiggle: 'wiggle 1s ease-in-out infinite',
       },
-      backgroundImage: {
-        star: "url('~/static/star.svg')",
-        texture: "url('~/static/texture.png')",
-      },
       colors: {
         alfred: '#5c1f87',
         'blue-link': '#0000FF',

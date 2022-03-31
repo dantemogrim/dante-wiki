@@ -18,7 +18,7 @@ export default {
       {
         rel: 'icon',
         type: 'image/x-icon',
-        href: '/favicon.ico?v=1',
+        href: '/favicon.ico',
       },
       {
         rel: 'icon',
@@ -69,7 +69,6 @@ export default {
 
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/pwa',
     'nuxt-lazy-load',
     'nuxt-content-body-html',
     // Fixes JavaScript timestamps issue.
@@ -86,12 +85,6 @@ export default {
   ],
 
   axios: {},
-
-  pwa: {
-    manifest: {
-      lang: 'en',
-    },
-  },
 
   content: {
     markdown: {
