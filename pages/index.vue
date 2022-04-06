@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="flex items-center justify-center">
+    <div class="flex items-center justify-center mx-2 my-5 md:mx-0">
       <img
         class="rounded-md shadow-md"
-        src="greeting.svg"
-        alt="A command-line interface outputting the text: 'Hi! I'm Dante Mogrim. Welcome to my personal wikipedia of web dev related findings. Have a nice day!'"
+        src="hello.svg"
+        alt="A command-line interface outputting prompt/interview questions where I say that I am Dante Mogrim, a Web Developer and that this is my personal wikipedia of web dev related findings."
       />
     </div>
     <Subheading>Latest Posts</Subheading>
