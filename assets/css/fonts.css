@@ -8,4 +8,20 @@
   src: url('~static/fonts/cartridge.woff2') format('woff2');
 }
 
-/* Fallback Fonts */
+/* Main + fallbacks. */
+* {
+  font-family: 'jetbrains-mono', Arial, Helvetica, Verdana, Georgia, Tahoma,
+    sans-serif;
+}
+
+.nuxt-content h1 {
+  font-family: 'cartridge';
+}
+
+.nuxt-content h2,
+.nuxt-content h3,
+.nuxt-content h4,
+.nuxt-content h5,
+.nuxt-content h6 {
+  font-family: 'jetbrains-mono';
+}

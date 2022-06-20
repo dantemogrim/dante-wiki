@@ -1,26 +1,11 @@
-/* Main + fallbacks. */
-* {
-  font-family: 'jetbrains-mono', Arial, Helvetica, Verdana, Georgia, Tahoma,
-    sans-serif;
-}
-
 /* h1, h2, h3 settings. */
-.nuxt-content h1,
 .nuxt-content h2,
 .nuxt-content h3,
-.nuxt-content h4 {
+.nuxt-content h4,
+.nuxt-content h5,
+.nuxt-content h6 {
   color: black;
   margin: 20px 0 0 0;
-}
-
-.nuxt-content h1 {
-  font-family: 'Cartridge';
-}
-
-.nuxt-content h2,
-.nuxt-content h3,
-.nuxt-content h4 {
-  font-family: 'Jetbrains Mono';
 }
 
 .nuxt-content h2 {
