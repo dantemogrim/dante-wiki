@@ -25,8 +25,8 @@
       <author :author="post.author" />
       <hr />
       <!-- TOC - Table of Contents -->
-      <nav class="w-full p-3 border-2 rounded-md md:w-2/6">
-        <p>📚 Contents:</p>
+      <nav class="w-full md:w-2/6">
+        <p class="italic">📚 TOC</p>
         <ul class="ml-4 list-disc text-blue-link">
           <li v-for="link of post.toc" :key="link.id">
             <nuxt-link :to="`#${link.id}`">{{ link.text }}</nuxt-link>

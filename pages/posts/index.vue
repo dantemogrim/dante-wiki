@@ -3,7 +3,7 @@
     <Heading>All Posts</Heading>
     <p class="ml-2 md:ml-0">// Ordered by last update.</p>
     <ul
-      class="flex flex-col justify-center md:my-3 md:grid md:grid-cols-3 md:grid-rows-4 md:gap-4"
+      class="flex flex-col justify-center md:my-3 md:grid md:grid-cols-1 md:grid-rows-10 md:gap-4"
     >
       <div v-for="item of items" :key="item.slug">
         <PostCard :item="item" />
@@ -26,10 +26,10 @@ export default {
     const items = await $content('posts', params.slug)
       .only(['title', 'slug', 'tags', 'path', 'gitUpdatedAt'])
       .sortBy('gitUpdatedAt', 'desc')
-      .limit(12)
+      .limit(20)
       .fetch();
 
-    const nextPage = items.length === 12;
+    const nextPage = items.length === 20;
     const posts = nextPage ? items.slice(0, -1) : items;
     return {
       nextPage,

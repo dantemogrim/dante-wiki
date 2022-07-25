@@ -8,8 +8,8 @@
       />
     </div>
     <Subheading>Latest Posts</Subheading>
-    <div class="flex-col items-center justify-center w-full h-fit">
-      <ul class="md:grid md:grid-cols-3 md:grid-rows-2 md:gap-4">
+    <div class="flex-col items-center justify-center h-fit">
+      <ul class="md:grid md:grid-cols-1 md:grid-rows-10 md:gap-4">
         <div class="grid-flow-col" v-for="item of items" :key="item.slug">
           <PostCard :item="item" />
         </div>
@@ -31,7 +31,7 @@ export default {
     const items = await $content('posts')
       .only(['title', 'slug', 'tags', 'gitUpdatedAt'])
       .sortBy('gitUpdatedAt', 'desc')
-      .limit(6)
+      .limit(10)
       .fetch();
 
     return {

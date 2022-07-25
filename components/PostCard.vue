@@ -1,13 +1,13 @@
 <template>
   <li
-    class="m-2 transition duration-300 ease-in-out transform bg-gray-200 rounded-md shadow-md h-36 border-3 md:m-0 hover:-translate-y-1 hover:scale-101"
+    class="h-16 m-2 transition duration-300 ease-in-out transform bg-gray-200 rounded-md shadow-md font-jetbrains-mono border-3 md:m-0 hover:-translate-y-1 hover:scale-101"
   >
     <nuxt-link
       class="grid h-full grid-rows-3"
       :to="{ name: 'posts-slug', params: { slug: item.slug } }"
     >
       <div class="row-start-1 row-end-2">
-        <h3 class="p-2 text-xl text-left font-jetbrains-mono text-blue-link">
+        <h3 class="p-2 text-xl text-left text-blue-link">
           {{ item.title }}
         </h3>
       </div>
@@ -15,9 +15,7 @@
         class="flex items-center row-start-3 row-end-3 p-1 bg-slate-100 rounded-b-md"
       >
         <div class="w-fit" v-for="tag in item.tags" :key="tag">
-          <p class="px-1 py-1 mr-2 text-sm rounded-lg font-cartridge">
-            #{{ tag }}
-          </p>
+          <p class="px-1 py-1 mr-2 text-sm rounded-lg">#{{ tag }}</p>
           <!-- <Tag :name="tag" /> -->
         </div>
       </div>
