@@ -5,7 +5,7 @@
     <nuxt-link
       v-if="previous"
       :to="{ name: 'posts-slug', params: { slug: previous.slug } }"
-      class="boombox-button"
+      class="standard-button"
     >
       Previous <slot></slot>
     </nuxt-link>
@@ -14,7 +14,7 @@
     <nuxt-link
       v-if="next"
       :to="{ name: 'posts-slug', params: { slug: next.slug } }"
-      class="boombox-button"
+      class="standard-button"
     >
       Next <slot></slot>
     </nuxt-link>

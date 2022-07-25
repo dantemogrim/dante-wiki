@@ -15,7 +15,7 @@
       v-if="nextPage"
       class="flex items-center justify-center w-full h-20 mt-3"
     >
-      <nuxt-link to="posts/page/2" class="boombox-button">Next page</nuxt-link>
+      <nuxt-link to="posts/page/2" class="standard-button">Next page</nuxt-link>
     </section>
   </div>
 </template>

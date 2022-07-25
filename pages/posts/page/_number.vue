@@ -13,13 +13,13 @@
       id="prev-next"
       class="flex items-center justify-around w-full h-20 mt-3"
     >
-      <nuxt-link :to="previousPage" class="boombox-button"
+      <nuxt-link :to="previousPage" class="standard-button"
         >Previous Page</nuxt-link
       >
       <nuxt-link
         v-if="nextPage"
         :to="`${pageNumber + 1}`"
-        class="boombox-button"
+        class="standard-button"
         >Next Page</nuxt-link
       >
     </section>

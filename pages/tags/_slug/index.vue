@@ -27,7 +27,7 @@
       v-if="nextPage"
       class="flex items-center justify-center w-full h-20 mt-3"
     >
-      <nuxt-link :to="`/tags/${tag.name}/page/2`" class="boombox-button"
+      <nuxt-link :to="`/tags/${tag.name}/page/2`" class="standard-button"
         >Next page</nuxt-link
       >
     </section>

@@ -33,30 +33,23 @@ hr {
   margin: 20px 0;
 }
 
-.boombox-button {
+.standard-button {
   align-items: center;
-  background: linear-gradient(180deg, rgb(106, 106, 106), rgb(65, 64, 64));
-  border-bottom: 1.5mm solid rgba(31, 31, 31, 0);
-  border-left: 1.5mm solid rgb(31, 31, 31);
-  border-radius: 3px;
-  box-shadow: -1px 2px 0 0 rgb(29, 29, 29);
-  color: white;
+  border-radius: 8px;
   display: inline-flex;
   font-family: 'jetbrains-mono';
   height: 2.7rem;
+  font-weight: 500;
   justify-content: center;
   text-align: center;
-  text-shadow: -0.8px 0.8px 0 rgb(19, 19, 19);
   text-transform: uppercase;
-  transition: border-bottom 0.1s, border-left 0.1s, box-shadow 0.1s;
+  border-width: 4px;
+  border-color: #bebebe;
   white-space: nowrap;
   width: 9rem;
 }
 
-.boombox-button:hover {
-  border-bottom: 1mm solid rgba(31, 31, 31, 0);
-  border-left: 1mm solid rgb(31, 31, 31);
-  box-shadow: -1px 1.5px 0 0 rgb(29, 29, 29);
+.standard-button:hover {
 }
 
 .v-enter-from,
