@@ -1,6 +1,6 @@
 <template>
   <div class="w-full">
-    <gif :gif="post.gif" />
+    <!--  <gif :gif="post.gif" /> -->
     <article class="p-3 font-jetbrains-mono">
       <div class="my-4">
         <h1 class="mb-2 text-4xl font-cartridge" v-html="post.title" />
