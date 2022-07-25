@@ -1,9 +1,7 @@
 <template>
   <div>
-    <div class="flex flex-row authorWrapper">
+    <div class="flex flex-row text-sm authorWrapper">
       <p class="text-indigo-800">Author: {{ author.name }}</p>
-      <!-- <p>{{ author.emoji }}</p> -->
-      <!-- <p>{{ author.bio }}</p> -->
     </div>
   </div>
 </template>

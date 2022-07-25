@@ -9,16 +9,14 @@
           <span> Tags: </span>
           <span v-for="tag in post.tags" :key="tag">
             <div>
-              <nuxt-link
-                :to="`/tags/${tag}`"
-                class="p-1 m-2 bg-green-200 rounded-md"
+              <nuxt-link :to="`/tags/${tag}`" class="p-1 m-2"
                 >#{{ tag }}
               </nuxt-link>
             </div>
           </span>
         </div>
       </div>
-      <div class="mb-4 lowercase md:columns-2">
+      <div class="mb-4 text-sm lowercase md:columns-2">
         <p>🌱 Created: {{ formatDate(post.gitCreatedAt) }}</p>
         <p>✏️ Updated: {{ formatDate(post.gitUpdatedAt) }}</p>
       </div>
