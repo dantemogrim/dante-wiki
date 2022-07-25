@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-2xl lg:max-w-3xl font-jetbrains-mono">
+  <div class="font-jetbrains-mono">
     <Heading>About</Heading>
     <article class="flex flex-col mx-4 mb-8 md:mx-0">
       <p>
