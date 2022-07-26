@@ -34,15 +34,15 @@ export default {
     const items = await $content('posts', params.slug)
       .only(['title', 'slug', 'tags', 'gitUpdatedAt'])
       .sortBy('gitUpdatedAt', 'desc')
-      .limit(20)
-      .skip(20 * (pageNumber - 1))
+      .limit(15)
+      .skip(15 * (pageNumber - 1))
       .fetch();
 
     if (!items.length) {
       return error({ statusCode: 404, message: 'No posts found!' });
     }
 
-    const nextPage = items.length === 20;
+    const nextPage = items.length === 15;
     const posts = nextPage ? items.slice(0, -1) : items;
     return { nextPage, items, pageNumber };
   },
