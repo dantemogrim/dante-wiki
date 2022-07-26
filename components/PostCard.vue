@@ -7,7 +7,9 @@
       :to="{ name: 'posts-slug', params: { slug: item.slug } }"
     >
       <div class="row-start-1 row-end-2">
-        <h3 class="p-2 text-xl text-left text-blue-link">
+        <h3
+          class="p-2 overflow-hidden text-left w-96 lg:w-auto whitespace-nowrap text-blue-link text-ellipsis"
+        >
           {{ item.title }}
         </h3>
       </div>
@@ -15,7 +17,7 @@
         class="flex items-center row-start-3 row-end-3 p-1 bg-slate-100 rounded-b-md"
       >
         <div class="w-fit" v-for="tag in item.tags" :key="tag">
-          <p class="px-1 py-1 mr-2 text-sm rounded-lg">#{{ tag }}</p>
+          <p class="px-1 py-1 mr-2 text-xs rounded-lg">#{{ tag }}</p>
           <!-- <Tag :name="tag" /> -->
         </div>
       </div>
