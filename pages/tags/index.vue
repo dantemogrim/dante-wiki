@@ -2,7 +2,7 @@
   <div class="md:m-4">
     <Heading>All Tags</Heading>
     <ul
-      class="flex flex-col justify-center m-0 list-none md:my-3 sm:grid sm:grid-flow-row sm:grid-cols-2 md:grid-cols-3 md:gap-4"
+      class="flex flex-col justify-center m-0 list-none md:my-3 sm:grid sm:grid-flow-row sm:grid-cols-2 md:grid-cols-3 sm:gap-4"
     >
       <div v-for="item of items" :key="item.slug">
         <TagCard :item="item" />

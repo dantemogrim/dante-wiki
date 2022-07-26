@@ -63,7 +63,6 @@ module.exports = {
       fontFamily: {
         cartridge: ['cartridge'],
         'jetbrains-mono': ['jetbrains-mono'],
-        'hack-nerd': 'hack-nerd',
       },
       keyframes: {
         wiggle: {

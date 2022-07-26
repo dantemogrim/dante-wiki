@@ -1,7 +1,7 @@
 <template>
   <div>
     <Heading>All Posts</Heading>
-    <p class="ml-2 md:ml-0">// Ordered by last update.</p>
+    <p>// Ordered by last update.</p>
     <ul
       class="flex flex-col justify-center md:my-3 md:grid md:grid-cols-1 md:grid-rows-10 md:gap-4"
     >

@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="flex items-center justify-center mx-2 my-5 md:mx-0">
-      <img
-        class="rounded-md shadow-md"
-        src="hello.svg"
-        alt="A command-line interface outputting prompt/interview questions where I say that I am Dante Mogrim, a Web Developer and that this is my personal wikipedia of web dev related findings."
-      />
+    <div class="flex flex-col items-center justify-center my-5">
+      <img src="peekaboo.png" alt="A drawing of me peeking up." />
+      <p class="p-3 pixelFrame">
+        Hi! I'm Dante Mogrim. Welcome to my website where I sometimes scribble
+        down tech sassy notes for anyone to take part of.
+      </p>
     </div>
     <Subheading>Latest Posts</Subheading>
     <div class="flex-col items-center justify-center h-fit">

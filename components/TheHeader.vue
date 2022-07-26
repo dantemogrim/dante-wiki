@@ -3,11 +3,9 @@
     class="sticky inset-0 z-10 flex items-center h-16 bg-blue-800 shadow-sm text-buttermilk"
   >
     <nav class="grid items-center w-full grid-cols-6 px-4">
-      <nuxt-link
-        class="self-center col-start-1 col-end-3 text-2xl brand sm:text-4xl lg:col-end-2 font-cartridge"
-        to="/"
-        >dante.wiki</nuxt-link
-      >
+      <nuxt-link class="self-center col-start-1 col-end-3 lg:col-end-2" to="/"
+        ><img class="w-40" src="dante-wiki.png"
+      /></nuxt-link>
       <div
         class="inline-flex items-center self-center justify-center col-start-3 col-end-6 lg:col-start-2 lg:col-end-4"
       >

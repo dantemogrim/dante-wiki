@@ -1,7 +1,7 @@
 <template>
   <nuxt-link
     :to="{ name: 'tags-slug', params: { slug: item.slug } }"
-    class="flex items-center h-16 px-4 m-2 uppercase transition duration-300 ease-in-out transform bg-gray-200 rounded-lg shadow-md md:m-0 tagWrapper hover:-translate-y-1 hover:scale-101"
+    class="flex items-center h-16 px-4 my-2 uppercase transition duration-300 ease-in-out transform rounded-lg shadow-md pixelFrame md:my-0 hover:-translate-y-1 hover:scale-101"
   >
     <div>
       <h6 class="text-medium font-semi-bold font-jetbrains-mono text-blue-link">

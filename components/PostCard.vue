@@ -1,6 +1,6 @@
 <template>
   <li
-    class="h-16 m-2 transition duration-300 ease-in-out transform bg-gray-200 rounded-md shadow-md font-jetbrains-mono border-3 md:m-0 hover:-translate-y-1 hover:scale-101"
+    class="h-16 my-3 transition duration-300 ease-in-out transform bg-gray-200 rounded-md shadow-md font-jetbrains-mono border-3 md:my-0 hover:-translate-y-1 hover:scale-101"
   >
     <nuxt-link
       class="grid h-full grid-rows-3"

@@ -1,7 +1,7 @@
 <template>
   <div class="w-full">
     <!--  <gif :gif="post.gif" /> -->
-    <article class="p-3 font-jetbrains-mono">
+    <article class="p-3 font-jetbrains-mono pixel-frame">
       <div class="my-4">
         <h1 class="mb-2 text-4xl font-cartridge" v-html="post.title" />
         <p class="mb-4" v-html="post.description" />

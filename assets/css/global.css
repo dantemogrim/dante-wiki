@@ -14,11 +14,6 @@ body {
   min-height: 100vh;
 }
 
-.brand,
-.ligatures {
-  font-feature-settings: 'aalt' on;
-}
-
 .page-enter-active,
 .page-leave-active {
   transition: opacity 0.4s;
@@ -31,6 +26,11 @@ body {
 hr {
   border: 1px dashed #b1b1b1;
   margin: 20px 0;
+}
+
+.pixelFrame {
+  border-image: url('../../static/frame.png') 48 fill repeat;
+  border-image-width: 48px;
 }
 
 .standard-button {

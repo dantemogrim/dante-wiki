@@ -4,11 +4,6 @@
 }
 
 @font-face {
-  font-family: 'hack-nerd';
-  src: url('~static/fonts/hack-nerd.woff2') format('woff2');
-}
-
-@font-face {
   font-family: 'cartridge';
   src: url('~static/fonts/cartridge.woff2') format('woff2');
 }

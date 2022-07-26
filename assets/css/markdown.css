@@ -31,12 +31,6 @@ pre {
   white-space: pre;
 }
 
-pre,
-code,
-.nuxt-content-highlight,
-.line-numbers {
-}
-
 /* Links */
 nuxt-content a {
   color: blue;

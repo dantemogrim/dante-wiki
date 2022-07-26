@@ -1,16 +1,18 @@
 <template>
   <div class="font-jetbrains-mono">
     <Heading>About</Heading>
-    <article class="flex flex-col mx-4 mb-8 md:mx-0">
+    <article class="flex flex-col mb-8">
       <p>
-        Hi! My name is Dante Mogrim. I am a web developer living in Gothenburg,
-        Sweden. Welcome to my personal cyber nook where I’ll be sharing all
-        kinds of development related findings as well as other fun things.
+        Hi! My name is Dante Mogrim. I am a web full stack developer living in
+        Gothenburg, Sweden. Welcome to my personal cyber nook where I’ll be
+        sharing all kinds of development related findings as well as other fun
+        things.
       </p>
       <p>
-        This project is both a personal + open source notebook. A collection of
-        notes that will grow over time, accessible for anyone to take part of a
-        wide range of maybe useful, perhaps comprehensive information.
+        This project is both personal as well as an open source notebook. A
+        collection of notes that will grow over time, accessible for anyone to
+        take part of a wide range of maybe useful, perhaps comprehensive
+        information.
       </p>
     </article>
     <img
@@ -18,7 +20,7 @@
       src="/about-me.png"
       alt="An illustration of me by my desk with my laptop and my two cats and a cup of coffee."
     />
-    <article class="flex flex-col mx-4 mb-8 md:mx-0">
+    <article class="flex flex-col mb-8">
       <ul class="ml-4 list-disc">
         <li>
           I am a cat guardian to two tortie sisters named Tosca and Waffles.
@@ -36,7 +38,7 @@
       </ul>
     </article>
     <Subheading>Connect</Subheading>
-    <article class="flex flex-col mx-4 mb-8 md:mx-0">
+    <article class="flex flex-col mb-8">
       <p class="mt-1 mb-2">
         <i>
           If you have any questions, feedback, recommendations, requests or just
@@ -66,7 +68,7 @@
       </ul>
     </article>
     <Subheading>Setup</Subheading>
-    <article class="flex flex-col mx-4 mb-8 md:mx-0">
+    <article class="flex flex-col mb-8">
       <p class="font-semibold">General setup + hardware:</p>
       <ul class="ml-4 list-disc">
         <li>💻 Macbook Pro 2019</li>
@@ -168,7 +170,7 @@
         >.
       </p>
       <p class="mt-3">
-        👨‍💻 The code for this project is open source. You can find it
+        👨‍💻 This project is open source. You can find the source code
         <a
           href="https://github.com/dantemogrim/dante-wiki"
           class="text-blue-link"
@@ -178,7 +180,7 @@
       </p>
     </article>
     <Subheading>Playlists</Subheading>
-    <article class="flex flex-col mx-4 mb-8 md:mx-0">
+    <article class="flex flex-col mb-8">
       <ul class="ml-4 list-disc">
         <li>
           <a
