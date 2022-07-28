@@ -35,7 +35,6 @@ hr {
 
 .standard-button {
   align-items: center;
-  border-radius: 8px;
   display: inline-flex;
   font-family: 'jetbrains-mono';
   height: 2.7rem;
@@ -44,9 +43,12 @@ hr {
   text-align: center;
   text-transform: uppercase;
   border-width: 4px;
-  border-color: #bebebe;
+  border-style: inset;
+  border-color: #ebebeb;
+  background-color: #cecac3;
   white-space: nowrap;
   width: 9rem;
+  outline: 1px solid black;
 }
 
 .v-enter-from,

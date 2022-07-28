@@ -20,19 +20,20 @@ pre {
 }
 
 /* Inline code. */
-.nuxt-content p code {
-  background-color: #3c434d;
-  border-radius: 7px;
+.nuxt-content p code,
+li code {
+  background-color: #4c5159;
+  border-radius: 6px;
   color: #c0cfe0;
   font-size: 0.875rem;
   letter-spacing: 0.025em;
   line-height: 1.25rem;
-  padding: 0.25rem;
+  padding: 0.1rem 0.25rem;
   white-space: pre;
 }
 
 /* Links */
-nuxt-content a {
+.nuxt-content a {
   color: blue;
 }
 
