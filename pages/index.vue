@@ -3,8 +3,8 @@
     <div class="flex flex-col items-center justify-center my-5">
       <img src="peekaboo.png" alt="A drawing of me peeking up." />
       <p class="p-3 pixelFrame">
-        Hi! I'm Dante Mogrim. Welcome to my website where I sometimes scribble
-        down tech sassy notes for anyone to take part of.
+        Hi! I'm Dante Mogrim. Welcome to my website where I sometimes post tech
+        sassy scribbles for anyone to take part of.
       </p>
     </div>
     <Subheading>Latest Posts</Subheading>
