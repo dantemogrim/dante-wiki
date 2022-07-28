@@ -11,3 +11,98 @@ gif:
 tags:
   - javascript
 ---
+
+### Click
+
+HTML:
+```html
+<button>Submit</button>
+```
+
+JavaScript:
+```js
+const button = document.querySelector('button');
+
+button.addEventListener('click', () => {
+	console.log('Somebody clicked me!');
+});
+```
+
+### Clipboard
+
+HTML:
+```html
+
+```
+
+JavaScript:
+```js
+
+```
+
+### Focus
+
+HTML:
+```html
+
+```
+
+JavaScript:
+```js
+
+```
+
+### Form
+
+HTML:
+```html
+
+```
+
+JavaScript:
+```js
+
+```
+
+### Keypress
+
+HTML:
+```html
+
+```
+
+JavaScript:
+```js
+
+```
+
+### Media
+
+HTML:
+```html
+
+```
+
+JavaScript:
+```js
+
+```
+
+### Scroll
+
+HTML:
+```html
+<div style="height: 200vh; background-color: pink"></div>
+```
+
+JavaScript:
+```js
+window.addEventListener('scroll', () => {
+  console.log("Chocolate starfish! Keep on scrollin' bebbeh!");
+});
+```
+
+#### Links
+
+- [mdn web docs: EventTarget.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+- [mdn web docs: Event Index](https://developer.mozilla.org/en-US/docs/Web/Events)
