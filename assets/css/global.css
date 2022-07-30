@@ -35,18 +35,19 @@ hr {
 
 .standard-button {
   align-items: center;
+  background-color: #d9d6cf;
+  border-color: #ebebeb;
+  border-radius: 2px;
+  border-style: inset;
+  border-width: 4px;
   display: inline-flex;
   font-family: 'jetbrains-mono';
-  height: 2.7rem;
   font-weight: 500;
+  font-weight: 600;
+  height: 2.7rem;
   justify-content: center;
   text-align: center;
-  font-weight: 600;
   text-transform: uppercase;
-  border-width: 4px;
-  border-style: inset;
-  border-color: #ebebeb;
-  background-color: #cecac3;
   white-space: nowrap;
   width: 9rem;
 }

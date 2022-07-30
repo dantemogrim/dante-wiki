@@ -99,7 +99,7 @@ window.addEventListener('scroll', () => {
 });
 ```
 
-#### Links
+### 🔗 Links
 
 - [BitDegree: Learn About JavaScript AddEventListener](https://www.bitdegree.org/learn/javascript-addeventlistener)
 - [mdn web docs: EventTarget.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
