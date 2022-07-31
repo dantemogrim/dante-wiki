@@ -3,12 +3,12 @@
     <article
       class="flex flex-col p-4 m-2 rounded-md shadow-lg tagWrapper bg-gray-50"
     >
-      <div class="p-1 pl-2 mb-2 bg-green-200 rounded-md">
-        <h1>{{ tag.emoji }} #{{ tag.name }}</h1>
+      <div>
+        <h1 class="text-4xl text-gray-900 font-cartridge">
+          {{ tag.emoji }} #{{ tag.name }}
+        </h1>
       </div>
       <p class="my-2">{{ tag.description }}</p>
-      <hr />
-      <div class="p-3 text-white bg-img"></div>
     </article>
 
     <div v-if="postsExist">
