@@ -5,10 +5,10 @@
       <div
         v-for="project of projects"
         :key="project.slug"
-        class="flex flex-col col-span-1 p-4 my-4 transition duration-300 ease-in-out transform bg-gray-200 rounded-md shadow-md md:my-0 hover:-translate-y-1 hover:scale-101"
+        class="flex flex-col col-span-1 p-4 my-4 transition duration-300 ease-in-out transform pixelFrame md:my-0 hover:-translate-y-1 hover:scale-101"
       >
         <h3
-          class="mb-3 text-2xl uppercase text-blue-link font-cartridge ligatures"
+          class="mb-3 text-xl uppercase"
           v-html="`${project.emoji} ${project.name} ${project.emoji}`"
         />
         <div class="grid h-5 grid-cols-4">

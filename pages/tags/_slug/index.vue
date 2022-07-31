@@ -1,10 +1,8 @@
 <template>
   <div class="md:m-4">
-    <article
-      class="flex flex-col p-4 m-2 rounded-md shadow-lg tagWrapper bg-gray-50"
-    >
+    <article class="flex flex-col p-4 rounded-md shadow-lg bg-gray-50">
       <div>
-        <h1 class="text-4xl text-gray-900 font-cartridge">
+        <h1 class="text-2xl text-gray-900 md:text-4xl font-cartridge">
           {{ tag.emoji }} #{{ tag.name }}
         </h1>
       </div>
