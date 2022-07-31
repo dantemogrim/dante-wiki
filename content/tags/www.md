@@ -1,11 +1,11 @@
 ---
-name: vuejs
+name: www
 
 color: bg-emerald-700
 
-description: A progressive framework for building user interfaces. 
+description: Anything internet related.
 
-emoji: 👀
+emoji: 🌐
 
 gif:
   alt: A minimalistic stop motion animation of the Vue.js logo.
