@@ -64,12 +64,13 @@ window.addEventListener('keypress', () => {
 
 HTML:
 ```html
-		<video
-			width="640"
-			height="480"
-			src="https://ia903406.us.archive.org/29/items/BannedCartoonsTransLuxFelixTheCatKingOfTheMoonVeryGood/Banned%20Cartoons%20-%20Trans-Lux%20-%20Felix%20The%20Cat%20-%20King%20Of%20The%20Moon%20-%20Very%20Good.mp4"
-			controls
-		></video>
+<video
+	width="640"
+	height="480"
+	src="https://ia903406.us.archive.org/29/items/BannedCartoonsTransLuxFelixTheCatKingOfTheMoonVeryGood/Banned%20Cartoons%20-%20Trans-Lux%20-%20Felix%20The%20Cat%20-%20King%20Of%20The%20Moon%20-%20Very%20Good.mp4"
+	controls
+	>
+</video>
 ```
 
 JavaScript:
