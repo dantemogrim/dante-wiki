@@ -1,11 +1,11 @@
 <template>
   <div>
     <Heading>Projects</Heading>
-    <div class="grid-flow-row grid-cols-2 gap-4 md:grid">
+    <div class="grid-flow-row grid-cols-2 gap-4 sm:grid">
       <div
         v-for="project of projects"
         :key="project.slug"
-        class="flex flex-col col-span-1 p-4 my-4 transition duration-300 ease-in-out transform pixelFrame md:my-0 hover:-translate-y-1 hover:scale-101"
+        class="flex flex-col col-span-1 p-4 my-4 transition duration-300 ease-in-out transform sm:my-0 pixelFrame md:my-0 hover:-translate-y-1 hover:scale-101"
       >
         <h3
           class="mb-3 text-xl uppercase"

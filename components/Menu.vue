@@ -12,6 +12,13 @@
       to="/posts"
       >Posts</NuxtLink
     >
+    <!--
+    <NuxtLink
+      class="p-4 border-t-2 border-blue-500 lg:border-none lg:self-center lg:p-0 hover:bg-blue-600 lg:hover:bg-transparent font-cartridge"
+      to="/projects"
+      >Projects</NuxtLink
+    >
+    -->
     <NuxtLink
       class="p-4 border-t-2 border-blue-500 lg:border-none lg:self-center lg:p-0 hover:bg-blue-600 lg:hover:bg-transparent font-cartridge"
       to="/tags"
